@@ -1,0 +1,6490 @@
+{
+  "metadata": {
+    "saved_at": "2025-07-31T19:41:30.374948",
+    "source": "openlm_arena",
+    "last_updated": "2025-07-31T19:41:30.369802",
+    "model_count": 194,
+    "stage": "scraped"
+  },
+  "models": [
+    {
+      "name": "gemini_2.5_pro",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1474.0,
+        "coding_score": 1472.0,
+        "vision_score": 1315.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.353563",
+      "metadata": {
+        "arena_elo": 1474.0,
+        "coding_score": 1472.0,
+        "vision_score": 1315.0,
+        "aai_score": 70.5,
+        "mmlu_pro_score": 86.2,
+        "votes": 23460.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "grok_4",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1438.0,
+        "coding_score": 1440.0,
+        "vision_score": 1266.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.353692",
+      "metadata": {
+        "arena_elo": 1438.0,
+        "coding_score": 1440.0,
+        "vision_score": 1266.0,
+        "aai_score": 73.2,
+        "mmlu_pro_score": 86.6,
+        "votes": 10622.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "o3",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1431.0,
+        "coding_score": 1442.0,
+        "vision_score": 1269.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.353815",
+      "metadata": {
+        "arena_elo": 1431.0,
+        "coding_score": 1442.0,
+        "vision_score": 1269.0,
+        "aai_score": 70.0,
+        "mmlu_pro_score": 85.3,
+        "votes": 29536.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "chatgpt_4o",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1430.0,
+        "coding_score": 1431.0,
+        "vision_score": 1295.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.353894",
+      "metadata": {
+        "arena_elo": 1430.0,
+        "coding_score": 1431.0,
+        "vision_score": 1295.0,
+        "aai_score": 50.3,
+        "mmlu_pro_score": 80.3,
+        "votes": 29006.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "grok_3",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1427.0,
+        "coding_score": 1435.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.353962",
+      "metadata": {
+        "arena_elo": 1427.0,
+        "coding_score": 1435.0,
+        "aai_score": 56.1,
+        "mmlu_pro_score": 79.9,
+        "votes": 30158.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "deepseek_r1",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1426.0,
+        "coding_score": 1431.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354033",
+      "metadata": {
+        "arena_elo": 1426.0,
+        "coding_score": 1431.0,
+        "aai_score": 68.3,
+        "mmlu_pro_score": 84.9,
+        "votes": 16822.0,
+        "license": "MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_4.5_preview",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1418.0,
+        "coding_score": 1418.0,
+        "vision_score": 1236.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354105",
+      "metadata": {
+        "arena_elo": 1418.0,
+        "coding_score": 1418.0,
+        "vision_score": 1236.0,
+        "aai_score": 53.0,
+        "mmlu_pro_score": 81.0,
+        "votes": 15271.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemini_2.5_flash",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1414.0,
+        "coding_score": 1416.0,
+        "vision_score": 1275.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354178",
+      "metadata": {
+        "arena_elo": 1414.0,
+        "coding_score": 1416.0,
+        "vision_score": 1275.0,
+        "aai_score": 65.1,
+        "mmlu_pro_score": 83.2,
+        "votes": 28816.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemini_2.0_pro",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1399.0,
+        "coding_score": 1397.0,
+        "vision_score": 1214.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354250",
+      "metadata": {
+        "arena_elo": 1399.0,
+        "coding_score": 1397.0,
+        "vision_score": 1214.0,
+        "aai_score": 49.2,
+        "mmlu_pro_score": 80.5,
+        "votes": 20120.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemini_2.0_flash",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1399.0,
+        "coding_score": 1380.0,
+        "vision_score": 1257.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354383",
+      "metadata": {
+        "arena_elo": 1399.0,
+        "coding_score": 1380.0,
+        "vision_score": 1257.0,
+        "aai_score": 52.3,
+        "mmlu_pro_score": 79.8,
+        "votes": 27551.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen3_235b_a22b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1390.0,
+        "coding_score": 1408.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354455",
+      "metadata": {
+        "arena_elo": 1390.0,
+        "coding_score": 1408.0,
+        "aai_score": 60.4,
+        "mmlu_pro_score": 82.8,
+        "votes": 22745.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "kimi_k2_preview",
+      "developer": "Moonshot",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1380.0,
+        "coding_score": 1402.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354649",
+      "metadata": {
+        "arena_elo": 1380.0,
+        "coding_score": 1402.0,
+        "aai_score": 57.6,
+        "mmlu_pro_score": 82.4,
+        "votes": 8752.0,
+        "license": "Modified MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "hunyuan_turbos",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1377.0,
+        "coding_score": 1383.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354780",
+      "metadata": {
+        "arena_elo": 1377.0,
+        "coding_score": 1383.0,
+        "mmlu_pro_score": 78.0,
+        "votes": 10808.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_opus_4",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1375.0,
+        "coding_score": 1427.0,
+        "vision_score": 1220.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354848",
+      "metadata": {
+        "arena_elo": 1375.0,
+        "coding_score": 1427.0,
+        "vision_score": 1220.0,
+        "aai_score": 64.4,
+        "mmlu_pro_score": 87.3,
+        "votes": 16266.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "deepseek_r1",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1374.0,
+        "coding_score": 1379.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.354946",
+      "metadata": {
+        "arena_elo": 1374.0,
+        "coding_score": 1379.0,
+        "aai_score": 60.2,
+        "mmlu_pro_score": 84.4,
+        "votes": 19430.0,
+        "license": "MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mistral_medium_3",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1372.0,
+        "coding_score": 1384.0,
+        "vision_score": 1190.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355016",
+      "metadata": {
+        "arena_elo": 1372.0,
+        "coding_score": 1384.0,
+        "vision_score": 1190.0,
+        "aai_score": 49.0,
+        "mmlu_pro_score": 76.0,
+        "votes": 26340.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemini_2.0_flash",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1372.0,
+        "coding_score": 1370.0,
+        "vision_score": 1239.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355082",
+      "metadata": {
+        "arena_elo": 1372.0,
+        "coding_score": 1370.0,
+        "vision_score": 1239.0,
+        "aai_score": 48.1,
+        "mmlu_pro_score": 78.2,
+        "votes": 22500.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen3_coder_480b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1368.0,
+        "coding_score": 1405.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355173",
+      "metadata": {
+        "arena_elo": 1368.0,
+        "coding_score": 1405.0,
+        "aai_score": 56.7,
+        "mmlu_pro_score": 78.8,
+        "votes": 2534.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_opus_4",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1368.0,
+        "coding_score": 1404.0,
+        "vision_score": 1210.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355331",
+      "metadata": {
+        "arena_elo": 1368.0,
+        "coding_score": 1404.0,
+        "vision_score": 1210.0,
+        "aai_score": 57.7,
+        "mmlu_pro_score": 86.0,
+        "votes": 24372.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen3_235b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1368.0,
+        "coding_score": 1393.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355404",
+      "metadata": {
+        "arena_elo": 1368.0,
+        "coding_score": 1393.0,
+        "aai_score": 62.3,
+        "mmlu_pro_score": 82.8,
+        "votes": 18971.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "o1",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1368.0,
+        "coding_score": 1375.0,
+        "vision_score": 1215.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355494",
+      "metadata": {
+        "arena_elo": 1368.0,
+        "coding_score": 1375.0,
+        "vision_score": 1215.0,
+        "aai_score": 61.9,
+        "mmlu_pro_score": 84.1,
+        "votes": 29038.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen2.5_max",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1368.0,
+        "coding_score": 1371.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355570",
+      "metadata": {
+        "arena_elo": 1368.0,
+        "coding_score": 1371.0,
+        "aai_score": 45.3,
+        "mmlu_pro_score": 76.2,
+        "votes": 34768.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "grok_3_mini",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1363.0,
+        "coding_score": 1373.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355636",
+      "metadata": {
+        "arena_elo": 1363.0,
+        "coding_score": 1373.0,
+        "aai_score": 66.7,
+        "mmlu_pro_score": 82.8,
+        "votes": 8614.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "o4_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1362.0,
+        "coding_score": 1381.0,
+        "vision_score": 1240.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355736",
+      "metadata": {
+        "arena_elo": 1362.0,
+        "coding_score": 1381.0,
+        "vision_score": 1240.0,
+        "aai_score": 69.8,
+        "mmlu_pro_score": 83.2,
+        "votes": 22753.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "minimax_m1",
+      "developer": "MiniMax",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1357.0,
+        "coding_score": 1368.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355805",
+      "metadata": {
+        "arena_elo": 1357.0,
+        "coding_score": 1368.0,
+        "aai_score": 63.0,
+        "mmlu_pro_score": 81.6,
+        "votes": 15126.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemma_3_27b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1357.0,
+        "coding_score": 1343.0,
+        "vision_score": 1208.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355873",
+      "metadata": {
+        "arena_elo": 1357.0,
+        "coding_score": 1343.0,
+        "vision_score": 1208.0,
+        "aai_score": 37.6,
+        "mmlu_pro_score": 66.9,
+        "votes": 30519.0,
+        "license": "Gemma",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_sonnet_4",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1351.0,
+        "coding_score": 1406.0,
+        "vision_score": 1225.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.355958",
+      "metadata": {
+        "arena_elo": 1351.0,
+        "coding_score": 1406.0,
+        "vision_score": 1225.0,
+        "aai_score": 62.8,
+        "mmlu_pro_score": 84.6,
+        "votes": 15350.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_sonnet_4",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1343.0,
+        "coding_score": 1381.0,
+        "vision_score": 1212.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356069",
+      "metadata": {
+        "arena_elo": 1343.0,
+        "coding_score": 1381.0,
+        "vision_score": 1212.0,
+        "aai_score": 53.0,
+        "mmlu_pro_score": 83.7,
+        "votes": 20829.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen3_32b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1340.0,
+        "coding_score": 1373.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356141",
+      "metadata": {
+        "arena_elo": 1340.0,
+        "coding_score": 1373.0,
+        "aai_score": 59.2,
+        "mmlu_pro_score": 79.8,
+        "votes": 4074.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "o3_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1339.0,
+        "coding_score": 1377.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356206",
+      "metadata": {
+        "arena_elo": 1339.0,
+        "coding_score": 1377.0,
+        "aai_score": 65.5,
+        "mmlu_pro_score": 80.2,
+        "votes": 19404.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_4.1_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1338.0,
+        "coding_score": 1367.0,
+        "vision_score": 1230.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356273",
+      "metadata": {
+        "arena_elo": 1338.0,
+        "coding_score": 1367.0,
+        "vision_score": 1230.0,
+        "aai_score": 52.6,
+        "mmlu_pro_score": 78.1,
+        "votes": 22156.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mistral_small",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1335.0,
+        "coding_score": 1361.0,
+        "vision_score": 1180.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356338",
+      "metadata": {
+        "arena_elo": 1335.0,
+        "coding_score": 1361.0,
+        "vision_score": 1180.0,
+        "aai_score": 42.3,
+        "mmlu_pro_score": 68.1,
+        "votes": 7493.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "glm_4_plus",
+      "developer": "Zhipu",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1334.0,
+        "coding_score": 1310.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356464",
+      "metadata": {
+        "arena_elo": 1334.0,
+        "coding_score": 1310.0,
+        "mmlu_pro_score": 78.6,
+        "votes": 6028.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemma_3_12b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1333.0,
+        "coding_score": 1308.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356526",
+      "metadata": {
+        "arena_elo": 1333.0,
+        "coding_score": 1308.0,
+        "aai_score": 33.8,
+        "mmlu_pro_score": 59.5,
+        "votes": 3976.0,
+        "license": "Gemma",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwq_32b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1332.0,
+        "coding_score": 1343.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356620",
+      "metadata": {
+        "arena_elo": 1332.0,
+        "coding_score": 1343.0,
+        "aai_score": 58.1,
+        "mmlu_pro_score": 76.4,
+        "votes": 20973.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemini_2.0_flash_lite",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1332.0,
+        "coding_score": 1335.0,
+        "vision_score": 1145.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356720",
+      "metadata": {
+        "arena_elo": 1332.0,
+        "coding_score": 1335.0,
+        "vision_score": 1145.0,
+        "aai_score": 41.4,
+        "mmlu_pro_score": 72.4,
+        "votes": 26104.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen_plus",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1329.0,
+        "coding_score": 1343.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356814",
+      "metadata": {
+        "arena_elo": 1329.0,
+        "coding_score": 1343.0,
+        "votes": 6055.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "command_a",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1328.0,
+        "coding_score": 1331.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356915",
+      "metadata": {
+        "arena_elo": 1328.0,
+        "coding_score": 1331.0,
+        "aai_score": 40.0,
+        "mmlu_pro_score": 71.2,
+        "votes": 29251.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "amazon_nova_chat_05_14",
+      "developer": "Amazon",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1324.0,
+        "coding_score": 1333.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.356981",
+      "metadata": {
+        "arena_elo": 1324.0,
+        "coding_score": 1333.0,
+        "aai_score": 42.6,
+        "mmlu_pro_score": 73.3,
+        "votes": 12267.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen3_30b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1323.0,
+        "coding_score": 1342.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357071",
+      "metadata": {
+        "arena_elo": 1323.0,
+        "coding_score": 1342.0,
+        "aai_score": 55.6,
+        "mmlu_pro_score": 77.7,
+        "votes": 18763.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.1_nemotron_ultra_253b",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1322.0,
+        "coding_score": 1344.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357166",
+      "metadata": {
+        "arena_elo": 1322.0,
+        "coding_score": 1344.0,
+        "aai_score": 60.8,
+        "mmlu_pro_score": 82.5,
+        "votes": 2656.0,
+        "license": "Nvidia Open Model",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "step_2",
+      "developer": "StepFun",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1322.0,
+        "coding_score": 1312.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357261",
+      "metadata": {
+        "arena_elo": 1322.0,
+        "coding_score": 1312.0,
+        "votes": 5126.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemini_1.5_pro_002",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1322.0,
+        "coding_score": 1311.0,
+        "vision_score": 1207.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357379",
+      "metadata": {
+        "arena_elo": 1322.0,
+        "coding_score": 1311.0,
+        "vision_score": 1207.0,
+        "aai_score": 44.6,
+        "mmlu_pro_score": 75.0,
+        "votes": 58645.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "o1_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1320.0,
+        "coding_score": 1364.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357454",
+      "metadata": {
+        "arena_elo": 1320.0,
+        "coding_score": 1364.0,
+        "aai_score": 53.8,
+        "mmlu_pro_score": 74.2,
+        "votes": 54951.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "o3_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1320.0,
+        "coding_score": 1359.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357519",
+      "metadata": {
+        "arena_elo": 1320.0,
+        "coding_score": 1359.0,
+        "aai_score": 62.9,
+        "mmlu_pro_score": 79.1,
+        "votes": 41489.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_3.7_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1319.0,
+        "coding_score": 1353.0,
+        "vision_score": 1200.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357586",
+      "metadata": {
+        "arena_elo": 1319.0,
+        "coding_score": 1353.0,
+        "vision_score": 1200.0,
+        "aai_score": 57.4,
+        "mmlu_pro_score": 83.7,
+        "votes": 30850.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "hunyuan_turbo",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1315.0,
+        "coding_score": 1334.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357646",
+      "metadata": {
+        "arena_elo": 1315.0,
+        "coding_score": 1334.0,
+        "votes": 2510.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.3_nemotron_super_49b",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1311.0,
+        "coding_score": 1318.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357709",
+      "metadata": {
+        "arena_elo": 1311.0,
+        "coding_score": 1318.0,
+        "aai_score": 51.2,
+        "mmlu_pro_score": 78.5,
+        "votes": 2371.0,
+        "license": "Nvidia Open Model",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "grok_2_08_13",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1307.0,
+        "coding_score": 1296.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357774",
+      "metadata": {
+        "arena_elo": 1307.0,
+        "coding_score": 1296.0,
+        "aai_score": 39.2,
+        "mmlu_pro_score": 70.9,
+        "votes": 67084.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "yi_lightning",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1305.0,
+        "coding_score": 1321.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357834",
+      "metadata": {
+        "arena_elo": 1305.0,
+        "coding_score": 1321.0,
+        "votes": 28968.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemma_3n_e4b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1305.0,
+        "coding_score": 1292.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.357897",
+      "metadata": {
+        "arena_elo": 1305.0,
+        "coding_score": 1292.0,
+        "aai_score": 28.0,
+        "mmlu_pro_score": 48.8,
+        "votes": 11642.0,
+        "license": "Gemma",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_3.7_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1304.0,
+        "coding_score": 1338.0,
+        "vision_score": 1196.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358006",
+      "metadata": {
+        "arena_elo": 1304.0,
+        "coding_score": 1338.0,
+        "vision_score": 1196.0,
+        "aai_score": 48.2,
+        "mmlu_pro_score": 80.3,
+        "votes": 35838.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_4o",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1304.0,
+        "coding_score": 1305.0,
+        "vision_score": 1181.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358106",
+      "metadata": {
+        "arena_elo": 1304.0,
+        "coding_score": 1305.0,
+        "vision_score": 1181.0,
+        "aai_score": 41.5,
+        "mmlu_pro_score": 74.8,
+        "votes": 117747.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_3.5_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1301.0,
+        "coding_score": 1341.0,
+        "vision_score": 1170.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358214",
+      "metadata": {
+        "arena_elo": 1301.0,
+        "coding_score": 1341.0,
+        "vision_score": 1170.0,
+        "aai_score": 44.4,
+        "mmlu_pro_score": 77.2,
+        "votes": 82772.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "athene_v2_chat_72b",
+      "developer": "NexusFlow",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1296.0,
+        "coding_score": 1319.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358373",
+      "metadata": {
+        "arena_elo": 1296.0,
+        "coding_score": 1319.0,
+        "votes": 26074.0,
+        "license": "NexusFlow",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "glm_4_plus",
+      "developer": "Zhipu",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1294.0,
+        "coding_score": 1298.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358440",
+      "metadata": {
+        "arena_elo": 1294.0,
+        "coding_score": 1298.0,
+        "mmlu_pro_score": 70.2,
+        "votes": 27788.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemma_3_4b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1293.0,
+        "coding_score": 1263.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358505",
+      "metadata": {
+        "arena_elo": 1293.0,
+        "coding_score": 1263.0,
+        "aai_score": 25.4,
+        "mmlu_pro_score": 41.7,
+        "votes": 4321.0,
+        "license": "Gemma",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_4_maverick_17b_128e",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1292.0,
+        "coding_score": 1313.0,
+        "vision_score": 1183.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358573",
+      "metadata": {
+        "arena_elo": 1292.0,
+        "coding_score": 1313.0,
+        "vision_score": 1183.0,
+        "aai_score": 50.5,
+        "mmlu_pro_score": 80.9,
+        "votes": 22839.0,
+        "license": "Llama 4",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemini_1.5_flash_002",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1292.0,
+        "coding_score": 1272.0,
+        "vision_score": 1186.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358670",
+      "metadata": {
+        "arena_elo": 1292.0,
+        "coding_score": 1272.0,
+        "vision_score": 1186.0,
+        "aai_score": 39.0,
+        "mmlu_pro_score": 68.0,
+        "votes": 37021.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_4o_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1291.0,
+        "coding_score": 1297.0,
+        "vision_score": 1110.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358744",
+      "metadata": {
+        "arena_elo": 1291.0,
+        "coding_score": 1297.0,
+        "vision_score": 1110.0,
+        "aai_score": 35.7,
+        "mmlu_pro_score": 64.8,
+        "votes": 72425.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "hunyuan_large",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1290.0,
+        "coding_score": 1310.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358838",
+      "metadata": {
+        "arena_elo": 1290.0,
+        "coding_score": 1310.0,
+        "votes": 3856.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_4.1_nano",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1289.0,
+        "coding_score": 1310.0,
+        "vision_score": 1113.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358908",
+      "metadata": {
+        "arena_elo": 1289.0,
+        "coding_score": 1310.0,
+        "vision_score": 1113.0,
+        "aai_score": 41.0,
+        "mmlu_pro_score": 65.7,
+        "votes": 6302.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.1_405b_instruct_bf16",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1287.0,
+        "coding_score": 1298.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.358974",
+      "metadata": {
+        "arena_elo": 1287.0,
+        "coding_score": 1298.0,
+        "aai_score": 40.5,
+        "mmlu_pro_score": 73.2,
+        "votes": 43788.0,
+        "license": "Llama 3.1",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen_max",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1286.0,
+        "coding_score": 1295.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359035",
+      "metadata": {
+        "arena_elo": 1286.0,
+        "coding_score": 1295.0,
+        "votes": 17432.0,
+        "license": "Qwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.1_405b_instruct_fp8",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1286.0,
+        "coding_score": 1290.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359099",
+      "metadata": {
+        "arena_elo": 1286.0,
+        "coding_score": 1290.0,
+        "aai_score": 40.5,
+        "mmlu_pro_score": 73.2,
+        "votes": 63038.0,
+        "license": "Llama 3.1",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.1_nemotron_70b",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1286.0,
+        "coding_score": 1289.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359161",
+      "metadata": {
+        "arena_elo": 1286.0,
+        "coding_score": 1289.0,
+        "aai_score": 37.3,
+        "mmlu_pro_score": 69.0,
+        "votes": 7577.0,
+        "license": "Llama 3.1",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "yi_lightning_lite",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1286.0,
+        "coding_score": 1286.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359220",
+      "metadata": {
+        "arena_elo": 1286.0,
+        "coding_score": 1286.0,
+        "votes": 17067.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_3.5_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1285.0,
+        "coding_score": 1307.0,
+        "vision_score": 1165.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359350",
+      "metadata": {
+        "arena_elo": 1285.0,
+        "coding_score": 1307.0,
+        "vision_score": 1165.0,
+        "aai_score": 40.0,
+        "mmlu_pro_score": 75.1,
+        "votes": 86159.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "grok_2_mini_08_13",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1285.0,
+        "coding_score": 1277.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359487",
+      "metadata": {
+        "arena_elo": 1285.0,
+        "coding_score": 1277.0,
+        "votes": 55442.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "hunyuan_standard",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1278.0,
+        "coding_score": 1286.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359556",
+      "metadata": {
+        "arena_elo": 1278.0,
+        "coding_score": 1286.0,
+        "votes": 4014.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_4_scout_17b_16e",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1278.0,
+        "coding_score": 1283.0,
+        "vision_score": 1169.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359678",
+      "metadata": {
+        "arena_elo": 1278.0,
+        "coding_score": 1283.0,
+        "vision_score": 1169.0,
+        "aai_score": 43.0,
+        "mmlu_pro_score": 75.2,
+        "votes": 12455.0,
+        "license": "Llama 4",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_4_turbo",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1276.0,
+        "coding_score": 1278.0,
+        "vision_score": 1133.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359751",
+      "metadata": {
+        "arena_elo": 1276.0,
+        "coding_score": 1278.0,
+        "vision_score": 1133.0,
+        "aai_score": 38.8,
+        "mmlu_pro_score": 69.4,
+        "votes": 102133.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.3_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1276.0,
+        "coding_score": 1277.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359817",
+      "metadata": {
+        "arena_elo": 1276.0,
+        "coding_score": 1277.0,
+        "aai_score": 41.1,
+        "mmlu_pro_score": 71.3,
+        "votes": 50580.0,
+        "license": "Llama 3.3",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen2.5_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1274.0,
+        "coding_score": 1301.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.359950",
+      "metadata": {
+        "arena_elo": 1274.0,
+        "coding_score": 1301.0,
+        "aai_score": 40.4,
+        "mmlu_pro_score": 72.0,
+        "votes": 41519.0,
+        "license": "Qwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mistral_large",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1271.0,
+        "coding_score": 1281.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360013",
+      "metadata": {
+        "arena_elo": 1271.0,
+        "coding_score": 1281.0,
+        "aai_score": 38.3,
+        "mmlu_pro_score": 69.7,
+        "votes": 29633.0,
+        "license": "MRL",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mistral_small_3.1_24b",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1270.0,
+        "coding_score": 1294.0,
+        "vision_score": 1155.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360113",
+      "metadata": {
+        "arena_elo": 1270.0,
+        "coding_score": 1294.0,
+        "vision_score": 1155.0,
+        "aai_score": 35.3,
+        "mmlu_pro_score": 65.9,
+        "votes": 12385.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "athene_70b",
+      "developer": "NexusFlow",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1270.0,
+        "coding_score": 1278.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360179",
+      "metadata": {
+        "arena_elo": 1270.0,
+        "coding_score": 1278.0,
+        "votes": 20580.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_4_preview",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1269.0,
+        "coding_score": 1269.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360243",
+      "metadata": {
+        "arena_elo": 1269.0,
+        "coding_score": 1269.0,
+        "aai_score": 36.0,
+        "mmlu_pro_score": 63.7,
+        "votes": 103748.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "hunyuan_large_vision",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1268.0,
+        "coding_score": 1288.0,
+        "vision_score": 1233.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360307",
+      "metadata": {
+        "arena_elo": 1268.0,
+        "coding_score": 1288.0,
+        "vision_score": 1233.0,
+        "votes": 5759.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_4_preview",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1268.0,
+        "coding_score": 1260.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360413",
+      "metadata": {
+        "arena_elo": 1268.0,
+        "coding_score": 1260.0,
+        "votes": 97079.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_3_opus",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1267.0,
+        "coding_score": 1268.0,
+        "vision_score": 1066.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360480",
+      "metadata": {
+        "arena_elo": 1267.0,
+        "coding_score": 1268.0,
+        "vision_score": 1066.0,
+        "aai_score": 35.1,
+        "mmlu_pro_score": 69.6,
+        "votes": 202641.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.1_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1267.0,
+        "coding_score": 1266.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360588",
+      "metadata": {
+        "arena_elo": 1267.0,
+        "coding_score": 1266.0,
+        "aai_score": 35.4,
+        "mmlu_pro_score": 67.6,
+        "votes": 58637.0,
+        "license": "Llama 3.1",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "amazon_nova_pro",
+      "developer": "Amazon",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1263.0,
+        "coding_score": 1282.0,
+        "vision_score": 1027.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360692",
+      "metadata": {
+        "arena_elo": 1263.0,
+        "coding_score": 1282.0,
+        "vision_score": 1027.0,
+        "aai_score": 37.1,
+        "mmlu_pro_score": 69.1,
+        "votes": 26371.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.1_tulu_3_70b",
+      "developer": "Ai2",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1262.0,
+        "coding_score": 1254.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360758",
+      "metadata": {
+        "arena_elo": 1262.0,
+        "coding_score": 1254.0,
+        "votes": 3010.0,
+        "license": "Llama 3.1",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "magistral_medium",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1257.0,
+        "coding_score": 1301.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360854",
+      "metadata": {
+        "arena_elo": 1257.0,
+        "coding_score": 1301.0,
+        "aai_score": 56.0,
+        "mmlu_pro_score": 75.3,
+        "votes": 7459.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_3.5_haiku",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1257.0,
+        "coding_score": 1284.0,
+        "vision_score": 1145.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.360944",
+      "metadata": {
+        "arena_elo": 1257.0,
+        "coding_score": 1284.0,
+        "vision_score": 1145.0,
+        "aai_score": 34.7,
+        "mmlu_pro_score": 63.4,
+        "votes": 54196.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "reka_core",
+      "developer": "Reka AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1254.0,
+        "coding_score": 1235.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361044",
+      "metadata": {
+        "arena_elo": 1254.0,
+        "coding_score": 1235.0,
+        "aai_score": 33.9,
+        "votes": 7948.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "reka_core",
+      "developer": "Reka AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1252.0,
+        "coding_score": 1226.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361138",
+      "metadata": {
+        "arena_elo": 1252.0,
+        "coding_score": 1226.0,
+        "votes": 13279.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "jamba_1.5_large",
+      "developer": "AI21 Labs",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1244.0,
+        "coding_score": 1243.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361208",
+      "metadata": {
+        "arena_elo": 1244.0,
+        "coding_score": 1243.0,
+        "aai_score": 29.3,
+        "mmlu_pro_score": 57.2,
+        "votes": 9125.0,
+        "license": "Jamba Open",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "deepseek_v2_api",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1242.0,
+        "coding_score": 1261.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361269",
+      "metadata": {
+        "arena_elo": 1242.0,
+        "coding_score": 1261.0,
+        "votes": 19508.0,
+        "license": "DeepSeek",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "deepseek_coder",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1241.0,
+        "coding_score": 1289.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361333",
+      "metadata": {
+        "arena_elo": 1241.0,
+        "coding_score": 1289.0,
+        "aai_score": 29.0,
+        "mmlu_pro_score": 58.5,
+        "votes": 11725.0,
+        "license": "DeepSeek",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen_plus",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1241.0,
+        "coding_score": 1259.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361394",
+      "metadata": {
+        "arena_elo": 1241.0,
+        "coding_score": 1259.0,
+        "votes": 14626.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mistral_small_24b",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1239.0,
+        "coding_score": 1252.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361458",
+      "metadata": {
+        "arena_elo": 1239.0,
+        "coding_score": 1252.0,
+        "aai_score": 35.3,
+        "mmlu_pro_score": 65.2,
+        "votes": 15321.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "yi_large",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1238.0,
+        "coding_score": 1239.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361568",
+      "metadata": {
+        "arena_elo": 1238.0,
+        "coding_score": 1239.0,
+        "aai_score": 27.9,
+        "mmlu_pro_score": 58.6,
+        "votes": 16624.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemma_2_27b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1237.0,
+        "coding_score": 1223.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361640",
+      "metadata": {
+        "arena_elo": 1237.0,
+        "coding_score": 1223.0,
+        "aai_score": 31.7,
+        "mmlu_pro_score": 57.5,
+        "votes": 79538.0,
+        "license": "Gemma",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen2.5_coder_32b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1236.0,
+        "coding_score": 1275.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361759",
+      "metadata": {
+        "arena_elo": 1236.0,
+        "coding_score": 1275.0,
+        "aai_score": 36.3,
+        "mmlu_pro_score": 63.5,
+        "votes": 5730.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemma_2_9b_it_simpo",
+      "developer": "Princeton",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1236.0,
+        "coding_score": 1210.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361833",
+      "metadata": {
+        "arena_elo": 1236.0,
+        "coding_score": 1210.0,
+        "votes": 10548.0,
+        "license": "MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "command_r",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1236.0,
+        "coding_score": 1201.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361899",
+      "metadata": {
+        "arena_elo": 1236.0,
+        "coding_score": 1201.0,
+        "aai_score": 21.5,
+        "mmlu_pro_score": 43.2,
+        "votes": 10535.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.1_nemotron_51b",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1235.0,
+        "coding_score": 1225.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.361991",
+      "metadata": {
+        "arena_elo": 1235.0,
+        "coding_score": 1225.0,
+        "votes": 3889.0,
+        "license": "Llama 3.1",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "amazon_nova_lite",
+      "developer": "Amazon",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1233.0,
+        "coding_score": 1252.0,
+        "vision_score": 1034.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362090",
+      "metadata": {
+        "arena_elo": 1233.0,
+        "coding_score": 1252.0,
+        "vision_score": 1034.0,
+        "aai_score": 32.5,
+        "mmlu_pro_score": 59.0,
+        "votes": 20646.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemini_1.5_flash_8b_001",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1232.0,
+        "coding_score": 1229.0,
+        "vision_score": 1091.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362160",
+      "metadata": {
+        "arena_elo": 1232.0,
+        "coding_score": 1229.0,
+        "vision_score": 1091.0,
+        "aai_score": 30.8,
+        "mmlu_pro_score": 56.9,
+        "votes": 37697.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "glm_4",
+      "developer": "Zhipu",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1231.0,
+        "coding_score": 1237.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362219",
+      "metadata": {
+        "arena_elo": 1231.0,
+        "coding_score": 1237.0,
+        "votes": 10221.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "nemotron_4_340b",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1231.0,
+        "coding_score": 1220.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362315",
+      "metadata": {
+        "arena_elo": 1231.0,
+        "coding_score": 1220.0,
+        "votes": 20608.0,
+        "license": "Nvidia Open Model",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "aya_expanse_32b",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1231.0,
+        "coding_score": 1213.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362383",
+      "metadata": {
+        "arena_elo": 1231.0,
+        "coding_score": 1213.0,
+        "aai_score": 20.1,
+        "mmlu_pro_score": 37.7,
+        "votes": 28768.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "olmo_2_32b",
+      "developer": "Ai2",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1228.0,
+        "coding_score": 1210.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362445",
+      "metadata": {
+        "arena_elo": 1228.0,
+        "coding_score": 1210.0,
+        "votes": 3460.0,
+        "license": "Apache-2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1226.0,
+        "coding_score": 1216.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362564",
+      "metadata": {
+        "arena_elo": 1226.0,
+        "coding_score": 1216.0,
+        "aai_score": 27.5,
+        "mmlu_pro_score": 57.4,
+        "votes": 163629.0,
+        "license": "Llama 3",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "reka_flash",
+      "developer": "Reka AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1226.0,
+        "coding_score": 1209.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362643",
+      "metadata": {
+        "arena_elo": 1226.0,
+        "coding_score": 1209.0,
+        "aai_score": 33.6,
+        "votes": 8132.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_3_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1224.0,
+        "coding_score": 1232.0,
+        "vision_score": 1029.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362710",
+      "metadata": {
+        "arena_elo": 1224.0,
+        "coding_score": 1232.0,
+        "vision_score": 1029.0,
+        "aai_score": 27.8,
+        "mmlu_pro_score": 57.9,
+        "votes": 113067.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "phi_4",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1223.0,
+        "coding_score": 1240.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362805",
+      "metadata": {
+        "arena_elo": 1223.0,
+        "coding_score": 1240.0,
+        "aai_score": 40.2,
+        "mmlu_pro_score": 71.4,
+        "votes": 25213.0,
+        "license": "MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "reka_flash",
+      "developer": "Reka AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1220.0,
+        "coding_score": 1197.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362868",
+      "metadata": {
+        "arena_elo": 1220.0,
+        "coding_score": 1197.0,
+        "votes": 13725.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "amazon_nova_micro",
+      "developer": "Amazon",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1218.0,
+        "coding_score": 1226.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.362961",
+      "metadata": {
+        "arena_elo": 1218.0,
+        "coding_score": 1226.0,
+        "aai_score": 28.3,
+        "mmlu_pro_score": 53.1,
+        "votes": 20654.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemma_2_9b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1215.0,
+        "coding_score": 1194.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363032",
+      "metadata": {
+        "arena_elo": 1215.0,
+        "coding_score": 1194.0,
+        "aai_score": 22.2,
+        "mmlu_pro_score": 49.5,
+        "votes": 57197.0,
+        "license": "Gemma",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "hunyuan_standard_256k",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1211.0,
+        "coding_score": 1243.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363093",
+      "metadata": {
+        "arena_elo": 1211.0,
+        "coding_score": 1243.0,
+        "votes": 2901.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen2_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1211.0,
+        "coding_score": 1199.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363159",
+      "metadata": {
+        "arena_elo": 1211.0,
+        "coding_score": 1199.0,
+        "aai_score": 32.6,
+        "mmlu_pro_score": 62.2,
+        "votes": 38872.0,
+        "license": "Qianwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "command_r",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1211.0,
+        "coding_score": 1183.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363233",
+      "metadata": {
+        "arena_elo": 1211.0,
+        "coding_score": 1183.0,
+        "aai_score": 19.9,
+        "mmlu_pro_score": 42.7,
+        "votes": 80846.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_3_haiku",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1202.0,
+        "coding_score": 1207.0,
+        "vision_score": 1000.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363347",
+      "metadata": {
+        "arena_elo": 1202.0,
+        "coding_score": 1207.0,
+        "vision_score": 1000.0,
+        "aai_score": 24.1,
+        "mmlu_pro_score": 50.0,
+        "votes": 122309.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.1_tulu_3_8b",
+      "developer": "Ai2",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1202.0,
+        "coding_score": 1196.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363447",
+      "metadata": {
+        "arena_elo": 1202.0,
+        "coding_score": 1196.0,
+        "votes": 3074.0,
+        "license": "Llama 3.1",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen_max",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1200.0,
+        "coding_score": 1205.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363513",
+      "metadata": {
+        "arena_elo": 1200.0,
+        "coding_score": 1205.0,
+        "votes": 25696.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "glm_4",
+      "developer": "Zhipu",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1199.0,
+        "coding_score": 1207.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363575",
+      "metadata": {
+        "arena_elo": 1199.0,
+        "coding_score": 1207.0,
+        "votes": 7579.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "deepseek_coder",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1198.0,
+        "coding_score": 1256.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363675",
+      "metadata": {
+        "arena_elo": 1198.0,
+        "coding_score": 1256.0,
+        "votes": 15753.0,
+        "license": "DeepSeek",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "ministral_8b",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1198.0,
+        "coding_score": 1216.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363743",
+      "metadata": {
+        "arena_elo": 1198.0,
+        "coding_score": 1216.0,
+        "aai_score": 22.3,
+        "mmlu_pro_score": 38.9,
+        "votes": 5111.0,
+        "license": "MRL",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "jamba_1.5_mini",
+      "developer": "AI21 Labs",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1196.0,
+        "coding_score": 1196.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363838",
+      "metadata": {
+        "arena_elo": 1196.0,
+        "coding_score": 1196.0,
+        "votes": 9274.0,
+        "license": "Jamba Open",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.1_8b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1194.0,
+        "coding_score": 1201.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.363905",
+      "metadata": {
+        "arena_elo": 1194.0,
+        "coding_score": 1201.0,
+        "aai_score": 23.7,
+        "mmlu_pro_score": 47.6,
+        "votes": 52578.0,
+        "license": "Llama 3.1",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "command_r",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1194.0,
+        "coding_score": 1178.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364006",
+      "metadata": {
+        "arena_elo": 1194.0,
+        "coding_score": 1178.0,
+        "aai_score": 14.8,
+        "mmlu_pro_score": 33.8,
+        "votes": 10851.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "aya_expanse_8b",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1191.0,
+        "coding_score": 1182.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364075",
+      "metadata": {
+        "arena_elo": 1191.0,
+        "coding_score": 1182.0,
+        "aai_score": 16.0,
+        "mmlu_pro_score": 31.2,
+        "votes": 10391.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen1.5_110b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1182.0,
+        "coding_score": 1188.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364174",
+      "metadata": {
+        "arena_elo": 1182.0,
+        "coding_score": 1188.0,
+        "aai_score": 25.0,
+        "votes": 27430.0,
+        "license": "Qianwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_1",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1181.0,
+        "coding_score": 1162.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364251",
+      "metadata": {
+        "arena_elo": 1181.0,
+        "coding_score": 1162.0,
+        "votes": 21149.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "yi_1.5_34b",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1180.0,
+        "coding_score": 1180.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364313",
+      "metadata": {
+        "arena_elo": 1180.0,
+        "coding_score": 1180.0,
+        "votes": 25135.0,
+        "license": "Apache-2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen1.5_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1174.0,
+        "coding_score": 1173.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364409",
+      "metadata": {
+        "arena_elo": 1174.0,
+        "coding_score": 1173.0,
+        "votes": 40658.0,
+        "license": "Qianwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mistral_medium",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1173.0,
+        "coding_score": 1171.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364501",
+      "metadata": {
+        "arena_elo": 1173.0,
+        "coding_score": 1171.0,
+        "aai_score": 22.8,
+        "mmlu_pro_score": 49.1,
+        "votes": 35556.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3_8b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1173.0,
+        "coding_score": 1163.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364570",
+      "metadata": {
+        "arena_elo": 1173.0,
+        "coding_score": 1163.0,
+        "aai_score": 21.5,
+        "mmlu_pro_score": 40.5,
+        "votes": 109056.0,
+        "license": "Llama 3",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "command_r",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1171.0,
+        "coding_score": 1139.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364634",
+      "metadata": {
+        "arena_elo": 1171.0,
+        "coding_score": 1139.0,
+        "aai_score": 14.7,
+        "mmlu_pro_score": 33.7,
+        "votes": 56398.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "internlm2.5_20b",
+      "developer": "InternLM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1170.0,
+        "coding_score": 1180.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364694",
+      "metadata": {
+        "arena_elo": 1170.0,
+        "coding_score": 1180.0,
+        "votes": 10599.0,
+        "license": "Other",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mixtral_8x22b_instruct",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1169.0,
+        "coding_score": 1174.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364757",
+      "metadata": {
+        "arena_elo": 1169.0,
+        "coding_score": 1174.0,
+        "aai_score": 26.2,
+        "mmlu_pro_score": 53.7,
+        "votes": 53751.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemma_2_2b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1165.0,
+        "coding_score": 1129.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.364873",
+      "metadata": {
+        "arena_elo": 1165.0,
+        "coding_score": 1129.0,
+        "votes": 48892.0,
+        "license": "Gemma",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "granite_3.1_8b",
+      "developer": "IBM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1159.0,
+        "coding_score": 1186.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365064",
+      "metadata": {
+        "arena_elo": 1159.0,
+        "coding_score": 1186.0,
+        "votes": 3289.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemini_1.0_pro_001",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1157.0,
+        "coding_score": 1127.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365132",
+      "metadata": {
+        "arena_elo": 1157.0,
+        "coding_score": 1127.0,
+        "votes": 18800.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "zephyr_orpo_141b",
+      "developer": "HuggingFace",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1153.0,
+        "coding_score": 1148.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365194",
+      "metadata": {
+        "arena_elo": 1153.0,
+        "coding_score": 1148.0,
+        "votes": 4854.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_3.5_turbo",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1148.0,
+        "coding_score": 1168.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365325",
+      "metadata": {
+        "arena_elo": 1148.0,
+        "coding_score": 1168.0,
+        "aai_score": 22.7,
+        "mmlu_pro_score": 46.2,
+        "votes": 38955.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen1.5_32b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1146.0,
+        "coding_score": 1159.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365421",
+      "metadata": {
+        "arena_elo": 1146.0,
+        "coding_score": 1159.0,
+        "votes": 22765.0,
+        "license": "Qianwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "phi_3_medium_4k",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1146.0,
+        "coding_score": 1146.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365488",
+      "metadata": {
+        "arena_elo": 1146.0,
+        "coding_score": 1146.0,
+        "aai_score": 24.5,
+        "mmlu_pro_score": 54.3,
+        "votes": 26105.0,
+        "license": "MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gpt_3.5_turbo",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1141.0,
+        "coding_score": 1138.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365549",
+      "metadata": {
+        "arena_elo": 1141.0,
+        "coding_score": 1138.0,
+        "votes": 5640.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mixtral_8x7b_instruct",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1140.0,
+        "coding_score": 1136.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365614",
+      "metadata": {
+        "arena_elo": 1140.0,
+        "coding_score": 1136.0,
+        "aai_score": 17.0,
+        "mmlu_pro_score": 38.7,
+        "votes": 76126.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "starling_lm_7b",
+      "developer": "Nexusflow",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1139.0,
+        "coding_score": 1148.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365740",
+      "metadata": {
+        "arena_elo": 1139.0,
+        "coding_score": 1148.0,
+        "votes": 16676.0,
+        "license": "Apache-2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen1.5_14b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1139.0,
+        "coding_score": 1145.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365835",
+      "metadata": {
+        "arena_elo": 1139.0,
+        "coding_score": 1145.0,
+        "votes": 18687.0,
+        "license": "Qianwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "granite_3.1_2b",
+      "developer": "IBM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1137.0,
+        "coding_score": 1162.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.365946",
+      "metadata": {
+        "arena_elo": 1137.0,
+        "coding_score": 1162.0,
+        "votes": 3380.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "claude_instant_1",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1137.0,
+        "coding_score": 1135.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366055",
+      "metadata": {
+        "arena_elo": 1137.0,
+        "coding_score": 1135.0,
+        "votes": 20631.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "yi_34b",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1135.0,
+        "coding_score": 1126.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366138",
+      "metadata": {
+        "arena_elo": 1135.0,
+        "coding_score": 1126.0,
+        "votes": 15917.0,
+        "license": "Yi",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "tulu_2_dpo_70b",
+      "developer": "Ai2",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1129.0,
+        "coding_score": 1124.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366201",
+      "metadata": {
+        "arena_elo": 1129.0,
+        "coding_score": 1124.0,
+        "votes": 6658.0,
+        "license": "Ai2 ImpACT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "dbrx_instruct_preview",
+      "developer": "Databricks",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1127.0,
+        "coding_score": 1140.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366263",
+      "metadata": {
+        "arena_elo": 1127.0,
+        "coding_score": 1140.0,
+        "votes": 33743.0,
+        "license": "DBRX",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "wizardlm_70b",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1127.0,
+        "coding_score": 1089.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366371",
+      "metadata": {
+        "arena_elo": 1127.0,
+        "coding_score": 1089.0,
+        "votes": 8383.0,
+        "license": "Llama 2",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "nous_hermes_2_mixtral_8x7b_dpo",
+      "developer": "NousResearch",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1125.0,
+        "coding_score": 1106.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366468",
+      "metadata": {
+        "arena_elo": 1125.0,
+        "coding_score": 1106.0,
+        "votes": 3836.0,
+        "license": "Apache-2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_2_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1124.0,
+        "coding_score": 1102.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366570",
+      "metadata": {
+        "arena_elo": 1124.0,
+        "coding_score": 1102.0,
+        "aai_score": 20.0,
+        "mmlu_pro_score": 40.7,
+        "votes": 39595.0,
+        "license": "Llama 2",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "phi_3_small_8k",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1119.0,
+        "coding_score": 1119.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366654",
+      "metadata": {
+        "arena_elo": 1119.0,
+        "coding_score": 1119.0,
+        "votes": 18476.0,
+        "license": "MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.2_3b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1119.0,
+        "coding_score": 1093.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366733",
+      "metadata": {
+        "arena_elo": 1119.0,
+        "coding_score": 1093.0,
+        "aai_score": 19.5,
+        "mmlu_pro_score": 34.7,
+        "votes": 8390.0,
+        "license": "Llama 3.2",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "starling_lm_7b_alpha",
+      "developer": "UC Berkeley",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1116.0,
+        "coding_score": 1104.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366842",
+      "metadata": {
+        "arena_elo": 1116.0,
+        "coding_score": 1104.0,
+        "votes": 10415.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "openchat",
+      "developer": "OpenChat",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1114.0,
+        "coding_score": 1113.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.366914",
+      "metadata": {
+        "arena_elo": 1114.0,
+        "coding_score": 1113.0,
+        "votes": 12990.0,
+        "license": "Apache-2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "vicuna_33b",
+      "developer": "LMSYS",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1114.0,
+        "coding_score": 1089.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367005",
+      "metadata": {
+        "arena_elo": 1114.0,
+        "coding_score": 1089.0,
+        "votes": 22936.0,
+        "license": "Non-commercial",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "deepseek_llm_67b",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1111.0,
+        "coding_score": 1115.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367069",
+      "metadata": {
+        "arena_elo": 1111.0,
+        "coding_score": 1115.0,
+        "aai_score": 20.0,
+        "votes": 4988.0,
+        "license": "DeepSeek",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "snowflake_arctic",
+      "developer": "Snowflake",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1110.0,
+        "coding_score": 1098.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367128",
+      "metadata": {
+        "arena_elo": 1110.0,
+        "coding_score": 1098.0,
+        "votes": 34173.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "granite_3.0_8b",
+      "developer": "IBM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1109.0,
+        "coding_score": 1116.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367188",
+      "metadata": {
+        "arena_elo": 1109.0,
+        "coding_score": 1116.0,
+        "votes": 7002.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "nv_llama2_70b_steerlm",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1108.0,
+        "coding_score": 1051.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367292",
+      "metadata": {
+        "arena_elo": 1108.0,
+        "coding_score": 1051.0,
+        "votes": 3636.0,
+        "license": "Llama 2",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "gemma_1.1_7b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1105.0,
+        "coding_score": 1105.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367356",
+      "metadata": {
+        "arena_elo": 1105.0,
+        "coding_score": 1105.0,
+        "votes": 25070.0,
+        "license": "Gemma",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "openchat",
+      "developer": "OpenChat",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1105.0,
+        "coding_score": 1080.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367440",
+      "metadata": {
+        "arena_elo": 1105.0,
+        "coding_score": 1080.0,
+        "votes": 8106.0,
+        "license": "Apache-2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "openhermes_2.5_mistral_7b",
+      "developer": "NousResearch",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1104.0,
+        "coding_score": 1086.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367514",
+      "metadata": {
+        "arena_elo": 1104.0,
+        "coding_score": 1086.0,
+        "votes": 5088.0,
+        "license": "Apache-2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mistral_7b_instruct",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1099.0,
+        "coding_score": 1098.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367580",
+      "metadata": {
+        "arena_elo": 1099.0,
+        "coding_score": 1098.0,
+        "aai_score": 10.1,
+        "mmlu_pro_score": 24.5,
+        "votes": 20067.0,
+        "license": "Apache-2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "pplx_70b_online",
+      "developer": "Perplexity AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1098.0,
+        "coding_score": 1059.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367640",
+      "metadata": {
+        "arena_elo": 1098.0,
+        "coding_score": 1059.0,
+        "votes": 6898.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "solar_10.7b_instruct",
+      "developer": "Upstage AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1097.0,
+        "coding_score": 1077.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367732",
+      "metadata": {
+        "arena_elo": 1097.0,
+        "coding_score": 1077.0,
+        "votes": 4286.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_2_13b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1094.0,
+        "coding_score": 1079.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367818",
+      "metadata": {
+        "arena_elo": 1094.0,
+        "coding_score": 1079.0,
+        "aai_score": 19.9,
+        "mmlu_pro_score": 40.6,
+        "votes": 19722.0,
+        "license": "Llama 2",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "granite_3.0_2b",
+      "developer": "IBM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1092.0,
+        "coding_score": 1105.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.367912",
+      "metadata": {
+        "arena_elo": 1092.0,
+        "coding_score": 1105.0,
+        "votes": 7191.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen1.5_7b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1090.0,
+        "coding_score": 1109.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368006",
+      "metadata": {
+        "arena_elo": 1090.0,
+        "coding_score": 1109.0,
+        "votes": 4872.0,
+        "license": "Qianwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "phi_3_mini_4k_instruct_june_24",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1089.0,
+        "coding_score": 1097.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368093",
+      "metadata": {
+        "arena_elo": 1089.0,
+        "coding_score": 1097.0,
+        "votes": 12808.0,
+        "license": "MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "dolphin_2.2.1_mistral_7b",
+      "developer": "Cognitive",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1089.0,
+        "coding_score": 1052.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368154",
+      "metadata": {
+        "arena_elo": 1089.0,
+        "coding_score": 1052.0,
+        "votes": 1714.0,
+        "license": "Apache-2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "wizardlm_13b",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1085.0,
+        "coding_score": 1052.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368235",
+      "metadata": {
+        "arena_elo": 1085.0,
+        "coding_score": 1052.0,
+        "votes": 7176.0,
+        "license": "Llama 2",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "phi_3_mini_4k",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1083.0,
+        "coding_score": 1097.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368308",
+      "metadata": {
+        "arena_elo": 1083.0,
+        "coding_score": 1097.0,
+        "votes": 21097.0,
+        "license": "MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "mpt_30b",
+      "developer": "MosaicML",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1078.0,
+        "coding_score": 1056.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368401",
+      "metadata": {
+        "arena_elo": 1078.0,
+        "coding_score": 1056.0,
+        "votes": 2644.0,
+        "license": "CC-BY-NC-SA-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "codellama_34b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1077.0,
+        "coding_score": 1074.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368499",
+      "metadata": {
+        "arena_elo": 1077.0,
+        "coding_score": 1074.0,
+        "votes": 7509.0,
+        "license": "Llama 2",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.2_1b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "openlm_arena_elo": 1067.0,
+        "coding_score": 1060.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368566",
+      "metadata": {
+        "arena_elo": 1067.0,
+        "coding_score": 1060.0,
+        "aai_score": 9.7,
+        "mmlu_pro_score": 20.0,
+        "votes": 8523.0,
+        "license": "Llama 3.2",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen2.5_vl_32b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1198.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368676",
+      "metadata": {
+        "vision_score": 1198.0,
+        "votes": 1505.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "step_1o_vision_32k",
+      "developer": "StepFun",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1165.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368747",
+      "metadata": {
+        "vision_score": 1165.0,
+        "votes": 2891.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen2.5_vl_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1154.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368806",
+      "metadata": {
+        "vision_score": 1154.0,
+        "votes": 3884.0,
+        "license": "Qwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "pixtral_large",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1135.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368870",
+      "metadata": {
+        "vision_score": 1135.0,
+        "aai_score": 37.4,
+        "mmlu_pro_score": 70.1,
+        "votes": 5546.0,
+        "license": "MRL",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen_vl_max",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1103.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.368929",
+      "metadata": {
+        "vision_score": 1103.0,
+        "votes": 1449.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen2_vl_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1091.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369008",
+      "metadata": {
+        "vision_score": 1091.0,
+        "votes": 6028.0,
+        "license": "Qwen",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "step_1v_32k",
+      "developer": "StepFun",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1090.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369110",
+      "metadata": {
+        "vision_score": 1090.0,
+        "votes": 1553.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "molmo_72b",
+      "developer": "Ai2",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1059.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369174",
+      "metadata": {
+        "vision_score": 1059.0,
+        "votes": 3092.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "pixtral_12b",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1056.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369236",
+      "metadata": {
+        "vision_score": 1056.0,
+        "aai_score": 23.4,
+        "mmlu_pro_score": 47.3,
+        "votes": 7623.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "internvl2_26b",
+      "developer": "OpenGVLab",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1053.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369320",
+      "metadata": {
+        "vision_score": 1053.0,
+        "votes": 5265.0,
+        "license": "MIT",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.2_90b_vision",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1046.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369389",
+      "metadata": {
+        "vision_score": 1046.0,
+        "aai_score": 33.4,
+        "mmlu_pro_score": 67.1,
+        "votes": 8829.0,
+        "license": "Llama 3.2",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "hunyuan_standard_vision",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1045.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369448",
+      "metadata": {
+        "vision_score": 1045.0,
+        "votes": 811.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "aya_vision_32b",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1036.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369537",
+      "metadata": {
+        "vision_score": 1036.0,
+        "votes": 849.0,
+        "license": "CC-BY-NC-4.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "qwen2_vl_7b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1034.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369598",
+      "metadata": {
+        "vision_score": 1034.0,
+        "votes": 5854.0,
+        "license": "Apache 2.0",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "yi_vision",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1028.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369656",
+      "metadata": {
+        "vision_score": 1028.0,
+        "votes": 1237.0,
+        "license": "Proprietary",
+        "source": "openlm_arena"
+      }
+    },
+    {
+      "name": "llama_3.2_11b_vision",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "vision_score": 1008.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:30.369772",
+      "metadata": {
+        "vision_score": 1008.0,
+        "aai_score": 25.0,
+        "mmlu_pro_score": 46.4,
+        "votes": 4893.0,
+        "license": "Llama 3.2",
+        "source": "openlm_arena"
+      }
+    }
+  ]
+}

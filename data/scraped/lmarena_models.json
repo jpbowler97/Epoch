@@ -1,0 +1,6371 @@
+{
+  "metadata": {
+    "saved_at": "2025-07-31T19:41:29.838128",
+    "source": "lmarena",
+    "last_updated": "2025-07-31T19:41:29.828900",
+    "model_count": 212,
+    "stage": "scraped"
+  },
+  "models": [
+    {
+      "name": "gemini_2.5_pro",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1463.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819676",
+      "metadata": {
+        "lmarena_score": 1463.0,
+        "lmarena_rank": "1",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "o3",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1454.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819855",
+      "metadata": {
+        "lmarena_score": 1454.0,
+        "lmarena_rank": "1",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "chatgpt_4o",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1443.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819867",
+      "metadata": {
+        "lmarena_score": 1443.0,
+        "lmarena_rank": "2",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4.5_preview",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1440.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819879",
+      "metadata": {
+        "lmarena_score": 1440.0,
+        "lmarena_rank": "3",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "grok_4",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1432.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819887",
+      "metadata": {
+        "lmarena_score": 1432.0,
+        "lmarena_rank": "3",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_opus_4_thinking_16k",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1421.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819895",
+      "metadata": {
+        "lmarena_score": 1421.0,
+        "lmarena_rank": "5",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "kimi_k2_preview",
+      "developer": "Moonshot",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1420.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819903",
+      "metadata": {
+        "lmarena_score": 1420.0,
+        "lmarena_rank": "5",
+        "license": "Modified MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "deepseek_r1",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1418.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819917",
+      "metadata": {
+        "lmarena_score": 1418.0,
+        "lmarena_rank": "5",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_opus_4",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1414.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819927",
+      "metadata": {
+        "lmarena_score": 1414.0,
+        "lmarena_rank": "6",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "grok_3",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1413.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819976",
+      "metadata": {
+        "lmarena_score": 1413.0,
+        "lmarena_rank": "6",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_2.5_flash",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1411.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.819987",
+      "metadata": {
+        "lmarena_score": 1411.0,
+        "lmarena_rank": "6",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_sonnet_4_thinking_32k",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1400.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820001",
+      "metadata": {
+        "lmarena_score": 1400.0,
+        "lmarena_rank": "10",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "o1",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1400.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820007",
+      "metadata": {
+        "lmarena_score": 1400.0,
+        "lmarena_rank": "11",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen3_235b_a22b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1397.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820014",
+      "metadata": {
+        "lmarena_score": 1397.0,
+        "lmarena_rank": "12",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "o4_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1397.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820020",
+      "metadata": {
+        "lmarena_score": 1397.0,
+        "lmarena_rank": "12",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen3_coder_480b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1391.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820026",
+      "metadata": {
+        "lmarena_score": 1391.0,
+        "lmarena_rank": "12",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "deepseek_r1",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1394.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820033",
+      "metadata": {
+        "lmarena_score": 1394.0,
+        "lmarena_rank": "13",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_sonnet_4",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1391.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820045",
+      "metadata": {
+        "lmarena_score": 1391.0,
+        "lmarena_rank": "13",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_3_7_sonnet_thinking_32k",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1387.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820105",
+      "metadata": {
+        "lmarena_score": 1387.0,
+        "lmarena_rank": "14",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "o1_preview",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1385.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820112",
+      "metadata": {
+        "lmarena_score": 1385.0,
+        "lmarena_rank": "17",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_medium",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1384.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820146",
+      "metadata": {
+        "lmarena_score": 1384.0,
+        "lmarena_rank": "17",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "hunyuan_turbos",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1381.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820160",
+      "metadata": {
+        "lmarena_score": 1381.0,
+        "lmarena_rank": "17",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "minimax_m1",
+      "developer": "MiniMax",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1376.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820167",
+      "metadata": {
+        "lmarena_score": 1376.0,
+        "lmarena_rank": "20",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4.1_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1374.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820173",
+      "metadata": {
+        "lmarena_score": 1374.0,
+        "lmarena_rank": "21",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen3_235b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1374.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820179",
+      "metadata": {
+        "lmarena_score": 1374.0,
+        "lmarena_rank": "21",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen2.5_max",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1373.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820214",
+      "metadata": {
+        "lmarena_score": 1373.0,
+        "lmarena_rank": "23",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_3_7_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1372.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820222",
+      "metadata": {
+        "lmarena_score": 1372.0,
+        "lmarena_rank": "24",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_3_5_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1367.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820228",
+      "metadata": {
+        "lmarena_score": 1367.0,
+        "lmarena_rank": "25",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_2.0_flash_001",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1366.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820234",
+      "metadata": {
+        "lmarena_score": 1366.0,
+        "lmarena_rank": "25",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "o3_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1364.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820240",
+      "metadata": {
+        "lmarena_score": 1364.0,
+        "lmarena_rank": "25",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_3_27b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1363.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820269",
+      "metadata": {
+        "lmarena_score": 1363.0,
+        "lmarena_rank": "26",
+        "license": "Gemma",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "grok_3_mini",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1360.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820284",
+      "metadata": {
+        "lmarena_score": 1360.0,
+        "lmarena_rank": "26",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "grok_3_mini",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1356.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820291",
+      "metadata": {
+        "lmarena_score": 1356.0,
+        "lmarena_rank": "30",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.1_nemotron_ultra_253b",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1346.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820335",
+      "metadata": {
+        "lmarena_score": 1346.0,
+        "lmarena_rank": "32",
+        "license": "Nvidia Open Model",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_2.0_flash_lite",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1352.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820341",
+      "metadata": {
+        "lmarena_score": 1352.0,
+        "lmarena_rank": "34",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_1.5_pro_002",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1351.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820401",
+      "metadata": {
+        "lmarena_score": 1351.0,
+        "lmarena_rank": "34",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_small",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1349.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820440",
+      "metadata": {
+        "lmarena_score": 1349.0,
+        "lmarena_rank": "34",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "command_a_03",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1347.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820449",
+      "metadata": {
+        "lmarena_score": 1347.0,
+        "lmarena_rank": "34",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "hunyuan_turbos",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1346.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820456",
+      "metadata": {
+        "lmarena_score": 1346.0,
+        "lmarena_rank": "34",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen_plus",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1345.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820485",
+      "metadata": {
+        "lmarena_score": 1345.0,
+        "lmarena_rank": "34",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen3_32b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1344.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820523",
+      "metadata": {
+        "lmarena_score": 1344.0,
+        "lmarena_rank": "34",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "glm_4_plus",
+      "developer": "Zhipu",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1343.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820532",
+      "metadata": {
+        "lmarena_score": 1343.0,
+        "lmarena_rank": "34",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "hunyuan_turbo",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1341.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820538",
+      "metadata": {
+        "lmarena_score": 1341.0,
+        "lmarena_rank": "34",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "o3_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1346.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820544",
+      "metadata": {
+        "lmarena_score": 1346.0,
+        "lmarena_rank": "36",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_3_12b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1338.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820550",
+      "metadata": {
+        "lmarena_score": 1338.0,
+        "lmarena_rank": "36",
+        "license": "Gemma",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4o",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1344.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820556",
+      "metadata": {
+        "lmarena_score": 1344.0,
+        "lmarena_rank": "37",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_3_5_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1340.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820562",
+      "metadata": {
+        "lmarena_score": 1340.0,
+        "lmarena_rank": "39",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwq_32b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1335.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820568",
+      "metadata": {
+        "lmarena_score": 1335.0,
+        "lmarena_rank": "39",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "step_2",
+      "developer": "StepFun",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1332.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820603",
+      "metadata": {
+        "lmarena_score": 1332.0,
+        "lmarena_rank": "39",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "o1_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1336.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820633",
+      "metadata": {
+        "lmarena_score": 1336.0,
+        "lmarena_rank": "42",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.1_405b_instruct_bf16",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1335.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820648",
+      "metadata": {
+        "lmarena_score": 1335.0,
+        "lmarena_rank": "42",
+        "license": "Llama 3.1 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.1_405b_instruct_fp8",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1334.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820679",
+      "metadata": {
+        "lmarena_score": 1334.0,
+        "lmarena_rank": "43",
+        "license": "Llama 3.1 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4o",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1334.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820693",
+      "metadata": {
+        "lmarena_score": 1334.0,
+        "lmarena_rank": "43",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_advanced",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1332.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820738",
+      "metadata": {
+        "lmarena_score": 1332.0,
+        "lmarena_rank": "43",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "grok_2",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1332.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820768",
+      "metadata": {
+        "lmarena_score": 1332.0,
+        "lmarena_rank": "43",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen3_30b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1331.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820776",
+      "metadata": {
+        "lmarena_score": 1331.0,
+        "lmarena_rank": "43",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_4_maverick_17b_128e",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1330.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820782",
+      "metadata": {
+        "lmarena_score": 1330.0,
+        "lmarena_rank": "43",
+        "license": "Llama 4",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.3_nemotron_49b_super",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1325.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820788",
+      "metadata": {
+        "lmarena_score": 1325.0,
+        "lmarena_rank": "43",
+        "license": "Nvidia",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "yi_lightning",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1328.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820794",
+      "metadata": {
+        "lmarena_score": 1328.0,
+        "lmarena_rank": "46",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "hunyuan_large",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1323.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820825",
+      "metadata": {
+        "lmarena_score": 1323.0,
+        "lmarena_rank": "46",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4.1_nano",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1321.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820847",
+      "metadata": {
+        "lmarena_score": 1321.0,
+        "lmarena_rank": "50",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4_turbo",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1324.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820908",
+      "metadata": {
+        "lmarena_score": 1324.0,
+        "lmarena_rank": "55",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_3_opus",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1323.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820918",
+      "metadata": {
+        "lmarena_score": 1323.0,
+        "lmarena_rank": "56",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_1.5_pro_001",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1320.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820952",
+      "metadata": {
+        "lmarena_score": 1320.0,
+        "lmarena_rank": "58",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "glm_4_plus",
+      "developer": "Zhipu AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1319.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820961",
+      "metadata": {
+        "lmarena_score": 1319.0,
+        "lmarena_rank": "58",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "amazon_nova_experimental_chat_05_14",
+      "developer": "Amazon",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1318.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820968",
+      "metadata": {
+        "lmarena_score": 1318.0,
+        "lmarena_rank": "58",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_4_scout_17b_16e",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1318.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.820999",
+      "metadata": {
+        "lmarena_score": 1318.0,
+        "lmarena_rank": "58",
+        "license": "Llama",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_3n_e4b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1316.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821012",
+      "metadata": {
+        "lmarena_score": 1316.0,
+        "lmarena_rank": "58",
+        "license": "Gemma",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen_max",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1317.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821041",
+      "metadata": {
+        "lmarena_score": 1317.0,
+        "lmarena_rank": "60",
+        "license": "Qwen",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.3_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1317.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821056",
+      "metadata": {
+        "lmarena_score": 1317.0,
+        "lmarena_rank": "61",
+        "license": "Llama-3.3",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen2.5_plus",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1315.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821114",
+      "metadata": {
+        "lmarena_score": 1315.0,
+        "lmarena_rank": "61",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_3_5_haiku",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1317.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821155",
+      "metadata": {
+        "lmarena_score": 1317.0,
+        "lmarena_rank": "62",
+        "license": "Propretary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4o_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1317.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821163",
+      "metadata": {
+        "lmarena_score": 1317.0,
+        "lmarena_rank": "62",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4_preview",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1315.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821170",
+      "metadata": {
+        "lmarena_score": 1315.0,
+        "lmarena_rank": "62",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "athene",
+      "developer": "NexusFlow",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1315.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821176",
+      "metadata": {
+        "lmarena_score": 1315.0,
+        "lmarena_rank": "62",
+        "license": "NexusFlow",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "hunyuan_standard",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1310.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821183",
+      "metadata": {
+        "lmarena_score": 1310.0,
+        "lmarena_rank": "62",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4_preview",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1315.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821188",
+      "metadata": {
+        "lmarena_score": 1315.0,
+        "lmarena_rank": "63",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_1.5_flash_002",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1313.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821194",
+      "metadata": {
+        "lmarena_score": 1313.0,
+        "lmarena_rank": "64",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_large",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1313.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821249",
+      "metadata": {
+        "lmarena_score": 1313.0,
+        "lmarena_rank": "64",
+        "license": "Mistral Research",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "magistral_medium",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1304.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821285",
+      "metadata": {
+        "lmarena_score": 1304.0,
+        "lmarena_rank": "66",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_3_4b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1303.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821292",
+      "metadata": {
+        "lmarena_score": 1303.0,
+        "lmarena_rank": "70",
+        "license": "Gemma",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "grok_2_mini",
+      "developer": "xAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1307.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821298",
+      "metadata": {
+        "lmarena_score": 1307.0,
+        "lmarena_rank": "73",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_large",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1306.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821334",
+      "metadata": {
+        "lmarena_score": 1306.0,
+        "lmarena_rank": "73",
+        "license": "MRL",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "athene_70b",
+      "developer": "NexusFlow",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1305.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821360",
+      "metadata": {
+        "lmarena_score": 1305.0,
+        "lmarena_rank": "73",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen2.5_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1303.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821403",
+      "metadata": {
+        "lmarena_score": 1303.0,
+        "lmarena_rank": "79",
+        "license": "Qwen",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.1_nemotron_70b",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1298.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821437",
+      "metadata": {
+        "lmarena_score": 1298.0,
+        "lmarena_rank": "83",
+        "license": "Llama 3.1",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "hunyuan_large_vision",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1295.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821447",
+      "metadata": {
+        "lmarena_score": 1295.0,
+        "lmarena_rank": "83",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_small_3.1_24b",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1294.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821506",
+      "metadata": {
+        "lmarena_score": 1294.0,
+        "lmarena_rank": "85",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.1_tulu_3_70b",
+      "developer": "Ai2",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1290.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821521",
+      "metadata": {
+        "lmarena_score": 1290.0,
+        "lmarena_rank": "85",
+        "license": "Llama 3.1",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.1_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1295.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821555",
+      "metadata": {
+        "lmarena_score": 1295.0,
+        "lmarena_rank": "86",
+        "license": "Llama 3.1 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.1_nemotron_51b",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1289.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821564",
+      "metadata": {
+        "lmarena_score": 1289.0,
+        "lmarena_rank": "86",
+        "license": "Llama 3.1",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "amazon_nova_pro",
+      "developer": "Amazon",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1290.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821570",
+      "metadata": {
+        "lmarena_score": 1290.0,
+        "lmarena_rank": "89",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "jamba_1.5_large",
+      "developer": "AI21 Labs",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1289.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821609",
+      "metadata": {
+        "lmarena_score": 1289.0,
+        "lmarena_rank": "89",
+        "license": "Jamba Open",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "reka_core",
+      "developer": "Reka AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1289.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821682",
+      "metadata": {
+        "lmarena_score": 1289.0,
+        "lmarena_rank": "89",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1287.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821694",
+      "metadata": {
+        "lmarena_score": 1287.0,
+        "lmarena_rank": "91",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_2_27b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1287.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821701",
+      "metadata": {
+        "lmarena_score": 1287.0,
+        "lmarena_rank": "91",
+        "license": "Gemma license",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_1.5_flash_001",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1284.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821707",
+      "metadata": {
+        "lmarena_score": 1284.0,
+        "lmarena_rank": "92",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_2_9b_it_simpo",
+      "developer": "Princeton",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1282.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821767",
+      "metadata": {
+        "lmarena_score": 1282.0,
+        "lmarena_rank": "92",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_3_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1283.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821782",
+      "metadata": {
+        "lmarena_score": 1283.0,
+        "lmarena_rank": "93",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "command_r_plus_08",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1281.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821789",
+      "metadata": {
+        "lmarena_score": 1281.0,
+        "lmarena_rank": "93",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "nemotron_4_340b",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1280.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821830",
+      "metadata": {
+        "lmarena_score": 1280.0,
+        "lmarena_rank": "94",
+        "license": "NVIDIA Open Model",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_4",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1277.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821858",
+      "metadata": {
+        "lmarena_score": 1277.0,
+        "lmarena_rank": "97",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "reka_flash",
+      "developer": "Reka AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1275.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821868",
+      "metadata": {
+        "lmarena_score": 1275.0,
+        "lmarena_rank": "97",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "glm_4",
+      "developer": "Zhipu AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1275.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821875",
+      "metadata": {
+        "lmarena_score": 1275.0,
+        "lmarena_rank": "97",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1277.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821881",
+      "metadata": {
+        "lmarena_score": 1277.0,
+        "lmarena_rank": "99",
+        "license": "Llama 3 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_small_24b",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1275.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821980",
+      "metadata": {
+        "lmarena_score": 1275.0,
+        "lmarena_rank": "99",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen2.5_coder_32b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1272.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.821991",
+      "metadata": {
+        "lmarena_score": 1272.0,
+        "lmarena_rank": "99",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "c4ai_aya_expanse_32b",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1269.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822020",
+      "metadata": {
+        "lmarena_score": 1269.0,
+        "lmarena_rank": "104",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "olmo_2_32b",
+      "developer": "Allen AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1261.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822056",
+      "metadata": {
+        "lmarena_score": 1261.0,
+        "lmarena_rank": "107",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen2_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1266.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822091",
+      "metadata": {
+        "lmarena_score": 1266.0,
+        "lmarena_rank": "108",
+        "license": "Qianwen LICENSE",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "command_r_plus",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1266.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822101",
+      "metadata": {
+        "lmarena_score": 1266.0,
+        "lmarena_rank": "109",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_2_9b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1265.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822108",
+      "metadata": {
+        "lmarena_score": 1265.0,
+        "lmarena_rank": "109",
+        "license": "Gemma license",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "deepseek_coder",
+      "developer": "DeepSeek AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1264.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822115",
+      "metadata": {
+        "lmarena_score": 1264.0,
+        "lmarena_rank": "109",
+        "license": "DeepSeek License",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "claude_3_haiku",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1263.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822149",
+      "metadata": {
+        "lmarena_score": 1263.0,
+        "lmarena_rank": "112",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_1.5_flash_8b_001",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1262.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822158",
+      "metadata": {
+        "lmarena_score": 1262.0,
+        "lmarena_rank": "112",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "amazon_nova_lite",
+      "developer": "Amazon",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1261.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822197",
+      "metadata": {
+        "lmarena_score": 1261.0,
+        "lmarena_rank": "112",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "phi_4",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1258.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822206",
+      "metadata": {
+        "lmarena_score": 1258.0,
+        "lmarena_rank": "113",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "command_r_08",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1253.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822282",
+      "metadata": {
+        "lmarena_score": 1253.0,
+        "lmarena_rank": "116",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "amazon_nova_micro",
+      "developer": "Amazon",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1246.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822298",
+      "metadata": {
+        "lmarena_score": 1246.0,
+        "lmarena_rank": "122",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_large",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1246.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822305",
+      "metadata": {
+        "lmarena_score": 1246.0,
+        "lmarena_rank": "122",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "jamba_1.5_mini",
+      "developer": "AI21 Labs",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1242.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822311",
+      "metadata": {
+        "lmarena_score": 1242.0,
+        "lmarena_rank": "122",
+        "license": "Jamba Open",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "hunyuan_standard_256k",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1239.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822317",
+      "metadata": {
+        "lmarena_score": 1239.0,
+        "lmarena_rank": "122",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "ministral_8b",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1239.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822323",
+      "metadata": {
+        "lmarena_score": 1239.0,
+        "lmarena_rank": "123",
+        "license": "MRL",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen1.5_110b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1238.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822378",
+      "metadata": {
+        "lmarena_score": 1238.0,
+        "lmarena_rank": "124",
+        "license": "Qianwen LICENSE",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen1.5_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1237.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822414",
+      "metadata": {
+        "lmarena_score": 1237.0,
+        "lmarena_rank": "124",
+        "license": "Qianwen LICENSE",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "reka_flash_21b_online",
+      "developer": "Reka AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1235.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.822425",
+      "metadata": {
+        "lmarena_score": 1235.0,
+        "lmarena_rank": "124",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_pro_dev_api",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1234.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823110",
+      "metadata": {
+        "lmarena_score": 1234.0,
+        "lmarena_rank": "124",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mixtral_8x22b_instruct",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1232.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823167",
+      "metadata": {
+        "lmarena_score": 1232.0,
+        "lmarena_rank": "126",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "command_r",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1232.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823181",
+      "metadata": {
+        "lmarena_score": 1232.0,
+        "lmarena_rank": "126",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "reka_flash_21b",
+      "developer": "Reka AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1230.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823221",
+      "metadata": {
+        "lmarena_score": 1230.0,
+        "lmarena_rank": "126",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_medium",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1228.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823243",
+      "metadata": {
+        "lmarena_score": 1228.0,
+        "lmarena_rank": "126",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.1_tulu_3_8b",
+      "developer": "Ai2",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1226.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823280",
+      "metadata": {
+        "lmarena_score": 1226.0,
+        "lmarena_rank": "126",
+        "license": "Llama 3.1",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemini_pro",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1222.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823318",
+      "metadata": {
+        "lmarena_score": 1222.0,
+        "lmarena_rank": "126",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_3.5_turbo",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1226.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823353",
+      "metadata": {
+        "lmarena_score": 1226.0,
+        "lmarena_rank": "127",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "c4ai_aya_expanse_8b",
+      "developer": "Cohere",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1224.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823362",
+      "metadata": {
+        "lmarena_score": 1224.0,
+        "lmarena_rank": "127",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3_8b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1226.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823369",
+      "metadata": {
+        "lmarena_score": 1226.0,
+        "lmarena_rank": "129",
+        "license": "Llama 3 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "zephyr_orpo_141b",
+      "developer": "HuggingFace",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1218.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823375",
+      "metadata": {
+        "lmarena_score": 1218.0,
+        "lmarena_rank": "129",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "yi_1.5_34b",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1218.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823407",
+      "metadata": {
+        "lmarena_score": 1218.0,
+        "lmarena_rank": "135",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "granite_3.1_8b",
+      "developer": "IBM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1214.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823421",
+      "metadata": {
+        "lmarena_score": 1214.0,
+        "lmarena_rank": "135",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.1_8b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1215.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823458",
+      "metadata": {
+        "lmarena_score": 1215.0,
+        "lmarena_rank": "139",
+        "license": "Llama 3.1 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen1.5_32b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1209.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823494",
+      "metadata": {
+        "lmarena_score": 1209.0,
+        "lmarena_rank": "139",
+        "license": "Qianwen LICENSE",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt_3.5_turbo",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1203.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823529",
+      "metadata": {
+        "lmarena_score": 1203.0,
+        "lmarena_rank": "141",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "phi_3_medium_4k",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1203.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823537",
+      "metadata": {
+        "lmarena_score": 1203.0,
+        "lmarena_rank": "144",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mixtral_8x7b_instruct",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1202.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823543",
+      "metadata": {
+        "lmarena_score": 1202.0,
+        "lmarena_rank": "144",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_2_2b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1201.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823550",
+      "metadata": {
+        "lmarena_score": 1201.0,
+        "lmarena_rank": "144",
+        "license": "Gemma license",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "internlm2_5_20b",
+      "developer": "InternLM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1200.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823611",
+      "metadata": {
+        "lmarena_score": 1200.0,
+        "lmarena_rank": "144",
+        "license": "Other",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen1.5_14b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1198.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823648",
+      "metadata": {
+        "lmarena_score": 1198.0,
+        "lmarena_rank": "144",
+        "license": "Qianwen LICENSE",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "dbrx_instruct_preview",
+      "developer": "Databricks",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1198.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823677",
+      "metadata": {
+        "lmarena_score": 1198.0,
+        "lmarena_rank": "145",
+        "license": "DBRX LICENSE",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "wizardlm_70b",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1189.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823719",
+      "metadata": {
+        "lmarena_score": 1189.0,
+        "lmarena_rank": "147",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "granite_3.0_8b",
+      "developer": "IBM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1188.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823730",
+      "metadata": {
+        "lmarena_score": 1188.0,
+        "lmarena_rank": "147",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "deepseek_llm_67b",
+      "developer": "DeepSeek AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1186.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823737",
+      "metadata": {
+        "lmarena_score": 1186.0,
+        "lmarena_rank": "147",
+        "license": "DeepSeek License",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "yi_34b",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1188.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823743",
+      "metadata": {
+        "lmarena_score": 1188.0,
+        "lmarena_rank": "149",
+        "license": "Yi License",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "openchat",
+      "developer": "OpenChat",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1185.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823748",
+      "metadata": {
+        "lmarena_score": 1185.0,
+        "lmarena_rank": "149",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "openchat",
+      "developer": "OpenChat",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1185.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823754",
+      "metadata": {
+        "lmarena_score": 1185.0,
+        "lmarena_rank": "150",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "granite_3.1_2b",
+      "developer": "IBM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1184.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823790",
+      "metadata": {
+        "lmarena_score": 1184.0,
+        "lmarena_rank": "150",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "tulu_2_dpo_70b",
+      "developer": "AllenAI/UW",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1183.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823798",
+      "metadata": {
+        "lmarena_score": 1183.0,
+        "lmarena_rank": "150",
+        "license": "AI2 ImpACT Low-risk",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "openhermes_2.5_mistral_7b",
+      "developer": "NousResearch",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1181.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823834",
+      "metadata": {
+        "lmarena_score": 1181.0,
+        "lmarena_rank": "150",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "snowflake_arctic",
+      "developer": "Snowflake",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1184.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823867",
+      "metadata": {
+        "lmarena_score": 1184.0,
+        "lmarena_rank": "153",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_1.1_7b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1180.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823882",
+      "metadata": {
+        "lmarena_score": 1180.0,
+        "lmarena_rank": "154",
+        "license": "Gemma license",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "vicuna_33b",
+      "developer": "LMSYS",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1178.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823927",
+      "metadata": {
+        "lmarena_score": 1178.0,
+        "lmarena_rank": "154",
+        "license": "Non-commercial",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "phi_3_small_8k",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1177.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823954",
+      "metadata": {
+        "lmarena_score": 1177.0,
+        "lmarena_rank": "154",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "starling_lm_7b",
+      "developer": "Nexusflow",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1176.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.823983",
+      "metadata": {
+        "lmarena_score": 1176.0,
+        "lmarena_rank": "154",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_2_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1176.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824012",
+      "metadata": {
+        "lmarena_score": 1176.0,
+        "lmarena_rank": "154",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "nous_hermes_2_mixtral_8x7b_dpo",
+      "developer": "NousResearch",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1175.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824020",
+      "metadata": {
+        "lmarena_score": 1175.0,
+        "lmarena_rank": "154",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwq_32b_preview",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1174.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824059",
+      "metadata": {
+        "lmarena_score": 1174.0,
+        "lmarena_rank": "154",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.2_3b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1173.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824067",
+      "metadata": {
+        "lmarena_score": 1173.0,
+        "lmarena_rank": "154",
+        "license": "Llama 3.2",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "starling_lm_7b_alpha",
+      "developer": "UC Berkeley",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1172.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824073",
+      "metadata": {
+        "lmarena_score": 1172.0,
+        "lmarena_rank": "154",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama2_70b_steerlm",
+      "developer": "Nvidia",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1164.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824094",
+      "metadata": {
+        "lmarena_score": 1164.0,
+        "lmarena_rank": "157",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "solar_10.7b_instruct",
+      "developer": "Upstage AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1163.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824109",
+      "metadata": {
+        "lmarena_score": 1163.0,
+        "lmarena_rank": "157",
+        "license": "CC-BY-NC-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "dolphin_2.2.1_mistral_7b",
+      "developer": "Cognitive Computations",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1155.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824116",
+      "metadata": {
+        "lmarena_score": 1155.0,
+        "lmarena_rank": "161",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "granite_3.0_2b",
+      "developer": "IBM",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1163.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824154",
+      "metadata": {
+        "lmarena_score": 1163.0,
+        "lmarena_rank": "164",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mpt_30b",
+      "developer": "MosaicML",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1154.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824161",
+      "metadata": {
+        "lmarena_score": 1154.0,
+        "lmarena_rank": "169",
+        "license": "CC-BY-NC-SA-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_7b_instruct",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1156.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824190",
+      "metadata": {
+        "lmarena_score": 1156.0,
+        "lmarena_rank": "170",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "falcon_180b",
+      "developer": "TII",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1145.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824224",
+      "metadata": {
+        "lmarena_score": 1145.0,
+        "lmarena_rank": "170",
+        "license": "Falcon-180B TII License",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "wizardlm_13b",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1153.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824233",
+      "metadata": {
+        "lmarena_score": 1153.0,
+        "lmarena_rank": "171",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "phi_3_mini_4k_instruct_june",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1149.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824241",
+      "metadata": {
+        "lmarena_score": 1149.0,
+        "lmarena_rank": "173",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_2_13b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1147.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824271",
+      "metadata": {
+        "lmarena_score": 1147.0,
+        "lmarena_rank": "173",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen1.5_7b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1146.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824351",
+      "metadata": {
+        "lmarena_score": 1146.0,
+        "lmarena_rank": "173",
+        "license": "Qianwen LICENSE",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "vicuna_13b",
+      "developer": "LMSYS",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1146.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824366",
+      "metadata": {
+        "lmarena_score": 1146.0,
+        "lmarena_rank": "174",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "codellama_34b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1143.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824373",
+      "metadata": {
+        "lmarena_score": 1143.0,
+        "lmarena_rank": "174",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "palm_2",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1141.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824410",
+      "metadata": {
+        "lmarena_score": 1141.0,
+        "lmarena_rank": "174",
+        "license": "Proprietary",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen_14b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1140.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824420",
+      "metadata": {
+        "lmarena_score": 1140.0,
+        "lmarena_rank": "174",
+        "license": "Qianwen LICENSE",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_7b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1139.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824428",
+      "metadata": {
+        "lmarena_score": 1139.0,
+        "lmarena_rank": "174",
+        "license": "Gemma license",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "codellama_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1131.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824434",
+      "metadata": {
+        "lmarena_score": 1131.0,
+        "lmarena_rank": "174",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "smollm2_1.7b",
+      "developer": "HuggingFace",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1132.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824440",
+      "metadata": {
+        "lmarena_score": 1132.0,
+        "lmarena_rank": "176",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "zephyr_7b_alpha",
+      "developer": "HuggingFace",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1132.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824468",
+      "metadata": {
+        "lmarena_score": 1132.0,
+        "lmarena_rank": "176",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "phi_3_mini_128k",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1138.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824520",
+      "metadata": {
+        "lmarena_score": 1138.0,
+        "lmarena_rank": "177",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "zephyr_7b",
+      "developer": "HuggingFace",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1136.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824571",
+      "metadata": {
+        "lmarena_score": 1136.0,
+        "lmarena_rank": "177",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "phi_3_mini_4k",
+      "developer": "Microsoft",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1135.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824586",
+      "metadata": {
+        "lmarena_score": 1135.0,
+        "lmarena_rank": "178",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "guanaco_33b",
+      "developer": "UW",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1129.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824594",
+      "metadata": {
+        "lmarena_score": 1129.0,
+        "lmarena_rank": "178",
+        "license": "Non-commercial",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "stripedhyena_nous_7b",
+      "developer": "Together AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1124.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824600",
+      "metadata": {
+        "lmarena_score": 1124.0,
+        "lmarena_rank": "183",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "vicuna_7b",
+      "developer": "LMSYS",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1119.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824606",
+      "metadata": {
+        "lmarena_score": 1119.0,
+        "lmarena_rank": "185",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_3.2_1b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1121.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824639",
+      "metadata": {
+        "lmarena_score": 1121.0,
+        "lmarena_rank": "188",
+        "license": "Llama 3.2",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mistral_7b",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1114.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824682",
+      "metadata": {
+        "lmarena_score": 1114.0,
+        "lmarena_rank": "192",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_2_7b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1113.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824720",
+      "metadata": {
+        "lmarena_score": 1113.0,
+        "lmarena_rank": "192",
+        "license": "Llama 2 Community",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_1.1_2b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1112.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824787",
+      "metadata": {
+        "lmarena_score": 1112.0,
+        "lmarena_rank": "192",
+        "license": "Gemma license",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gemma_2b",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1092.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824798",
+      "metadata": {
+        "lmarena_score": 1092.0,
+        "lmarena_rank": "201",
+        "license": "Gemma license",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "qwen1.5_4b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1091.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824825",
+      "metadata": {
+        "lmarena_score": 1091.0,
+        "lmarena_rank": "201",
+        "license": "Qianwen LICENSE",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "olmo_7b",
+      "developer": "Allen AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1082.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824840",
+      "metadata": {
+        "lmarena_score": 1082.0,
+        "lmarena_rank": "202",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "koala_13b",
+      "developer": "UC Berkeley",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1072.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824862",
+      "metadata": {
+        "lmarena_score": 1072.0,
+        "lmarena_rank": "202",
+        "license": "Non-commercial",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "gpt4all_13b_snoozy",
+      "developer": "Nomic AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1068.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824875",
+      "metadata": {
+        "lmarena_score": 1068.0,
+        "lmarena_rank": "202",
+        "license": "Non-commercial",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "alpaca_13b",
+      "developer": "Stanford",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1066.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824961",
+      "metadata": {
+        "lmarena_score": 1066.0,
+        "lmarena_rank": "203",
+        "license": "Non-commercial",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "mpt_7b",
+      "developer": "MosaicML",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1063.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.824998",
+      "metadata": {
+        "lmarena_score": 1063.0,
+        "lmarena_rank": "204",
+        "license": "CC-BY-NC-SA-4.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "chatglm3_6b",
+      "developer": "Tsinghua",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1055.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.825009",
+      "metadata": {
+        "lmarena_score": 1055.0,
+        "lmarena_rank": "204",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "rwkv_4_raven_14b",
+      "developer": "RWKV",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1044.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.825016",
+      "metadata": {
+        "lmarena_score": 1044.0,
+        "lmarena_rank": "206",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "chatglm2_6b",
+      "developer": "Tsinghua",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1033.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.825022",
+      "metadata": {
+        "lmarena_score": 1033.0,
+        "lmarena_rank": "208",
+        "license": "Apache-2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "oasst_pythia_12b",
+      "developer": "OpenAssistant",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1021.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.825028",
+      "metadata": {
+        "lmarena_score": 1021.0,
+        "lmarena_rank": "210",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "chatglm_6b",
+      "developer": "Tsinghua",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1004.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.825056",
+      "metadata": {
+        "lmarena_score": 1004.0,
+        "lmarena_rank": "211",
+        "license": "Non-commercial",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "fastchat_t5_3b",
+      "developer": "LMSYS",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 995.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.825113",
+      "metadata": {
+        "lmarena_score": 995.0,
+        "lmarena_rank": "212",
+        "license": "Apache 2.0",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "llama_13b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 978.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.825123",
+      "metadata": {
+        "lmarena_score": 978.0,
+        "lmarena_rank": "213",
+        "license": "Non-commercial",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "dolly_v2_12b",
+      "developer": "Databricks",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 976.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.825158",
+      "metadata": {
+        "lmarena_score": 976.0,
+        "lmarena_rank": "213",
+        "license": "MIT",
+        "source": "lmarena"
+      }
+    },
+    {
+      "name": "stablelm_tuned_alpha_7b",
+      "developer": "Stability AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 956.0
+      },
+      "sources": [
+        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-07-31T19:41:29.825351",
+      "metadata": {
+        "lmarena_score": 956.0,
+        "lmarena_rank": "215",
+        "license": "CC-BY-NC-S",
+        "source": "lmarena"
+      }
+    }
+  ]
+}

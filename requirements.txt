@@ -1,0 +1,22 @@
+# Core dependencies for the current implementation
+requests>=2.31.0          # HTTP client for web scraping
+pydantic>=2.4.0           # Data validation and schemas
+pydantic-settings>=2.0.0  # Settings management (BaseSettings)
+python-dateutil>=2.8.0    # Date parsing utilities
+huggingface-hub>=0.17.0   # Hugging Face API access
+pyyaml>=6.0               # YAML configuration files
+python-dotenv>=1.0.0      # Environment variable loading
+pandas>=2.1.0             # Data processing
+lxml>=6.0.0
+
+# Web scraping dependencies
+beautifulsoup4>=4.12.0     # HTML parsing for web scraping
+# selenium>=4.15.0        # Dynamic content scraping if needed (optional)
+
+# Development dependencies (install separately with pip install -e ".[dev]")
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# responses>=0.23.0       # Mock HTTP requests for testing
+# black>=23.9.0           # Code formatting
+# isort>=5.12.0           # Import sorting
+# flake8>=6.1.0           # Linting
