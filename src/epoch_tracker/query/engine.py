@@ -6,7 +6,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Callable
 
-from ..config import get_settings
 from ..models import Model, ModelCollection, ModelStatus, ConfidenceLevel
 from ..storage import JSONStorage
 

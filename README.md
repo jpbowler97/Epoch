@@ -85,17 +85,16 @@ data/
 ## Current Data Sources
 
 - **LMArena** (manual + automated): Leaderboard scores and model rankings
-- **Papers with Code**: Academic model releases and benchmarks
 - **Manual datasets**: CSV files in `data/raw/*/` directories
 
 ## FLOP Estimation Methods
 
-1. **Known Model Specifications**: Direct calculation using published parameters and training tokens
+1. **Epoch Data**: Use data collected by Epoch [here](https://epoch.ai/data-insights/models-over-1e25-flop)
 2. **Benchmark Score Interpolation**: ELO rating → FLOP estimation using reference models
 3. **Parameter Size Heuristics**: Extract model size from names and apply scaling laws
 4. **Confidence Levels**: High (published specs) → Medium (reliable estimates) → Low (interpolated) → Speculative (heuristics)
 
-## Next Steps
+## For more info....
 
 For detailed usage instructions, see the **[Usage Guide](docs/usage.md)**.
 For development and architecture details, see **[CLAUDE.md](CLAUDE.md)**.

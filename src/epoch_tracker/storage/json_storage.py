@@ -5,9 +5,25 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Optional, Dict, Any
 
-from ..config import get_settings
 from ..models import Model, ModelCollection
-from ..utils.formatting import format_flop_value, parse_flop_value
+
+
+# Simple FLOP formatting functions
+def format_flop_value(flop: Optional[float]) -> Optional[str]:
+    """Format FLOP value for JSON serialization."""
+    if flop is None:
+        return None
+    return f"{flop:.2e}"
+
+
+def parse_flop_value(flop_str: Optional[str]) -> Optional[float]:
+    """Parse FLOP value from JSON."""
+    if flop_str is None:
+        return None
+    try:
+        return float(flop_str)
+    except (ValueError, TypeError):
+        return None
 
 
 class JSONStorage:

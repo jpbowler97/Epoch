@@ -6,9 +6,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Optional, Dict, Any
 
-from ..config import get_settings, get_config
 from ..models import Model, ModelCollection
-from ..utils import HTTPClient
 
 
 class BaseScraper(ABC):
@@ -25,15 +23,11 @@ class BaseScraper(ABC):
         self.base_url = base_url
         self.logger = logging.getLogger(f"scrapers.{name}")
         
-        # Get source-specific configuration
-        self.config = get_config(f"sources.{name}", {})
-        self.enabled = self.config.get("enabled", True)
+        # Simple defaults without config system
+        self.enabled = True
+        self.delay = 1.0  # Default delay between requests
         
-        # Initialize HTTP client with source-specific delay
-        delay = self.config.get("delay") or get_config("scraping.default_delay", 1.0)
-        self.http = HTTPClient(base_url=base_url, delay=delay)
-        
-        self.logger.info(f"Initialized {name} scraper (enabled: {self.enabled})")
+        self.logger.info(f"Initialized {name} scraper")
     
     @abstractmethod
     def scrape_models(self) -> ModelCollection:
@@ -60,8 +54,8 @@ class BaseScraper(ABC):
         """
         import json
         
-        settings = get_settings()
-        raw_dir = settings.data_dir / "raw" / self.name
+        # Use hardcoded data directory
+        raw_dir = Path("data") / "raw" / self.name
         raw_dir.mkdir(parents=True, exist_ok=True)
         
         filepath = raw_dir / f"{filename}.json"
@@ -92,8 +86,8 @@ class BaseScraper(ABC):
         """
         import json
         
-        settings = get_settings()
-        filepath = settings.data_dir / "raw" / self.name / f"{filename}.json"
+        # Use hardcoded data directory
+        filepath = Path("data") / "raw" / self.name / f"{filename}.json"
         
         if not filepath.exists():
             return None
