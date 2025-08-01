@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "saved_at": "2025-07-31T19:41:33.905822",
+    "saved_at": "2025-08-01T12:44:10.325179",
     "source": "consolidated_estimated",
-    "last_updated": "2025-07-31T19:41:33.905788",
+    "last_updated": "2025-08-01T12:44:10.325134",
     "model_count": 238,
     "stage": "estimated"
   },
@@ -38,7 +38,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 500,000,000,000 params \u00d7 20,000,000,000,000 tokens = 6.00e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.880643",
+      "last_updated": "2025-08-01T12:44:10.269824",
       "metadata": {
         "arena_elo": 1474.0,
         "coding_score": 1472.0,
@@ -74,7 +74,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1431.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 5.07e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.880877",
+      "last_updated": "2025-08-01T12:44:10.270109",
       "metadata": {
         "arena_elo": 1431.0,
         "coding_score": 1442.0,
@@ -123,7 +123,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from OpenAI patterns",
-      "last_updated": "2025-07-31T19:41:33.881265",
+      "last_updated": "2025-08-01T12:44:10.270309",
       "metadata": {
         "arena_elo": 1430.0,
         "coding_score": 1431.0,
@@ -172,7 +172,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate for GPT-4.5",
-      "last_updated": "2025-07-31T19:41:33.881481",
+      "last_updated": "2025-08-01T12:44:10.270483",
       "metadata": {
         "arena_elo": 1418.0,
         "coding_score": 1418.0,
@@ -208,7 +208,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1438.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 5.14e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.881590",
+      "last_updated": "2025-08-01T12:44:10.270597",
       "metadata": {
         "arena_elo": 1438.0,
         "coding_score": 1440.0,
@@ -255,7 +255,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Epoch AI: Speculative estimate for next-gen Claude",
-      "last_updated": "2025-07-31T19:41:33.881733",
+      "last_updated": "2025-08-01T12:44:10.270720",
       "metadata": {
         "lmarena_score": 1421.0,
         "lmarena_rank": "5",
@@ -286,7 +286,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1380.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.55e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.881835",
+      "last_updated": "2025-08-01T12:44:10.270919",
       "metadata": {
         "arena_elo": 1380.0,
         "coding_score": 1402.0,
@@ -333,7 +333,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "https://epoch.ai/gradient-updates/what-went-into-training-deepseek-r1",
-      "last_updated": "2025-07-31T19:41:33.881997",
+      "last_updated": "2025-08-01T12:44:10.271064",
       "metadata": {
         "arena_elo": 1374.0,
         "coding_score": 1379.0,
@@ -381,7 +381,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Speculative estimate for next-gen Claude",
-      "last_updated": "2025-07-31T19:41:33.882160",
+      "last_updated": "2025-08-01T12:44:10.271131",
       "metadata": {
         "arena_elo": 1368.0,
         "coding_score": 1404.0,
@@ -416,7 +416,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1427.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 5.03e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882297",
+      "last_updated": "2025-08-01T12:44:10.271229",
       "metadata": {
         "arena_elo": 1427.0,
         "coding_score": 1435.0,
@@ -458,7 +458,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 500,000,000,000 params \u00d7 20,000,000,000,000 tokens = 6.00e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882419",
+      "last_updated": "2025-08-01T12:44:10.271389",
       "metadata": {
         "arena_elo": 1414.0,
         "coding_score": 1416.0,
@@ -492,7 +492,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1400.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.75e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882486",
+      "last_updated": "2025-08-01T12:44:10.271591",
       "metadata": {
         "lmarena_score": 1400.0,
         "lmarena_rank": "10",
@@ -524,7 +524,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1368.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.43e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882538",
+      "last_updated": "2025-08-01T12:44:10.271807",
       "metadata": {
         "arena_elo": 1368.0,
         "coding_score": 1375.0,
@@ -566,7 +566,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 235,000,000,000 params \u00d7 10,000,000,000,000 tokens = 1.41e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882613",
+      "last_updated": "2025-08-01T12:44:10.272142",
       "metadata": {
         "arena_elo": 1390.0,
         "coding_score": 1408.0,
@@ -601,7 +601,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1362.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.37e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882665",
+      "last_updated": "2025-08-01T12:44:10.272313",
       "metadata": {
         "arena_elo": 1362.0,
         "coding_score": 1381.0,
@@ -643,7 +643,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 480,000,000,000 params \u00d7 15,000,000,000,000 tokens = 4.32e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882729",
+      "last_updated": "2025-08-01T12:44:10.285151",
       "metadata": {
         "arena_elo": 1368.0,
         "coding_score": 1405.0,
@@ -678,7 +678,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1343.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.19e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882781",
+      "last_updated": "2025-08-01T12:44:10.285303",
       "metadata": {
         "arena_elo": 1343.0,
         "coding_score": 1381.0,
@@ -712,7 +712,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1387.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.62e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882834",
+      "last_updated": "2025-08-01T12:44:10.285379",
       "metadata": {
         "lmarena_score": 1387.0,
         "lmarena_rank": "14",
@@ -742,7 +742,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1385.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.60e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.882898",
+      "last_updated": "2025-08-01T12:44:10.285440",
       "metadata": {
         "lmarena_score": 1385.0,
         "lmarena_rank": "17",
@@ -773,7 +773,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1173.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.80e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883004",
+      "last_updated": "2025-08-01T12:44:10.285502",
       "metadata": {
         "arena_elo": 1173.0,
         "coding_score": 1171.0,
@@ -807,7 +807,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1377.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.52e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883086",
+      "last_updated": "2025-08-01T12:44:10.285560",
       "metadata": {
         "arena_elo": 1377.0,
         "coding_score": 1383.0,
@@ -840,7 +840,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1357.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.32e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883181",
+      "last_updated": "2025-08-01T12:44:10.285615",
       "metadata": {
         "arena_elo": 1357.0,
         "coding_score": 1368.0,
@@ -888,7 +888,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from scaling analysis",
-      "last_updated": "2025-07-31T19:41:33.883294",
+      "last_updated": "2025-08-01T12:44:10.285693",
       "metadata": {
         "arena_elo": 1338.0,
         "coding_score": 1367.0,
@@ -930,7 +930,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 235,000,000,000 params \u00d7 10,000,000,000,000 tokens = 1.41e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883398",
+      "last_updated": "2025-08-01T12:44:10.285768",
       "metadata": {
         "arena_elo": 1368.0,
         "coding_score": 1393.0,
@@ -964,7 +964,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1368.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.43e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883484",
+      "last_updated": "2025-08-01T12:44:10.285830",
       "metadata": {
         "arena_elo": 1368.0,
         "coding_score": 1371.0,
@@ -997,7 +997,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1372.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.47e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883575",
+      "last_updated": "2025-08-01T12:44:10.285887",
       "metadata": {
         "lmarena_score": 1372.0,
         "lmarena_rank": "24",
@@ -1027,7 +1027,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1340.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.16e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883664",
+      "last_updated": "2025-08-01T12:44:10.285998",
       "metadata": {
         "lmarena_score": 1340.0,
         "lmarena_rank": "39",
@@ -1064,7 +1064,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 500,000,000,000 params \u00d7 20,000,000,000,000 tokens = 6.00e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883757",
+      "last_updated": "2025-08-01T12:44:10.286079",
       "metadata": {
         "lmarena_score": 1366.0,
         "lmarena_rank": "25",
@@ -1095,7 +1095,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1320.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.98e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883843",
+      "last_updated": "2025-08-01T12:44:10.286141",
       "metadata": {
         "arena_elo": 1320.0,
         "coding_score": 1359.0,
@@ -1137,7 +1137,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 27,000,000,000 params \u00d7 540,000,000,000 tokens = 8.75e+22 FLOP (Modern model: 27B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.883949",
+      "last_updated": "2025-08-01T12:44:10.286233",
       "metadata": {
         "arena_elo": 1357.0,
         "coding_score": 1343.0,
@@ -1172,7 +1172,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1363.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.38e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.883981",
+      "last_updated": "2025-08-01T12:44:10.286278",
       "metadata": {
         "arena_elo": 1363.0,
         "coding_score": 1373.0,
@@ -1213,7 +1213,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 253,000,000,000 params \u00d7 3,795,000,000,000 tokens = 5.76e+24 FLOP (Modern large model: 253B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.884089",
+      "last_updated": "2025-08-01T12:44:10.286368",
       "metadata": {
         "arena_elo": 1322.0,
         "coding_score": 1344.0,
@@ -1255,7 +1255,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 500,000,000,000 params \u00d7 20,000,000,000,000 tokens = 6.00e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.884146",
+      "last_updated": "2025-08-01T12:44:10.286406",
       "metadata": {
         "arena_elo": 1332.0,
         "coding_score": 1335.0,
@@ -1298,7 +1298,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 300,000,000,000 params \u00d7 12,000,000,000,000 tokens = 2.16e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.884248",
+      "last_updated": "2025-08-01T12:44:10.286496",
       "metadata": {
         "arena_elo": 1322.0,
         "coding_score": 1311.0,
@@ -1334,7 +1334,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1335.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.12e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.884348",
+      "last_updated": "2025-08-01T12:44:10.286556",
       "metadata": {
         "arena_elo": 1335.0,
         "coding_score": 1361.0,
@@ -1368,7 +1368,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1347.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.23e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.884457",
+      "last_updated": "2025-08-01T12:44:10.286613",
       "metadata": {
         "lmarena_score": 1347.0,
         "lmarena_rank": "34",
@@ -1399,7 +1399,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1241.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.64e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.884570",
+      "last_updated": "2025-08-01T12:44:10.286669",
       "metadata": {
         "arena_elo": 1241.0,
         "coding_score": 1259.0,
@@ -1438,7 +1438,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 640,000,000,000 tokens = 1.23e+23 FLOP (Modern model: 32B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.884649",
+      "last_updated": "2025-08-01T12:44:10.286742",
       "metadata": {
         "arena_elo": 1340.0,
         "coding_score": 1373.0,
@@ -1472,7 +1472,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1294.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.75e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.884680",
+      "last_updated": "2025-08-01T12:44:10.286771",
       "metadata": {
         "arena_elo": 1294.0,
         "coding_score": 1298.0,
@@ -1505,7 +1505,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1315.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.93e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.884757",
+      "last_updated": "2025-08-01T12:44:10.286829",
       "metadata": {
         "arena_elo": 1315.0,
         "coding_score": 1334.0,
@@ -1544,7 +1544,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 12,000,000,000 params \u00d7 240,000,000,000 tokens = 1.73e+22 FLOP (Modern model: 12B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.884856",
+      "last_updated": "2025-08-01T12:44:10.286901",
       "metadata": {
         "arena_elo": 1333.0,
         "coding_score": 1308.0,
@@ -1592,7 +1592,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from OpenAI patterns",
-      "last_updated": "2025-07-31T19:41:33.884922",
+      "last_updated": "2025-08-01T12:44:10.286945",
       "metadata": {
         "arena_elo": 1304.0,
         "coding_score": 1305.0,
@@ -1634,7 +1634,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 480,000,000,000 tokens = 9.22e+22 FLOP (Generic estimate: 32B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.885065",
+      "last_updated": "2025-08-01T12:44:10.287023",
       "metadata": {
         "arena_elo": 1332.0,
         "coding_score": 1343.0,
@@ -1668,7 +1668,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1322.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.00e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.885222",
+      "last_updated": "2025-08-01T12:44:10.287050",
       "metadata": {
         "arena_elo": 1322.0,
         "coding_score": 1312.0,
@@ -1700,7 +1700,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1320.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.98e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.885388",
+      "last_updated": "2025-08-01T12:44:10.287106",
       "metadata": {
         "arena_elo": 1320.0,
         "coding_score": 1364.0,
@@ -1747,7 +1747,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: High-precision estimate from Meta disclosure",
-      "last_updated": "2025-07-31T19:41:33.885532",
+      "last_updated": "2025-08-01T12:44:10.287183",
       "metadata": {
         "arena_elo": 1287.0,
         "coding_score": 1298.0,
@@ -1794,7 +1794,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: High-precision estimate from Meta disclosure",
-      "last_updated": "2025-07-31T19:41:33.885721",
+      "last_updated": "2025-08-01T12:44:10.287286",
       "metadata": {
         "arena_elo": 1286.0,
         "coding_score": 1290.0,
@@ -1827,7 +1827,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1332.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.09e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.885973",
+      "last_updated": "2025-08-01T12:44:10.287631",
       "metadata": {
         "lmarena_score": 1332.0,
         "lmarena_rank": "43",
@@ -1864,7 +1864,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Epoch AI: High-precision estimate from xAI disclosure",
-      "last_updated": "2025-07-31T19:41:33.886207",
+      "last_updated": "2025-08-01T12:44:10.287715",
       "metadata": {
         "lmarena_score": 1332.0,
         "lmarena_rank": "43",
@@ -1902,7 +1902,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 30,000,000,000 params \u00d7 600,000,000,000 tokens = 1.08e+23 FLOP (Modern model: 30B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.886384",
+      "last_updated": "2025-08-01T12:44:10.287792",
       "metadata": {
         "arena_elo": 1323.0,
         "coding_score": 1342.0,
@@ -1944,7 +1944,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 17,000,000,000 params \u00d7 340,000,000,000 tokens = 3.47e+22 FLOP (Modern model: 17B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.886449",
+      "last_updated": "2025-08-01T12:44:10.287836",
       "metadata": {
         "arena_elo": 1292.0,
         "coding_score": 1313.0,
@@ -1985,7 +1985,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 49,000,000,000 params \u00d7 980,000,000,000 tokens = 2.88e+23 FLOP (Modern model: 49B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.886543",
+      "last_updated": "2025-08-01T12:44:10.287883",
       "metadata": {
         "lmarena_score": 1325.0,
         "lmarena_rank": "43",
@@ -2016,7 +2016,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1305.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.84e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.886574",
+      "last_updated": "2025-08-01T12:44:10.287911",
       "metadata": {
         "arena_elo": 1305.0,
         "coding_score": 1321.0,
@@ -2048,7 +2048,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1290.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.71e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.886681",
+      "last_updated": "2025-08-01T12:44:10.287971",
       "metadata": {
         "arena_elo": 1290.0,
         "coding_score": 1310.0,
@@ -2094,7 +2094,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from scaling analysis",
-      "last_updated": "2025-07-31T19:41:33.886779",
+      "last_updated": "2025-08-01T12:44:10.288043",
       "metadata": {
         "arena_elo": 1289.0,
         "coding_score": 1310.0,
@@ -2143,7 +2143,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from scaling analysis",
-      "last_updated": "2025-07-31T19:41:33.886875",
+      "last_updated": "2025-08-01T12:44:10.288124",
       "metadata": {
         "arena_elo": 1276.0,
         "coding_score": 1278.0,
@@ -2192,7 +2192,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from industry analysis",
-      "last_updated": "2025-07-31T19:41:33.886986",
+      "last_updated": "2025-08-01T12:44:10.288197",
       "metadata": {
         "arena_elo": 1267.0,
         "coding_score": 1268.0,
@@ -2233,7 +2233,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 300,000,000,000 params \u00d7 12,000,000,000,000 tokens = 2.16e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.887091",
+      "last_updated": "2025-08-01T12:44:10.288296",
       "metadata": {
         "lmarena_score": 1320.0,
         "lmarena_rank": "58",
@@ -2263,7 +2263,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1318.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.96e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.887184",
+      "last_updated": "2025-08-01T12:44:10.288363",
       "metadata": {
         "lmarena_score": 1318.0,
         "lmarena_rank": "58",
@@ -2302,7 +2302,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 17,000,000,000 params \u00d7 340,000,000,000 tokens = 3.47e+22 FLOP (Modern model: 17B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.887296",
+      "last_updated": "2025-08-01T12:44:10.288440",
       "metadata": {
         "arena_elo": 1278.0,
         "coding_score": 1283.0,
@@ -2344,7 +2344,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 4,000,000,000 params \u00d7 80,000,000,000 tokens = 1.92e+21 FLOP (Modern model: 4B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.887342",
+      "last_updated": "2025-08-01T12:44:10.288481",
       "metadata": {
         "arena_elo": 1305.0,
         "coding_score": 1292.0,
@@ -2378,7 +2378,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1200.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.15e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.887372",
+      "last_updated": "2025-08-01T12:44:10.288509",
       "metadata": {
         "arena_elo": 1200.0,
         "coding_score": 1205.0,
@@ -2417,7 +2417,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,400,000,000,000 tokens = 5.88e+23 FLOP (Modern model: 70B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.887473",
+      "last_updated": "2025-08-01T12:44:10.288583",
       "metadata": {
         "arena_elo": 1276.0,
         "coding_score": 1277.0,
@@ -2450,7 +2450,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1315.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.93e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.887506",
+      "last_updated": "2025-08-01T12:44:10.288613",
       "metadata": {
         "lmarena_score": 1315.0,
         "lmarena_rank": "61",
@@ -2480,7 +2480,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1317.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.95e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.887590",
+      "last_updated": "2025-08-01T12:44:10.288682",
       "metadata": {
         "lmarena_score": 1317.0,
         "lmarena_rank": "62",
@@ -2525,7 +2525,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from OpenAI patterns",
-      "last_updated": "2025-07-31T19:41:33.887730",
+      "last_updated": "2025-08-01T12:44:10.288790",
       "metadata": {
         "arena_elo": 1291.0,
         "coding_score": 1297.0,
@@ -2573,7 +2573,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from scaling analysis",
-      "last_updated": "2025-07-31T19:41:33.887858",
+      "last_updated": "2025-08-01T12:44:10.288904",
       "metadata": {
         "arena_elo": 1268.0,
         "coding_score": 1260.0,
@@ -2604,7 +2604,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1315.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.93e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.888195",
+      "last_updated": "2025-08-01T12:44:10.288996",
       "metadata": {
         "lmarena_score": 1315.0,
         "lmarena_rank": "62",
@@ -2635,7 +2635,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1278.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.61e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.888315",
+      "last_updated": "2025-08-01T12:44:10.289088",
       "metadata": {
         "arena_elo": 1278.0,
         "coding_score": 1286.0,
@@ -2668,7 +2668,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1292.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.73e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.888402",
+      "last_updated": "2025-08-01T12:44:10.289187",
       "metadata": {
         "arena_elo": 1292.0,
         "coding_score": 1272.0,
@@ -2703,7 +2703,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1271.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.84e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.888521",
+      "last_updated": "2025-08-01T12:44:10.289310",
       "metadata": {
         "arena_elo": 1271.0,
         "coding_score": 1281.0,
@@ -2737,7 +2737,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1257.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.75e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.888638",
+      "last_updated": "2025-08-01T12:44:10.289405",
       "metadata": {
         "arena_elo": 1257.0,
         "coding_score": 1301.0,
@@ -2778,7 +2778,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 4,000,000,000 params \u00d7 80,000,000,000 tokens = 1.92e+21 FLOP (Modern model: 4B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.888808",
+      "last_updated": "2025-08-01T12:44:10.293083",
       "metadata": {
         "arena_elo": 1293.0,
         "coding_score": 1263.0,
@@ -2818,7 +2818,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Epoch AI: High-precision estimate from xAI disclosure",
-      "last_updated": "2025-07-31T19:41:33.888861",
+      "last_updated": "2025-08-01T12:44:10.293147",
       "metadata": {
         "lmarena_score": 1307.0,
         "lmarena_rank": "73",
@@ -2856,7 +2856,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,050,000,000,000 tokens = 4.41e+23 FLOP (Generic estimate: 70B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.889020",
+      "last_updated": "2025-08-01T12:44:10.293342",
       "metadata": {
         "arena_elo": 1270.0,
         "coding_score": 1278.0,
@@ -2895,7 +2895,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 72,000,000,000 params \u00d7 864,000,000,000 tokens = 3.73e+23 FLOP (Mid-era model: 72B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.889079",
+      "last_updated": "2025-08-01T12:44:10.293421",
       "metadata": {
         "arena_elo": 1274.0,
         "coding_score": 1301.0,
@@ -2936,7 +2936,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,400,000,000,000 tokens = 5.88e+23 FLOP (Modern model: 70B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.889122",
+      "last_updated": "2025-08-01T12:44:10.293485",
       "metadata": {
         "arena_elo": 1286.0,
         "coding_score": 1289.0,
@@ -2971,7 +2971,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1268.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.82e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.889153",
+      "last_updated": "2025-08-01T12:44:10.293523",
       "metadata": {
         "arena_elo": 1268.0,
         "coding_score": 1288.0,
@@ -3012,7 +3012,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 24,000,000,000 params \u00d7 288,000,000,000 tokens = 4.15e+22 FLOP (Mid-era model: 24B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.889277",
+      "last_updated": "2025-08-01T12:44:10.293649",
       "metadata": {
         "arena_elo": 1270.0,
         "coding_score": 1294.0,
@@ -3054,7 +3054,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,400,000,000,000 tokens = 5.88e+23 FLOP (Modern model: 70B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.889321",
+      "last_updated": "2025-08-01T12:44:10.293703",
       "metadata": {
         "arena_elo": 1262.0,
         "coding_score": 1254.0,
@@ -3093,7 +3093,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 15,000,000,000,000 tokens = 6.30e+24 FLOP",
-      "last_updated": "2025-07-31T19:41:33.889360",
+      "last_updated": "2025-08-01T12:44:10.293749",
       "metadata": {
         "arena_elo": 1267.0,
         "coding_score": 1266.0,
@@ -3134,7 +3134,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 51,000,000,000 params \u00d7 1,020,000,000,000 tokens = 3.12e+23 FLOP (Modern model: 51B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.889401",
+      "last_updated": "2025-08-01T12:44:10.293799",
       "metadata": {
         "arena_elo": 1235.0,
         "coding_score": 1225.0,
@@ -3167,7 +3167,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1263.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.79e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.889429",
+      "last_updated": "2025-08-01T12:44:10.293835",
       "metadata": {
         "arena_elo": 1263.0,
         "coding_score": 1282.0,
@@ -3202,7 +3202,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1244.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.66e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.889518",
+      "last_updated": "2025-08-01T12:44:10.293918",
       "metadata": {
         "arena_elo": 1244.0,
         "coding_score": 1243.0,
@@ -3236,7 +3236,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1252.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.71e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.889598",
+      "last_updated": "2025-08-01T12:44:10.293987",
       "metadata": {
         "arena_elo": 1252.0,
         "coding_score": 1226.0,
@@ -3280,7 +3280,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from scaling analysis",
-      "last_updated": "2025-07-31T19:41:33.889712",
+      "last_updated": "2025-08-01T12:44:10.294090",
       "metadata": {
         "lmarena_score": 1277.0,
         "lmarena_rank": "97",
@@ -3318,7 +3318,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 27,000,000,000 params \u00d7 324,000,000,000 tokens = 5.25e+22 FLOP (Mid-era model: 27B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.889845",
+      "last_updated": "2025-08-01T12:44:10.294235",
       "metadata": {
         "arena_elo": 1237.0,
         "coding_score": 1223.0,
@@ -3351,7 +3351,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1284.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.66e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.889878",
+      "last_updated": "2025-08-01T12:44:10.294324",
       "metadata": {
         "lmarena_score": 1284.0,
         "lmarena_rank": "92",
@@ -3389,7 +3389,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 9,000,000,000 params \u00d7 108,000,000,000 tokens = 5.83e+21 FLOP (Mid-era model: 9B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.889991",
+      "last_updated": "2025-08-01T12:44:10.294652",
       "metadata": {
         "arena_elo": 1236.0,
         "coding_score": 1210.0,
@@ -3422,7 +3422,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1224.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.28e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.890026",
+      "last_updated": "2025-08-01T12:44:10.294713",
       "metadata": {
         "arena_elo": 1224.0,
         "coding_score": 1232.0,
@@ -3456,7 +3456,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1281.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.64e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.890109",
+      "last_updated": "2025-08-01T12:44:10.294843",
       "metadata": {
         "lmarena_score": 1281.0,
         "lmarena_rank": "93",
@@ -3494,7 +3494,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 340,000,000,000 params \u00d7 5,100,000,000,000 tokens = 1.04e+25 FLOP (Generic estimate: 340B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.890206",
+      "last_updated": "2025-08-01T12:44:10.294992",
       "metadata": {
         "arena_elo": 1231.0,
         "coding_score": 1220.0,
@@ -3526,7 +3526,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1220.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.26e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.890360",
+      "last_updated": "2025-08-01T12:44:10.295115",
       "metadata": {
         "arena_elo": 1220.0,
         "coding_score": 1197.0,
@@ -3558,7 +3558,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1199.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.14e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.890523",
+      "last_updated": "2025-08-01T12:44:10.295212",
       "metadata": {
         "arena_elo": 1199.0,
         "coding_score": 1207.0,
@@ -3597,7 +3597,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 15,000,000,000,000 tokens = 6.30e+24 FLOP",
-      "last_updated": "2025-07-31T19:41:33.890669",
+      "last_updated": "2025-08-01T12:44:10.295339",
       "metadata": {
         "arena_elo": 1226.0,
         "coding_score": 1216.0,
@@ -3638,7 +3638,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 24,000,000,000 params \u00d7 288,000,000,000 tokens = 4.15e+22 FLOP (Mid-era model: 24B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.890754",
+      "last_updated": "2025-08-01T12:44:10.295431",
       "metadata": {
         "arena_elo": 1239.0,
         "coding_score": 1252.0,
@@ -3679,7 +3679,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 384,000,000,000 tokens = 7.37e+22 FLOP (Mid-era model: 32B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.890822",
+      "last_updated": "2025-08-01T12:44:10.295504",
       "metadata": {
         "arena_elo": 1236.0,
         "coding_score": 1275.0,
@@ -3719,7 +3719,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 480,000,000,000 tokens = 9.22e+22 FLOP (Generic estimate: 32B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.891020",
+      "last_updated": "2025-08-01T12:44:10.295581",
       "metadata": {
         "lmarena_score": 1269.0,
         "lmarena_rank": "104",
@@ -3757,7 +3757,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 480,000,000,000 tokens = 9.22e+22 FLOP (Generic estimate: 32B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.891107",
+      "last_updated": "2025-08-01T12:44:10.295654",
       "metadata": {
         "arena_elo": 1228.0,
         "coding_score": 1210.0,
@@ -3796,7 +3796,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 72,000,000,000 params \u00d7 864,000,000,000 tokens = 3.73e+23 FLOP (Mid-era model: 72B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.891176",
+      "last_updated": "2025-08-01T12:44:10.295720",
       "metadata": {
         "arena_elo": 1211.0,
         "coding_score": 1199.0,
@@ -3829,7 +3829,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1266.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.81e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.891220",
+      "last_updated": "2025-08-01T12:44:10.295767",
       "metadata": {
         "lmarena_score": 1266.0,
         "lmarena_rank": "109",
@@ -3867,7 +3867,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 9,000,000,000 params \u00d7 108,000,000,000 tokens = 5.83e+21 FLOP (Mid-era model: 9B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.891460",
+      "last_updated": "2025-08-01T12:44:10.295977",
       "metadata": {
         "arena_elo": 1215.0,
         "coding_score": 1194.0,
@@ -3908,7 +3908,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 671,000,000,000 params \u00d7 14,800,000,000,000 tokens = 5.96e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.891522",
+      "last_updated": "2025-08-01T12:44:10.296045",
       "metadata": {
         "arena_elo": 1198.0,
         "coding_score": 1256.0,
@@ -3941,7 +3941,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1202.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.16e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.891699",
+      "last_updated": "2025-08-01T12:44:10.300393",
       "metadata": {
         "arena_elo": 1202.0,
         "coding_score": 1207.0,
@@ -3984,7 +3984,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 8,000,000,000 params \u00d7 120,000,000,000 tokens = 5.76e+21 FLOP (Generic estimate: 8B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.891834",
+      "last_updated": "2025-08-01T12:44:10.300621",
       "metadata": {
         "arena_elo": 1232.0,
         "coding_score": 1229.0,
@@ -4020,7 +4020,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1233.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.59e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.891883",
+      "last_updated": "2025-08-01T12:44:10.300659",
       "metadata": {
         "arena_elo": 1233.0,
         "coding_score": 1252.0,
@@ -4055,7 +4055,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1223.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.28e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.891973",
+      "last_updated": "2025-08-01T12:44:10.300731",
       "metadata": {
         "arena_elo": 1223.0,
         "coding_score": 1240.0,
@@ -4088,7 +4088,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1253.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.72e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.892058",
+      "last_updated": "2025-08-01T12:44:10.300795",
       "metadata": {
         "lmarena_score": 1253.0,
         "lmarena_rank": "116",
@@ -4119,7 +4119,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1218.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.25e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.892148",
+      "last_updated": "2025-08-01T12:44:10.300859",
       "metadata": {
         "arena_elo": 1218.0,
         "coding_score": 1226.0,
@@ -4153,7 +4153,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1196.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.13e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.892261",
+      "last_updated": "2025-08-01T12:44:10.300920",
       "metadata": {
         "arena_elo": 1196.0,
         "coding_score": 1196.0,
@@ -4185,7 +4185,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1211.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.21e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.892360",
+      "last_updated": "2025-08-01T12:44:10.300982",
       "metadata": {
         "arena_elo": 1211.0,
         "coding_score": 1243.0,
@@ -4224,7 +4224,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 8,000,000,000 params \u00d7 120,000,000,000 tokens = 5.76e+21 FLOP (Generic estimate: 8B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.892521",
+      "last_updated": "2025-08-01T12:44:10.301063",
       "metadata": {
         "arena_elo": 1198.0,
         "coding_score": 1216.0,
@@ -4265,7 +4265,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 110,000,000,000 params \u00d7 1,760,000,000,000 tokens = 1.16e+24 FLOP (Chinese model: 110B params * 16 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.892606",
+      "last_updated": "2025-08-01T12:44:10.301117",
       "metadata": {
         "arena_elo": 1182.0,
         "coding_score": 1188.0,
@@ -4305,7 +4305,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 72,000,000,000 params \u00d7 1,152,000,000,000 tokens = 4.98e+23 FLOP (Chinese model: 72B params * 16 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.892677",
+      "last_updated": "2025-08-01T12:44:10.301164",
       "metadata": {
         "arena_elo": 1174.0,
         "coding_score": 1173.0,
@@ -4343,7 +4343,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 21,000,000,000 params \u00d7 315,000,000,000 tokens = 3.97e+22 FLOP (Generic estimate: 21B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.892763",
+      "last_updated": "2025-08-01T12:44:10.301246",
       "metadata": {
         "lmarena_score": 1235.0,
         "lmarena_rank": "124",
@@ -4373,7 +4373,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1234.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.60e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.892810",
+      "last_updated": "2025-08-01T12:44:10.301290",
       "metadata": {
         "lmarena_score": 1234.0,
         "lmarena_rank": "124",
@@ -4411,7 +4411,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 22,000,000,000 params \u00d7 396,000,000,000 tokens = 5.23e+22 FLOP (Specialized model: 22B params * 18 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.892967",
+      "last_updated": "2025-08-01T12:44:10.301485",
       "metadata": {
         "arena_elo": 1169.0,
         "coding_score": 1174.0,
@@ -4445,7 +4445,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1171.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.79e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.893014",
+      "last_updated": "2025-08-01T12:44:10.301531",
       "metadata": {
         "arena_elo": 1171.0,
         "coding_score": 1139.0,
@@ -4485,7 +4485,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 21,000,000,000 params \u00d7 315,000,000,000 tokens = 3.97e+22 FLOP (Generic estimate: 21B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.893131",
+      "last_updated": "2025-08-01T12:44:10.302676",
       "metadata": {
         "lmarena_score": 1230.0,
         "lmarena_rank": "126",
@@ -4523,7 +4523,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 8,000,000,000 params \u00d7 160,000,000,000 tokens = 7.68e+21 FLOP (Modern model: 8B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.893197",
+      "last_updated": "2025-08-01T12:44:10.302733",
       "metadata": {
         "arena_elo": 1202.0,
         "coding_score": 1196.0,
@@ -4554,7 +4554,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1222.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.27e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.893242",
+      "last_updated": "2025-08-01T12:44:10.302776",
       "metadata": {
         "lmarena_score": 1222.0,
         "lmarena_rank": "126",
@@ -4585,7 +4585,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1141.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.66e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.893332",
+      "last_updated": "2025-08-01T12:44:10.302874",
       "metadata": {
         "arena_elo": 1141.0,
         "coding_score": 1138.0,
@@ -4623,7 +4623,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 8,000,000,000 params \u00d7 120,000,000,000 tokens = 5.76e+21 FLOP (Generic estimate: 8B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.893441",
+      "last_updated": "2025-08-01T12:44:10.302957",
       "metadata": {
         "lmarena_score": 1224.0,
         "lmarena_rank": "127",
@@ -4661,7 +4661,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 8,000,000,000 params \u00d7 15,000,000,000,000 tokens = 7.20e+23 FLOP",
-      "last_updated": "2025-07-31T19:41:33.893498",
+      "last_updated": "2025-08-01T12:44:10.303000",
       "metadata": {
         "arena_elo": 1173.0,
         "coding_score": 1163.0,
@@ -4702,7 +4702,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 141,000,000,000 params \u00d7 2,115,000,000,000 tokens = 1.79e+24 FLOP (Generic estimate: 141B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.893577",
+      "last_updated": "2025-08-01T12:44:10.303048",
       "metadata": {
         "arena_elo": 1153.0,
         "coding_score": 1148.0,
@@ -4741,7 +4741,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 34,000,000,000 params \u00d7 544,000,000,000 tokens = 1.11e+23 FLOP (Chinese model: 34B params * 16 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.893642",
+      "last_updated": "2025-08-01T12:44:10.303094",
       "metadata": {
         "arena_elo": 1180.0,
         "coding_score": 1180.0,
@@ -4780,7 +4780,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 8,000,000,000 params \u00d7 120,000,000,000 tokens = 5.76e+21 FLOP (Generic estimate: 8B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.893705",
+      "last_updated": "2025-08-01T12:44:10.303139",
       "metadata": {
         "arena_elo": 1159.0,
         "coding_score": 1186.0,
@@ -4819,7 +4819,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 8,000,000,000 params \u00d7 15,000,000,000,000 tokens = 7.20e+23 FLOP",
-      "last_updated": "2025-07-31T19:41:33.893771",
+      "last_updated": "2025-08-01T12:44:10.303211",
       "metadata": {
         "arena_elo": 1194.0,
         "coding_score": 1201.0,
@@ -4860,7 +4860,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 512,000,000,000 tokens = 9.83e+22 FLOP (Chinese model: 32B params * 16 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.893843",
+      "last_updated": "2025-08-01T12:44:10.303582",
       "metadata": {
         "arena_elo": 1146.0,
         "coding_score": 1159.0,
@@ -4892,7 +4892,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1146.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.68e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.893889",
+      "last_updated": "2025-08-01T12:44:10.303725",
       "metadata": {
         "arena_elo": 1146.0,
         "coding_score": 1146.0,
@@ -4933,7 +4933,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 126,000,000,000 tokens = 5.29e+21 FLOP (Specialized model: 7B params * 18 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.894035",
+      "last_updated": "2025-08-01T12:44:10.303915",
       "metadata": {
         "arena_elo": 1140.0,
         "coding_score": 1136.0,
@@ -4974,7 +4974,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 2,000,000,000 params \u00d7 24,000,000,000 tokens = 2.88e+20 FLOP (Mid-era model: 2B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.894105",
+      "last_updated": "2025-08-01T12:44:10.303969",
       "metadata": {
         "arena_elo": 1165.0,
         "coding_score": 1129.0,
@@ -5012,7 +5012,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 20,000,000,000 params \u00d7 300,000,000,000 tokens = 3.60e+22 FLOP (Generic estimate: 20B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.894176",
+      "last_updated": "2025-08-01T12:44:10.304019",
       "metadata": {
         "lmarena_score": 1200.0,
         "lmarena_rank": "144",
@@ -5050,7 +5050,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 14,000,000,000 params \u00d7 224,000,000,000 tokens = 1.88e+22 FLOP (Chinese model: 14B params * 16 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.894244",
+      "last_updated": "2025-08-01T12:44:10.304066",
       "metadata": {
         "arena_elo": 1139.0,
         "coding_score": 1145.0,
@@ -5082,7 +5082,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1127.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.60e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.894297",
+      "last_updated": "2025-08-01T12:44:10.304100",
       "metadata": {
         "arena_elo": 1127.0,
         "coding_score": 1140.0,
@@ -5121,7 +5121,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,050,000,000,000 tokens = 4.41e+23 FLOP (Generic estimate: 70B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.894514",
+      "last_updated": "2025-08-01T12:44:10.304247",
       "metadata": {
         "arena_elo": 1127.0,
         "coding_score": 1089.0,
@@ -5160,7 +5160,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 8,000,000,000 params \u00d7 120,000,000,000 tokens = 5.76e+21 FLOP (Generic estimate: 8B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.894584",
+      "last_updated": "2025-08-01T12:44:10.304303",
       "metadata": {
         "arena_elo": 1109.0,
         "coding_score": 1116.0,
@@ -5205,7 +5205,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 671,000,000,000 params \u00d7 14,800,000,000,000 tokens = 5.96e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.894666",
+      "last_updated": "2025-08-01T12:44:10.304362",
       "metadata": {
         "arena_elo": 1111.0,
         "coding_score": 1115.0,
@@ -5245,7 +5245,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 34,000,000,000 params \u00d7 544,000,000,000 tokens = 1.11e+23 FLOP (Chinese model: 34B params * 16 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.894796",
+      "last_updated": "2025-08-01T12:44:10.304453",
       "metadata": {
         "arena_elo": 1135.0,
         "coding_score": 1126.0,
@@ -5277,7 +5277,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1105.0 vs reference llama_405b (ELO 1100, 1.00e+25 FLOP) with power law scaling \u03b1=3.0 = 1.01e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.894842",
+      "last_updated": "2025-08-01T12:44:10.304488",
       "metadata": {
         "arena_elo": 1105.0,
         "coding_score": 1080.0,
@@ -5316,7 +5316,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 2,000,000,000 params \u00d7 30,000,000,000 tokens = 3.60e+20 FLOP (Generic estimate: 2B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.894964",
+      "last_updated": "2025-08-01T12:44:10.304570",
       "metadata": {
         "arena_elo": 1137.0,
         "coding_score": 1162.0,
@@ -5355,7 +5355,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,050,000,000,000 tokens = 4.41e+23 FLOP (Generic estimate: 70B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895028",
+      "last_updated": "2025-08-01T12:44:10.304619",
       "metadata": {
         "arena_elo": 1129.0,
         "coding_score": 1124.0,
@@ -5394,7 +5394,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 84,000,000,000 tokens = 3.53e+21 FLOP (Mid-era model: 7B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895089",
+      "last_updated": "2025-08-01T12:44:10.304665",
       "metadata": {
         "arena_elo": 1104.0,
         "coding_score": 1086.0,
@@ -5426,7 +5426,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1110.0 vs reference llama_405b (ELO 1100, 1.00e+25 FLOP) with power law scaling \u03b1=3.0 = 1.03e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.895137",
+      "last_updated": "2025-08-01T12:44:10.304695",
       "metadata": {
         "arena_elo": 1110.0,
         "coding_score": 1098.0,
@@ -5465,7 +5465,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895307",
+      "last_updated": "2025-08-01T12:44:10.304776",
       "metadata": {
         "arena_elo": 1105.0,
         "coding_score": 1105.0,
@@ -5504,7 +5504,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 33,000,000,000 params \u00d7 495,000,000,000 tokens = 9.80e+22 FLOP (Generic estimate: 33B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895365",
+      "last_updated": "2025-08-01T12:44:10.304822",
       "metadata": {
         "arena_elo": 1114.0,
         "coding_score": 1089.0,
@@ -5536,7 +5536,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1119.0 vs reference llama_405b (ELO 1100, 1.00e+25 FLOP) with power law scaling \u03b1=3.0 = 1.05e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.895401",
+      "last_updated": "2025-08-01T12:44:10.304853",
       "metadata": {
         "arena_elo": 1119.0,
         "coding_score": 1119.0,
@@ -5575,7 +5575,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895546",
+      "last_updated": "2025-08-01T12:44:10.304933",
       "metadata": {
         "arena_elo": 1139.0,
         "coding_score": 1148.0,
@@ -5614,7 +5614,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 2,000,000,000,000 tokens = 8.40e+23 FLOP",
-      "last_updated": "2025-07-31T19:41:33.895599",
+      "last_updated": "2025-08-01T12:44:10.304974",
       "metadata": {
         "arena_elo": 1124.0,
         "coding_score": 1102.0,
@@ -5655,7 +5655,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895671",
+      "last_updated": "2025-08-01T12:44:10.305025",
       "metadata": {
         "arena_elo": 1125.0,
         "coding_score": 1106.0,
@@ -5693,7 +5693,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 480,000,000,000 tokens = 9.22e+22 FLOP (Generic estimate: 32B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895743",
+      "last_updated": "2025-08-01T12:44:10.305071",
       "metadata": {
         "lmarena_score": 1174.0,
         "lmarena_rank": "154",
@@ -5731,7 +5731,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 3,000,000,000 params \u00d7 60,000,000,000 tokens = 1.08e+21 FLOP (Modern model: 3B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895805",
+      "last_updated": "2025-08-01T12:44:10.305113",
       "metadata": {
         "arena_elo": 1119.0,
         "coding_score": 1093.0,
@@ -5772,7 +5772,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895862",
+      "last_updated": "2025-08-01T12:44:10.306105",
       "metadata": {
         "arena_elo": 1116.0,
         "coding_score": 1104.0,
@@ -5810,7 +5810,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,050,000,000,000 tokens = 4.41e+23 FLOP (Generic estimate: 70B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895923",
+      "last_updated": "2025-08-01T12:44:10.306329",
       "metadata": {
         "lmarena_score": 1164.0,
         "lmarena_rank": "157",
@@ -5848,7 +5848,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 10,700,000,000 params \u00d7 192,600,000,000 tokens = 1.24e+22 FLOP (Specialized model: 11B params * 18 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.895981",
+      "last_updated": "2025-08-01T12:44:10.307237",
       "metadata": {
         "arena_elo": 1097.0,
         "coding_score": 1077.0,
@@ -5887,7 +5887,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 84,000,000,000 tokens = 3.53e+21 FLOP (Mid-era model: 7B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896035",
+      "last_updated": "2025-08-01T12:44:10.307309",
       "metadata": {
         "arena_elo": 1089.0,
         "coding_score": 1052.0,
@@ -5926,7 +5926,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 2,000,000,000 params \u00d7 30,000,000,000 tokens = 3.60e+20 FLOP (Generic estimate: 2B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896086",
+      "last_updated": "2025-08-01T12:44:10.307359",
       "metadata": {
         "arena_elo": 1092.0,
         "coding_score": 1105.0,
@@ -5965,7 +5965,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 30,000,000,000 params \u00d7 450,000,000,000 tokens = 8.10e+22 FLOP (Generic estimate: 30B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896137",
+      "last_updated": "2025-08-01T12:44:10.307405",
       "metadata": {
         "arena_elo": 1078.0,
         "coding_score": 1056.0,
@@ -6004,7 +6004,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 84,000,000,000 tokens = 3.53e+21 FLOP (Mid-era model: 7B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896190",
+      "last_updated": "2025-08-01T12:44:10.308548",
       "metadata": {
         "arena_elo": 1099.0,
         "coding_score": 1098.0,
@@ -6044,7 +6044,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 180,000,000,000 params \u00d7 2,700,000,000,000 tokens = 2.92e+24 FLOP (Generic estimate: 180B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896245",
+      "last_updated": "2025-08-01T12:44:10.308616",
       "metadata": {
         "lmarena_score": 1145.0,
         "lmarena_rank": "170",
@@ -6082,7 +6082,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 13,000,000,000 params \u00d7 195,000,000,000 tokens = 1.52e+22 FLOP (Generic estimate: 13B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896299",
+      "last_updated": "2025-08-01T12:44:10.308664",
       "metadata": {
         "arena_elo": 1085.0,
         "coding_score": 1052.0,
@@ -6113,7 +6113,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1149.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.70e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.896338",
+      "last_updated": "2025-08-01T12:44:10.308699",
       "metadata": {
         "lmarena_score": 1149.0,
         "lmarena_rank": "173",
@@ -6151,7 +6151,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 13,000,000,000 params \u00d7 156,000,000,000 tokens = 1.22e+22 FLOP (Mid-era model: 13B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896567",
+      "last_updated": "2025-08-01T12:44:10.308903",
       "metadata": {
         "arena_elo": 1094.0,
         "coding_score": 1079.0,
@@ -6192,7 +6192,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 112,000,000,000 tokens = 4.70e+21 FLOP (Chinese model: 7B params * 16 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896636",
+      "last_updated": "2025-08-01T12:44:10.308954",
       "metadata": {
         "arena_elo": 1090.0,
         "coding_score": 1109.0,
@@ -6230,7 +6230,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 13,000,000,000 params \u00d7 195,000,000,000 tokens = 1.52e+22 FLOP (Generic estimate: 13B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896692",
+      "last_updated": "2025-08-01T12:44:10.309016",
       "metadata": {
         "lmarena_score": 1146.0,
         "lmarena_rank": "174",
@@ -6268,7 +6268,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 34,000,000,000 params \u00d7 680,000,000,000 tokens = 1.39e+23 FLOP (Modern model: 34B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896744",
+      "last_updated": "2025-08-01T12:44:10.309077",
       "metadata": {
         "arena_elo": 1077.0,
         "coding_score": 1074.0,
@@ -6299,7 +6299,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1141.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.66e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.896782",
+      "last_updated": "2025-08-01T12:44:10.309151",
       "metadata": {
         "lmarena_score": 1141.0,
         "lmarena_rank": "174",
@@ -6336,7 +6336,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 14,000,000,000 params \u00d7 224,000,000,000 tokens = 1.88e+22 FLOP (Chinese model: 14B params * 16 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896904",
+      "last_updated": "2025-08-01T12:44:10.309670",
       "metadata": {
         "lmarena_score": 1140.0,
         "lmarena_rank": "174",
@@ -6373,7 +6373,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.896959",
+      "last_updated": "2025-08-01T12:44:10.309779",
       "metadata": {
         "lmarena_score": 1139.0,
         "lmarena_rank": "174",
@@ -6410,7 +6410,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,260,000,000,000 tokens = 5.29e+23 FLOP (Specialized model: 70B params * 18 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897023",
+      "last_updated": "2025-08-01T12:44:10.309857",
       "metadata": {
         "lmarena_score": 1131.0,
         "lmarena_rank": "174",
@@ -6447,7 +6447,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 1,700,000,000 params \u00d7 25,500,000,000 tokens = 2.60e+20 FLOP (Generic estimate: 2B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897076",
+      "last_updated": "2025-08-01T12:44:10.309923",
       "metadata": {
         "lmarena_score": 1132.0,
         "lmarena_rank": "176",
@@ -6484,7 +6484,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897131",
+      "last_updated": "2025-08-01T12:44:10.309988",
       "metadata": {
         "lmarena_score": 1132.0,
         "lmarena_rank": "176",
@@ -6514,7 +6514,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Benchmark-based (lmarena_score): Benchmark-based estimation: ELO 1138.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.65e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.897169",
+      "last_updated": "2025-08-01T12:44:10.310034",
       "metadata": {
         "lmarena_score": 1138.0,
         "lmarena_rank": "177",
@@ -6551,7 +6551,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897273",
+      "last_updated": "2025-08-01T12:44:10.310325",
       "metadata": {
         "lmarena_score": 1136.0,
         "lmarena_rank": "177",
@@ -6582,7 +6582,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1083.0 vs reference llama_405b (ELO 1100, 1.00e+25 FLOP) with power law scaling \u03b1=3.0 = 9.54e+24 FLOP",
-      "last_updated": "2025-07-31T19:41:33.897311",
+      "last_updated": "2025-08-01T12:44:10.310375",
       "metadata": {
         "arena_elo": 1083.0,
         "coding_score": 1097.0,
@@ -6620,7 +6620,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 33,000,000,000 params \u00d7 495,000,000,000 tokens = 9.80e+22 FLOP (Generic estimate: 33B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897364",
+      "last_updated": "2025-08-01T12:44:10.310443",
       "metadata": {
         "lmarena_score": 1129.0,
         "lmarena_rank": "178",
@@ -6657,7 +6657,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897417",
+      "last_updated": "2025-08-01T12:44:10.310523",
       "metadata": {
         "lmarena_score": 1124.0,
         "lmarena_rank": "183",
@@ -6694,7 +6694,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897467",
+      "last_updated": "2025-08-01T12:44:10.310598",
       "metadata": {
         "lmarena_score": 1119.0,
         "lmarena_rank": "185",
@@ -6732,7 +6732,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 1,000,000,000 params \u00d7 20,000,000,000 tokens = 1.20e+20 FLOP (Modern model: 1B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897521",
+      "last_updated": "2025-08-01T12:44:10.310675",
       "metadata": {
         "arena_elo": 1067.0,
         "coding_score": 1060.0,
@@ -6772,7 +6772,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 84,000,000,000 tokens = 3.53e+21 FLOP (Mid-era model: 7B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897574",
+      "last_updated": "2025-08-01T12:44:10.310753",
       "metadata": {
         "lmarena_score": 1114.0,
         "lmarena_rank": "192",
@@ -6809,7 +6809,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 2,000,000,000,000 tokens = 8.40e+22 FLOP",
-      "last_updated": "2025-07-31T19:41:33.897624",
+      "last_updated": "2025-08-01T12:44:10.310816",
       "metadata": {
         "lmarena_score": 1113.0,
         "lmarena_rank": "192",
@@ -6846,7 +6846,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 2,000,000,000 params \u00d7 30,000,000,000 tokens = 3.60e+20 FLOP (Generic estimate: 2B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897676",
+      "last_updated": "2025-08-01T12:44:10.310880",
       "metadata": {
         "lmarena_score": 1112.0,
         "lmarena_rank": "192",
@@ -6883,7 +6883,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 2,000,000,000 params \u00d7 24,000,000,000 tokens = 2.88e+20 FLOP (Mid-era model: 2B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897734",
+      "last_updated": "2025-08-01T12:44:10.310946",
       "metadata": {
         "lmarena_score": 1092.0,
         "lmarena_rank": "201",
@@ -6920,7 +6920,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 4,000,000,000 params \u00d7 64,000,000,000 tokens = 1.54e+21 FLOP (Chinese model: 4B params * 16 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897786",
+      "last_updated": "2025-08-01T12:44:10.311019",
       "metadata": {
         "lmarena_score": 1091.0,
         "lmarena_rank": "201",
@@ -6957,7 +6957,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897839",
+      "last_updated": "2025-08-01T12:44:10.311093",
       "metadata": {
         "lmarena_score": 1082.0,
         "lmarena_rank": "202",
@@ -6994,7 +6994,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 13,000,000,000 params \u00d7 195,000,000,000 tokens = 1.52e+22 FLOP (Generic estimate: 13B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897894",
+      "last_updated": "2025-08-01T12:44:10.311209",
       "metadata": {
         "lmarena_score": 1072.0,
         "lmarena_rank": "202",
@@ -7031,7 +7031,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 13,000,000,000 params \u00d7 195,000,000,000 tokens = 1.52e+22 FLOP (Generic estimate: 13B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897948",
+      "last_updated": "2025-08-01T12:44:10.311286",
       "metadata": {
         "lmarena_score": 1068.0,
         "lmarena_rank": "202",
@@ -7068,7 +7068,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 13,000,000,000 params \u00d7 195,000,000,000 tokens = 1.52e+22 FLOP (Generic estimate: 13B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.897999",
+      "last_updated": "2025-08-01T12:44:10.311356",
       "metadata": {
         "lmarena_score": 1066.0,
         "lmarena_rank": "203",
@@ -7105,7 +7105,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898052",
+      "last_updated": "2025-08-01T12:44:10.320240",
       "metadata": {
         "lmarena_score": 1063.0,
         "lmarena_rank": "204",
@@ -7142,7 +7142,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 6,000,000,000 params \u00d7 108,000,000,000 tokens = 3.89e+21 FLOP (Specialized model: 6B params * 18 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898115",
+      "last_updated": "2025-08-01T12:44:10.320481",
       "metadata": {
         "lmarena_score": 1055.0,
         "lmarena_rank": "204",
@@ -7179,7 +7179,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 14,000,000,000 params \u00d7 210,000,000,000 tokens = 1.76e+22 FLOP (Generic estimate: 14B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898168",
+      "last_updated": "2025-08-01T12:44:10.320549",
       "metadata": {
         "lmarena_score": 1044.0,
         "lmarena_rank": "206",
@@ -7216,7 +7216,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 6,000,000,000 params \u00d7 108,000,000,000 tokens = 3.89e+21 FLOP (Specialized model: 6B params * 18 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898221",
+      "last_updated": "2025-08-01T12:44:10.320598",
       "metadata": {
         "lmarena_score": 1033.0,
         "lmarena_rank": "208",
@@ -7253,7 +7253,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 12,000,000,000 params \u00d7 180,000,000,000 tokens = 1.30e+22 FLOP (Generic estimate: 12B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898280",
+      "last_updated": "2025-08-01T12:44:10.320655",
       "metadata": {
         "lmarena_score": 1021.0,
         "lmarena_rank": "210",
@@ -7290,7 +7290,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 6,000,000,000 params \u00d7 108,000,000,000 tokens = 3.89e+21 FLOP (Specialized model: 6B params * 18 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898333",
+      "last_updated": "2025-08-01T12:44:10.320702",
       "metadata": {
         "lmarena_score": 1004.0,
         "lmarena_rank": "211",
@@ -7327,7 +7327,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 3,000,000,000 params \u00d7 54,000,000,000 tokens = 9.72e+20 FLOP (Specialized model: 3B params * 18 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898385",
+      "last_updated": "2025-08-01T12:44:10.320759",
       "metadata": {
         "lmarena_score": 995.0,
         "lmarena_rank": "212",
@@ -7364,7 +7364,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 13,000,000,000 params \u00d7 104,000,000,000 tokens = 8.11e+21 FLOP (Early era model: 13B params * 8 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898438",
+      "last_updated": "2025-08-01T12:44:10.320828",
       "metadata": {
         "lmarena_score": 978.0,
         "lmarena_rank": "213",
@@ -7401,7 +7401,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 12,000,000,000 params \u00d7 180,000,000,000 tokens = 1.30e+22 FLOP (Generic estimate: 12B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898520",
+      "last_updated": "2025-08-01T12:44:10.320899",
       "metadata": {
         "lmarena_score": 976.0,
         "lmarena_rank": "213",
@@ -7438,7 +7438,7 @@
         "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 105,000,000,000 tokens = 4.41e+21 FLOP (Generic estimate: 7B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.898590",
+      "last_updated": "2025-08-01T12:44:10.320961",
       "metadata": {
         "lmarena_score": 956.0,
         "lmarena_rank": "215",
@@ -7477,7 +7477,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 500,000,000,000 params \u00d7 20,000,000,000,000 tokens = 6.00e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.898643",
+      "last_updated": "2025-08-01T12:44:10.321100",
       "metadata": {
         "arena_elo": 1399.0,
         "coding_score": 1397.0,
@@ -7520,7 +7520,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 500,000,000,000 params \u00d7 20,000,000,000,000 tokens = 6.00e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.898884",
+      "last_updated": "2025-08-01T12:44:10.321319",
       "metadata": {
         "arena_elo": 1372.0,
         "coding_score": 1370.0,
@@ -7556,7 +7556,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1372.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.47e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.899003",
+      "last_updated": "2025-08-01T12:44:10.321439",
       "metadata": {
         "arena_elo": 1372.0,
         "coding_score": 1384.0,
@@ -7591,7 +7591,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1328.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.05e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.899079",
+      "last_updated": "2025-08-01T12:44:10.321536",
       "metadata": {
         "arena_elo": 1328.0,
         "coding_score": 1331.0,
@@ -7625,7 +7625,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1324.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 4.01e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.899180",
+      "last_updated": "2025-08-01T12:44:10.321642",
       "metadata": {
         "arena_elo": 1324.0,
         "coding_score": 1333.0,
@@ -7660,7 +7660,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1304.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.84e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.899315",
+      "last_updated": "2025-08-01T12:44:10.321741",
       "metadata": {
         "arena_elo": 1304.0,
         "coding_score": 1338.0,
@@ -7702,7 +7702,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 49,000,000,000 params \u00d7 980,000,000,000 tokens = 2.88e+23 FLOP (Modern model: 49B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.899512",
+      "last_updated": "2025-08-01T12:44:10.321983",
       "metadata": {
         "arena_elo": 1311.0,
         "coding_score": 1318.0,
@@ -7743,7 +7743,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: High-precision estimate from xAI disclosure",
-      "last_updated": "2025-07-31T19:41:33.899617",
+      "last_updated": "2025-08-01T12:44:10.322083",
       "metadata": {
         "arena_elo": 1307.0,
         "coding_score": 1296.0,
@@ -7791,7 +7791,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: Low-precision estimate from benchmarks",
-      "last_updated": "2025-07-31T19:41:33.899854",
+      "last_updated": "2025-08-01T12:44:10.322247",
       "metadata": {
         "arena_elo": 1285.0,
         "coding_score": 1307.0,
@@ -7833,7 +7833,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 72,000,000,000 params \u00d7 1,296,000,000,000 tokens = 5.60e+23 FLOP (Specialized model: 72B params * 18 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.899962",
+      "last_updated": "2025-08-01T12:44:10.322395",
       "metadata": {
         "arena_elo": 1296.0,
         "coding_score": 1319.0,
@@ -7865,7 +7865,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1286.0 vs reference llama_405b (ELO 1300, 3.80e+25 FLOP) with power law scaling \u03b1=3.0 = 3.68e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.900004",
+      "last_updated": "2025-08-01T12:44:10.322448",
       "metadata": {
         "arena_elo": 1286.0,
         "coding_score": 1286.0,
@@ -7904,7 +7904,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Epoch AI: High-precision estimate from xAI disclosure",
-      "last_updated": "2025-07-31T19:41:33.900095",
+      "last_updated": "2025-08-01T12:44:10.322559",
       "metadata": {
         "arena_elo": 1285.0,
         "coding_score": 1277.0,
@@ -7937,7 +7937,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1257.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.75e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.900174",
+      "last_updated": "2025-08-01T12:44:10.322657",
       "metadata": {
         "arena_elo": 1257.0,
         "coding_score": 1284.0,
@@ -7979,7 +7979,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Scaling laws with documented parameters: Chinchilla scaling law: 6 \u00d7 671,000,000,000 params \u00d7 14,800,000,000,000 tokens = 5.96e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.900298",
+      "last_updated": "2025-08-01T12:44:10.322767",
       "metadata": {
         "arena_elo": 1242.0,
         "coding_score": 1261.0,
@@ -8011,7 +8011,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1238.0 vs reference llama_405b (ELO 1250, 2.70e+25 FLOP) with power law scaling \u03b1=3.0 = 2.62e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.900414",
+      "last_updated": "2025-08-01T12:44:10.322858",
       "metadata": {
         "arena_elo": 1238.0,
         "coding_score": 1239.0,
@@ -8052,7 +8052,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 480,000,000,000 tokens = 9.22e+22 FLOP (Generic estimate: 32B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.900653",
+      "last_updated": "2025-08-01T12:44:10.323012",
       "metadata": {
         "arena_elo": 1231.0,
         "coding_score": 1213.0,
@@ -8093,7 +8093,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 8,000,000,000 params \u00d7 120,000,000,000 tokens = 5.76e+21 FLOP (Generic estimate: 8B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.900732",
+      "last_updated": "2025-08-01T12:44:10.323119",
       "metadata": {
         "arena_elo": 1191.0,
         "coding_score": 1182.0,
@@ -8127,7 +8127,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1181.0 vs reference llama_405b (ELO 1200, 2.15e+25 FLOP) with power law scaling \u03b1=3.0 = 2.05e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.900791",
+      "last_updated": "2025-08-01T12:44:10.323166",
       "metadata": {
         "arena_elo": 1181.0,
         "coding_score": 1162.0,
@@ -8166,7 +8166,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 20,000,000,000 params \u00d7 300,000,000,000 tokens = 3.60e+22 FLOP (Generic estimate: 20B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.901009",
+      "last_updated": "2025-08-01T12:44:10.323298",
       "metadata": {
         "arena_elo": 1170.0,
         "coding_score": 1180.0,
@@ -8198,7 +8198,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1157.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.73e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.901084",
+      "last_updated": "2025-08-01T12:44:10.323359",
       "metadata": {
         "arena_elo": 1157.0,
         "coding_score": 1127.0,
@@ -8230,7 +8230,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1137.0 vs reference llama_405b (ELO 1150, 1.70e+25 FLOP) with power law scaling \u03b1=3.0 = 1.64e+25 FLOP",
-      "last_updated": "2025-07-31T19:41:33.901220",
+      "last_updated": "2025-08-01T12:44:10.323565",
       "metadata": {
         "arena_elo": 1137.0,
         "coding_score": 1135.0,
@@ -8269,7 +8269,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,050,000,000,000 tokens = 4.41e+23 FLOP (Generic estimate: 70B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.903286",
+      "last_updated": "2025-08-01T12:44:10.323702",
       "metadata": {
         "arena_elo": 1108.0,
         "coding_score": 1051.0,
@@ -8308,7 +8308,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 70,000,000,000 params \u00d7 1,050,000,000,000 tokens = 4.41e+23 FLOP (Generic estimate: 70B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.903871",
+      "last_updated": "2025-08-01T12:44:10.323776",
       "metadata": {
         "arena_elo": 1098.0,
         "coding_score": 1059.0,
@@ -8340,7 +8340,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Benchmark-based (openlm_arena_elo): Benchmark-based estimation: ELO 1089.0 vs reference llama_405b (ELO 1100, 1.00e+25 FLOP) with power law scaling \u03b1=3.0 = 9.70e+24 FLOP",
-      "last_updated": "2025-07-31T19:41:33.904048",
+      "last_updated": "2025-08-01T12:44:10.323827",
       "metadata": {
         "arena_elo": 1089.0,
         "coding_score": 1097.0,
@@ -8371,7 +8371,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 384,000,000,000 tokens = 7.37e+22 FLOP (Mid-era model: 32B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.904395",
+      "last_updated": "2025-08-01T12:44:10.323880",
       "metadata": {
         "vision_score": 1198.0,
         "votes": 1505.0,
@@ -8401,7 +8401,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-07-31T19:41:30.368747",
+      "last_updated": "2025-08-01T12:43:47.413333",
       "metadata": {
         "vision_score": 1165.0,
         "votes": 2891.0,
@@ -8431,7 +8431,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 72,000,000,000 params \u00d7 864,000,000,000 tokens = 3.73e+23 FLOP (Mid-era model: 72B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.904720",
+      "last_updated": "2025-08-01T12:44:10.323946",
       "metadata": {
         "vision_score": 1154.0,
         "votes": 3884.0,
@@ -8461,7 +8461,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-07-31T19:41:30.368870",
+      "last_updated": "2025-08-01T12:43:47.413494",
       "metadata": {
         "vision_score": 1135.0,
         "aai_score": 37.4,
@@ -8493,7 +8493,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-07-31T19:41:30.368929",
+      "last_updated": "2025-08-01T12:43:47.413568",
       "metadata": {
         "vision_score": 1103.0,
         "votes": 1449.0,
@@ -8523,7 +8523,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 72,000,000,000 params \u00d7 864,000,000,000 tokens = 3.73e+23 FLOP (Mid-era model: 72B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.904836",
+      "last_updated": "2025-08-01T12:44:10.324051",
       "metadata": {
         "vision_score": 1091.0,
         "votes": 6028.0,
@@ -8553,7 +8553,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-07-31T19:41:30.369110",
+      "last_updated": "2025-08-01T12:43:47.413745",
       "metadata": {
         "vision_score": 1090.0,
         "votes": 1553.0,
@@ -8583,7 +8583,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 72,000,000,000 params \u00d7 1,080,000,000,000 tokens = 4.67e+23 FLOP (Generic estimate: 72B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.904900",
+      "last_updated": "2025-08-01T12:44:10.324138",
       "metadata": {
         "vision_score": 1059.0,
         "votes": 3092.0,
@@ -8613,7 +8613,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 12,000,000,000 params \u00d7 180,000,000,000 tokens = 1.30e+22 FLOP (Generic estimate: 12B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.904944",
+      "last_updated": "2025-08-01T12:44:10.324193",
       "metadata": {
         "vision_score": 1056.0,
         "aai_score": 23.4,
@@ -8645,7 +8645,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 26,000,000,000 params \u00d7 390,000,000,000 tokens = 6.08e+22 FLOP (Generic estimate: 26B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.904979",
+      "last_updated": "2025-08-01T12:44:10.324239",
       "metadata": {
         "vision_score": 1053.0,
         "votes": 5265.0,
@@ -8675,7 +8675,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 90,000,000,000 params \u00d7 1,800,000,000,000 tokens = 9.72e+23 FLOP (Modern model: 90B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.905009",
+      "last_updated": "2025-08-01T12:44:10.324288",
       "metadata": {
         "vision_score": 1046.0,
         "aai_score": 33.4,
@@ -8707,7 +8707,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-07-31T19:41:30.369448",
+      "last_updated": "2025-08-01T12:43:47.414136",
       "metadata": {
         "vision_score": 1045.0,
         "votes": 811.0,
@@ -8737,7 +8737,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 32,000,000,000 params \u00d7 480,000,000,000 tokens = 9.22e+22 FLOP (Generic estimate: 32B params * 15 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.905050",
+      "last_updated": "2025-08-01T12:44:10.324354",
       "metadata": {
         "vision_score": 1036.0,
         "votes": 849.0,
@@ -8767,7 +8767,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 7,000,000,000 params \u00d7 84,000,000,000 tokens = 3.53e+21 FLOP (Mid-era model: 7B params * 12 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.905078",
+      "last_updated": "2025-08-01T12:44:10.324397",
       "metadata": {
         "vision_score": 1034.0,
         "votes": 5854.0,
@@ -8797,7 +8797,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-07-31T19:41:30.369656",
+      "last_updated": "2025-08-01T12:43:47.414358",
       "metadata": {
         "vision_score": 1028.0,
         "votes": 1237.0,
@@ -8827,7 +8827,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "Parameter-based Chinchilla scaling: Chinchilla scaling law: 6 \u00d7 11,000,000,000 params \u00d7 220,000,000,000 tokens = 1.45e+22 FLOP (Modern model: 11B params * 20 tokens/param)",
-      "last_updated": "2025-07-31T19:41:33.905114",
+      "last_updated": "2025-08-01T12:44:10.324458",
       "metadata": {
         "vision_score": 1008.0,
         "aai_score": 25.0,

@@ -22,7 +22,7 @@ class ModelQueryEngine:
         self.logger = logging.getLogger(__name__)
         
         if data_dir is None:
-            data_dir = get_settings().data_dir
+            data_dir = Path("data")
         
         self.data_dir = Path(data_dir)
         self.storage = JSONStorage(data_dir)

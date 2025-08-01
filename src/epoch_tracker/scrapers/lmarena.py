@@ -17,8 +17,8 @@ class LMArenaScraper(BaseScraper):
     
     def __init__(self):
         super().__init__(name="lmarena")
-        # Get data directory from config or use default
-        self.data_dir = Path(self.config.get("data_dir", "data/raw/lmarena/text"))
+        # Use default data directory
+        self.data_dir = Path("data/raw/lmarena/text")
             
     def scrape_models(self) -> ModelCollection:
         """Read models from CSV files (manual or automated)."""

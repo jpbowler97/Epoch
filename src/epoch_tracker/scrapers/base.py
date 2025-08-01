@@ -162,7 +162,9 @@ class BaseScraper(ABC):
     
     def __exit__(self, exc_type, exc_val, exc_tb):
         """Context manager exit - cleanup resources."""
-        self.http.close()
+        # Clean up HTTP session if it exists
+        if hasattr(self, 'http') and hasattr(self.http, 'close'):
+            self.http.close()
 
 
 class ScraperError(Exception):

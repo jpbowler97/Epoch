@@ -19,6 +19,11 @@ class OpenLMArenaWebScraper(BaseScraper):
     def __init__(self):
         super().__init__(name="openlm_arena", base_url="https://openlm.ai")
         self.leaderboard_url = "https://openlm.ai/chatbot-arena/"
+        # Initialize HTTP session
+        self.http = requests.Session()
+        self.http.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        })
         
     def scrape_models(self) -> ModelCollection:
         """Scrape models from OpenLM Chatbot Arena."""
