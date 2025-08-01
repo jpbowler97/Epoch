@@ -7,7 +7,7 @@ The semi-automatic model review process allows you to compare models in `clean/a
 ## Usage
 
 ```bash
-python scripts/review_candidates.py [--data-dir DATA_DIR] [--batch-size BATCH_SIZE]
+python scripts/run.py review-candidates [--data-dir DATA_DIR] [--batch-size BATCH_SIZE]
 ```
 
 ### Options
@@ -97,8 +97,8 @@ Successfully added kimi_k2_preview to staging dataset and marked as verified
 
 This workflow integrates seamlessly with the existing automated pipeline:
 
-1. Run the automated pipeline: `python scripts/refresh_all_data.py`
-2. Review new candidates: `python scripts/review_candidates.py`
-3. Re-run the core dataset refresh: `python scripts/refresh_core_dataset.py`
+1. Run the automated pipeline: `python scripts/run.py collect-all && python scripts/run.py estimate-flops --update`
+2. Review new candidates: `python scripts/run.py review-candidates`
+3. Re-run the core dataset refresh: `python scripts/run.py refresh-dataset`
 
 The verified models will be protected from future automated changes, ensuring your manual decisions are preserved.

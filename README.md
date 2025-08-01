@@ -15,19 +15,22 @@ This project builds a structured system to improve Epoch's tracking of large-sca
 
 ```bash
 # 1. Install dependencies
-pip install -r requirements.txt
+pip install -e .
 
 # 2. Collect data from sources (uses manual CSV files + web scraping when available)
-python scripts/get_latest_model_data.py
+python scripts/run.py collect-all
 
 # 3. Apply FLOP estimations to scraped models
-python scripts/estimate_flops.py --update
+python scripts/run.py estimate-flops --update
 
 # 4. Generate/refresh core dataset of models above 1e25 FLOP threshold
-python scripts/refresh_core_dataset.py
+python scripts/run.py refresh-dataset
 
 # 5. Review new candidate models (semi-automatic curation)
-python scripts/review_candidates.py
+python scripts/run.py review-candidates
+
+# 6. Sync staging dataset to published dataset (production deployment)
+python scripts/run.py sync-datasets --sync --direction staging-to-published
 ```
 
 ### Model Review Workflow
@@ -35,7 +38,7 @@ python scripts/review_candidates.py
 After running the automated pipeline, use the semi-automatic review process to curate the final dataset:
 
 ```bash
-python scripts/review_candidates.py
+python scripts/run.py review-candidates
 ```
 
 For each new candidate model, you can:
@@ -67,15 +70,18 @@ The system follows a **four-stage data processing pipeline**:
 - **Output**: Candidate models in `data/clean/` ready for manual verification
 
 ### Stage 4: Manual Review & Staging
-- **Interactive review**: `python scripts/review_candidates.py` compares candidates against staging dataset
+- **Interactive review**: `python scripts/run.py review-candidates` compares candidates against staging dataset
 - **Manual decisions**: For each candidate, decide to add to staging, move to below threshold, or skip
 - **Verification protection**: Models marked `verified=y` are protected from automated pipeline changes
+- **Dataset synchronization**: `python scripts/run.py sync-datasets` manages bidirectional sync between staging and published datasets
+- **Field value reconciliation**: `python scripts/run.py sync-datasets --diff` provides interactive comparison and resolution of field differences with automatic verification protection
 - **Output**: Curated staging dataset in `data/staging/above_1e25_flop_staging.csv` ready for production
 
 **📚 Documentation:**
 - **[Developer Guide](CLAUDE.md)** - Development setup, architecture, and current system status
 - **[Core Dataset Management](docs/core_dataset_management.md)** - Detailed guide to curating models above 1e25 FLOP
 - **[Review Workflow](docs/review_workflow.md)** - Semi-automatic candidate review process and manual curation
+- **[Staging/Published Sync](docs/staging_published_sync.md)** - Bidirectional dataset synchronization with manual name mapping
 - **[Data Pipeline](docs/data_pipeline.md)** - Complete data flow from collection to curation
 - **[FLOP Estimation Guide](docs/flop_estimation_guide.md)** - FLOP calculation methods and implementation details
 - **[Assignment](Assignment.md)** - Project objectives and success criteria
@@ -93,13 +99,24 @@ src/epoch_tracker/
 └── utils/           # HTTP client, date parsing, etc.
 
 scripts/
-├── get_latest_model_data.py  # Collect data from all configured sources
-├── fetch_lmarena_data.py     # Automated LMArena web scraping
-├── estimate_flops.py         # Apply FLOP estimations to models
-├── refresh_core_dataset.py   # Generate/refresh curated dataset above 1e25 FLOP
-├── review_candidates.py      # Semi-automatic review process for manual curation
-├── query_models.py           # Interactive data exploration (optional)
-└── manual_model_entry.py     # Manual model entry interface
+├── run.py                    # Main entry point for all functionality
+├── data_collection/          # Data collection scripts
+│   ├── get_latest_model_data.py  # Collect data from all configured sources
+│   ├── fetch_lmarena_data.py     # Automated LMArena web scraping  
+│   └── fetch_openlm_data.py      # Automated OpenLM arena scraping
+├── data_processing/          # Data processing and estimation
+│   ├── estimate_flops.py         # Apply FLOP estimations to models
+│   └── refresh_core_dataset.py   # Generate/refresh curated dataset above 1e25 FLOP
+├── curation/                 # Manual curation and review
+│   ├── review_candidates.py      # Semi-automatic review process for manual curation
+│   ├── sync_staging_published.py # Sync staging and published datasets
+│   └── manual_model_entry.py     # Manual model entry interface
+├── analysis/                 # Data analysis and querying
+│   └── query_models.py           # Interactive data exploration
+└── testing/                  # Testing and validation
+    ├── test_compute_estimator.py # Test compute estimation methods
+    ├── test_verification_workflow.py # Test verification workflow
+    └── validate_against_epoch.py # Validate against Epoch's existing data
 
 data/
 ├── scraped/        # Raw scraped model data (Stage 1)

@@ -34,17 +34,24 @@ isort src/ scripts/ tests/
 # Linting
 flake8 src/ scripts/ tests/
 
-# Primary system entry points
-python scripts/refresh_all_data.py              # Refresh all model data
-python scripts/refresh_core_dataset.py          # Generate/refresh curated dataset above 1e25 FLOP
-python scripts/query_models.py --above-threshold --format table  # Query results
-python scripts/manual_model_entry.py           # Manual model entry interface
-python scripts/validate_against_epoch.py       # Validate against Epoch's data
+# Primary system entry points (using main script)
+python scripts/run.py collect-all              # Refresh all model data
+python scripts/run.py refresh-dataset          # Generate/refresh curated dataset above 1e25 FLOP
+python scripts/run.py query --above-threshold --format table  # Query results
+python scripts/run.py manual-entry             # Manual model entry interface
+python scripts/run.py validate                 # Validate against Epoch's data
 
 # Individual pipeline stages
-python scripts/get_latest_model_data.py         # Stage 1: Data collection
-python scripts/estimate_flops.py --update       # Stage 2: FLOP estimation
-python scripts/refresh_core_dataset.py          # Stage 3: Core dataset curation
+python scripts/run.py collect-all              # Stage 1: Data collection
+python scripts/run.py estimate-flops --update  # Stage 2: FLOP estimation
+python scripts/run.py refresh-dataset          # Stage 3: Core dataset curation
+python scripts/run.py review-candidates        # Stage 4: Manual review & staging
+
+# Alternative: Direct script access (legacy support)
+python scripts/data_collection/get_latest_model_data.py         # Stage 1: Data collection
+python scripts/data_processing/estimate_flops.py --update       # Stage 2: FLOP estimation
+python scripts/data_processing/refresh_core_dataset.py          # Stage 3: Core dataset curation
+python scripts/curation/review_candidates.py                    # Stage 4: Manual review & staging
 ```
 
 ## Architecture

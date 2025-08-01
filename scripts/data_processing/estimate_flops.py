@@ -14,12 +14,9 @@ import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-# Add src to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from src.epoch_tracker.estimation import ComputeEstimator
-from src.epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod, ThresholdClassification
-from src.epoch_tracker.storage import JSONStorage
+from epoch_tracker.estimation import ComputeEstimator
+from epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod, ThresholdClassification
+from epoch_tracker.storage import JSONStorage
 
 
 # Threshold classification constants

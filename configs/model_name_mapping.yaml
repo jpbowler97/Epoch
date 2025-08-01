@@ -1,0 +1,90 @@
+# Model Name Mapping Configuration
+# Maps standardized staging names to human-readable published names
+# 
+# Format: staging_name: "Published Name"
+# 
+# This file controls all synchronization between staging and published datasets.
+# Add new mappings manually to handle edge cases and ensure correct name translation.
+
+# OpenAI Models
+gpt_4.5_preview: "GPT-4.5"
+gpt_4o: "GPT-4o"
+gpt_4_turbo: "GPT-4 Turbo"
+gpt_4: "GPT-4"
+o1_preview: "o1-preview"
+o3: "o3"
+
+# Anthropic Models
+claude_opus_4: "Claude Opus 4"
+claude_opus_4_thinking_16k: "Claude Opus 4 (thinking 16k)"
+claude_sonnet_4_thinking_32k: "Claude Sonnet 4 (thinking 32k)"
+claude_3_7_sonnet: "Claude 3.7 Sonnet"
+claude_3_7_sonnet_thinking_32k: "Claude 3.7 Sonnet (thinking 32k)"
+claude_3_5_sonnet: "Claude 3.5 Sonnet"
+claude_3_opus: "Claude 3 Opus"
+
+# Google Models
+gemini_2.5_pro: "Gemini 2.5 Pro"
+gemini_2.5_flash: "Gemini 2.5 Flash"
+gemini_2.0_pro: "Gemini 2.0 Pro"
+gemini_2.0_flash: "Gemini 2.0 Flash"
+gemini_2.0_flash_001: "Gemini 2.0 Flash-001"
+gemini_2.0_flash_lite: "Gemini 2.0 Flash Lite"
+gemini_1.5_pro: "Gemini 1.5 Pro"
+gemini_1.0_ultra: "Gemini 1.0 Ultra"
+
+# xAI Models
+grok_4: "Grok 4"
+grok_3: "Grok-3"
+grok_2: "Grok-2"
+
+# Meta Models
+llama_4_behemoth_preview: "Llama 4 Behemoth (preview)"
+llama_3.1_405b: "Llama 3.1-405B"
+
+# DeepSeek Models
+deepseek_r1: "DeepSeek R1"
+deepseek_v2_api: "DeepSeek V2 API"
+deepseek_coder: "DeepSeek Coder"
+deepseek_llm_67b: "DeepSeek LLM 67B"
+
+# NVIDIA Models
+nemotron_4_340b: "Nemotron-4 340B"
+llama_nemotron_ultra_253b: "Llama Nemotron Ultra 253B"
+
+# Chinese Models
+glm_4_plus: "GLM-4-Plus"
+glm_4_0116: "GLM-4 (0116)"
+doubao_pro: "Doubao-pro"
+pangu_ultra: "Pangu Ultra"
+
+# Other Models
+mistral_large_2: "Mistral Large 2"
+mistral_large: "Mistral Large"
+inflection_2: "Inflection-2"
+aramco_metabrain_ai: "Aramco Metabrain AI"
+
+# Additional mappings for models not yet in published dataset  
+claude_opus_4: "Claude Opus 4"
+claude_opus_4_thinking_16k: "Claude Opus 4 (thinking 16k)"
+claude_sonnet_4_thinking_32k: "Claude Sonnet 4 (thinking 32k)"
+claude_3_7_sonnet_thinking_32k: "Claude 3.7 Sonnet (thinking 32k)"
+gpt_4.5_preview: "GPT-4.5"
+gemini_2.0_flash_001: "Gemini 2.0 Flash-001"
+gemini_2.0_flash_lite: "Gemini 2.0 Flash Lite"
+gemini_2.5_pro: "Gemini 2.5 Pro"
+gemini_2.5_flash: "Gemini 2.5 Flash"
+gemini_2.0_pro: "Gemini 2.0 Pro"
+gemini_2.0_flash: "Gemini 2.0 Flash"
+grok_4: "Grok 4"
+o3: "o3"
+o1_preview: "o1-preview"
+deepseek_r1: "DeepSeek R1"
+deepseek_coder: "DeepSeek Coder"
+deepseek_llm_67b: "DeepSeek LLM 67B"
+deepseek_v2_api: "DeepSeek V2 API"
+kimi_k2_preview: "Kimi K2 (preview)"
+
+# Add new mappings below as needed
+# staging_name: "Published Name"
+# test_model_123: "Test Model 123"

@@ -19,7 +19,7 @@ import pandas as pd
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Set
+from typing import Dict, List, Optional, Set, Tuple
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
@@ -310,6 +310,183 @@ def detect_duplicates(above_df: pd.DataFrame, below_df: pd.DataFrame) -> Dict[st
     return duplicates
 
 
+def deduplicate_within_table(df: pd.DataFrame, table_name: str, model_lookup: Dict[str, Model]) -> Tuple[pd.DataFrame, List[str]]:
+    """
+    Remove duplicate models within a single table, keeping the one with highest FLOP estimate.
+    
+    Args:
+        df: DataFrame to deduplicate
+        table_name: Name of table for logging ("above" or "below")
+        model_lookup: Dict mapping model names to Model objects for FLOP lookup
+        
+    Returns:
+        Tuple of (deduplicated_df, resolution_log)
+    """
+    # Find duplicate model names (case-insensitive)
+    df_lower = df.copy()
+    df_lower['model_lower'] = df['model'].str.lower()
+    
+    duplicate_counts = df_lower['model_lower'].value_counts()
+    duplicate_names = duplicate_counts[duplicate_counts > 1].index.tolist()
+    
+    if not duplicate_names:
+        return df, []
+    
+    resolution_log = []
+    indices_to_remove = []
+    
+    for model_name_lower in duplicate_names:
+        # Get all rows with this model name
+        duplicate_rows = df_lower[df_lower['model_lower'] == model_name_lower]
+        
+        if len(duplicate_rows) <= 1:
+            continue
+            
+        # Determine which row to keep (highest FLOP estimate)
+        best_row_idx = None
+        best_flop = -1
+        actual_model_name = duplicate_rows.iloc[0]['model']  # Use first occurrence's casing
+        
+        for idx, row in duplicate_rows.iterrows():
+            # Try to get FLOP from model lookup first
+            model_obj = model_lookup.get(model_name_lower)
+            if model_obj and model_obj.training_flop:
+                flop = model_obj.training_flop
+            else:
+                # Fall back to CSV training_flop field
+                flop_str = str(row.get('training_flop', '')).strip()
+                try:
+                    flop = float(flop_str) if flop_str and flop_str != 'nan' else 0
+                except (ValueError, TypeError):
+                    flop = 0
+            
+            if flop > best_flop:
+                best_flop = flop
+                best_row_idx = idx
+        
+        # Mark all other rows for removal
+        for idx, row in duplicate_rows.iterrows():
+            if idx != best_row_idx:
+                indices_to_remove.append(idx)
+        
+        # Log the resolution
+        if best_flop > 0:
+            resolution_log.append(f"✓ {actual_model_name}: Deduplicated in {table_name} table, kept entry with {best_flop:.2e} FLOP")
+        else:
+            resolution_log.append(f"✓ {actual_model_name}: Deduplicated in {table_name} table, kept first entry (no FLOP data)")
+    
+    # Remove duplicate rows
+    if indices_to_remove:
+        df_deduplicated = df.drop(index=indices_to_remove).reset_index(drop=True)
+    else:
+        df_deduplicated = df
+    
+    return df_deduplicated, resolution_log
+
+
+def resolve_duplicates(above_df: pd.DataFrame, below_df: pd.DataFrame, all_models: List[Model]) -> Tuple[pd.DataFrame, pd.DataFrame, List[str]]:
+    """
+    Resolve cross-table duplicates by re-applying categorization logic.
+    
+    For models that appear in both tables:
+    1. Check verified=y flag first - preserve manually verified models
+    2. For unverified duplicates, re-apply threshold_classification logic
+    3. Remove model from incorrect table
+    4. Log resolution decisions
+    
+    Args:
+        above_df: DataFrame for above threshold models
+        below_df: DataFrame for below threshold models  
+        all_models: All models from estimated_models.json for FLOP lookup
+        
+    Returns:
+        Tuple of (updated_above_df, updated_below_df, resolution_log)
+    """
+    # Create model lookup for FLOP estimates
+    model_lookup = {model.name.lower(): model for model in all_models}
+    
+    # Find cross-table duplicates
+    above_models = set(above_df['model'].str.lower())
+    below_models = set(below_df['model'].str.lower())
+    cross_duplicates = above_models.intersection(below_models)
+    
+    if not cross_duplicates:
+        return above_df, below_df, []
+    
+    resolution_log = []
+    models_to_remove_from_above = []
+    models_to_remove_from_below = []
+    
+    for model_name_lower in cross_duplicates:
+        # Get actual model name (preserving case)
+        above_match = above_df[above_df['model'].str.lower() == model_name_lower]
+        below_match = below_df[below_df['model'].str.lower() == model_name_lower]
+        
+        if len(above_match) == 0 or len(below_match) == 0:
+            continue
+            
+        above_row = above_match.iloc[0]
+        below_row = below_match.iloc[0]
+        actual_model_name = above_row['model']  # Use above table's casing
+        
+        # Check if either is manually verified
+        above_verified = str(above_row.get('verified', '')).lower() == 'y'
+        below_verified = str(below_row.get('verified', '')).lower() == 'y'
+        
+        if above_verified and below_verified:
+            # Both verified - keep both and log warning
+            resolution_log.append(f"⚠️  {actual_model_name}: Both tables have verified=y, keeping both (manual review needed)")
+            continue
+        elif above_verified:
+            # Above is verified, remove from below
+            models_to_remove_from_below.append(model_name_lower)
+            resolution_log.append(f"✓ {actual_model_name}: Kept in above table (verified=y), removed from below")
+            continue
+        elif below_verified:
+            # Below is verified, remove from above  
+            models_to_remove_from_above.append(model_name_lower)
+            resolution_log.append(f"✓ {actual_model_name}: Kept in below table (verified=y), removed from above")
+            continue
+        
+        # Neither verified - use FLOP-based categorization
+        model_obj = model_lookup.get(model_name_lower)
+        if not model_obj or not model_obj.training_flop:
+            # No FLOP data - keep in above table for manual review
+            models_to_remove_from_below.append(model_name_lower)
+            resolution_log.append(f"✓ {actual_model_name}: No FLOP data, kept in above table for review")
+            continue
+        
+        # Apply threshold classification logic
+        flop = model_obj.training_flop
+        if flop >= 5e25:  # HIGH_CONFIDENCE_ABOVE_THRESHOLD
+            # Should be in above table
+            models_to_remove_from_below.append(model_name_lower)
+            resolution_log.append(f"✓ {actual_model_name}: {flop:.2e} FLOP ≥ 5e25, moved to above table")
+        elif flop <= 9e24:  # HIGH_CONFIDENCE_BELOW_THRESHOLD  
+            # Should be in below table
+            models_to_remove_from_above.append(model_name_lower)
+            resolution_log.append(f"✓ {actual_model_name}: {flop:.2e} FLOP ≤ 9e24, moved to below table")
+        else:
+            # NOT_SURE range - should be in above table for verification
+            models_to_remove_from_below.append(model_name_lower)
+            resolution_log.append(f"✓ {actual_model_name}: {flop:.2e} FLOP in uncertain range, moved to above table for verification")
+    
+    # Remove duplicates from tables
+    if models_to_remove_from_above:
+        above_df = above_df[~above_df['model'].str.lower().isin(models_to_remove_from_above)]
+    if models_to_remove_from_below:
+        below_df = below_df[~below_df['model'].str.lower().isin(models_to_remove_from_below)]
+    
+    # Deduplicate within each table, keeping highest FLOP estimate
+    above_df, above_dedup_log = deduplicate_within_table(above_df, "above", model_lookup)
+    below_df, below_dedup_log = deduplicate_within_table(below_df, "below", model_lookup)
+    
+    # Combine all resolution logs
+    all_logs = resolution_log + above_dedup_log + below_dedup_log
+    
+    return above_df, below_df, all_logs
+
+
 def check_model_coverage(all_models: List[Model], above_df: pd.DataFrame, below_df: pd.DataFrame) -> Dict[str, List[str]]:
     """
     Check that all models from estimated_models.json are covered by exactly one CSV.
@@ -576,6 +753,18 @@ Models with 'verified=y' are preserved during refresh operations.
     else:
         logger.info("Refreshing below_1e25_flop.csv")
         below_df = refresh_existing_csv(existing_below_df, below_models, below_csv_path)
+    
+    # Resolve cross-table duplicates automatically  
+    above_df, below_df, resolution_log = resolve_duplicates(above_df, below_df, deduplicated_models)
+    
+    # Save resolved CSVs if any changes were made
+    if resolution_log:
+        above_df.to_csv(above_csv_path, index=False)
+        below_df.to_csv(below_csv_path, index=False)
+        print(f"\n🔧 DUPLICATE RESOLUTION ({len(resolution_log)} conflicts resolved):")
+        for log_entry in resolution_log:
+            print(f"  {log_entry}")
+        print(f"\n✅ Updated CSV files saved automatically")
     
     # Detect duplicates and coverage issues
     duplicates = detect_duplicates(above_df, below_df)
