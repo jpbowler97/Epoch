@@ -1,0 +1,269 @@
+{
+  "description": "Developer blacklist configuration for model filtering and FLOP capping",
+  "version": "1.0",
+  "last_updated": "2025-08-04T15:46:22.831107",
+  "blacklist": {
+    "01 AI": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Chinese AI company founded by Kai-Fu Lee, relatively new but has some disclosure"
+    },
+    "AI21 Labs": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Israeli AI company with reasonable disclosure standards, academic backing"
+    },
+    "Alibaba": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major Chinese tech company with established AI research division, reasonable disclosure"
+    },
+    "Amazon": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major tech company with established AI research and disclosure practices"
+    },
+    "Anthropic": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "AI safety focused company with good disclosure practices and research transparency"
+    },
+    "ByteDance": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Chinese tech company with limited transparency on AI model training specifics - Limited disclosure on training methodology and data sources for frontier models"
+    },
+    "Cohere": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Canadian AI company with reasonable disclosure standards and research focus"
+    },
+    "Databricks": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Open source focused company with transparent model development practices"
+    },
+    "DeepSeek": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Chinese AI company with good research publication record and model specifications"
+    },
+    "Google": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major tech company with established AI research division and disclosure practices"
+    },
+    "Meta": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major tech company with open source AI models and good disclosure practices"
+    },
+    "Microsoft": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "So far they are not generating large proprietary models"
+    },
+    "MiniMax": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Chinese AI company with very limited transparency on model specifications - Insufficient disclosure on training methodology, data sources, and model architecture"
+    },
+    "Mistral": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "French AI company with reasonable disclosure standards and research focus"
+    },
+    "Moonshot": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Chinese AI startup with limited public disclosure on model training details - Minimal transparency on training compute, data sources, and methodology"
+    },
+    "NexusFlow": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "AI company with focus on open models and reasonable disclosure practices"
+    },
+    "Nvidia": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major tech company with established AI research and good disclosure practices"
+    },
+    "OpenAI": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Leading AI company with reasonable disclosure standards for frontier models"
+    },
+    "OpenChat": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Open source project with transparent development practices"
+    },
+    "Reka AI": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "AI company with research focus and reasonable disclosure practices"
+    },
+    "Snowflake": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Data platform company with transparent model development practices"
+    },
+    "StepFun": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Chinese AI company with very limited public information on model training - Extremely limited disclosure on training compute, methodology, and specifications"
+    },
+    "Tencent": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major Chinese tech company but with limited transparency on AI model training specifics - Limited disclosure on training methodology and compute for frontier AI models"
+    },
+    "Unknown": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Models with unidentified developers cannot be properly evaluated - Cannot verify training methodology or model provenance"
+    },
+    "xAI": {
+      "blacklisted": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Elon Musk's AI company with some disclosure on model development"
+    },
+    "Zhipu": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Chinese AI company with limited transparency on model training details - Insufficient disclosure on training compute and methodology"
+    },
+    "Zhipu AI": {
+      "blacklisted": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Chinese AI company (same as Zhipu) with limited transparency on model training details - Insufficient disclosure on training compute and methodology"
+    },
+    "Ai2": {
+      "blacklisted": false,
+      "reason": "TestOrg has good disclosure practices for research purposes",
+      "last_reviewed": "2025-08-04T15:40:58.659204"
+    },
+    "Allen AI": {
+      "blacklisted": true,
+      "reason": "lack resources",
+      "last_reviewed": "2025-08-04T15:45:44.549999"
+    },
+    "Cognitive Computations": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:45:54.053563"
+    },
+    "HuggingFace": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:45:59.842002"
+    },
+    "InternLM": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:02.655002"
+    },
+    "MosaicML": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:04.646529"
+    },
+    "Nomic AI": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:07.966037"
+    },
+    "OpenAssistant": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:11.103280"
+    },
+    "RWKV": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:14.589192"
+    },
+    "Stanford": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:15.923417"
+    },
+    "Together AI": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:17.542098"
+    },
+    "UC Berkeley": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:19.277055"
+    },
+    "Upstage AI": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:21.111812"
+    },
+    "Pika Labs": {
+      "blacklisted": true,
+      "reason": "Insufficient disclosure on training methodology and specifications",
+      "last_reviewed": "2025-08-04T15:46:22.830449"
+    }
+  },
+  "pending_review": [
+    "AllenAI/UW",
+    "DeepSeek AI",
+    "IBM",
+    "LMSYS",
+    "Nexusflow",
+    "NousResearch",
+    "Princeton",
+    "Stability AI",
+    "TII",
+    "Tsinghua",
+    "UW",
+    "Runway"
+  ],
+  "settings": {
+    "auto_discover": true,
+    "require_review_new_developers": true,
+    "default_blacklist_status": false,
+    "cap_value": 9.9e+24,
+    "cap_reasoning_template": "FLOP estimate capped at {cap_value:.1e} due to developer blacklist policy: {reason}",
+    "preserve_original_estimates": true,
+    "reduce_confidence_on_cap": true
+  },
+  "statistics": {
+    "total_developers": 41,
+    "blacklisted_count": 30,
+    "allowed_count": 11,
+    "pending_count": 12
+  },
+  "notes": {
+    "blacklist_criteria": [
+      "Limited or no disclosure on training methodology",
+      "Insufficient transparency on compute resources used",
+      "Lack of verifiable model specifications",
+      "No clear documentation of data sources or training process"
+    ],
+    "examples": {
+      "blacklisted": [
+        "MiniMax",
+        "StepFun",
+        "ByteDance",
+        "Moonshot",
+        "Tencent",
+        "Zhipu AI",
+        "Unknown"
+      ],
+      "allowed": [
+        "OpenAI",
+        "Google",
+        "Anthropic",
+        "Meta",
+        "DeepSeek",
+        "Mistral",
+        "Cohere"
+      ]
+    }
+  }
+}

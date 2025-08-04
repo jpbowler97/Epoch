@@ -29,7 +29,7 @@ python scripts/run.py refresh-dataset
 # 5. Review new candidate models (semi-automatic curation)
 python scripts/run.py review-candidates
 
-# 6. Sync staging dataset to published dataset (production deployment)
+# 6. Sync staging dataset to published dataset (production deployment)  
 python scripts/run.py sync-datasets --sync --direction staging-to-published
 ```
 
@@ -73,7 +73,7 @@ The system follows a **four-stage data processing pipeline**:
 - **Interactive review**: `python scripts/run.py review-candidates` compares candidates against staging dataset
 - **Manual decisions**: For each candidate, decide to add to staging, move to below threshold, or skip
 - **Verification protection**: Models marked `verified=y` are protected from automated pipeline changes
-- **Dataset synchronization**: `python scripts/run.py sync-datasets` manages bidirectional sync between staging and published datasets
+- **Dataset synchronization**: `python scripts/run.py sync-datasets` manages bidirectional sync between staging and published datasets with option to remove unwanted models from staging
 - **Field value reconciliation**: `python scripts/run.py sync-datasets --diff` provides interactive comparison and resolution of field differences with automatic verification protection
 - **Output**: Curated staging dataset in `data/staging/above_1e25_flop_staging.csv` ready for production
 
@@ -82,8 +82,9 @@ The system follows a **four-stage data processing pipeline**:
 - **[Core Dataset Management](docs/core_dataset_management.md)** - Detailed guide to curating models above 1e25 FLOP
 - **[Review Workflow](docs/review_workflow.md)** - Semi-automatic candidate review process and manual curation
 - **[Staging/Published Sync](docs/staging_published_sync.md)** - Bidirectional dataset synchronization with manual name mapping
+- **[FLOP Estimation Guide](docs/flop_estimation_guide.md)** - Multi-benchmark estimation methods and configuration
+- **[Adding Benchmark References](docs/adding_benchmark_references.md)** - Seamless workflow for adding new benchmark types
 - **[Data Pipeline](docs/data_pipeline.md)** - Complete data flow from collection to curation
-- **[FLOP Estimation Guide](docs/flop_estimation_guide.md)** - FLOP calculation methods and implementation details
 - **[Assignment](Assignment.md)** - Project objectives and success criteria
 
 ## Architecture
@@ -130,8 +131,37 @@ data/
 
 - **LMArena** (manual + automated): Leaderboard scores and model rankings
 - **OpenLM Arena** (automated): Chatbot arena leaderboard data
+- **SuperCLUE** (Claude-managed): Chinese model benchmark via WebFetch
+- **Physics-IQ** (Claude-managed): Video model physics understanding
+- **Olympic Arena** (Claude-managed): Multi-discipline cognitive reasoning
+- **Video Arena** (Claude-managed): Text-to-video model rankings
 - **Manual datasets**: CSV files in `data/raw/*/` directories
 - **Epoch AI tracker**: Manual overrides for frontier models with authoritative FLOP values
+
+### Claude Integration for JavaScript-Heavy Sites
+
+Some benchmark sites use JavaScript rendering that regular scrapers can't handle. We use Claude Code's WebFetch capabilities for these:
+
+```bash
+# Update only Claude-managed sites (SuperCLUE, Physics-IQ, etc.)
+python scripts/run.py update-claude
+
+# Update specific sites with force refresh
+python scripts/run.py update-claude --sites superclue physics_iq --force
+
+# Include Claude updates in regular collection
+python scripts/run.py collect-all --update-claude-sites
+```
+
+**Simple Workflow**: When you run these commands, you'll see:
+1. A simple command like: `claude code scripts/claude_instructions/update_benchmarks.md`
+2. Run that command in Claude Code
+3. Claude will fetch fresh data and save HTML files
+4. Press Enter to continue with the regular pipeline
+
+**Auto-Warning**: If you run `collect-all` without fresh Claude data, you'll get a warning with clear instructions.
+
+See [Claude Integration Documentation](docs/claude_integration.md) for details.
 
 ## FLOP Estimation Methods
 

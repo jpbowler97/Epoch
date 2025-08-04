@@ -36,10 +36,16 @@ flake8 src/ scripts/ tests/
 
 # Primary system entry points (using main script)
 python scripts/run.py collect-all              # Refresh all model data
+python scripts/run.py collect-all --update-claude-sites  # Refresh with Claude updates
+python scripts/run.py update-claude            # Update only Claude-managed sites
 python scripts/run.py refresh-dataset          # Generate/refresh curated dataset above 1e25 FLOP
 python scripts/run.py query --above-threshold --format table  # Query results
 python scripts/run.py manual-entry             # Manual model entry interface
 python scripts/run.py validate                 # Validate against Epoch's data
+
+# Claude-specific commands for JavaScript-heavy sites
+python scripts/run.py update-claude            # Update Claude-managed sites (shows simple command)
+python scripts/run.py update-claude --sites superclue --force  # Force update specific sites
 
 # Individual pipeline stages
 python scripts/run.py collect-all              # Stage 1: Data collection
