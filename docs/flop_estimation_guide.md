@@ -128,33 +128,76 @@ flop = 6 * 7B * 105B = 4.41e+21 FLOP (Low confidence)
 
 **Confidence:** Medium (modern/specialized models) → Low (generic/early models)
 
-### 3. Benchmark Score Interpolation
+### 3. Multi-Benchmark Score Estimation (NEW)
 
 **How it works:**
-- Uses LMArena ELO scores to estimate FLOP
-- Interpolates between known reference models
-- Applies power-law scaling between performance and compute
+- Uses multiple benchmark scores from the same model (OpenLM Arena ELO, coding scores, reasoning scores, etc.)
+- Each benchmark type has its own reference model and scaling parameters
+- Aggregates estimates using confidence-weighted averaging
+- Boosts confidence when multiple benchmarks agree
 
-**Reference Models:**
+**Benchmark Reference Models:**
 ```python
-BENCHMARK_REFERENCES = {
+BENCHMARK_REFERENCE_MODELS = {
     "lmarena_score": {
-        1300: 3.8e25,   # Llama 3.1 405B level
-        1250: 2.7e25,   # Gemini 1.5 Pro level  
-        1200: 2.15e25,  # GPT-4 level
-        1150: 1.7e25,   # Claude 3.5 Sonnet level
-        1100: 1e25,     # Threshold level
+        "reference_model": "llama_3.1_405b",
+        "reference_score": 1335.0,    # Actual LMArena score
+        "reference_flop": 3.8e25,     # Epoch AI research
+        "scaling_exponent": 3.0       # Power law α
+    },
+    "openlm_arena_elo": {
+        "reference_model": "llama_3.1_405b", 
+        "reference_score": 1286.0,    # Actual OpenLM Arena ELO
+        "reference_flop": 3.8e25,
+        "scaling_exponent": 3.0
+    },
+    "coding_score": {
+        "reference_model": "llama_3.1_405b",
+        "reference_score": 1299.0,    # Coding performance
+        "reference_flop": 3.8e25,
+        "scaling_exponent": 3.0
+    },
+    "aai_score": {
+        "reference_model": "llama_3.1_405b",
+        "reference_score": 40.5,      # AI safety score  
+        "reference_flop": 3.8e25,
+        "scaling_exponent": 2.0       # More conservative scaling
+    },
+    "mmlu_pro_score": {
+        "reference_model": "llama_3.1_405b",
+        "reference_score": 73.2,      # Advanced reasoning
+        "reference_flop": 3.8e25,
+        "scaling_exponent": 2.5       # Moderate scaling
     }
 }
 ```
 
-**Formula:**
+**Multi-Benchmark Aggregation:**
+1. **Individual estimates**: Each available benchmark generates a FLOP estimate
+2. **Confidence weighting**: Higher confidence benchmarks get more weight
+3. **Agreement checking**: If estimates agree (within 2x), confidence is boosted
+4. **Weighted average**: Final estimate combines all benchmarks
+
+**Example:**
 ```python
-flop_estimate = reference_flop * (model_score / reference_score) ^ alpha
-# where alpha = 2.0 (power law exponent)
+# Model has multiple benchmark scores:
+benchmarks = {
+    "openlm_arena_elo": 1350,  # → 4.2e25 FLOP (Medium confidence)
+    "coding_score": 1320,      # → 3.9e25 FLOP (Medium confidence)  
+    "mmlu_pro_score": 75.0     # → 4.1e25 FLOP (Medium confidence)
+}
+
+# Estimates agree (within 2x) → confidence boosted to Medium
+# Weighted average: ~4.1e25 FLOP (Medium confidence)
 ```
 
-**Confidence:** Medium (close score match) → Low (distant interpolation)
+**Key Benefits:**
+- **Higher accuracy**: Multiple data points reduce estimation errors
+- **Improved confidence**: Agreement across benchmarks validates estimates
+- **Domain-specific scaling**: Different α values for different benchmark types
+- **Extensible design**: Easy to add new benchmarks
+
+**Confidence:** Medium (multiple agreeing benchmarks) → Low (single benchmark or disagreement)
 
 ### 4. Parameter Size Heuristics (DEPRECATED)
 
@@ -244,6 +287,66 @@ MANUAL_OVERRIDES = {
 - **Include source**: Always reference where the estimate came from
 - **Check Epoch's tracker**: Sync with https://epoch.ai/data-insights/models-over-1e25-flop
 
+### Adding New Benchmark References
+
+The system uses a **JSON configuration file** for seamless addition of new benchmark references. No code changes required!
+
+**🚀 Quick Start:**
+1. Edit `configs/benchmark_references.json`
+2. Add your benchmark data
+3. Run estimation - everything works automatically
+
+**Example JSON Entry:**
+```json
+{
+  "benchmark_references": {
+    "your_new_benchmark": {
+      "reference_model": "llama_3.1_405b",
+      "reference_score": 85.4,
+      "reference_flop": 3.8e25,
+      "source": "Your Benchmark + Epoch AI disclosure analysis",
+      "source_url": "https://your-benchmark.com/",
+      "scaling_exponent": 2.5,
+      "benchmark_type": "percentage",
+      "notes": "Description of benchmark"
+    }
+  }
+}
+```
+
+**Field Guidelines:**
+- **`reference_model`**: Usually "llama_3.1_405b" (well-characterized)
+- **`reference_score`**: Actual benchmark score for reference model
+- **`reference_flop`**: Training FLOP of reference model (3.8e25 for Llama 405B)
+- **`scaling_exponent`**: 3.0 (ELO scores), 2.5 (reasoning), 2.0 (safety/specialized)
+- **`source`**: Citation for benchmark score + FLOP estimate
+
+**Examples:**
+
+**Vision Benchmark:**
+```json
+"vision_score": {
+  "reference_model": "gpt_4o",
+  "reference_score": 88.5,
+  "reference_flop": 3.8e25,
+  "source": "Vision Benchmark + Epoch AI estimates",
+  "scaling_exponent": 2.5
+}
+```
+
+**Math Reasoning:**
+```json
+"math_reasoning": {
+  "reference_model": "llama_3.1_405b",
+  "reference_score": 76.8,
+  "reference_flop": 3.8e25,
+  "source": "Math Benchmark + Epoch AI disclosure",
+  "scaling_exponent": 2.5
+}
+```
+
+**📖 Complete Guide:** See [Adding Benchmark References](adding_benchmark_references.md) for detailed workflow, troubleshooting, and examples.
+
 ### Adding New Reference Models
 
 To improve estimation accuracy, add known models to `KNOWN_MODEL_SPECS` in `scripts/estimate_flops.py`:
@@ -309,4 +412,3 @@ Current system performance (as of last update):
 - **Models with FLOP estimates**: 134 (62%)
 - **Models above 1e25 FLOP**: 27 (12%)
 - **High confidence estimates**: ~15% of total
-- **Coverage of major LLMs**: >90%

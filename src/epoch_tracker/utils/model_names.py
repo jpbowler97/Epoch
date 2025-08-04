@@ -27,10 +27,19 @@ TRAILING_PATTERNS = [
     r'_instruct$',                 # _instruct
     r'_base$',                     # _base
     r'_it$',                       # _it (instruction tuned)
-    r'_v\d+\.?\d*$',              # _v1.0, _v2
     # Remove only numeric suffixes that look like versions, not model identifiers
     r'_\d+\.\d+$',                # _1.0, _2.5 (version numbers with decimals)
 ]
+
+# Patterns for version removal that should NOT apply to core model identifiers
+VERSION_REMOVAL_PATTERNS = [
+    r'_v\d+\.?\d*$',              # _v1.0, _v2 - but NOT for core model families
+]
+
+# Model families where version numbers are part of the core identifier
+CORE_MODEL_FAMILIES = {
+    'deepseek', 'qwen', 'qwen2', 'qwen3', 'gpt', 'claude', 'gemini', 'grok', 'llama'
+}
 
 # Special model family mappings for complex cases
 SPECIAL_MAPPINGS: Dict[str, str] = {
@@ -38,6 +47,7 @@ SPECIAL_MAPPINGS: Dict[str, str] = {
     'chatgpt-4o-latest': 'gpt_4o',
     'gpt-4.5-preview': 'gpt_4.5_preview',
     'gpt-4.1': 'gpt_4.1',
+    'gpt-4.1-2025-04-14': 'gpt_4.1',
     'gpt-4o-mini': 'gpt_4o_mini',
     'gpt-4-turbo': 'gpt_4_turbo',
     'gpt-3.5-turbo': 'gpt_3.5_turbo',
@@ -118,20 +128,42 @@ def normalize_model_name(name: str) -> str:
     if not name:
         return name
     
+    # Check for special mappings first (exact match before any normalization)
+    original_lower = name.lower().strip()
+    if original_lower in SPECIAL_MAPPINGS:
+        return SPECIAL_MAPPINGS[original_lower]
+    
     # Convert to lowercase and remove parentheses and their contents
-    normalized = name.lower().strip()
+    normalized = original_lower
     normalized = re.sub(r'\([^)]*\)', '', normalized)
     
     # Replace dashes and spaces with underscores
     normalized = re.sub(r'[-\s]+', '_', normalized)
     
-    # Remove date patterns first (most specific)
+    # Handle version patterns BEFORE date removal to preserve model identifiers
+    # Look for patterns like "deepseek_v3_0324" and preserve the version part
+    version_preservation_patterns = [
+        (r'(deepseek)_v(\d+(?:\.\d+)?)_\d{4}', r'\1_v\2'),  # deepseek_v3_0324, deepseek_v2.5_1210 -> deepseek_v3, deepseek_v2.5
+        (r'(qwen\d*)_v(\d+(?:\.\d+)?)_\d+', r'\1_v\2'),   # qwen3_v2_0324 -> qwen3_v2
+        (r'(gpt)_(\d+(?:\.\d+)?)_\d{4}_\d{2}_\d{2}', r'\1_\2'),  # gpt_4.1_2025_04_14 -> gpt_4.1
+    ]
+    
+    for pattern, replacement in version_preservation_patterns:
+        normalized = re.sub(pattern, replacement, normalized)
+    
+    # Remove date patterns after version preservation
     for pattern in DATE_PATTERNS:
         normalized = re.sub(pattern, '', normalized)
     
     # Remove trailing patterns (in order of specificity)
     for pattern in TRAILING_PATTERNS:
         normalized = re.sub(pattern, '', normalized)
+    
+    # Handle version removal patterns - only apply if NOT a core model family
+    base_name = normalized.split('_')[0]
+    if base_name not in CORE_MODEL_FAMILIES:
+        for pattern in VERSION_REMOVAL_PATTERNS:
+            normalized = re.sub(pattern, '', normalized)
     
     # Clean up multiple consecutive underscores
     normalized = re.sub(r'_+', '_', normalized)

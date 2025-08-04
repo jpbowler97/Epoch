@@ -146,8 +146,8 @@ class Model(BaseModel):
     
     def classify_by_threshold(
         self, 
-        high_confidence_above_threshold: float = 1e26,
-        high_confidence_below_threshold: float = 5e24
+        high_confidence_above_threshold: float,
+        high_confidence_below_threshold: float
     ) -> ThresholdClassification:
         """Classify model based on FLOP estimate and confidence thresholds.
         
@@ -203,9 +203,9 @@ class Model(BaseModel):
         flop: float, 
         confidence: ConfidenceLevel, 
         method: EstimationMethod,
-        reasoning: str = "",
-        high_confidence_above_threshold: float = 1e26,
-        high_confidence_below_threshold: float = 5e24
+        high_confidence_above_threshold: float,
+        high_confidence_below_threshold: float,
+        reasoning: str = ""
     ):
         """Update the FLOP estimate with new information."""
         self.training_flop = flop

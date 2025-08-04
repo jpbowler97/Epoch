@@ -8,6 +8,7 @@ and heuristics based on model names and metadata.
 """
 
 import argparse
+import json
 import logging
 import re
 import sys
@@ -17,34 +18,35 @@ from typing import Dict, List, Optional, Tuple
 from epoch_tracker.estimation import ComputeEstimator
 from epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod, ThresholdClassification
 from epoch_tracker.storage import JSONStorage
+from epoch_tracker.utils.developer_blacklist import DeveloperBlacklist
+from epoch_tracker.config.thresholds import get_threshold_config
 
 
-# Threshold classification constants
-HIGH_CONFIDENCE_ABOVE_THRESHOLD = 5e25  # >= X FLOP = high confidence above 1e25
-HIGH_CONFIDENCE_BELOW_THRESHOLD = 9e24  # <= X FLOP = high confidence below 1e25
+# Global threshold configuration - loaded once at startup
+THRESHOLD_CONFIG = None
 
 # Manual overrides based on Epoch AI's tracker (https://epoch.ai/data-insights/models-over-1e25-flop)
 # These take HIGHEST PRIORITY and override all other estimation methods
 # NOTE: Use exact FLOP values from Epoch's research with appropriate confidence levels
 MANUAL_OVERRIDES = {
     # Frontier models from Epoch AI tracker - High precision estimates
-    "llama_3.1_405b": (3.8e25, ConfidenceLevel.HIGH, "Epoch AI: High-precision estimate from Meta disclosure"),
-    "grok_2": (3.0e25, ConfidenceLevel.HIGH, "Epoch AI: High-precision estimate from xAI disclosure"),
+    "llama_3.1_405b": (3.8e25, ConfidenceLevel.HIGH, "https://epoch.ai/data-insights/models-over-1e25-flop: High-precision estimate from Meta disclosure"),
+    "grok_2": (3.0e25, ConfidenceLevel.HIGH, "https://epoch.ai/data-insights/models-over-1e25-flop: High-precision estimate from xAI disclosure"),
     
     # Low-precision but reliable estimates from Epoch AI
-    "claude_3_opus": (1.6e25, ConfidenceLevel.MEDIUM, "Epoch AI: Low-precision estimate from industry analysis"),
-    "claude_opus": (1.6e25, ConfidenceLevel.MEDIUM, "Epoch AI: Low-precision estimate from industry analysis"),  # Alias
-    "gpt_4": (2.1e25, ConfidenceLevel.MEDIUM, "Epoch AI: Low-precision estimate from scaling analysis"),
-    "gemini_1.0_ultra": (5.0e25, ConfidenceLevel.MEDIUM, "Epoch AI: Low-precision estimate from Google hints"),
-    "gemini_ultra": (5.0e25, ConfidenceLevel.MEDIUM, "Epoch AI: Low-precision estimate from Google hints"),  # Alias
-    "claude_3.5_sonnet": (3.6e25, ConfidenceLevel.MEDIUM, "Epoch AI: Low-precision estimate from benchmarks"),
-    "gpt_4o": (3.8e25, ConfidenceLevel.MEDIUM, "Epoch AI: Low-precision estimate from OpenAI patterns"),
+    "claude_3_opus": (1.6e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from industry analysis"),
+    "claude_opus": (1.6e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from industry analysis"),  # Alias
+    "gpt_4": (2.1e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from scaling analysis"),
+    "gemini_1.0_ultra": (5.0e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from Google hints"),
+    "gemini_ultra": (5.0e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from Google hints"),  # Alias
+    "claude_3.5_sonnet": (3.6e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from benchmarks"),
+    "gpt_4o": (3.8e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from OpenAI patterns"),
     
     # Speculative but notable estimates from Epoch AI
-    "claude_opus_4": (1.5e26, ConfidenceLevel.LOW, "Epoch AI: Speculative estimate for next-gen Claude"),
-    "claude_4_opus": (1.5e26, ConfidenceLevel.LOW, "Epoch AI: Speculative estimate for next-gen Claude"),  # Alias
-    "gpt_4.5": (6.4e25, ConfidenceLevel.LOW, "Epoch AI: Low-precision estimate for GPT-4.5"),
-    "gpt_4.5_preview": (6.4e25, ConfidenceLevel.LOW, "Epoch AI: Low-precision estimate for GPT-4.5"),  # Alias
+    "claude_opus_4": (1.5e26, ConfidenceLevel.LOW, "https://epoch.ai/data-insights/models-over-1e25-flop: Speculative estimate for next-gen Claude"),
+    "claude_4_opus": (1.5e26, ConfidenceLevel.LOW, "https://epoch.ai/data-insights/models-over-1e25-flop: Speculative estimate for next-gen Claude"),  # Alias
+    "gpt_4.5": (6.4e25, ConfidenceLevel.LOW, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate for GPT-4.5"),
+    "gpt_4.5_preview": (6.4e25, ConfidenceLevel.LOW, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate for GPT-4.5"),  # Alias
 
     # More manual overrides
     "deepseek_r1": (3.0e24, ConfidenceLevel.HIGH, "https://epoch.ai/gradient-updates/what-went-into-training-deepseek-r1"),
@@ -76,7 +78,6 @@ KNOWN_MODEL_SPECS = {
     # Gemini models (Google) - MEDIUM confidence from industry estimates
     "gemini_1.5_pro": (300_000_000_000, 12_000_000_000_000, ConfidenceLevel.MEDIUM),
     "gemini_2.0": (500_000_000_000, 20_000_000_000_000, ConfidenceLevel.LOW),  # Speculative
-    "gemini_2": (500_000_000_000, 20_000_000_000_000, ConfidenceLevel.LOW),  # Alias
     
     # Qwen models (Alibaba) - MEDIUM confidence from partial disclosures
     "qwen3_235b": (235_000_000_000, 10_000_000_000_000, ConfidenceLevel.MEDIUM),
@@ -85,14 +86,192 @@ KNOWN_MODEL_SPECS = {
     
     # DeepSeek models - MEDIUM confidence from papers
     "deepseek_v3": (671_000_000_000, 14_800_000_000_000, ConfidenceLevel.MEDIUM),  # From paper
-    "deepseek": (671_000_000_000, 14_800_000_000_000, ConfidenceLevel.MEDIUM),  # Alias for v3
     "deepseek_r1": (671_000_000_000, 15_000_000_000_000, ConfidenceLevel.LOW),  # Estimated
 }
 
-# Benchmark score to FLOP mappings (reference models)
+def load_estimation_methods_config(config_path: Optional[Path] = None) -> Dict:
+    """Load FLOP estimation methods configuration from JSON file.
+    
+    Args:
+        config_path: Path to flop estimation methods JSON file
+        
+    Returns:
+        Dictionary of estimation methods configuration
+    """
+    if config_path is None:
+        # Default path relative to script location
+        script_dir = Path(__file__).parent
+        config_path = script_dir.parent.parent / "configs" / "flop_estimation_methods.json"
+    
+    try:
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+        logging.info(f"Loaded FLOP estimation methods configuration from {config_path}")
+        return config
+    except FileNotFoundError:
+        logging.error(f"FLOP estimation methods config not found at {config_path}")
+        raise
+    except (json.JSONDecodeError, KeyError) as e:
+        logging.error(f"Error loading FLOP estimation methods config: {e}")
+        raise
+
+
+def load_benchmark_references(config_path: Optional[Path] = None) -> Dict:
+    """Load benchmark reference models from JSON configuration file.
+    
+    Args:
+        config_path: Path to benchmark references JSON file
+        
+    Returns:
+        Dictionary of benchmark reference configurations
+    """
+    if config_path is None:
+        # Default path relative to script location
+        script_dir = Path(__file__).parent
+        config_path = script_dir.parent.parent / "configs" / "benchmark_references.json"
+    
+    try:
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+        return config["benchmark_references"]
+    except FileNotFoundError:
+        logging.warning(f"Benchmark references config not found at {config_path}, using fallback")
+        return get_fallback_benchmark_references()
+    except (json.JSONDecodeError, KeyError) as e:
+        logging.error(f"Error loading benchmark references config: {e}, using fallback")
+        return get_fallback_benchmark_references()
+
+
+def infer_developer_from_references(model: Model) -> str:
+    """Infer the correct developer from benchmark reference data."""
+    if not model.name:
+        return model.developer
+        
+    # Check if this model is a reference model in any benchmark
+    for benchmark_name, ref_config in BENCHMARK_REFERENCE_MODELS.items():
+        if model.name.lower() == ref_config["reference_model"].lower():
+            source = ref_config.get("source", "")
+            # Extract known company names from source descriptions
+            if "openai" in source.lower():
+                return "OpenAI"
+            elif "anthropic" in source.lower():
+                return "Anthropic"
+            elif "google" in source.lower():
+                return "Google"
+            elif "meta" in source.lower():
+                return "Meta"
+            elif "deepseek" in source.lower():
+                return "DeepSeek"
+    
+    # Keep original developer if no inference possible
+    return model.developer
+
+
+def get_fallback_benchmark_references() -> Dict:
+    """Fallback benchmark references if JSON config fails to load."""
+    return {
+        "lmarena_score": {
+            "reference_model": "llama_3.1_405b",
+            "reference_score": 1335.0,
+            "reference_flop": 3.8e25,
+            "source": "LMArena Manual Data Collection + Epoch AI disclosure analysis",
+            "scaling_exponent": 3.0
+        },
+        "openlm_arena_elo": {
+            "reference_model": "llama_3.1_405b", 
+            "reference_score": 1286.0,
+            "reference_flop": 3.8e25,
+            "source": "OpenLM Arena leaderboard + Epoch AI disclosure analysis",
+            "scaling_exponent": 3.0
+        }
+    }
+
+
+# Load benchmark reference models from JSON configuration
+# To add new benchmarks, edit configs/benchmark_references.json
+BENCHMARK_REFERENCE_MODELS = load_benchmark_references()
+
+# Configuration loading - will be set after all functions are defined
+ESTIMATION_METHODS_CONFIG = None
+
+
+def get_manual_overrides() -> Dict:
+    """Get manual overrides from configuration."""
+    if ESTIMATION_METHODS_CONFIG is None:
+        return {}
+    return ESTIMATION_METHODS_CONFIG.get("manual_overrides", {}).get("entries", {})
+
+
+def get_known_model_specs() -> Dict:
+    """Get known model specifications from configuration."""
+    if ESTIMATION_METHODS_CONFIG is None:
+        return {}
+    return ESTIMATION_METHODS_CONFIG.get("known_model_specifications", {}).get("entries", {})
+
+
+def get_estimation_methods() -> List[Dict]:
+    """Get estimation methods in priority order."""
+    if ESTIMATION_METHODS_CONFIG is None:
+        return []
+    return ESTIMATION_METHODS_CONFIG.get("method_priority_order", [])
+
+
+# get_threshold_config function removed - now using centralized version from epoch_tracker.config.thresholds
+
+
+class MethodUsageTracker:
+    """Track usage statistics for each estimation method."""
+    
+    def __init__(self):
+        self.stats = {}
+        self.total_models = 0
+        self.models_with_estimates = 0
+        
+    def record_method_usage(self, method_id: str, model_name: str, confidence: ConfidenceLevel, flop: float):
+        """Record usage of an estimation method."""
+        if method_id not in self.stats:
+            self.stats[method_id] = {
+                'count': 0,
+                'models': [],
+                'confidence_distribution': {'HIGH': 0, 'MEDIUM': 0, 'LOW': 0, 'SPECULATIVE': 0},
+                'above_threshold': 0,
+                'total_flop': 0.0
+            }
+        
+        self.stats[method_id]['count'] += 1
+        self.stats[method_id]['models'].append({
+            'name': model_name,
+            'confidence': confidence,
+            'flop': flop
+        })
+        self.stats[method_id]['confidence_distribution'][confidence.name] += 1
+        self.stats[method_id]['total_flop'] += flop
+        
+        if flop >= 1e25:
+            self.stats[method_id]['above_threshold'] += 1
+    
+    def record_no_estimate(self, model_name: str):
+        """Record that no estimate was possible for a model."""
+        if 'no_estimate' not in self.stats:
+            self.stats['no_estimate'] = {
+                'count': 0,
+                'models': []
+            }
+        self.stats['no_estimate']['count'] += 1
+        self.stats['no_estimate']['models'].append(model_name)
+    
+    def get_summary(self) -> Dict:
+        """Get summary statistics."""
+        return {
+            'total_models': self.total_models,
+            'models_with_estimates': self.models_with_estimates,
+            'method_stats': self.stats
+        }
+
+# Legacy benchmark references (kept for backwards compatibility)
 BENCHMARK_REFERENCES = {
     "lmarena_score": {
-        1300: 3.8e25,   # Llama 3.1 405B level
+        1300: 3.8e25,   # Legacy reference point
         1250: 2.7e25,   # Gemini 1.5 Pro level
         1200: 2.15e25,  # GPT-4 level
         1150: 1.7e25,   # Claude 3.5 Sonnet level
@@ -111,6 +290,108 @@ def setup_logging(verbose: bool = False):
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
     )
+
+
+def initialize_configuration():
+    """Initialize the estimation methods configuration and constants."""
+    global ESTIMATION_METHODS_CONFIG, THRESHOLD_CONFIG
+    
+    # Load the configuration
+    ESTIMATION_METHODS_CONFIG = load_estimation_methods_config()
+    
+    # Load centralized threshold configuration
+    THRESHOLD_CONFIG = get_threshold_config()
+
+
+def print_enhanced_summary(all_models: List[Model], updated_count: int, above_threshold_count: int, 
+                          usage_tracker: MethodUsageTracker, args):
+    """Print enhanced FLOP estimation summary with method priority and usage statistics."""
+    final_models = all_models
+    models_with_flop = [m for m in final_models if m.training_flop is not None]
+    high_confidence_above = len([m for m in models_with_flop if m.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_ABOVE])
+    high_confidence_below = len([m for m in models_with_flop if m.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_BELOW])
+    not_sure = len([m for m in models_with_flop if m.threshold_classification == ThresholdClassification.NOT_SURE])
+    
+    print(f"\n{'='*80}")
+    print("FLOP ESTIMATION SUMMARY")
+    print(f"{'='*80}")
+    
+    # Method Priority Order Section
+    print("\nEstimation Methods (Priority Order):")
+    estimation_methods = get_estimation_methods()
+    for i, method in enumerate(estimation_methods, 1):
+        enabled_status = "✓" if method.get("enabled", True) else "✗"
+        confidence_levels = "/".join(method.get("confidence_levels", []))
+        print(f"  {i}. {method['name']} [{enabled_status}] - {method['description']}")
+        print(f"     Confidence: {confidence_levels} | Source: {method['source_description']}")
+    
+    print(f"\nMethod Usage Statistics:")
+    usage_stats = usage_tracker.get_summary()
+    
+    # Show method-specific statistics
+    method_name_map = {
+        "manual_overrides": "Manual Overrides",
+        "known_specifications": "Known Model Specifications", 
+        "parameter_based_scaling": "Parameter-based Chinchilla Scaling",
+        "benchmark_interpolation": "Benchmark Score Interpolation"
+    }
+    
+    total_estimated = 0
+    for method_id, display_name in method_name_map.items():
+        if method_id in usage_stats['method_stats']:
+            stats = usage_stats['method_stats'][method_id]
+            count = stats['count']
+            above_threshold = stats['above_threshold']
+            total_estimated += count
+            
+            confidence_dist = stats['confidence_distribution']
+            conf_summary = f"H:{confidence_dist['HIGH']} M:{confidence_dist['MEDIUM']} L:{confidence_dist['LOW']} S:{confidence_dist['SPECULATIVE']}"
+            
+            print(f"  • {display_name}: {count} models ({above_threshold} above 1e25 FLOP)")
+            print(f"    Confidence distribution: {conf_summary}")
+            
+            # Show top models for this method
+            if count > 0:
+                top_models = sorted(stats['models'], key=lambda x: x['flop'], reverse=True)[:3]
+                model_names = [f"{m['name']} ({m['flop']:.1e})" for m in top_models]
+                print(f"    Top models: {', '.join(model_names)}")
+        else:
+            print(f"  • {display_name}: 0 models")
+    
+    # Show no estimate statistics
+    if 'no_estimate' in usage_stats['method_stats']:
+        no_est_count = usage_stats['method_stats']['no_estimate']['count']
+        print(f"  • No estimate possible: {no_est_count} models")
+    
+    print(f"\nOverall Statistics:")
+    print(f"  Total models processed: {len(all_models)}")
+    if not args.dry_run:
+        print(f"  Unique models after deduplication: {len(all_models)}")
+    print(f"  Models with FLOP estimates: {len(models_with_flop)}")
+    print(f"  Models updated this run: {updated_count}")
+    print(f"  Models above 1e25 FLOP: {above_threshold_count}")
+    
+    print(f"\nThreshold Classification:")
+    print(f"  High confidence > 1e25 FLOP (>= {THRESHOLD_CONFIG.high_confidence_above_threshold:.1e}): {high_confidence_above}")
+    print(f"  High confidence < 1e25 FLOP (<= {THRESHOLD_CONFIG.high_confidence_below_threshold:.1e}): {high_confidence_below}")
+    print(f"  Not sure ({THRESHOLD_CONFIG.high_confidence_below_threshold:.1e} - {THRESHOLD_CONFIG.high_confidence_above_threshold:.1e}): {not_sure}")
+    
+    # Show example models for each classification
+    if high_confidence_above > 0:
+        print(f"\nHigh confidence models > 1e25 FLOP:")
+        high_conf_above_models = [m for m in models_with_flop if m.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_ABOVE]
+        for model in sorted(high_conf_above_models, key=lambda m: m.training_flop, reverse=True)[:10]:
+            print(f"  - {model.name}: {model.training_flop:.2e} FLOP "
+                  f"({model.training_flop_confidence.value})")
+    
+    if above_threshold_count > 0 and above_threshold_count != high_confidence_above:
+        print(f"\nAll models likely above 1e25 FLOP threshold:")
+        above_threshold = [m for m in all_models if m.training_flop and m.training_flop >= 1e25]
+        for model in sorted(above_threshold, key=lambda m: m.training_flop, reverse=True)[:10]:
+            print(f"  - {model.name}: {model.training_flop:.2e} FLOP "
+                  f"({model.training_flop_confidence.value}) [{model.threshold_classification.value}]")
+    
+    print(f"{'='*80}\n")
 
 
 def extract_model_size(model_name: str) -> Optional[int]:
@@ -199,10 +480,20 @@ def find_manual_override(model_name: str) -> Optional[Tuple[float, ConfidenceLev
     cleaned = re.sub(r'[-_]instruct$|[-_]chat$|[-_]base$', '', model_lower)
     cleaned = re.sub(r'[-_]fp\d+$|[-_]bnb[-_]nf\d+', '', cleaned)
     
-    # Find all matching patterns and prefer the longest (most specific) one
+    # Get manual overrides from configuration
+    manual_overrides = get_manual_overrides()
+    
+    # Find exact matching patterns only (no more fuzzy matching)
     matches = []
-    for pattern, (flop, confidence, reasoning) in MANUAL_OVERRIDES.items():
-        if pattern in cleaned:
+    for pattern, override_data in manual_overrides.items():
+        if pattern == cleaned:
+            flop = override_data.get("training_flop")
+            confidence_str = override_data.get("confidence", "MEDIUM")
+            reasoning = override_data.get("reasoning", "Manual override")
+            
+            # Convert confidence string to enum
+            confidence = getattr(ConfidenceLevel, confidence_str, ConfidenceLevel.MEDIUM)
+            
             matches.append((len(pattern), pattern, flop, confidence, reasoning))
     
     if matches:
@@ -214,24 +505,214 @@ def find_manual_override(model_name: str) -> Optional[Tuple[float, ConfidenceLev
     return None
 
 
-def find_known_model_match(model_name: str) -> Optional[Tuple[int, int, ConfidenceLevel]]:
-    """Find a matching known model specification."""
+def find_known_model_match(model_name: str) -> Optional[Tuple[int, int, ConfidenceLevel, str]]:
+    """Find a matching known model specification.
+    
+    Returns:
+        Tuple of (parameters, training_tokens, confidence_level, matched_pattern) or None
+    """
     model_lower = model_name.lower()
     
     # Remove version suffixes and clean up
     cleaned = re.sub(r'[-_]instruct$|[-_]chat$|[-_]base$', '', model_lower)
     cleaned = re.sub(r'[-_]fp\d+$|[-_]bnb[-_]nf\d+', '', cleaned)
     
-    for pattern, specs in KNOWN_MODEL_SPECS.items():
-        if pattern in cleaned:
-            return specs
+    # Get known model specifications from configuration
+    known_specs = get_known_model_specs()
+    
+    for pattern, spec_data in known_specs.items():
+        if pattern == cleaned:
+            parameters = spec_data.get("parameters")
+            training_tokens = spec_data.get("training_tokens")
+            confidence_str = spec_data.get("confidence", "MEDIUM")
+            
+            # Convert confidence string to enum
+            confidence = getattr(ConfidenceLevel, confidence_str, ConfidenceLevel.MEDIUM)
+            
+            return (parameters, training_tokens, confidence, pattern)
             
     return None
 
 
+def estimate_from_single_benchmark(benchmark_name: str, benchmark_score: float, 
+                                  estimator: ComputeEstimator, model_name: str = None) -> Optional[Dict]:
+    """Estimate FLOP from a single benchmark score using new reference system."""
+    if benchmark_name not in BENCHMARK_REFERENCE_MODELS:
+        return None
+        
+    ref_config = BENCHMARK_REFERENCE_MODELS[benchmark_name]
+    
+    try:
+        # Check if this benchmark uses threshold logic (e.g., Sora-based video benchmarks)
+        use_threshold_logic = ref_config.get("threshold_logic", False)
+        
+        if use_threshold_logic:
+            # Special threshold logic: models outperforming reference assumed >1e25 FLOP
+            reference_score = ref_config["reference_score"]
+            reference_flop = ref_config["reference_flop"]  # This should be 1e25 for Sora
+            reference_model = ref_config["reference_model"]
+            
+            # Check if this IS the reference model
+            if model_name and model_name.lower() == reference_model.lower():
+                # Reference model gets exactly its reference FLOP value
+                final_flop = reference_flop  # 1e25 for Sora
+                confidence = ConfidenceLevel.MEDIUM
+                reasoning = f"Threshold reference model ({benchmark_name}): {reference_model} set to {final_flop:.2e} FLOP as threshold marker"
+            elif benchmark_score > reference_score:
+                # Model outperforms threshold model (Sora) -> assume >1e25 FLOP
+                # Give it a slightly higher estimate to ensure it's above threshold
+                final_flop = max(1.1e25, reference_flop * 1.1)
+                confidence = ConfidenceLevel.MEDIUM
+                reasoning = f"Threshold-based ({benchmark_name}): {benchmark_score} > {reference_model} ({reference_score}) → assumed >1e25 FLOP (reference model assumed frontier-level)"
+            else:
+                # Model underperforms threshold model -> scale normally but below threshold
+                alpha = ref_config.get("scaling_exponent", 2.5)
+                flop_ratio = (benchmark_score / reference_score) ** alpha
+                scaled_flop = reference_flop * flop_ratio
+                
+                # Ensure it stays below threshold if scaling suggests it
+                # Cap at 99% of the high_confidence_below_threshold to stay clearly below
+                cap_value = THRESHOLD_CONFIG.high_confidence_below_threshold * 0.99
+                final_flop = min(scaled_flop, cap_value)
+                confidence = ConfidenceLevel.LOW
+                reasoning = f"Threshold-based ({benchmark_name}): {benchmark_score} < {reference_model} ({reference_score}) → scaled estimate {final_flop:.2e} FLOP (α={alpha})"
+            
+            return {
+                'flop': final_flop,
+                'confidence': confidence,
+                'method': EstimationMethod.BENCHMARK_BASED,
+                'benchmark_name': benchmark_name,
+                'reference_model': ref_config["reference_model"],
+                'source': ref_config["source"],
+                'reasoning': reasoning
+            }
+        
+        else:
+            # Normal scaling-based estimation
+            result = estimator.estimate_from_benchmark_elo(
+                elo_rating=benchmark_score,
+                reference_elo=ref_config["reference_score"], 
+                reference_flop=ref_config["reference_flop"]
+            )
+            
+            # Override scaling exponent if specified
+            if "scaling_exponent" in ref_config:
+                alpha = ref_config["scaling_exponent"]
+                flop_ratio = (benchmark_score / ref_config["reference_score"]) ** alpha
+                result.flop_estimate = ref_config["reference_flop"] * flop_ratio
+            
+            # Adjust confidence based on distance from reference
+            score_diff = abs(benchmark_score - ref_config["reference_score"])
+            if ref_config.get("benchmark_type") == "percentage":
+                # Percentage-based scores
+                if score_diff > 20:
+                    result.confidence = ConfidenceLevel.LOW
+                elif score_diff > 10:
+                    result.confidence = ConfidenceLevel.MEDIUM
+            else:
+                # ELO-based scores
+                if score_diff > 100:
+                    result.confidence = ConfidenceLevel.LOW
+                elif score_diff > 50:
+                    result.confidence = ConfidenceLevel.MEDIUM
+            
+            return {
+                'flop': result.flop_estimate,
+                'confidence': result.confidence,
+                'method': result.method,
+                'benchmark_name': benchmark_name,
+                'reference_model': ref_config["reference_model"],
+                'source': ref_config["source"],
+                'reasoning': f"Benchmark-based ({benchmark_name}): {benchmark_score} vs reference {ref_config['reference_model']} ({ref_config['reference_score']}, {ref_config['reference_flop']:.2e} FLOP) with α={ref_config.get('scaling_exponent', 3.0)} = {result.flop_estimate:.2e} FLOP"
+            }
+            
+    except Exception as e:
+        logging.warning(f"Failed to estimate from {benchmark_name} for score {benchmark_score}: {e}")
+        return None
+
+
+def estimate_from_multiple_benchmarks(model: Model, estimator: ComputeEstimator) -> Optional[Dict]:
+    """Estimate FLOP from multiple benchmark scores with confidence weighting."""
+    if not model.benchmarks:
+        return None
+    
+    # Get estimates from all available benchmarks
+    individual_estimates = []
+    
+    for benchmark_name, score in model.benchmarks.items():
+        if benchmark_name in BENCHMARK_REFERENCE_MODELS and score is not None:
+            estimate = estimate_from_single_benchmark(benchmark_name, score, estimator, model.name)
+            if estimate:
+                individual_estimates.append(estimate)
+    
+    if not individual_estimates:
+        return None
+    
+    # If only one estimate, return it directly
+    if len(individual_estimates) == 1:
+        return individual_estimates[0]
+    
+    # Multiple estimates - aggregate with confidence weighting
+    confidence_weights = {
+        ConfidenceLevel.HIGH: 4.0,
+        ConfidenceLevel.MEDIUM: 3.0, 
+        ConfidenceLevel.LOW: 2.0,
+        ConfidenceLevel.SPECULATIVE: 1.0
+    }
+    
+    total_weight = 0
+    weighted_flop_sum = 0
+    best_confidence = ConfidenceLevel.SPECULATIVE
+    benchmark_details = []
+    
+    for estimate in individual_estimates:
+        weight = confidence_weights[estimate['confidence']]
+        weighted_flop_sum += estimate['flop'] * weight
+        total_weight += weight
+        
+        # Track best confidence level
+        if estimate['confidence'].value < best_confidence.value:
+            best_confidence = estimate['confidence']
+            
+        benchmark_details.append(f"{estimate['benchmark_name']}: {estimate['flop']:.2e} ({estimate['confidence'].value.title()})")
+    
+    # Calculate weighted average
+    avg_flop = weighted_flop_sum / total_weight
+    
+    # Boost confidence if multiple benchmarks agree (within 2x of each other)
+    flop_values = [est['flop'] for est in individual_estimates]
+    max_flop = max(flop_values)
+    min_flop = min(flop_values)
+    agreement_ratio = max_flop / min_flop if min_flop > 0 else float('inf')
+    
+    if agreement_ratio <= 2.0 and len(individual_estimates) >= 2:
+        # Good agreement across benchmarks - boost confidence
+        if best_confidence == ConfidenceLevel.LOW:
+            best_confidence = ConfidenceLevel.MEDIUM
+        elif best_confidence == ConfidenceLevel.SPECULATIVE:
+            best_confidence = ConfidenceLevel.LOW
+    
+    # Create aggregate reasoning
+    aggregate_reasoning = f"Multi-benchmark estimation from {len(individual_estimates)} benchmarks: {'; '.join(benchmark_details)} → weighted average: {avg_flop:.2e} FLOP"
+    
+    return {
+        'flop': avg_flop,
+        'confidence': best_confidence,
+        'method': EstimationMethod.BENCHMARK_BASED,
+        'reasoning': aggregate_reasoning,
+        'benchmark_count': len(individual_estimates),
+        'agreement_ratio': agreement_ratio
+    }
+
+
 def estimate_from_benchmark_score(model: Model, estimator: ComputeEstimator) -> Optional[Dict]:
-    """Estimate FLOP from benchmark scores."""
-    # Check for available benchmark scores (prioritize OpenLM Arena ELO)
+    """Estimate FLOP from benchmark scores - enhanced multi-benchmark version."""
+    # Try new multi-benchmark approach first
+    result = estimate_from_multiple_benchmarks(model, estimator)
+    if result:
+        return result
+    
+    # Fallback to legacy single-benchmark approach
     elo_score = model.benchmarks.get('openlm_arena_elo') or model.benchmarks.get('lmarena_score')
     if not elo_score:
         return None
@@ -328,7 +809,8 @@ def deduplicate_models(models: List[Model]) -> List[Model]:
     return deduplicated
 
 
-def estimate_model_flops(model: Model, estimator: ComputeEstimator) -> Optional[Dict]:
+def estimate_model_flops(model: Model, estimator: ComputeEstimator, usage_tracker: Optional[MethodUsageTracker] = None, 
+                         blacklist: Optional[DeveloperBlacklist] = None) -> Optional[Dict]:
     """
     Estimate FLOP for a single model using hierarchical methods with multiple estimates.
     
@@ -343,6 +825,8 @@ def estimate_model_flops(model: Model, estimator: ComputeEstimator) -> Optional[
     Args:
         model: Model object with name and benchmark data
         estimator: ComputeEstimator instance
+        usage_tracker: Optional tracker for method usage statistics
+        blacklist: Optional developer blacklist for applying FLOP caps
         
     Returns:
         Dict with primary estimate and alternative estimates, or None if no estimate possible
@@ -368,21 +852,21 @@ def estimate_model_flops(model: Model, estimator: ComputeEstimator) -> Optional[
     # PRIORITY 1: Known model specifications
     known_specs = find_known_model_match(model.name)
     if known_specs:
-        params, tokens, confidence = known_specs
+        params, tokens, confidence, matched_pattern = known_specs
         
         # Update model parameters if not already set
         if model.parameters is None:
             model.parameters = params
-            model.parameter_source = "known_specification"
+            model.parameter_source = f"known_specification:{matched_pattern}"
         
         result = estimator.estimate_from_scaling_laws(params, tokens, "chinchilla")
         estimate = {
             'flop': result.flop_estimate,
             'confidence': confidence,
             'method': result.method,
-            'reasoning': f"Scaling laws with documented parameters: {result.reasoning}",
+            'reasoning': f"Known model specification '{matched_pattern}': {result.reasoning}",
             'parameters': params,
-            'parameter_source': 'known_specification',
+            'parameter_source': f'known_specification:{matched_pattern}',
             'priority': 1
         }
         all_estimates.append(estimate)
@@ -442,6 +926,52 @@ def estimate_model_flops(model: Model, estimator: ComputeEstimator) -> Optional[
             reasoning=est['reasoning']
         )
     
+    # Record method usage in tracker
+    if usage_tracker and primary_estimate:
+        # Map the priority to method ID for tracking
+        priority_to_method_id = {
+            0: "manual_overrides",
+            1: "known_specifications", 
+            2: "parameter_based_scaling",
+            3: "benchmark_interpolation"
+        }
+        method_id = priority_to_method_id.get(primary_estimate['priority'], "unknown")
+        usage_tracker.record_method_usage(
+            method_id=method_id,
+            model_name=model.name,
+            confidence=primary_estimate['confidence'],
+            flop=primary_estimate['flop']
+        )
+    
+    # Infer correct developer from benchmark references if needed
+    corrected_developer = infer_developer_from_references(model)
+    
+    # Apply developer blacklist capping if configured
+    if blacklist and primary_estimate and corrected_developer:
+        original_flop = primary_estimate['flop']
+        original_confidence = primary_estimate['confidence']
+        original_method = primary_estimate['method']
+        original_reasoning = primary_estimate['reasoning']
+        
+        final_flop, final_confidence, final_reasoning, was_capped = blacklist.apply_cap_if_needed(
+            corrected_developer, original_flop, original_confidence, original_method, original_reasoning
+        )
+        
+        if was_capped:
+            # Store original estimate as alternative if preserve is enabled
+            if blacklist.should_preserve_original():
+                model.add_alternative_estimate(
+                    flop=original_flop,
+                    confidence=original_confidence,
+                    method=original_method,
+                    reasoning=f"Original estimate before developer policy cap: {original_reasoning}"
+                )
+            
+            # Update primary estimate with capped values
+            primary_estimate['flop'] = final_flop
+            primary_estimate['confidence'] = final_confidence
+            primary_estimate['reasoning'] = final_reasoning
+    
     # Return the primary estimate
     result = primary_estimate.copy()
     result.pop('priority', None)  # Remove priority from result
@@ -481,9 +1011,20 @@ def main():
     logger = logging.getLogger(__name__)
     logger.info("Starting FLOP estimation for scraped models...")
     
-    # Initialize components
+    # Initialize configuration and components
+    initialize_configuration()
     storage = JSONStorage(args.data_dir)
     estimator = ComputeEstimator()
+    usage_tracker = MethodUsageTracker()
+    
+    # Initialize developer blacklist
+    try:
+        blacklist = DeveloperBlacklist()
+        logger.info(f"Loaded developer blacklist: {blacklist.get_statistics()}")
+    except Exception as e:
+        logger.warning(f"Failed to load developer blacklist: {e}")
+        logger.warning("Proceeding without developer blacklist filtering")
+        blacklist = None
     
     # Load all models from scraped data
     raw_models = storage.load_all_scraped_models()
@@ -504,8 +1045,12 @@ def main():
             # Skip if already has FLOP estimate and not forcing update
             continue
             
-        estimate = estimate_model_flops(model, estimator)
+        # Track total models processed
+        usage_tracker.total_models += 1
+        
+        estimate = estimate_model_flops(model, estimator, usage_tracker, blacklist)
         if estimate:
+            usage_tracker.models_with_estimates += 1
             if args.dry_run:
                 logger.info(f"Would update {model.name}: {estimate['flop']:.2e} FLOP "
                           f"(confidence: {estimate['confidence'].value})")
@@ -515,9 +1060,9 @@ def main():
                     flop=estimate['flop'],
                     confidence=estimate['confidence'],
                     method=estimate['method'],
-                    reasoning=estimate['reasoning'],
-                    high_confidence_above_threshold=HIGH_CONFIDENCE_ABOVE_THRESHOLD,
-                    high_confidence_below_threshold=HIGH_CONFIDENCE_BELOW_THRESHOLD
+                    high_confidence_above_threshold=THRESHOLD_CONFIG.high_confidence_above_threshold,
+                    high_confidence_below_threshold=THRESHOLD_CONFIG.high_confidence_below_threshold,
+                    reasoning=estimate['reasoning']
                 )
                 
                 # Update parameters if provided in estimate
@@ -534,6 +1079,9 @@ def main():
                 else:
                     logger.debug(f"Updated {model.name}: {estimate['flop']:.2e} FLOP "
                                f"(confidence: {estimate['confidence'].value})")
+        else:
+            # No estimate possible
+            usage_tracker.record_no_estimate(model.name)
     
     # Apply threshold classification to all models (including those not updated)
     if not args.dry_run:
@@ -544,8 +1092,8 @@ def main():
             if model.training_flop is not None:
                 old_classification = model.threshold_classification
                 new_classification = model.classify_by_threshold(
-                    HIGH_CONFIDENCE_ABOVE_THRESHOLD, 
-                    HIGH_CONFIDENCE_BELOW_THRESHOLD
+                    THRESHOLD_CONFIG.high_confidence_above_threshold, 
+                    THRESHOLD_CONFIG.high_confidence_below_threshold
                 )
                 
                 if old_classification != new_classification:
@@ -569,44 +1117,8 @@ def main():
         filepath = storage.save_models(collection, "estimated_models", stage="estimated")
         logger.info(f"Saved {len(all_models)} models to {filepath}")
     
-    # Calculate threshold classification statistics using deduplicated models
-    final_models = all_models
-    models_with_flop = [m for m in final_models if m.training_flop is not None]
-    high_confidence_above = len([m for m in models_with_flop if m.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_ABOVE])
-    high_confidence_below = len([m for m in models_with_flop if m.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_BELOW])
-    not_sure = len([m for m in models_with_flop if m.threshold_classification == ThresholdClassification.NOT_SURE])
-    
-    # Print summary
-    print(f"\n{'='*60}")
-    print("FLOP ESTIMATION SUMMARY")
-    print(f"{'='*60}")
-    print(f"Total models processed: {len(all_models)}")
-    if not args.dry_run:
-        print(f"Unique models after deduplication: {len(all_models)}")
-    print(f"Models with FLOP estimates: {len(models_with_flop)}")
-    print(f"Models updated this run: {updated_count}")
-    print(f"Models above 1e25 FLOP: {above_threshold_count}")
-    
-    print(f"\nTHRESHOLD CLASSIFICATION:")
-    print(f"  High confidence > 1e25 FLOP (>= {HIGH_CONFIDENCE_ABOVE_THRESHOLD:.1e}): {high_confidence_above}")
-    print(f"  High confidence < 1e25 FLOP (<= {HIGH_CONFIDENCE_BELOW_THRESHOLD:.1e}): {high_confidence_below}")
-    print(f"  Not sure ({HIGH_CONFIDENCE_BELOW_THRESHOLD:.1e} - {HIGH_CONFIDENCE_ABOVE_THRESHOLD:.1e}): {not_sure}")
-    
-    if high_confidence_above > 0:
-        print(f"\nHigh confidence models > 1e25 FLOP:")
-        high_conf_above_models = [m for m in models_with_flop if m.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_ABOVE]
-        for model in sorted(high_conf_above_models, key=lambda m: m.training_flop, reverse=True)[:10]:
-            print(f"  - {model.name}: {model.training_flop:.2e} FLOP "
-                  f"({model.training_flop_confidence.value})")
-    
-    if above_threshold_count > 0 and above_threshold_count != high_confidence_above:
-        print(f"\nAll models likely above 1e25 FLOP threshold:")
-        above_threshold = [m for m in all_models if m.training_flop and m.training_flop >= 1e25]
-        for model in sorted(above_threshold, key=lambda m: m.training_flop, reverse=True)[:10]:
-            print(f"  - {model.name}: {model.training_flop:.2e} FLOP "
-                  f"({model.training_flop_confidence.value}) [{model.threshold_classification.value}]")
-    
-    print(f"{'='*60}\n")
+    # Print enhanced summary with method priority and usage statistics
+    print_enhanced_summary(all_models, updated_count, above_threshold_count, usage_tracker, args)
 
 
 if __name__ == "__main__":
