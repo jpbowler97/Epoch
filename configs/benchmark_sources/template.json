@@ -1,0 +1,38 @@
+{
+  "name": "Benchmark Configuration Template",
+  "description": "Template for creating new benchmark source configurations",
+  "sources": [
+    {
+      "name": "example_benchmark",
+      "type": "html_table",
+      "file_path": "data/benchmark_files/example_file.html",
+      "parser_config": {
+        "model_column": 0,
+        "score_columns": {
+          "primary_score": 1,
+          "secondary_score": 2
+        },
+        "filter_models": ["model_name_to_filter"],
+        "encoding": "utf-8",
+        "headers": ["Model", "Score1", "Score2"],
+        "delimiter": ","
+      },
+      "metadata": {
+        "description": "Brief description of the benchmark",
+        "url": "https://example.com/benchmark",
+        "metrics": ["Description of what scores represent"],
+        "model_focus": "Which models this benchmark primarily evaluates"
+      }
+    }
+  ],
+  "_template_notes": {
+    "supported_types": ["html_table", "markdown_table", "csv"],
+    "model_column": "Index or name of column containing model names (0-based for index)",
+    "score_columns": "Map of score_name to column index/name",
+    "filter_models": "List of strings - only extract rows containing these model name patterns",
+    "encoding": "File encoding (utf-8, latin-1, etc.)",
+    "headers": "Optional - explicit column names for HTML tables",
+    "delimiter": "For CSV files - column separator character",
+    "file_path": "Relative to project root or absolute path to benchmark file"
+  }
+}

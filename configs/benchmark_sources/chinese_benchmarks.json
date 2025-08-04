@@ -1,0 +1,75 @@
+{
+  "name": "Chinese AI Benchmarks",
+  "description": "Comprehensive collection of Chinese AI model benchmarks including OlympicArena, ChineseSimpleQA, and SuperCLUE",
+  "sources": [
+    {
+      "name": "olympic_arena",
+      "type": "html_table",
+      "file_path": "data/benchmark_files/OlympicArena.html",
+      "parser_config": {
+        "model_column": 0,
+        "score_columns": {
+          "overall": 1,
+          "math": 2,
+          "physics": 3,
+          "chemistry": 4,
+          "biology": 5,
+          "geography": 6,
+          "astronomy": 7,
+          "computer_science": 8,
+          "english": 9,
+          "chinese": 10,
+          "text_only": 11,
+          "multi_modal": 12
+        },
+        "filter_models": ["doubao"],
+        "encoding": "utf-8",
+        "headers": [
+          "Model",
+          "Overall",
+          "Math",
+          "Physics", 
+          "Chemistry",
+          "Biology",
+          "Geography",
+          "Astronomy",
+          "Computer Science",
+          "English",
+          "Chinese",
+          "Text Only",
+          "Multi Modal"
+        ]
+      },
+      "metadata": {
+        "description": "OlympicArena - Chinese LLM competition evaluating models across multiple academic subjects",
+        "url": "https://github.com/GAIR-NLP/OlympicArena",
+        "subjects": ["Math", "Physics", "Chemistry", "Biology", "Geography", "Astronomy", "Computer Science", "English", "Chinese"],
+        "model_focus": "ByteDance Doubao models"
+      }
+    },
+    {
+      "name": "superclue",
+      "type": "html_table",
+      "file_path": "data/benchmark_files/SuperCLUE.html", 
+      "parser_config": {
+        "model_column": 0,
+        "score_columns": {
+          "math": 2,
+          "scientific_reasoning": 3,
+          "code_generation": 4,
+          "intelligent_agents": 5,
+          "accuracy_index": 6
+        },
+        "filter_models": ["doubao"],
+        "encoding": "utf-8"
+      },
+      "metadata": {
+        "description": "SuperCLUE - Comprehensive Chinese language ability benchmark by CLUE team",
+        "url": "https://www.superclue.ai/",
+        "date": "July 2025 ranking",
+        "categories": ["Math", "Scientific Reasoning", "Code Generation", "Intelligent Agents", "Accuracy Index"],
+        "model_focus": "Various Doubao model variants"
+      }
+    }
+  ]
+}

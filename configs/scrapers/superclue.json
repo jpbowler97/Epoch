@@ -1,0 +1,34 @@
+{
+  "name": "superclue",
+  "type": "html_file",
+  "source": {
+    "type": "local_file",
+    "path": "data/benchmark_files/SuperCLUE.html",
+    "encoding": "utf-8"
+  },
+  "parser": {
+    "table_selector": "table",
+    "columns": {
+      "model": "Model",
+      "organization": "Organization",
+      "overall": "Overall Score",
+      "math": "Math",
+      "reasoning": "Science Reasoning",
+      "code": "Code Generation",
+      "agents": "Agent Capabilities"
+    },
+    "benchmarks": {
+      "superclue_overall": "overall",
+      "superclue_math": "math",
+      "superclue_reasoning": "reasoning",
+      "superclue_code": "code",
+      "superclue_agents": "agents"
+    },
+    "developer_field": "organization"
+  },
+  "metadata": {
+    "description": "SuperCLUE - Comprehensive Chinese language understanding benchmark",
+    "source_name": "SuperCLUE",
+    "source_url": "https://www.superclueai.com/"
+  }
+}

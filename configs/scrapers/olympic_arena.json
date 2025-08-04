@@ -1,0 +1,37 @@
+{
+  "name": "olympic_arena",
+  "type": "html_file",
+  "source": {
+    "type": "local_file",
+    "path": "data/benchmark_files/OlympicArena.html",
+    "encoding": "utf-8"
+  },
+  "parser": {
+    "table_selector": "table",
+    "columns": {
+      "model": "Model",
+      "overall": "Overall",
+      "math": "Math",
+      "physics": "Physics",
+      "chemistry": "Chemistry",
+      "biology": "Biology",
+      "geography": "Geography",
+      "astronomy": "Astronomy",
+      "computer_science": "Computer Science"
+    },
+    "benchmarks": {
+      "olympic_overall": "overall",
+      "olympic_math": "math",
+      "olympic_physics": "physics",
+      "olympic_chemistry": "chemistry",
+      "olympic_biology": "biology"
+    },
+    "developer_field": "model",
+    "model_filter": ["doubao", "pangu", "ernie", "qwen", "yi", "baichuan"]
+  },
+  "metadata": {
+    "description": "OlympicArena - Chinese LLM benchmark across STEM subjects",
+    "source_name": "OlympicArena",
+    "source_url": "https://gair-nlp.github.io/OlympicArena"
+  }
+}

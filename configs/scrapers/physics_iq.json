@@ -1,0 +1,25 @@
+{
+  "name": "physics_iq",
+  "type": "html_file",
+  "source": {
+    "type": "local_file",
+    "path": "data/benchmark_files/PhysicsIQ.html",
+    "encoding": "utf-8"
+  },
+  "parser": {
+    "table_selector": "table",
+    "columns": {
+      "model": "Model",
+      "physics_iq": "Physics IQ Score"
+    },
+    "benchmarks": {
+      "physics_iq_score": "physics_iq"
+    },
+    "developer_field": "model"
+  },
+  "metadata": {
+    "description": "Physics-IQ - Benchmark for physical understanding in video generation models",
+    "source_name": "Physics-IQ",
+    "source_url": "https://physics-iq.github.io/"
+  }
+}

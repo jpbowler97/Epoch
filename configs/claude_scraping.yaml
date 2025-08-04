@@ -1,0 +1,85 @@
+claude_scrapers:
+  superclue:
+    url: https://www.superclueai.com/
+    output_file: data/benchmark_files/SuperCLUE.html
+    extraction_prompt: "Extract the complete leaderboard table with:\n- Model names\
+      \ (\u6A21\u578B\u540D\u79F0)\n- Organization/Developer (\u673A\u6784)\n- Overall\
+      \ score (\u603B\u5206)\n- Math scores (\u6570\u5B66)\n- Reasoning scores (\u63A8\
+      \u7406)\n- Code generation scores (\u4EE3\u7801)\n- Agent capabilities (\u667A\
+      \u80FD\u4F53)\nFormat as a clean HTML table with proper <table>, <thead>, <tbody>\
+      \ structure.\nEnsure all Chinese and English text is preserved correctly.\n"
+    update_frequency: daily
+    last_updated: '2025-08-04T13:32:47.487003'
+    enabled: true
+  physics_iq:
+    url: https://physics-iq.github.io/
+    output_file: data/benchmark_files/PhysicsIQ.html
+    extraction_prompt: 'Extract the physics understanding benchmark table with:
+
+      - Model names (e.g., VideoPoet, Lumiere, Sora)
+
+      - Physics IQ scores (percentage values)
+
+      - Model types (i2v, multiframe, etc.)
+
+      Format as HTML table with clear column headers.
+
+      '
+    update_frequency: weekly
+    last_updated: '2025-08-04T13:38:45.155590'
+    enabled: true
+  olympic_arena:
+    url: https://gair-nlp.github.io/OlympicArena
+    output_file: data/benchmark_files/OlympicArena.html
+    extraction_prompt: 'Extract the complete leaderboard table with:
+
+      - Model names (e.g., GPT-4o, Claude-3.5-Sonnet)
+
+      - Developer/Organization
+
+      - Overall scores (percentage)
+
+      - Subject-specific scores: Math, Physics, Chemistry, Biology, Geography, Astronomy,
+      CS
+
+      Include both validation and test set results if available.
+
+      '
+    update_frequency: weekly
+    last_updated: '2025-08-04T13:38:45.167598'
+    enabled: true
+  video_arena:
+    url: https://artificialanalysis.ai/text-to-video/arena
+    output_file: data/benchmark_files/VideoArena.html
+    extraction_prompt: 'Extract the text-to-video model arena leaderboard with:
+
+      - Model names (e.g., Veo, Sora, Runway Gen3)
+
+      - ELO scores
+
+      - Quality ratings
+
+      - Win rates if available
+
+      Format as HTML table with all ranking information.
+
+      '
+    update_frequency: weekly
+    last_updated: '2025-08-04T13:38:45.167686'
+    enabled: true
+settings:
+  max_retries: 3
+  timeout_seconds: 120
+  use_subprocess: true
+  auto_confirm: true
+  verbose: true
+  backup_on_update: true
+  validate_output: true
+scheduling:
+  enabled: false
+  schedule: 0 2 * * *
+  on_failure: use_cache
+logging:
+  level: INFO
+  file: logs/claude_scraping.log
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'

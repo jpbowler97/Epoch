@@ -1,0 +1,26 @@
+{
+  "name": "Video Model Benchmarks", 
+  "description": "Benchmarks for evaluating video generation and understanding models",
+  "sources": [
+    {
+      "name": "physics_iq",
+      "type": "html_table",
+      "file_path": "data/benchmark_files/PhysicsIQ.html",
+      "parser_config": {
+        "model_column": 0,
+        "score_columns": {
+          "physics_iq_score": 1
+        },
+        "filter_models": [],
+        "encoding": "utf-8"
+      },
+      "metadata": {
+        "description": "Physics-IQ - Benchmark measuring whether generative video models understand physical principles",
+        "url": "https://physics-iq.github.io/",
+        "focus": "Physical understanding in video generation",
+        "models": ["VideoPoet", "Lumiere", "Sora"],
+        "metric": "Physics IQ Score"
+      }
+    }
+  ]
+}

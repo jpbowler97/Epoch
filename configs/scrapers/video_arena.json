@@ -1,0 +1,28 @@
+{
+  "name": "video_arena",
+  "type": "html_file",
+  "source": {
+    "type": "local_file",
+    "path": "data/benchmark_files/VideoArena.html",
+    "encoding": "utf-8"
+  },
+  "parser": {
+    "table_selector": "table",
+    "columns": {
+      "model": "Model",
+      "elo": "ELO Score",
+      "quality": "Quality Rating",
+      "rank": "Rank"
+    },
+    "benchmarks": {
+      "video_arena_elo": "elo",
+      "video_quality": "quality"
+    },
+    "developer_field": "model"
+  },
+  "metadata": {
+    "description": "Artificial Analysis Video Arena - Text-to-video model rankings",
+    "source_name": "Video Arena",
+    "source_url": "https://artificialanalysis.ai/text-to-video/arena"
+  }
+}

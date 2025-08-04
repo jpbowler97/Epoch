@@ -1,0 +1,41 @@
+{
+  "name": "openlm_arena",
+  "type": "web_table",
+  "source": {
+    "type": "http",
+    "url": "https://openlm.ai/chatbot-arena/",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    },
+    "timeout": 30,
+    "retries": 3
+  },
+  "parser": {
+    "table_selector": "table",
+    "column_detection": {
+      "model": ["model"],
+      "arena_elo": ["arena elo", "elo"],
+      "coding": ["coding"],
+      "vision": ["vision"],
+      "aai": ["aai"],
+      "mmlu_pro": ["mmlu", "mmlu-pro"],
+      "votes": ["votes"],
+      "organization": ["organization", "org"],
+      "license": ["license"]
+    },
+    "benchmarks": {
+      "openlm_arena_elo": "arena_elo",
+      "coding_score": "coding",
+      "vision_score": "vision",
+      "aai_score": "aai",
+      "mmlu_pro_score": "mmlu_pro"
+    },
+    "developer_field": "organization",
+    "license_field": "license"
+  },
+  "metadata": {
+    "description": "OpenLM Chatbot Arena leaderboard",
+    "source_name": "OpenLM Chatbot Arena",
+    "source_url": "https://openlm.ai/chatbot-arena/"
+  }
+}

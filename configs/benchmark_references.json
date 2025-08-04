@@ -1,0 +1,225 @@
+{
+  "description": "Benchmark reference models configuration for FLOP estimation",
+  "last_updated": "2025-08-01",
+  "version": "1.0",
+  
+  "default_reference_model": {
+    "name": "llama_3.1_405b",
+    "training_flop": 3.8e25,
+    "flop_source": "https://epoch.ai/data-insights/models-over-1e25-flop: High-precision estimate from Meta disclosure",
+    "notes": "Well-characterized model with official Meta disclosure"
+  },
+
+  "benchmark_references": {
+    "lmarena_score": {
+      "reference_model": "llama_3.1_405b",
+      "reference_score": 1335.0,
+      "reference_flop": 3.8e25,
+      "source": "LMArena Manual Data Collection + https://epoch.ai/data-insights/models-over-1e25-flop disclosure analysis",
+      "source_url": "https://lmarena.ai/",
+      "scaling_exponent": 3.0,
+      "benchmark_type": "elo_rating",
+      "notes": "LMArena overall performance ELO rating"
+    },
+    
+    "openlm_arena_elo": {
+      "reference_model": "llama_3.1_405b",
+      "reference_score": 1286.0,
+      "reference_flop": 3.8e25,
+      "source": "OpenLM Arena leaderboard + https://epoch.ai/data-insights/models-over-1e25-flop disclosure analysis",
+      "source_url": "https://openlm.ai/chatbot-arena/",
+      "scaling_exponent": 3.0,
+      "benchmark_type": "elo_rating",
+      "notes": "OpenLM Arena overall performance ELO rating"
+    },
+    
+    "coding_score": {
+      "reference_model": "llama_3.1_405b",
+      "reference_score": 1299.0,
+      "reference_flop": 3.8e25,
+      "source": "OpenLM Arena coding benchmark + https://epoch.ai/data-insights/models-over-1e25-flop disclosure analysis",
+      "source_url": "https://openlm.ai/chatbot-arena/",
+      "scaling_exponent": 3.0,
+      "benchmark_type": "elo_rating",
+      "notes": "Specialized coding performance ELO rating"
+    },
+    
+    "aai_score": {
+      "reference_model": "llama_3.1_405b",
+      "reference_score": 40.5,
+      "reference_flop": 3.8e25,
+      "source": "OpenLM Arena AI safety benchmark + https://epoch.ai/data-insights/models-over-1e25-flop disclosure analysis",
+      "source_url": "https://openlm.ai/chatbot-arena/",
+      "scaling_exponent": 2.0,
+      "benchmark_type": "percentage",
+      "notes": "AI alignment and safety score (0-100%), more conservative scaling"
+    },
+    
+    "mmlu_pro_score": {
+      "reference_model": "llama_3.1_405b",
+      "reference_score": 73.2,
+      "reference_flop": 3.8e25,
+      "source": "OpenLM Arena MMLU-Pro benchmark + https://epoch.ai/data-insights/models-over-1e25-flop disclosure analysis",
+      "source_url": "https://openlm.ai/chatbot-arena/",
+      "scaling_exponent": 2.5,
+      "benchmark_type": "percentage", 
+      "notes": "Advanced reasoning benchmark (0-100%), moderate scaling"
+    },
+
+    "superclue_overall": {
+      "reference_model": "deepseek_v3",
+      "reference_score": 75.44,
+      "reference_flop": 5.96e25,
+      "source": "SuperCLUE benchmark + DeepSeek V3 scaling laws estimate",
+      "source_url": "https://www.supercluebench.com/leaderboard",
+      "scaling_exponent": 2.5,
+      "benchmark_type": "percentage",
+      "notes": "Comprehensive Chinese language understanding benchmark, overall score"
+    },
+
+    "superclue_math": {
+      "reference_model": "deepseek_v3",
+      "reference_score": 78.22,
+      "reference_flop": 5.96e25,
+      "source": "SuperCLUE math benchmark + DeepSeek V3 scaling laws estimate",
+      "source_url": "https://www.supercluebench.com/leaderboard",
+      "scaling_exponent": 2.5,
+      "benchmark_type": "percentage",
+      "notes": "SuperCLUE mathematical reasoning performance"
+    },
+
+    "superclue_reasoning": {
+      "reference_model": "deepseek_v3",
+      "reference_score": 73.67,
+      "reference_flop": 5.96e25,
+      "source": "SuperCLUE reasoning benchmark + DeepSeek V3 scaling laws estimate",
+      "source_url": "https://www.supercluebench.com/leaderboard",
+      "scaling_exponent": 2.5,
+      "benchmark_type": "percentage",
+      "notes": "SuperCLUE logical reasoning and inference performance"
+    },
+
+    "superclue_code": {
+      "reference_model": "deepseek_v3",
+      "reference_score": 86.33,
+      "reference_flop": 5.96e25,
+      "source": "SuperCLUE coding benchmark + DeepSeek V3 scaling laws estimate",
+      "source_url": "https://www.supercluebench.com/leaderboard",
+      "scaling_exponent": 2.5,
+      "benchmark_type": "percentage",
+      "notes": "SuperCLUE programming and code understanding performance"
+    },
+
+    "superclue_agents": {
+      "reference_model": "deepseek_v3",
+      "reference_score": 79.44,
+      "reference_flop": 5.96e25,
+      "source": "SuperCLUE agents benchmark + DeepSeek V3 scaling laws estimate",
+      "source_url": "https://www.supercluebench.com/leaderboard",
+      "scaling_exponent": 2.5,
+      "benchmark_type": "percentage",
+      "notes": "SuperCLUE agent behavior and interaction performance"
+    },
+
+    "video_arena_elo": {
+      "reference_model": "sora",
+      "reference_score": 1234.0,
+      "reference_flop": 1e25,
+      "source": "Video Arena benchmark + Sora threshold assumption (OpenAI frontier video model)",
+      "source_url": "https://artificialanalysis.ai/text-to-video/arena",
+      "scaling_exponent": 3.0,
+      "benchmark_type": "elo_rating",
+      "threshold_logic": true,
+      "notes": "THRESHOLD MODEL: Sora assumed >1e25 FLOP, models outperforming it also assumed >1e25 FLOP"
+    },
+
+    "video_quality": {
+      "reference_model": "sora",
+      "reference_score": 84.3,
+      "reference_flop": 1e25,
+      "source": "Video quality benchmark + Sora threshold assumption (OpenAI frontier video model)",
+      "source_url": "https://artificialanalysis.ai/text-to-video/arena",
+      "scaling_exponent": 2.5,
+      "benchmark_type": "percentage",
+      "threshold_logic": true,
+      "notes": "THRESHOLD MODEL: Sora assumed >1e25 FLOP, models outperforming it also assumed >1e25 FLOP"
+    },
+
+    "physics_iq_score": {
+      "reference_model": "sora",
+      "reference_score": 10.0,
+      "reference_flop": 1e25,
+      "source": "Physics-IQ benchmark + Sora threshold assumption (OpenAI frontier video model)",
+      "source_url": "https://physics-iq.github.io/",
+      "scaling_exponent": 2.0,
+      "benchmark_type": "percentage",
+      "threshold_logic": true,
+      "notes": "THRESHOLD MODEL: Sora assumed >1e25 FLOP, models outperforming it also assumed >1e25 FLOP"
+    }
+  },
+
+  "scaling_guidelines": {
+    "3.0": {
+      "description": "Strong correlation with compute",
+      "use_cases": ["General performance ELO scores", "Overall capability ratings"],
+      "examples": ["lmarena_score", "openlm_arena_elo"]
+    },
+    "2.5": {
+      "description": "Moderate correlation with compute", 
+      "use_cases": ["Reasoning tasks", "Complex benchmarks"],
+      "examples": ["mmlu_pro_score", "math_benchmarks"]
+    },
+    "2.0": {
+      "description": "Weaker correlation with compute",
+      "use_cases": ["Safety scores", "Specialized metrics", "Human preference"],
+      "examples": ["aai_score", "helpfulness_ratings"]
+    }
+  },
+
+  "benchmark_type_guidelines": {
+    "elo_rating": {
+      "description": "ELO-based rating systems (typically 1000-1500 range)",
+      "confidence_thresholds": {
+        "high": "< 50 ELO difference from reference",
+        "medium": "50-100 ELO difference from reference", 
+        "low": "> 100 ELO difference from reference"
+      }
+    },
+    "percentage": {
+      "description": "Percentage-based scores (0-100% range)",
+      "confidence_thresholds": {
+        "high": "< 10% difference from reference",
+        "medium": "10-20% difference from reference",
+        "low": "> 20% difference from reference"
+      }
+    }
+  },
+
+  "template_for_new_benchmarks": {
+    "new_benchmark_name": {
+      "reference_model": "llama_3.1_405b",
+      "reference_score": null,
+      "reference_flop": 3.8e25,
+      "source": "Benchmark source + FLOP source",
+      "source_url": "https://benchmark-url.com",
+      "scaling_exponent": 3.0,
+      "benchmark_type": "elo_rating",
+      "notes": "Description of what this benchmark measures"
+    }
+  },
+
+  "alternative_reference_models": {
+    "gpt_4o": {
+      "training_flop": 3.8e25,
+      "flop_source": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from OpenAI patterns",
+      "strengths": ["Vision capabilities", "Multimodal tasks"],
+      "use_for": ["vision_score", "multimodal_benchmarks"]
+    },
+    "claude_3_opus": {
+      "training_flop": 1.6e25,
+      "flop_source": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from industry analysis",
+      "strengths": ["Long context", "Reasoning"],
+      "use_for": ["long_context_tasks", "reasoning_benchmarks"]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "lmarena",
+  "type": "csv_file",
+  "source": {
+    "type": "local_files",
+    "paths": ["data/raw/lmarena/text/Manual Data Collection - lmarena-text.csv"],
+    "fallback_pattern": "data/raw/lmarena/text/lmarena_auto_*.csv"
+  },
+  "parser": {
+    "columns": {
+      "model": "Model",
+      "developer": "Organization",
+      "score": "Score",
+      "rank": "Rank (UB)",
+      "license": "License"
+    },
+    "benchmarks": {
+      "lmarena_score": "score"
+    },
+    "developer_field": "developer",
+    "license_field": "license"
+  },
+  "metadata": {
+    "description": "LMArena Manual Data Collection",
+    "source_name": "LMArena Manual Data Collection",
+    "source_url": "CSV file with manually collected leaderboard data"
+  }
+}
