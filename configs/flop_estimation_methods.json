@@ -1,0 +1,358 @@
+{
+  "description": "FLOP estimation methods configuration",
+  "version": "1.0", 
+  "last_updated": "2025-08-04",
+  
+  "method_priority_order": [
+    {
+      "id": "manual_overrides",
+      "priority": 0,
+      "name": "Manual Overrides",
+      "description": "Curated values from Epoch AI's authoritative tracker",
+      "confidence_levels": ["HIGH", "MEDIUM", "LOW"],
+      "enabled": true,
+      "method_type": "EPOCH_ESTIMATE",
+      "source_description": "Epoch AI research and company disclosures"
+    },
+    {
+      "id": "known_specifications", 
+      "priority": 1,
+      "name": "Known Model Specifications",
+      "description": "Published/official model specifications with parameter counts and training tokens",
+      "confidence_levels": ["HIGH", "MEDIUM"],
+      "enabled": true,
+      "method_type": "SCALING_LAWS",
+      "source_description": "Official company disclosures and research papers"
+    },
+    {
+      "id": "parameter_based_scaling",
+      "priority": 2, 
+      "name": "Parameter-based Chinchilla Scaling",
+      "description": "Extract parameter count from names, intelligent token estimation",
+      "confidence_levels": ["MEDIUM", "LOW"],
+      "enabled": true,
+      "method_type": "SCALING_LAWS",
+      "source_description": "Model name parsing + era-aware token estimation"
+    },
+    {
+      "id": "benchmark_interpolation",
+      "priority": 3,
+      "name": "Benchmark Score Interpolation", 
+      "description": "ELO ratings and benchmark scores mapped to FLOP estimates",
+      "confidence_levels": ["MEDIUM", "LOW"],
+      "enabled": true,
+      "method_type": "BENCHMARK_BASED",
+      "source_description": "Benchmark scores + reference model scaling"
+    }
+  ],
+
+  "manual_overrides": {
+    "description": "Manual FLOP overrides from Epoch AI's tracker (HIGHEST PRIORITY)",
+    "source": "https://epoch.ai/data-insights/models-over-1e25-flop",
+    "entries": {
+      "llama_3.1_405b": {
+        "training_flop": 3.8e25,
+        "confidence": "HIGH",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: High-precision estimate from Meta disclosure"
+      },
+      "grok_2": {
+        "training_flop": 3.0e25,
+        "confidence": "HIGH", 
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: High-precision estimate from xAI disclosure"
+      },
+      "claude_3_opus": {
+        "training_flop": 1.6e25,
+        "confidence": "MEDIUM",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from industry analysis"
+      },
+      "claude_opus": {
+        "training_flop": 1.6e25,
+        "confidence": "MEDIUM",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from industry analysis"
+      },
+      "gpt_4": {
+        "training_flop": 2.1e25,
+        "confidence": "MEDIUM",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from scaling analysis"
+      },
+      "gemini_1.0_ultra": {
+        "training_flop": 5.0e25,
+        "confidence": "MEDIUM",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from Google hints"
+      },
+      "gemini_ultra": {
+        "training_flop": 5.0e25,
+        "confidence": "MEDIUM", 
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from Google hints"
+      },
+      "claude_3.5_sonnet": {
+        "training_flop": 3.6e25,
+        "confidence": "MEDIUM",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from benchmarks"
+      },
+      "gpt_4o": {
+        "training_flop": 3.8e25,
+        "confidence": "MEDIUM",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from OpenAI patterns"
+      },
+      "claude_opus_4": {
+        "training_flop": 1.5e26,
+        "confidence": "LOW",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Speculative estimate for next-gen Claude"
+      },
+      "claude_4_opus": {
+        "training_flop": 1.5e26,
+        "confidence": "LOW",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Speculative estimate for next-gen Claude"
+      },
+      "gpt_4.5": {
+        "training_flop": 6.4e25,
+        "confidence": "LOW",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate for GPT-4.5"
+      },
+      "gpt_4.5_preview": {
+        "training_flop": 6.4e25,
+        "confidence": "LOW",
+        "reasoning": "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate for GPT-4.5"
+      },
+      "deepseek_r1": {
+        "training_flop": 3.0e24,
+        "confidence": "HIGH",
+        "reasoning": "https://epoch.ai/gradient-updates/what-went-into-training-deepseek-r1"
+      }
+    }
+  },
+
+  "known_model_specifications": {
+    "description": "Known model specifications for direct FLOP calculation using Chinchilla scaling",
+    "scaling_formula": "FLOP = 6 × Parameters × Tokens",
+    "entries": {
+      "llama_3.1_405b": {
+        "parameters": 405000000000,
+        "training_tokens": 15000000000000,
+        "confidence": "HIGH",
+        "source": "Official Meta disclosure"
+      },
+      "llama_3.1_70b": {
+        "parameters": 70000000000,
+        "training_tokens": 15000000000000,
+        "confidence": "HIGH",
+        "source": "Official Meta disclosure"
+      },
+      "llama_3.1_8b": {
+        "parameters": 8000000000,
+        "training_tokens": 15000000000000,
+        "confidence": "HIGH",
+        "source": "Official Meta disclosure"
+      },
+      "llama_3_405b": {
+        "parameters": 405000000000,
+        "training_tokens": 15000000000000,
+        "confidence": "HIGH",
+        "source": "Official Meta disclosure"
+      },
+      "llama_3_70b": {
+        "parameters": 70000000000,
+        "training_tokens": 15000000000000,
+        "confidence": "HIGH",
+        "source": "Official Meta disclosure"
+      },
+      "llama_3_8b": {
+        "parameters": 8000000000,
+        "training_tokens": 15000000000000,
+        "confidence": "HIGH",
+        "source": "Official Meta disclosure"
+      },
+      "llama_2_70b": {
+        "parameters": 70000000000,
+        "training_tokens": 2000000000000,
+        "confidence": "HIGH",
+        "source": "Official Meta disclosure"
+      },
+      "llama_2_7b": {
+        "parameters": 7000000000,
+        "training_tokens": 2000000000000,
+        "confidence": "HIGH",
+        "source": "Official Meta disclosure"
+      },
+      "gpt_4": {
+        "parameters": 1760000000000,
+        "training_tokens": 13000000000000,
+        "confidence": "MEDIUM",
+        "source": "Industry estimates"
+      },
+      "gpt_4o": {
+        "parameters": 1760000000000,
+        "training_tokens": 13000000000000,
+        "confidence": "MEDIUM",
+        "source": "Industry estimates (similar to GPT-4)"
+      },
+      "claude_3.5_sonnet": {
+        "parameters": 250000000000,
+        "training_tokens": 10000000000000,
+        "confidence": "MEDIUM",
+        "source": "Industry estimates"
+      },
+      "claude_3_opus": {
+        "parameters": 175000000000,
+        "training_tokens": 8000000000000,
+        "confidence": "MEDIUM",
+        "source": "Industry estimates"
+      },
+      "claude_opus": {
+        "parameters": 175000000000,
+        "training_tokens": 8000000000000,
+        "confidence": "MEDIUM",
+        "source": "Industry estimates"
+      },
+      "gemini_1.5_pro": {
+        "parameters": 300000000000,
+        "training_tokens": 12000000000000,
+        "confidence": "MEDIUM",
+        "source": "Industry estimates"
+      },
+      "gemini_2.0": {
+        "parameters": 500000000000,
+        "training_tokens": 20000000000000,
+        "confidence": "LOW",
+        "source": "Speculative estimates for base Gemini 2.0 model"
+      },
+      "gemini_2.5_pro": {
+        "parameters": 800000000000,
+        "training_tokens": 25000000000000,
+        "confidence": "LOW",
+        "source": "Estimated - Pro models typically larger than Flash variants"
+      },
+      "gemini_2.0_flash": {
+        "parameters": 300000000000,
+        "training_tokens": 18000000000000,
+        "confidence": "LOW",
+        "source": "Estimated - Flash models optimized for speed with fewer parameters"
+      },
+      "gemini_2.5_flash": {
+        "parameters": 400000000000,
+        "training_tokens": 20000000000000,
+        "confidence": "LOW",
+        "source": "Estimated - Mid-size between 2.0 Flash and 2.5 Pro"
+      },
+      "qwen3_235b": {
+        "parameters": 235000000000,
+        "training_tokens": 10000000000000,
+        "confidence": "MEDIUM",
+        "source": "Partial disclosures from Alibaba"
+      },
+      "qwen3_480b": {
+        "parameters": 480000000000,
+        "training_tokens": 15000000000000,
+        "confidence": "MEDIUM",
+        "source": "Partial disclosures from Alibaba"
+      },
+      "qwen3_coder_480b": {
+        "parameters": 480000000000,
+        "training_tokens": 15000000000000,
+        "confidence": "MEDIUM",
+        "source": "Partial disclosures from Alibaba"
+      },
+      "deepseek_v3": {
+        "parameters": 671000000000,
+        "training_tokens": 14800000000000,
+        "confidence": "MEDIUM",
+        "source": "DeepSeek research paper"
+      },
+      "deepseek_r1": {
+        "parameters": 671000000000,
+        "training_tokens": 15000000000000,
+        "confidence": "LOW",
+        "source": "Estimated based on DeepSeek v3"
+      },
+      "deepseek_coder_v2": {
+        "parameters": 236000000000,
+        "training_tokens": 6000000000000,
+        "confidence": "MEDIUM",
+        "source": "DeepSeek-Coder-V2 paper - 236B total parameters MoE model"
+      },
+      "deepseek_coder_6.7b": {
+        "parameters": 6700000000,
+        "training_tokens": 2000000000000,
+        "confidence": "HIGH",
+        "source": "DeepSeek-Coder paper - trained on 2T tokens"
+      },
+      "deepseek_coder_33b": {
+        "parameters": 33000000000,
+        "training_tokens": 2000000000000,
+        "confidence": "HIGH",
+        "source": "DeepSeek-Coder paper - trained on 2T tokens"
+      }
+    }
+  },
+
+  "parameter_token_estimation": {
+    "description": "Rules for estimating training tokens based on model characteristics and era",
+    "scaling_formula": "FLOP = 6 × Parameters × Estimated_Tokens",
+    "rules": [
+      {
+        "name": "Modern Era Models (2023+)",
+        "pattern_matches": ["llama_3", "llama_4", "qwen3", "gemma_3", "claude_3", "gpt_4"],
+        "large_model_threshold": 100000000000,
+        "large_model_ratio": 15,
+        "small_model_ratio": 20,
+        "confidence": "MEDIUM",
+        "description": "Modern models use 15-20x tokens per parameter"
+      },
+      {
+        "name": "Mid-Era Models (2022-2023)",
+        "pattern_matches": ["llama_2", "qwen2", "gemma_2", "mistral", "claude_2"],
+        "token_ratio": 12,
+        "confidence": "MEDIUM",
+        "description": "Moderate training ratios for mid-era models"
+      },
+      {
+        "name": "Early Era Models (2021-2022)",
+        "pattern_matches": ["llama_1", "llama_13b", "llama_7b", "gpt_3", "palm"],
+        "token_ratio": 8,
+        "confidence": "LOW",
+        "description": "Earlier models had lower token ratios"
+      },
+      {
+        "name": "Specialized Models",
+        "pattern_matches": ["coder", "code", "instruct", "chat"],
+        "token_ratio": 18,
+        "confidence": "MEDIUM",
+        "description": "Code/instruct models often have higher ratios"
+      },
+      {
+        "name": "Chinese Models",
+        "pattern_matches": ["qwen", "glm", "chatglm", "baichuan", "yi"],
+        "token_ratio": 16,
+        "confidence": "MEDIUM",
+        "description": "Chinese models typically well-trained"
+      },
+      {
+        "name": "Default Fallback",
+        "pattern_matches": [],
+        "token_ratio": 15,
+        "confidence": "LOW",
+        "description": "Conservative middle ground for unknown models"
+      }
+    ]
+  },
+
+  "threshold_classification": {
+    "description": "Thresholds for classifying models by training FLOP confidence",
+    "high_confidence_above_threshold": 5e25,
+    "target_threshold": 1e25,
+    "classifications": {
+      "HIGH_CONFIDENCE_ABOVE": "High confidence >= 5e25 FLOP (well above 1e25 threshold)",
+      "HIGH_CONFIDENCE_BELOW": "High confidence <= 1e25 FLOP (at or below target threshold)", 
+      "NOT_SURE": "Between 1e25 and 5e25 FLOP (uncertain around 1e25 threshold)"
+    }
+  },
+
+  "method_statistics_tracking": {
+    "description": "Configuration for tracking method usage in console output",
+    "enabled": true,
+    "show_top_models_per_method": 5,
+    "show_confidence_distribution": true,
+    "show_alternative_estimates": true
+  }
+}
