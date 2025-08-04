@@ -143,14 +143,24 @@ data/
 
 ## Current Data Sources
 
-- **LMArena** (manual + automated): Leaderboard scores and model rankings
-- **OpenLM Arena** (automated): Chatbot arena leaderboard data
-- **SuperCLUE** (Claude-managed): Chinese model benchmark via WebFetch
-- **Physics-IQ** (Claude-managed): Video model physics understanding
-- **Olympic Arena** (Claude-managed): Multi-discipline cognitive reasoning
-- **Video Arena** (Claude-managed): Text-to-video model rankings
-- **Manual datasets**: CSV files in `data/raw/*/` directories
-- **Epoch AI tracker**: Manual overrides for frontier models with authoritative FLOP values
+The system now uses a **configurable scraper architecture** that supports multiple data sources:
+
+### Automated Web Scrapers
+- **LMArena**: Leaderboard scores and model rankings (hybrid manual + automated)
+- **OpenLM Arena**: Chatbot arena leaderboard data (automated scraping)
+
+### Claude-Managed Benchmark Sites (JavaScript-Heavy)
+- **SuperCLUE**: Comprehensive Chinese language understanding benchmark
+- **Physics-IQ**: Video model physics understanding benchmark  
+- **Olympic Arena**: Multi-discipline cognitive reasoning benchmark
+- **Video Arena**: Text-to-video model quality rankings
+- **ChineseSimpleQA**: Chinese question answering benchmark
+- **Open Agent Leaderboard**: Multi-task agent performance evaluation
+
+### Reference Data Sources
+- **Epoch AI Tracker**: Authoritative FLOP values for frontier models (manual overrides)
+- **Developer Blacklist**: Transparency-based FLOP capping for undisclosed models
+- **Benchmark References**: Anchor models for benchmark interpolation methods
 
 ### Claude Integration for JavaScript-Heavy Sites
 
@@ -179,10 +189,30 @@ See [Claude Integration Documentation](docs/claude_integration.md) for details.
 
 ## FLOP Estimation Methods
 
-1. **Epoch Data**: Use data collected by Epoch [here](https://epoch.ai/data-insights/models-over-1e25-flop)
-2. **Benchmark Score Interpolation**: ELO rating → FLOP estimation using reference models
-3. **Parameter Size Heuristics**: Extract model size from names and apply scaling laws
-4. **Confidence Levels**: High (published specs) → Medium (reliable estimates) → Low (interpolated) → Speculative (heuristics)
+The system uses a **hierarchical estimation approach** with multiple methods in priority order:
+
+### Estimation Method Priority
+
+0. **Manual Overrides** - Curated values from Epoch AI's authoritative tracker (HIGH/MEDIUM/LOW confidence)
+1. **Known Model Specifications** - Official disclosures with published parameters/tokens (HIGH confidence)  
+2. **Parameter-based Chinchilla Scaling** - Extract params from names, intelligent token estimation (MEDIUM confidence)
+3. **Multi-Benchmark Interpolation** - ELO ratings → FLOP using reference models (MEDIUM/LOW confidence)
+4. **Hardware/Cost-Based** - GPU/TPU specs or training cost estimates (LOW confidence)
+
+### Key Features
+
+- **Confidence-Based Classification**: Models classified as `confirmed_above_1e25`, `likely_above_1e25`, `uncertain`, `likely_below_1e25`, or `confirmed_below_1e25`
+- **Developer Blacklist Integration**: Automatic FLOP capping (9.9e+24) for developers with insufficient transparency
+- **Multi-Method Validation**: Alternative estimates provided when multiple methods available
+- **Era-Aware Token Estimation**: Parameter-based scaling uses contextual token estimates based on model era
+
+### Status-Based Model Classification
+
+- **Confirmed Above**: High confidence estimates ≥1e25 FLOP
+- **Likely Above**: Medium/Low confidence estimates >1e25 FLOP  
+- **Uncertain**: Speculative estimates or borderline cases
+- **Likely Below**: Medium/Low confidence estimates ≤1e25 FLOP
+- **Confirmed Below**: High confidence estimates <1e25 FLOP
 
 ## For more info....
 
