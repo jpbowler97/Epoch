@@ -24,7 +24,7 @@ from typing import Dict, List, Optional, Set, Tuple
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from epoch_tracker.models import Model, ThresholdClassification
+from epoch_tracker.models import Model, ModelStatus
 from epoch_tracker.storage import JSONStorage
 from epoch_tracker.config.thresholds import get_threshold_config
 
@@ -116,11 +116,12 @@ def categorize_models(models: List[Model]) -> Dict[str, List[Model]]:
     below_confident = []
     
     for model in models:
-        if model.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_ABOVE:
+        # Use status field instead of threshold_classification for model placement
+        if model.status in [ModelStatus.CONFIRMED_ABOVE, ModelStatus.LIKELY_ABOVE]:
             above_candidates.append(model)
-        elif model.threshold_classification == ThresholdClassification.NOT_SURE:
+        elif model.status == ModelStatus.UNCERTAIN:
             above_candidates.append(model)  # Uncertain models go to above table for verification
-        elif model.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_BELOW:
+        else:  # CONFIRMED_BELOW, LIKELY_BELOW
             below_confident.append(model)
     
     return {
@@ -151,9 +152,10 @@ def get_candidate_models(models: List[Model]) -> List[Model]:
     candidates = []
     
     for model in models:
-        if model.threshold_classification in [
-            ThresholdClassification.HIGH_CONFIDENCE_ABOVE,
-            ThresholdClassification.NOT_SURE
+        if model.status in [
+            ModelStatus.CONFIRMED_ABOVE,
+            ModelStatus.LIKELY_ABOVE,
+            ModelStatus.UNCERTAIN
         ]:
             candidates.append(model)
     
@@ -285,7 +287,6 @@ def model_to_csv_row(model: Model, verified: str = "") -> Dict:
         'confidence_explanation': generate_confidence_explanation(model),
         'estimation_method': model.estimation_method.value,
         'alternative_methods': format_alternative_methods(model),
-        'threshold_classification': model.threshold_classification.value,
         'status': model.status.value,
         'reasoning': model.reasoning,
         'sources': "; ".join(model.sources) if model.sources else "",
@@ -873,9 +874,11 @@ Models with 'verified=y' are preserved during refresh operations.
     above_verified = len(above_df[above_df['verified'].fillna('').str.lower() == 'y'])
     below_verified = len(below_df[below_df['verified'].fillna('').str.lower() == 'y'])
     
-    high_confidence_above = len(above_df[above_df['threshold_classification'] == 'high_confidence_above_1e25'])
-    not_sure = len(above_df[(above_df['threshold_classification'] == 'not_sure') & (above_df['verified'].fillna('').str.lower() != 'y')])
-    high_confidence_below = len(below_df[below_df['threshold_classification'] == 'high_confidence_below_1e25'])
+    confirmed_above = len(above_df[above_df['status'] == 'confirmed_above_1e25'])
+    likely_above = len(above_df[above_df['status'] == 'likely_above_1e25'])
+    uncertain_unverified = len(above_df[(above_df['status'] == 'uncertain') & (above_df['verified'].fillna('').str.lower() != 'y')])
+    confirmed_below = len(below_df[below_df['status'] == 'confirmed_below_1e25'])
+    likely_below = len(below_df[below_df['status'] == 'likely_below_1e25'])
     
     print(f"\n{'='*70}")
     print("DUAL-TABLE CORE DATASET SUMMARY")
@@ -883,13 +886,15 @@ Models with 'verified=y' are preserved during refresh operations.
     print(f"Above/Uncertain Table (above_1e25_flop.csv):")
     print(f"  Total models: {len(above_df)}")
     print(f"  Manually verified: {above_verified}")
-    print(f"  High confidence above 1e25: {high_confidence_above}")
-    print(f"  Uncertain (need verification): {not_sure}")
+    print(f"  Confirmed above 1e25: {confirmed_above}")
+    print(f"  Likely above 1e25: {likely_above}")
+    print(f"  Uncertain (need verification): {uncertain_unverified}")
     
     print(f"\nBelow Table (below_1e25_flop.csv):")
     print(f"  Total models: {len(below_df)}")
     print(f"  Manually verified: {below_verified}")
-    print(f"  High confidence below 1e25: {high_confidence_below}")
+    print(f"  Confirmed below 1e25: {confirmed_below}")
+    print(f"  Likely below 1e25: {likely_below}")
     
     print(f"\nCoverage Analysis:")
     print(f"  Models in estimated_models.json: {coverage['total_estimated']}")

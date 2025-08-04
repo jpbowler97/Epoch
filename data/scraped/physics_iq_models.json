@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "saved_at": "2025-08-04T19:46:32.738362",
+    "saved_at": "2025-08-04T20:15:45.384269",
     "source": "physics_iq",
-    "last_updated": "2025-08-04T19:46:32.738318",
+    "last_updated": "2025-08-04T20:15:45.384219",
     "model_count": 8,
     "stage": "scraped"
   },
@@ -21,7 +21,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "physics_iq_score": 29.5
       },
@@ -29,7 +28,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.727599",
+      "last_updated": "2025-08-04T20:15:45.369538",
       "metadata": {}
     },
     {
@@ -46,7 +45,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "physics_iq_score": 23.0
       },
@@ -54,7 +52,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.727643",
+      "last_updated": "2025-08-04T20:15:45.369589",
       "metadata": {}
     },
     {
@@ -71,7 +69,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "physics_iq_score": 22.8
       },
@@ -79,7 +76,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.727673",
+      "last_updated": "2025-08-04T20:15:45.369626",
       "metadata": {}
     },
     {
@@ -96,7 +93,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "physics_iq_score": 20.3
       },
@@ -104,7 +100,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.727695",
+      "last_updated": "2025-08-04T20:15:45.369656",
       "metadata": {}
     },
     {
@@ -121,7 +117,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "physics_iq_score": 19.0
       },
@@ -129,7 +124,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.727716",
+      "last_updated": "2025-08-04T20:15:45.369683",
       "metadata": {}
     },
     {
@@ -146,7 +141,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "physics_iq_score": 14.8
       },
@@ -154,7 +148,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.727741",
+      "last_updated": "2025-08-04T20:15:45.369715",
       "metadata": {}
     },
     {
@@ -171,7 +165,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "physics_iq_score": 13.0
       },
@@ -179,7 +172,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.727765",
+      "last_updated": "2025-08-04T20:15:45.369745",
       "metadata": {}
     },
     {
@@ -196,7 +189,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "physics_iq_score": 10.0
       },
@@ -204,7 +196,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.727783",
+      "last_updated": "2025-08-04T20:15:45.369769",
       "metadata": {}
     }
   ]

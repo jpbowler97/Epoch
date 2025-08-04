@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "saved_at": "2025-08-04T19:46:32.892284",
+    "saved_at": "2025-08-04T20:15:45.579789",
     "source": "video_arena",
-    "last_updated": "2025-08-04T19:46:32.892237",
+    "last_updated": "2025-08-04T20:15:45.579745",
     "model_count": 7,
     "stage": "scraped"
   },
@@ -21,7 +21,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "video_arena_elo": 1298.0,
         "video_quality": 89.2
@@ -30,7 +29,7 @@
         "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.878504",
+      "last_updated": "2025-08-04T20:15:45.556757",
       "metadata": {}
     },
     {
@@ -47,7 +46,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "video_arena_elo": 1267.0,
         "video_quality": 86.7
@@ -56,7 +54,7 @@
         "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.878555",
+      "last_updated": "2025-08-04T20:15:45.556802",
       "metadata": {}
     },
     {
@@ -73,7 +71,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "video_arena_elo": 1234.0,
         "video_quality": 84.3
@@ -82,7 +79,7 @@
         "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.878585",
+      "last_updated": "2025-08-04T20:15:45.556831",
       "metadata": {}
     },
     {
@@ -99,7 +96,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "video_arena_elo": 1205.0,
         "video_quality": 81.5
@@ -108,7 +104,7 @@
         "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.878617",
+      "last_updated": "2025-08-04T20:15:45.556865",
       "metadata": {}
     },
     {
@@ -125,7 +121,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "video_arena_elo": 1187.0,
         "video_quality": 79.8
@@ -134,7 +129,7 @@
         "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.878648",
+      "last_updated": "2025-08-04T20:15:45.556896",
       "metadata": {}
     },
     {
@@ -151,7 +146,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "video_arena_elo": 1156.0,
         "video_quality": 75.2
@@ -160,7 +154,7 @@
         "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.878681",
+      "last_updated": "2025-08-04T20:15:45.556929",
       "metadata": {}
     },
     {
@@ -177,7 +171,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "video_arena_elo": 1134.0,
         "video_quality": 72.8
@@ -186,7 +179,7 @@
         "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.878712",
+      "last_updated": "2025-08-04T20:15:45.556960",
       "metadata": {}
     }
   ]

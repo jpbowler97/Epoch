@@ -80,15 +80,34 @@ def display_model_info(model_row: pd.Series) -> None:
         ('Developer', 'developer'),
         ('Training FLOP', 'training_flop'),
         ('Confidence', 'confidence'),
+        ('Confidence Explanation', 'confidence_explanation'),
         ('Parameters', 'parameters'),
+        ('Parameter Source', 'parameter_source'),
         ('Estimation Method', 'estimation_method'),
-        ('Threshold Classification', 'threshold_classification'),
         ('Status', 'status'),
+        ('Blacklist Status', 'blacklist_status'),
+        ('Release Date', 'release_date'),
+        ('Original Estimate', 'original_estimate'),
     ]
     
     for label, field in key_fields:
         if field in model_row and pd.notna(model_row[field]):
-            print(f"{label}: {model_row[field]}")
+            if field in ['training_flop', 'original_estimate']:
+                # Format FLOP values to 1 decimal place in scientific notation
+                try:
+                    flop_value = float(model_row[field])
+                    print(f"{label}: {flop_value:.1e}")
+                except (ValueError, TypeError):
+                    print(f"{label}: {model_row[field]}")
+            elif field == 'parameters':
+                # Format parameter count with commas for readability
+                try:
+                    param_value = int(float(model_row[field]))
+                    print(f"{label}: {param_value:,}")
+                except (ValueError, TypeError):
+                    print(f"{label}: {model_row[field]}")
+            else:
+                print(f"{label}: {model_row[field]}")
     
     # Display reasoning if available
     if 'reasoning' in model_row and pd.notna(model_row['reasoning']):
@@ -101,6 +120,10 @@ def display_model_info(model_row: pd.Series) -> None:
     # Display alternative methods if available
     if 'alternative_methods' in model_row and pd.notna(model_row['alternative_methods']):
         print(f"\nAlternative Methods: {model_row['alternative_methods']}")
+    
+    # Display notes if available
+    if 'notes' in model_row and pd.notna(model_row['notes']):
+        print(f"\nNotes: {model_row['notes']}")
     
     print("="*80)
 
@@ -140,8 +163,7 @@ def move_to_below_threshold(model_row: pd.Series, data_dir: Path, reason: str = 
         
         # Update status and threshold classification
         new_row['status'] = 'confirmed_below_1e25'
-        if 'threshold_classification' in new_row:
-            new_row['threshold_classification'] = 'high_confidence_below_1e25'
+        # Status is already set appropriately by the move operation
         
         # Add to below dataset
         df_below = pd.concat([df_below, pd.DataFrame([new_row])], ignore_index=True)

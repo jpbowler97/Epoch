@@ -239,7 +239,6 @@ class JSONStorage:
             ],
             "inference_flop_per_token": format_flop_value(model.inference_flop_per_token),
             "status": model.status.value,
-            "threshold_classification": model.threshold_classification.value,
             "benchmarks": model.benchmarks,
             "sources": model.sources,
             "reasoning": model.reasoning,
@@ -249,7 +248,7 @@ class JSONStorage:
     
     def _dict_to_model(self, data: Dict[str, Any]) -> Model:
         """Convert dictionary to Model object."""
-        from ..models import ConfidenceLevel, EstimationMethod, ModelStatus, ThresholdClassification, AlternativeEstimate
+        from ..models import ConfidenceLevel, EstimationMethod, ModelStatus, AlternativeEstimate
         from ..utils import parse_date
         
         # Parse alternative estimates
@@ -276,7 +275,6 @@ class JSONStorage:
             alternative_estimates=alternative_estimates,
             inference_flop_per_token=parse_flop_value(data.get("inference_flop_per_token")),
             status=ModelStatus(data.get("status", "uncertain")),
-            threshold_classification=ThresholdClassification(data.get("threshold_classification", "not_sure")),
             benchmarks=data.get("benchmarks", {}),
             sources=data.get("sources", []),
             reasoning=data.get("reasoning", ""),

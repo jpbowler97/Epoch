@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "saved_at": "2025-08-04T19:46:32.063380",
+    "saved_at": "2025-08-04T20:15:44.481962",
     "source": "lmarena",
-    "last_updated": "2025-08-04T19:46:32.063306",
+    "last_updated": "2025-08-04T20:15:44.481912",
     "model_count": 217,
     "stage": "scraped"
   },
@@ -21,7 +21,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1463.0
       },
@@ -29,7 +28,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.034724",
+      "last_updated": "2025-08-04T20:15:44.435201",
       "metadata": {}
     },
     {
@@ -46,7 +45,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1454.0
       },
@@ -54,7 +52,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035316",
+      "last_updated": "2025-08-04T20:15:44.435726",
       "metadata": {}
     },
     {
@@ -71,7 +69,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1443.0
       },
@@ -79,7 +76,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035338",
+      "last_updated": "2025-08-04T20:15:44.435752",
       "metadata": {}
     },
     {
@@ -96,7 +93,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1440.0
       },
@@ -104,7 +100,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035355",
+      "last_updated": "2025-08-04T20:15:44.435780",
       "metadata": {}
     },
     {
@@ -121,7 +117,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1432.0
       },
@@ -129,7 +124,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035371",
+      "last_updated": "2025-08-04T20:15:44.435801",
       "metadata": {}
     },
     {
@@ -146,7 +141,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1421.0
       },
@@ -154,7 +148,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035385",
+      "last_updated": "2025-08-04T20:15:44.435927",
       "metadata": {}
     },
     {
@@ -171,7 +165,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1420.0
       },
@@ -179,7 +172,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035400",
+      "last_updated": "2025-08-04T20:15:44.435950",
       "metadata": {}
     },
     {
@@ -196,7 +189,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1418.0
       },
@@ -204,7 +196,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035416",
+      "last_updated": "2025-08-04T20:15:44.435973",
       "metadata": {}
     },
     {
@@ -221,7 +213,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1414.0
       },
@@ -229,7 +220,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035430",
+      "last_updated": "2025-08-04T20:15:44.435992",
       "metadata": {}
     },
     {
@@ -246,7 +237,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1413.0
       },
@@ -254,7 +244,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035448",
+      "last_updated": "2025-08-04T20:15:44.436009",
       "metadata": {}
     },
     {
@@ -271,7 +261,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1411.0
       },
@@ -279,7 +268,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035460",
+      "last_updated": "2025-08-04T20:15:44.436024",
       "metadata": {}
     },
     {
@@ -296,7 +285,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1407.0
       },
@@ -304,7 +292,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035473",
+      "last_updated": "2025-08-04T20:15:44.436046",
       "metadata": {}
     },
     {
@@ -321,7 +309,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1400.0
       },
@@ -329,7 +316,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035485",
+      "last_updated": "2025-08-04T20:15:44.436064",
       "metadata": {}
     },
     {
@@ -346,7 +333,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1400.0
       },
@@ -354,7 +340,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035497",
+      "last_updated": "2025-08-04T20:15:44.436079",
       "metadata": {}
     },
     {
@@ -371,7 +357,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1397.0
       },
@@ -379,7 +364,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035508",
+      "last_updated": "2025-08-04T20:15:44.436119",
       "metadata": {}
     },
     {
@@ -396,7 +381,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1397.0
       },
@@ -404,7 +388,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035520",
+      "last_updated": "2025-08-04T20:15:44.436137",
       "metadata": {}
     },
     {
@@ -421,7 +405,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1391.0
       },
@@ -429,7 +412,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035533",
+      "last_updated": "2025-08-04T20:15:44.436156",
       "metadata": {}
     },
     {
@@ -446,7 +429,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1394.0
       },
@@ -454,7 +436,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035545",
+      "last_updated": "2025-08-04T20:15:44.436171",
       "metadata": {}
     },
     {
@@ -471,7 +453,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1394.0
       },
@@ -479,7 +460,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035558",
+      "last_updated": "2025-08-04T20:15:44.436186",
       "metadata": {}
     },
     {
@@ -496,7 +477,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1391.0
       },
@@ -504,7 +484,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035574",
+      "last_updated": "2025-08-04T20:15:44.436201",
       "metadata": {}
     },
     {
@@ -521,7 +501,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1387.0
       },
@@ -529,7 +508,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035587",
+      "last_updated": "2025-08-04T20:15:44.436216",
       "metadata": {}
     },
     {
@@ -546,7 +525,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1385.0
       },
@@ -554,7 +532,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035624",
+      "last_updated": "2025-08-04T20:15:44.436232",
       "metadata": {}
     },
     {
@@ -571,7 +549,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1384.0
       },
@@ -579,7 +556,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035646",
+      "last_updated": "2025-08-04T20:15:44.436248",
       "metadata": {}
     },
     {
@@ -596,7 +573,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1381.0
       },
@@ -604,7 +580,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035659",
+      "last_updated": "2025-08-04T20:15:44.436262",
       "metadata": {}
     },
     {
@@ -621,7 +597,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1376.0
       },
@@ -629,7 +604,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035670",
+      "last_updated": "2025-08-04T20:15:44.436276",
       "metadata": {}
     },
     {
@@ -646,7 +621,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1374.0
       },
@@ -654,7 +628,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035683",
+      "last_updated": "2025-08-04T20:15:44.436291",
       "metadata": {}
     },
     {
@@ -671,7 +645,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1374.0
       },
@@ -679,7 +652,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035695",
+      "last_updated": "2025-08-04T20:15:44.436305",
       "metadata": {}
     },
     {
@@ -696,7 +669,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1373.0
       },
@@ -704,7 +676,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035708",
+      "last_updated": "2025-08-04T20:15:44.436320",
       "metadata": {}
     },
     {
@@ -721,7 +693,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1372.0
       },
@@ -729,7 +700,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035720",
+      "last_updated": "2025-08-04T20:15:44.436336",
       "metadata": {}
     },
     {
@@ -746,7 +717,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1367.0
       },
@@ -754,7 +724,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035732",
+      "last_updated": "2025-08-04T20:15:44.436351",
       "metadata": {}
     },
     {
@@ -771,7 +741,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1366.0
       },
@@ -779,7 +748,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035743",
+      "last_updated": "2025-08-04T20:15:44.436368",
       "metadata": {}
     },
     {
@@ -796,7 +765,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1364.0
       },
@@ -804,7 +772,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035756",
+      "last_updated": "2025-08-04T20:15:44.436385",
       "metadata": {}
     },
     {
@@ -821,7 +789,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1363.0
       },
@@ -829,7 +796,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035767",
+      "last_updated": "2025-08-04T20:15:44.436399",
       "metadata": {}
     },
     {
@@ -846,7 +813,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1360.0
       },
@@ -854,7 +820,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035779",
+      "last_updated": "2025-08-04T20:15:44.436414",
       "metadata": {}
     },
     {
@@ -871,7 +837,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1356.0
       },
@@ -879,7 +844,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035793",
+      "last_updated": "2025-08-04T20:15:44.436428",
       "metadata": {}
     },
     {
@@ -896,7 +861,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1357.0
       },
@@ -904,7 +868,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035804",
+      "last_updated": "2025-08-04T20:15:44.436444",
       "metadata": {}
     },
     {
@@ -921,7 +885,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1346.0
       },
@@ -929,7 +892,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035815",
+      "last_updated": "2025-08-04T20:15:44.436458",
       "metadata": {}
     },
     {
@@ -946,7 +909,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1352.0
       },
@@ -954,7 +916,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035826",
+      "last_updated": "2025-08-04T20:15:44.436472",
       "metadata": {}
     },
     {
@@ -971,7 +933,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1351.0
       },
@@ -979,7 +940,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035889",
+      "last_updated": "2025-08-04T20:15:44.436545",
       "metadata": {}
     },
     {
@@ -996,7 +957,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1349.0
       },
@@ -1004,7 +964,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035902",
+      "last_updated": "2025-08-04T20:15:44.436562",
       "metadata": {}
     },
     {
@@ -1021,7 +981,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1347.0
       },
@@ -1029,7 +988,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035914",
+      "last_updated": "2025-08-04T20:15:44.436577",
       "metadata": {}
     },
     {
@@ -1046,7 +1005,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1346.0
       },
@@ -1054,7 +1012,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035927",
+      "last_updated": "2025-08-04T20:15:44.436594",
       "metadata": {}
     },
     {
@@ -1071,7 +1029,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1345.0
       },
@@ -1079,7 +1036,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035938",
+      "last_updated": "2025-08-04T20:15:44.436609",
       "metadata": {}
     },
     {
@@ -1096,7 +1053,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1344.0
       },
@@ -1104,7 +1060,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035950",
+      "last_updated": "2025-08-04T20:15:44.436623",
       "metadata": {}
     },
     {
@@ -1121,7 +1077,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1343.0
       },
@@ -1129,7 +1084,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035964",
+      "last_updated": "2025-08-04T20:15:44.436640",
       "metadata": {}
     },
     {
@@ -1146,7 +1101,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1341.0
       },
@@ -1154,7 +1108,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035977",
+      "last_updated": "2025-08-04T20:15:44.436655",
       "metadata": {}
     },
     {
@@ -1171,7 +1125,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1346.0
       },
@@ -1179,7 +1132,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.035988",
+      "last_updated": "2025-08-04T20:15:44.436669",
       "metadata": {}
     },
     {
@@ -1196,7 +1149,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1338.0
       },
@@ -1204,7 +1156,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036000",
+      "last_updated": "2025-08-04T20:15:44.436683",
       "metadata": {}
     },
     {
@@ -1221,7 +1173,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1344.0
       },
@@ -1229,7 +1180,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036011",
+      "last_updated": "2025-08-04T20:15:44.436701",
       "metadata": {}
     },
     {
@@ -1246,7 +1197,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1340.0
       },
@@ -1254,7 +1204,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036022",
+      "last_updated": "2025-08-04T20:15:44.436715",
       "metadata": {}
     },
     {
@@ -1271,7 +1221,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1335.0
       },
@@ -1279,7 +1228,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036033",
+      "last_updated": "2025-08-04T20:15:44.436729",
       "metadata": {}
     },
     {
@@ -1296,7 +1245,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1332.0
       },
@@ -1304,7 +1252,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036045",
+      "last_updated": "2025-08-04T20:15:44.436745",
       "metadata": {}
     },
     {
@@ -1321,7 +1269,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1336.0
       },
@@ -1329,7 +1276,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036060",
+      "last_updated": "2025-08-04T20:15:44.436760",
       "metadata": {}
     },
     {
@@ -1346,7 +1293,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1335.0
       },
@@ -1354,7 +1300,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036072",
+      "last_updated": "2025-08-04T20:15:44.436774",
       "metadata": {}
     },
     {
@@ -1371,7 +1317,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1334.0
       },
@@ -1379,7 +1324,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036083",
+      "last_updated": "2025-08-04T20:15:44.436788",
       "metadata": {}
     },
     {
@@ -1396,7 +1341,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1334.0
       },
@@ -1404,7 +1348,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036094",
+      "last_updated": "2025-08-04T20:15:44.436802",
       "metadata": {}
     },
     {
@@ -1421,7 +1365,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1332.0
       },
@@ -1429,7 +1372,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036105",
+      "last_updated": "2025-08-04T20:15:44.436818",
       "metadata": {}
     },
     {
@@ -1446,7 +1389,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1332.0
       },
@@ -1454,7 +1396,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036116",
+      "last_updated": "2025-08-04T20:15:44.436832",
       "metadata": {}
     },
     {
@@ -1471,7 +1413,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1331.0
       },
@@ -1479,7 +1420,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036127",
+      "last_updated": "2025-08-04T20:15:44.436846",
       "metadata": {}
     },
     {
@@ -1496,7 +1437,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1330.0
       },
@@ -1504,7 +1444,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036138",
+      "last_updated": "2025-08-04T20:15:44.436860",
       "metadata": {}
     },
     {
@@ -1521,7 +1461,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1325.0
       },
@@ -1529,7 +1468,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036149",
+      "last_updated": "2025-08-04T20:15:44.436874",
       "metadata": {}
     },
     {
@@ -1546,7 +1485,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1328.0
       },
@@ -1554,7 +1492,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036162",
+      "last_updated": "2025-08-04T20:15:44.436891",
       "metadata": {}
     },
     {
@@ -1571,7 +1509,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1323.0
       },
@@ -1579,7 +1516,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036173",
+      "last_updated": "2025-08-04T20:15:44.436905",
       "metadata": {}
     },
     {
@@ -1596,7 +1533,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1322.0
       },
@@ -1604,7 +1540,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036186",
+      "last_updated": "2025-08-04T20:15:44.436919",
       "metadata": {}
     },
     {
@@ -1621,7 +1557,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1321.0
       },
@@ -1629,7 +1564,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036197",
+      "last_updated": "2025-08-04T20:15:44.436934",
       "metadata": {}
     },
     {
@@ -1646,7 +1581,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1324.0
       },
@@ -1654,7 +1588,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036210",
+      "last_updated": "2025-08-04T20:15:44.436948",
       "metadata": {}
     },
     {
@@ -1671,7 +1605,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1323.0
       },
@@ -1679,7 +1612,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036221",
+      "last_updated": "2025-08-04T20:15:44.436965",
       "metadata": {}
     },
     {
@@ -1696,7 +1629,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1320.0
       },
@@ -1704,7 +1636,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036233",
+      "last_updated": "2025-08-04T20:15:44.436983",
       "metadata": {}
     },
     {
@@ -1721,7 +1653,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1319.0
       },
@@ -1729,7 +1660,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036244",
+      "last_updated": "2025-08-04T20:15:44.436997",
       "metadata": {}
     },
     {
@@ -1746,7 +1677,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1318.0
       },
@@ -1754,7 +1684,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036255",
+      "last_updated": "2025-08-04T20:15:44.437014",
       "metadata": {}
     },
     {
@@ -1771,7 +1701,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1318.0
       },
@@ -1779,7 +1708,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036268",
+      "last_updated": "2025-08-04T20:15:44.437028",
       "metadata": {}
     },
     {
@@ -1796,7 +1725,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1316.0
       },
@@ -1804,7 +1732,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036280",
+      "last_updated": "2025-08-04T20:15:44.437044",
       "metadata": {}
     },
     {
@@ -1821,7 +1749,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1317.0
       },
@@ -1829,7 +1756,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036292",
+      "last_updated": "2025-08-04T20:15:44.437059",
       "metadata": {}
     },
     {
@@ -1846,7 +1773,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1317.0
       },
@@ -1854,7 +1780,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036305",
+      "last_updated": "2025-08-04T20:15:44.437075",
       "metadata": {}
     },
     {
@@ -1871,7 +1797,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1315.0
       },
@@ -1879,7 +1804,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036316",
+      "last_updated": "2025-08-04T20:15:44.437089",
       "metadata": {}
     },
     {
@@ -1896,7 +1821,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1317.0
       },
@@ -1904,7 +1828,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036327",
+      "last_updated": "2025-08-04T20:15:44.437103",
       "metadata": {}
     },
     {
@@ -1921,7 +1845,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1317.0
       },
@@ -1929,7 +1852,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036338",
+      "last_updated": "2025-08-04T20:15:44.437117",
       "metadata": {}
     },
     {
@@ -1946,7 +1869,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1315.0
       },
@@ -1954,7 +1876,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036350",
+      "last_updated": "2025-08-04T20:15:44.437132",
       "metadata": {}
     },
     {
@@ -1971,7 +1893,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1315.0
       },
@@ -1979,7 +1900,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036436",
+      "last_updated": "2025-08-04T20:15:44.437146",
       "metadata": {}
     },
     {
@@ -1996,7 +1917,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1310.0
       },
@@ -2004,7 +1924,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036450",
+      "last_updated": "2025-08-04T20:15:44.437162",
       "metadata": {}
     },
     {
@@ -2021,7 +1941,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1315.0
       },
@@ -2029,7 +1948,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036462",
+      "last_updated": "2025-08-04T20:15:44.437176",
       "metadata": {}
     },
     {
@@ -2046,7 +1965,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1313.0
       },
@@ -2054,7 +1972,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036476",
+      "last_updated": "2025-08-04T20:15:44.437192",
       "metadata": {}
     },
     {
@@ -2071,7 +1989,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1313.0
       },
@@ -2079,7 +1996,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036488",
+      "last_updated": "2025-08-04T20:15:44.437209",
       "metadata": {}
     },
     {
@@ -2096,7 +2013,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1304.0
       },
@@ -2104,7 +2020,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036499",
+      "last_updated": "2025-08-04T20:15:44.437223",
       "metadata": {}
     },
     {
@@ -2121,7 +2037,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1303.0
       },
@@ -2129,7 +2044,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036512",
+      "last_updated": "2025-08-04T20:15:44.437239",
       "metadata": {}
     },
     {
@@ -2146,7 +2061,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1307.0
       },
@@ -2154,7 +2068,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036523",
+      "last_updated": "2025-08-04T20:15:44.437253",
       "metadata": {}
     },
     {
@@ -2171,7 +2085,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1306.0
       },
@@ -2179,7 +2092,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036535",
+      "last_updated": "2025-08-04T20:15:44.437270",
       "metadata": {}
     },
     {
@@ -2196,7 +2109,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1305.0
       },
@@ -2204,7 +2116,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036546",
+      "last_updated": "2025-08-04T20:15:44.437283",
       "metadata": {}
     },
     {
@@ -2221,7 +2133,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1306.0
       },
@@ -2229,7 +2140,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036557",
+      "last_updated": "2025-08-04T20:15:44.437297",
       "metadata": {}
     },
     {
@@ -2246,7 +2157,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1303.0
       },
@@ -2254,7 +2164,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036568",
+      "last_updated": "2025-08-04T20:15:44.437311",
       "metadata": {}
     },
     {
@@ -2271,7 +2181,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1298.0
       },
@@ -2279,7 +2188,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036579",
+      "last_updated": "2025-08-04T20:15:44.437325",
       "metadata": {}
     },
     {
@@ -2296,7 +2205,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1295.0
       },
@@ -2304,7 +2212,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036652",
+      "last_updated": "2025-08-04T20:15:44.437341",
       "metadata": {}
     },
     {
@@ -2321,7 +2229,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1294.0
       },
@@ -2329,7 +2236,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036666",
+      "last_updated": "2025-08-04T20:15:44.437355",
       "metadata": {}
     },
     {
@@ -2346,7 +2253,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1290.0
       },
@@ -2354,7 +2260,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036678",
+      "last_updated": "2025-08-04T20:15:44.437369",
       "metadata": {}
     },
     {
@@ -2371,7 +2277,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1295.0
       },
@@ -2379,7 +2284,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036690",
+      "last_updated": "2025-08-04T20:15:44.437383",
       "metadata": {}
     },
     {
@@ -2396,7 +2301,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1289.0
       },
@@ -2404,7 +2308,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036703",
+      "last_updated": "2025-08-04T20:15:44.437400",
       "metadata": {}
     },
     {
@@ -2421,7 +2325,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1290.0
       },
@@ -2429,7 +2332,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036720",
+      "last_updated": "2025-08-04T20:15:44.437414",
       "metadata": {}
     },
     {
@@ -2446,7 +2349,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1289.0
       },
@@ -2454,7 +2356,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036735",
+      "last_updated": "2025-08-04T20:15:44.437457",
       "metadata": {}
     },
     {
@@ -2471,7 +2373,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1289.0
       },
@@ -2479,7 +2380,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036752",
+      "last_updated": "2025-08-04T20:15:44.437474",
       "metadata": {}
     },
     {
@@ -2496,7 +2397,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1287.0
       },
@@ -2504,7 +2404,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036771",
+      "last_updated": "2025-08-04T20:15:44.437492",
       "metadata": {}
     },
     {
@@ -2521,7 +2421,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1287.0
       },
@@ -2529,7 +2428,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036783",
+      "last_updated": "2025-08-04T20:15:44.437506",
       "metadata": {}
     },
     {
@@ -2546,7 +2445,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1284.0
       },
@@ -2554,7 +2452,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036797",
+      "last_updated": "2025-08-04T20:15:44.437525",
       "metadata": {}
     },
     {
@@ -2571,7 +2469,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1282.0
       },
@@ -2579,7 +2476,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036808",
+      "last_updated": "2025-08-04T20:15:44.437541",
       "metadata": {}
     },
     {
@@ -2596,7 +2493,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1283.0
       },
@@ -2604,7 +2500,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036821",
+      "last_updated": "2025-08-04T20:15:44.437555",
       "metadata": {}
     },
     {
@@ -2621,7 +2517,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1281.0
       },
@@ -2629,7 +2524,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036832",
+      "last_updated": "2025-08-04T20:15:44.437569",
       "metadata": {}
     },
     {
@@ -2646,7 +2541,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1280.0
       },
@@ -2654,7 +2548,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036843",
+      "last_updated": "2025-08-04T20:15:44.437583",
       "metadata": {}
     },
     {
@@ -2671,7 +2565,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1277.0
       },
@@ -2679,7 +2572,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036855",
+      "last_updated": "2025-08-04T20:15:44.437597",
       "metadata": {}
     },
     {
@@ -2696,7 +2589,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1275.0
       },
@@ -2704,7 +2596,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036866",
+      "last_updated": "2025-08-04T20:15:44.437622",
       "metadata": {}
     },
     {
@@ -2721,7 +2613,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1275.0
       },
@@ -2729,7 +2620,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036877",
+      "last_updated": "2025-08-04T20:15:44.437636",
       "metadata": {}
     },
     {
@@ -2746,7 +2637,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1277.0
       },
@@ -2754,7 +2644,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036889",
+      "last_updated": "2025-08-04T20:15:44.437652",
       "metadata": {}
     },
     {
@@ -2771,7 +2661,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1275.0
       },
@@ -2779,7 +2668,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036900",
+      "last_updated": "2025-08-04T20:15:44.437666",
       "metadata": {}
     },
     {
@@ -2796,7 +2685,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1272.0
       },
@@ -2804,7 +2692,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036912",
+      "last_updated": "2025-08-04T20:15:44.437683",
       "metadata": {}
     },
     {
@@ -2821,7 +2709,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1269.0
       },
@@ -2829,7 +2716,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036924",
+      "last_updated": "2025-08-04T20:15:44.437697",
       "metadata": {}
     },
     {
@@ -2846,7 +2733,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1261.0
       },
@@ -2854,7 +2740,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036935",
+      "last_updated": "2025-08-04T20:15:44.437711",
       "metadata": {}
     },
     {
@@ -2871,7 +2757,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1266.0
       },
@@ -2879,7 +2764,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036946",
+      "last_updated": "2025-08-04T20:15:44.437725",
       "metadata": {}
     },
     {
@@ -2896,7 +2781,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1266.0
       },
@@ -2904,7 +2788,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036959",
+      "last_updated": "2025-08-04T20:15:44.437740",
       "metadata": {}
     },
     {
@@ -2921,7 +2805,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1265.0
       },
@@ -2929,7 +2812,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036971",
+      "last_updated": "2025-08-04T20:15:44.437754",
       "metadata": {}
     },
     {
@@ -2946,7 +2829,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1264.0
       },
@@ -2954,7 +2836,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036984",
+      "last_updated": "2025-08-04T20:15:44.437768",
       "metadata": {}
     },
     {
@@ -2971,7 +2853,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1263.0
       },
@@ -2979,7 +2860,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.036997",
+      "last_updated": "2025-08-04T20:15:44.437782",
       "metadata": {}
     },
     {
@@ -2996,7 +2877,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1262.0
       },
@@ -3004,7 +2884,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037028",
+      "last_updated": "2025-08-04T20:15:44.437796",
       "metadata": {}
     },
     {
@@ -3021,7 +2901,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1261.0
       },
@@ -3029,7 +2908,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037044",
+      "last_updated": "2025-08-04T20:15:44.437814",
       "metadata": {}
     },
     {
@@ -3046,7 +2925,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1258.0
       },
@@ -3054,7 +2932,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037059",
+      "last_updated": "2025-08-04T20:15:44.437830",
       "metadata": {}
     },
     {
@@ -3071,7 +2949,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1253.0
       },
@@ -3079,7 +2956,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037072",
+      "last_updated": "2025-08-04T20:15:44.437844",
       "metadata": {}
     },
     {
@@ -3096,7 +2973,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1246.0
       },
@@ -3104,7 +2980,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037084",
+      "last_updated": "2025-08-04T20:15:44.437859",
       "metadata": {}
     },
     {
@@ -3121,7 +2997,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1246.0
       },
@@ -3129,7 +3004,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037095",
+      "last_updated": "2025-08-04T20:15:44.437873",
       "metadata": {}
     },
     {
@@ -3146,7 +3021,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1242.0
       },
@@ -3154,7 +3028,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037107",
+      "last_updated": "2025-08-04T20:15:44.437887",
       "metadata": {}
     },
     {
@@ -3171,7 +3045,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1239.0
       },
@@ -3179,7 +3052,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037118",
+      "last_updated": "2025-08-04T20:15:44.437901",
       "metadata": {}
     },
     {
@@ -3196,7 +3069,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1239.0
       },
@@ -3204,7 +3076,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037129",
+      "last_updated": "2025-08-04T20:15:44.437915",
       "metadata": {}
     },
     {
@@ -3221,7 +3093,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1238.0
       },
@@ -3229,7 +3100,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037140",
+      "last_updated": "2025-08-04T20:15:44.437929",
       "metadata": {}
     },
     {
@@ -3246,7 +3117,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1237.0
       },
@@ -3254,7 +3124,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037154",
+      "last_updated": "2025-08-04T20:15:44.437945",
       "metadata": {}
     },
     {
@@ -3271,7 +3141,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1235.0
       },
@@ -3279,7 +3148,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037166",
+      "last_updated": "2025-08-04T20:15:44.437962",
       "metadata": {}
     },
     {
@@ -3296,7 +3165,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1234.0
       },
@@ -3304,7 +3172,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037179",
+      "last_updated": "2025-08-04T20:15:44.437980",
       "metadata": {}
     },
     {
@@ -3321,7 +3189,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1232.0
       },
@@ -3329,7 +3196,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037190",
+      "last_updated": "2025-08-04T20:15:44.437995",
       "metadata": {}
     },
     {
@@ -3346,7 +3213,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1232.0
       },
@@ -3354,7 +3220,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037202",
+      "last_updated": "2025-08-04T20:15:44.438011",
       "metadata": {}
     },
     {
@@ -3371,7 +3237,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1230.0
       },
@@ -3379,7 +3244,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037213",
+      "last_updated": "2025-08-04T20:15:44.438025",
       "metadata": {}
     },
     {
@@ -3396,7 +3261,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1228.0
       },
@@ -3404,7 +3268,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037271",
+      "last_updated": "2025-08-04T20:15:44.438039",
       "metadata": {}
     },
     {
@@ -3421,7 +3285,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1226.0
       },
@@ -3429,7 +3292,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037284",
+      "last_updated": "2025-08-04T20:15:44.438053",
       "metadata": {}
     },
     {
@@ -3446,7 +3309,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1222.0
       },
@@ -3454,7 +3316,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037295",
+      "last_updated": "2025-08-04T20:15:44.438067",
       "metadata": {}
     },
     {
@@ -3471,7 +3333,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1226.0
       },
@@ -3479,7 +3340,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037332",
+      "last_updated": "2025-08-04T20:15:44.438132",
       "metadata": {}
     },
     {
@@ -3496,7 +3357,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1224.0
       },
@@ -3504,7 +3364,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037343",
+      "last_updated": "2025-08-04T20:15:44.438149",
       "metadata": {}
     },
     {
@@ -3521,7 +3381,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1226.0
       },
@@ -3529,7 +3388,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037355",
+      "last_updated": "2025-08-04T20:15:44.438164",
       "metadata": {}
     },
     {
@@ -3546,7 +3405,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1218.0
       },
@@ -3554,7 +3412,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037368",
+      "last_updated": "2025-08-04T20:15:44.438180",
       "metadata": {}
     },
     {
@@ -3571,7 +3429,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1218.0
       },
@@ -3579,7 +3436,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037381",
+      "last_updated": "2025-08-04T20:15:44.438196",
       "metadata": {}
     },
     {
@@ -3596,7 +3453,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1214.0
       },
@@ -3604,7 +3460,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037392",
+      "last_updated": "2025-08-04T20:15:44.438210",
       "metadata": {}
     },
     {
@@ -3621,7 +3477,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1215.0
       },
@@ -3629,7 +3484,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037403",
+      "last_updated": "2025-08-04T20:15:44.438224",
       "metadata": {}
     },
     {
@@ -3646,7 +3501,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1209.0
       },
@@ -3654,7 +3508,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037414",
+      "last_updated": "2025-08-04T20:15:44.438238",
       "metadata": {}
     },
     {
@@ -3671,7 +3525,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1203.0
       },
@@ -3679,7 +3532,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037425",
+      "last_updated": "2025-08-04T20:15:44.438255",
       "metadata": {}
     },
     {
@@ -3696,7 +3549,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1203.0
       },
@@ -3704,7 +3556,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037438",
+      "last_updated": "2025-08-04T20:15:44.438269",
       "metadata": {}
     },
     {
@@ -3721,7 +3573,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1202.0
       },
@@ -3729,7 +3580,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037449",
+      "last_updated": "2025-08-04T20:15:44.438283",
       "metadata": {}
     },
     {
@@ -3746,7 +3597,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1201.0
       },
@@ -3754,7 +3604,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037461",
+      "last_updated": "2025-08-04T20:15:44.438298",
       "metadata": {}
     },
     {
@@ -3771,7 +3621,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1200.0
       },
@@ -3779,7 +3628,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037472",
+      "last_updated": "2025-08-04T20:15:44.438312",
       "metadata": {}
     },
     {
@@ -3796,7 +3645,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1198.0
       },
@@ -3804,7 +3652,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037484",
+      "last_updated": "2025-08-04T20:15:44.438328",
       "metadata": {}
     },
     {
@@ -3821,7 +3669,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1198.0
       },
@@ -3829,7 +3676,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037496",
+      "last_updated": "2025-08-04T20:15:44.438342",
       "metadata": {}
     },
     {
@@ -3846,7 +3693,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1189.0
       },
@@ -3854,7 +3700,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037508",
+      "last_updated": "2025-08-04T20:15:44.438357",
       "metadata": {}
     },
     {
@@ -3871,7 +3717,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1188.0
       },
@@ -3879,7 +3724,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037521",
+      "last_updated": "2025-08-04T20:15:44.438371",
       "metadata": {}
     },
     {
@@ -3896,7 +3741,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1186.0
       },
@@ -3904,7 +3748,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037532",
+      "last_updated": "2025-08-04T20:15:44.438385",
       "metadata": {}
     },
     {
@@ -3921,7 +3765,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1188.0
       },
@@ -3929,7 +3772,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037543",
+      "last_updated": "2025-08-04T20:15:44.438402",
       "metadata": {}
     },
     {
@@ -3946,7 +3789,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1185.0
       },
@@ -3954,7 +3796,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037556",
+      "last_updated": "2025-08-04T20:15:44.438419",
       "metadata": {}
     },
     {
@@ -3971,7 +3813,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1185.0
       },
@@ -3979,7 +3820,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037568",
+      "last_updated": "2025-08-04T20:15:44.438435",
       "metadata": {}
     },
     {
@@ -3996,7 +3837,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1184.0
       },
@@ -4004,7 +3844,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037579",
+      "last_updated": "2025-08-04T20:15:44.438450",
       "metadata": {}
     },
     {
@@ -4021,7 +3861,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1183.0
       },
@@ -4029,7 +3868,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037590",
+      "last_updated": "2025-08-04T20:15:44.438464",
       "metadata": {}
     },
     {
@@ -4046,7 +3885,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1181.0
       },
@@ -4054,7 +3892,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037602",
+      "last_updated": "2025-08-04T20:15:44.438481",
       "metadata": {}
     },
     {
@@ -4071,7 +3909,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1184.0
       },
@@ -4079,7 +3916,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037613",
+      "last_updated": "2025-08-04T20:15:44.438498",
       "metadata": {}
     },
     {
@@ -4096,7 +3933,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1180.0
       },
@@ -4104,7 +3940,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037624",
+      "last_updated": "2025-08-04T20:15:44.438512",
       "metadata": {}
     },
     {
@@ -4121,7 +3957,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1178.0
       },
@@ -4129,7 +3964,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037636",
+      "last_updated": "2025-08-04T20:15:44.438526",
       "metadata": {}
     },
     {
@@ -4146,7 +3981,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1177.0
       },
@@ -4154,7 +3988,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037647",
+      "last_updated": "2025-08-04T20:15:44.438540",
       "metadata": {}
     },
     {
@@ -4171,7 +4005,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1176.0
       },
@@ -4179,7 +4012,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037658",
+      "last_updated": "2025-08-04T20:15:44.438554",
       "metadata": {}
     },
     {
@@ -4196,7 +4029,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1176.0
       },
@@ -4204,7 +4036,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037671",
+      "last_updated": "2025-08-04T20:15:44.438572",
       "metadata": {}
     },
     {
@@ -4221,7 +4053,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1175.0
       },
@@ -4229,7 +4060,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037682",
+      "last_updated": "2025-08-04T20:15:44.438791",
       "metadata": {}
     },
     {
@@ -4246,7 +4077,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1174.0
       },
@@ -4254,7 +4084,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037693",
+      "last_updated": "2025-08-04T20:15:44.438847",
       "metadata": {}
     },
     {
@@ -4271,7 +4101,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1173.0
       },
@@ -4279,7 +4108,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037705",
+      "last_updated": "2025-08-04T20:15:44.438863",
       "metadata": {}
     },
     {
@@ -4296,7 +4125,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1172.0
       },
@@ -4304,7 +4132,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037718",
+      "last_updated": "2025-08-04T20:15:44.438888",
       "metadata": {}
     },
     {
@@ -4321,7 +4149,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1164.0
       },
@@ -4329,7 +4156,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037731",
+      "last_updated": "2025-08-04T20:15:44.438904",
       "metadata": {}
     },
     {
@@ -4346,7 +4173,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1163.0
       },
@@ -4354,7 +4180,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037742",
+      "last_updated": "2025-08-04T20:15:44.438919",
       "metadata": {}
     },
     {
@@ -4371,7 +4197,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1155.0
       },
@@ -4379,7 +4204,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037754",
+      "last_updated": "2025-08-04T20:15:44.438936",
       "metadata": {}
     },
     {
@@ -4396,7 +4221,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1163.0
       },
@@ -4404,7 +4228,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037765",
+      "last_updated": "2025-08-04T20:15:44.438951",
       "metadata": {}
     },
     {
@@ -4421,7 +4245,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1154.0
       },
@@ -4429,7 +4252,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037776",
+      "last_updated": "2025-08-04T20:15:44.438965",
       "metadata": {}
     },
     {
@@ -4446,7 +4269,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1156.0
       },
@@ -4454,7 +4276,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037787",
+      "last_updated": "2025-08-04T20:15:44.438979",
       "metadata": {}
     },
     {
@@ -4471,7 +4293,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1145.0
       },
@@ -4479,7 +4300,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037803",
+      "last_updated": "2025-08-04T20:15:44.438993",
       "metadata": {}
     },
     {
@@ -4496,7 +4317,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1153.0
       },
@@ -4504,7 +4324,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037816",
+      "last_updated": "2025-08-04T20:15:44.439007",
       "metadata": {}
     },
     {
@@ -4521,7 +4341,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1149.0
       },
@@ -4529,7 +4348,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037830",
+      "last_updated": "2025-08-04T20:15:44.439021",
       "metadata": {}
     },
     {
@@ -4546,7 +4365,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1147.0
       },
@@ -4554,7 +4372,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037842",
+      "last_updated": "2025-08-04T20:15:44.439040",
       "metadata": {}
     },
     {
@@ -4571,7 +4389,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1146.0
       },
@@ -4579,7 +4396,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037854",
+      "last_updated": "2025-08-04T20:15:44.439054",
       "metadata": {}
     },
     {
@@ -4596,7 +4413,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1146.0
       },
@@ -4604,7 +4420,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037865",
+      "last_updated": "2025-08-04T20:15:44.439068",
       "metadata": {}
     },
     {
@@ -4621,7 +4437,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1143.0
       },
@@ -4629,7 +4444,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037876",
+      "last_updated": "2025-08-04T20:15:44.439085",
       "metadata": {}
     },
     {
@@ -4646,7 +4461,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1141.0
       },
@@ -4654,7 +4468,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037887",
+      "last_updated": "2025-08-04T20:15:44.439099",
       "metadata": {}
     },
     {
@@ -4671,7 +4485,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1140.0
       },
@@ -4679,7 +4492,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037936",
+      "last_updated": "2025-08-04T20:15:44.439116",
       "metadata": {}
     },
     {
@@ -4696,7 +4509,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1139.0
       },
@@ -4704,7 +4516,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037954",
+      "last_updated": "2025-08-04T20:15:44.439130",
       "metadata": {}
     },
     {
@@ -4721,7 +4533,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1131.0
       },
@@ -4729,7 +4540,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037966",
+      "last_updated": "2025-08-04T20:15:44.439144",
       "metadata": {}
     },
     {
@@ -4746,7 +4557,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1132.0
       },
@@ -4754,7 +4564,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037979",
+      "last_updated": "2025-08-04T20:15:44.439158",
       "metadata": {}
     },
     {
@@ -4771,7 +4581,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1132.0
       },
@@ -4779,7 +4588,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.037991",
+      "last_updated": "2025-08-04T20:15:44.439172",
       "metadata": {}
     },
     {
@@ -4796,7 +4605,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1138.0
       },
@@ -4804,7 +4612,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038003",
+      "last_updated": "2025-08-04T20:15:44.439188",
       "metadata": {}
     },
     {
@@ -4821,7 +4629,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1136.0
       },
@@ -4829,7 +4636,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038015",
+      "last_updated": "2025-08-04T20:15:44.439204",
       "metadata": {}
     },
     {
@@ -4846,7 +4653,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1135.0
       },
@@ -4854,7 +4660,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038028",
+      "last_updated": "2025-08-04T20:15:44.439218",
       "metadata": {}
     },
     {
@@ -4871,7 +4677,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1129.0
       },
@@ -4879,7 +4684,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038039",
+      "last_updated": "2025-08-04T20:15:44.439257",
       "metadata": {}
     },
     {
@@ -4896,7 +4701,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1124.0
       },
@@ -4904,7 +4708,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038051",
+      "last_updated": "2025-08-04T20:15:44.439283",
       "metadata": {}
     },
     {
@@ -4921,7 +4725,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1119.0
       },
@@ -4929,7 +4732,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038062",
+      "last_updated": "2025-08-04T20:15:44.439300",
       "metadata": {}
     },
     {
@@ -4946,7 +4749,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1121.0
       },
@@ -4954,7 +4756,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038073",
+      "last_updated": "2025-08-04T20:15:44.439320",
       "metadata": {}
     },
     {
@@ -4971,7 +4773,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1114.0
       },
@@ -4979,7 +4780,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038084",
+      "last_updated": "2025-08-04T20:15:44.439336",
       "metadata": {}
     },
     {
@@ -4996,7 +4797,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1113.0
       },
@@ -5004,7 +4804,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038095",
+      "last_updated": "2025-08-04T20:15:44.439350",
       "metadata": {}
     },
     {
@@ -5021,7 +4821,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1112.0
       },
@@ -5029,7 +4828,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038106",
+      "last_updated": "2025-08-04T20:15:44.439364",
       "metadata": {}
     },
     {
@@ -5046,7 +4845,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1092.0
       },
@@ -5054,7 +4852,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038120",
+      "last_updated": "2025-08-04T20:15:44.439382",
       "metadata": {}
     },
     {
@@ -5071,7 +4869,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1091.0
       },
@@ -5079,7 +4876,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038131",
+      "last_updated": "2025-08-04T20:15:44.439397",
       "metadata": {}
     },
     {
@@ -5096,7 +4893,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1082.0
       },
@@ -5104,7 +4900,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038144",
+      "last_updated": "2025-08-04T20:15:44.439411",
       "metadata": {}
     },
     {
@@ -5121,7 +4917,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1072.0
       },
@@ -5129,7 +4924,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038155",
+      "last_updated": "2025-08-04T20:15:44.439425",
       "metadata": {}
     },
     {
@@ -5146,7 +4941,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1068.0
       },
@@ -5154,7 +4948,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038168",
+      "last_updated": "2025-08-04T20:15:44.439440",
       "metadata": {}
     },
     {
@@ -5171,7 +4965,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1066.0
       },
@@ -5179,7 +4972,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038179",
+      "last_updated": "2025-08-04T20:15:44.439454",
       "metadata": {}
     },
     {
@@ -5196,7 +4989,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1063.0
       },
@@ -5204,7 +4996,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038192",
+      "last_updated": "2025-08-04T20:15:44.439468",
       "metadata": {}
     },
     {
@@ -5221,7 +5013,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1055.0
       },
@@ -5229,7 +5020,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038204",
+      "last_updated": "2025-08-04T20:15:44.439482",
       "metadata": {}
     },
     {
@@ -5246,7 +5037,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1044.0
       },
@@ -5254,7 +5044,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038215",
+      "last_updated": "2025-08-04T20:15:44.439498",
       "metadata": {}
     },
     {
@@ -5271,7 +5061,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1033.0
       },
@@ -5279,7 +5068,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038227",
+      "last_updated": "2025-08-04T20:15:44.439515",
       "metadata": {}
     },
     {
@@ -5296,7 +5085,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1021.0
       },
@@ -5304,7 +5092,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038241",
+      "last_updated": "2025-08-04T20:15:44.439531",
       "metadata": {}
     },
     {
@@ -5321,7 +5109,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 1004.0
       },
@@ -5329,7 +5116,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038253",
+      "last_updated": "2025-08-04T20:15:44.439545",
       "metadata": {}
     },
     {
@@ -5346,7 +5133,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 995.0
       },
@@ -5354,7 +5140,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038264",
+      "last_updated": "2025-08-04T20:15:44.439559",
       "metadata": {}
     },
     {
@@ -5371,7 +5157,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 978.0
       },
@@ -5379,7 +5164,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038277",
+      "last_updated": "2025-08-04T20:15:44.439576",
       "metadata": {}
     },
     {
@@ -5396,7 +5181,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 976.0
       },
@@ -5404,7 +5188,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038288",
+      "last_updated": "2025-08-04T20:15:44.439590",
       "metadata": {}
     },
     {
@@ -5421,7 +5205,6 @@
       "alternative_estimates": [],
       "inference_flop_per_token": null,
       "status": "uncertain",
-      "threshold_classification": "not_sure",
       "benchmarks": {
         "lmarena_score": 956.0
       },
@@ -5429,7 +5212,7 @@
         "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T19:46:32.038299",
+      "last_updated": "2025-08-04T20:15:44.439604",
       "metadata": {}
     }
   ]

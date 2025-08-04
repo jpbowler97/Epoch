@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 from epoch_tracker.estimation import ComputeEstimator
-from epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod, ThresholdClassification
+from epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod, ModelStatus
 from epoch_tracker.storage import JSONStorage
 from epoch_tracker.utils.developer_blacklist import DeveloperBlacklist
 from epoch_tracker.config.thresholds import get_threshold_config
@@ -308,9 +308,11 @@ def print_enhanced_summary(all_models: List[Model], updated_count: int, above_th
     """Print enhanced FLOP estimation summary with method priority and usage statistics."""
     final_models = all_models
     models_with_flop = [m for m in final_models if m.training_flop is not None]
-    high_confidence_above = len([m for m in models_with_flop if m.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_ABOVE])
-    high_confidence_below = len([m for m in models_with_flop if m.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_BELOW])
-    not_sure = len([m for m in models_with_flop if m.threshold_classification == ThresholdClassification.NOT_SURE])
+    confirmed_above = len([m for m in models_with_flop if m.status == ModelStatus.CONFIRMED_ABOVE])
+    likely_above = len([m for m in models_with_flop if m.status == ModelStatus.LIKELY_ABOVE])
+    confirmed_below = len([m for m in models_with_flop if m.status == ModelStatus.CONFIRMED_BELOW])
+    likely_below = len([m for m in models_with_flop if m.status == ModelStatus.LIKELY_BELOW])
+    uncertain = len([m for m in models_with_flop if m.status == ModelStatus.UNCERTAIN])
     
     print(f"\n{'='*80}")
     print("FLOP ESTIMATION SUMMARY")
@@ -371,25 +373,27 @@ def print_enhanced_summary(all_models: List[Model], updated_count: int, above_th
     print(f"  Models updated this run: {updated_count}")
     print(f"  Models above 1e25 FLOP: {above_threshold_count}")
     
-    print(f"\nThreshold Classification:")
-    print(f"  High confidence > 1e25 FLOP (>= {THRESHOLD_CONFIG.high_confidence_above_threshold:.1e}): {high_confidence_above}")
-    print(f"  High confidence < 1e25 FLOP (<= {THRESHOLD_CONFIG.high_confidence_below_threshold:.1e}): {high_confidence_below}")
-    print(f"  Not sure ({THRESHOLD_CONFIG.high_confidence_below_threshold:.1e} - {THRESHOLD_CONFIG.high_confidence_above_threshold:.1e}): {not_sure}")
+    print(f"\nModel Status Classification:")
+    print(f"  Confirmed above 1e25 FLOP: {confirmed_above}")
+    print(f"  Likely above 1e25 FLOP: {likely_above}")
+    print(f"  Uncertain: {uncertain}")
+    print(f"  Likely below 1e25 FLOP: {likely_below}")
+    print(f"  Confirmed below 1e25 FLOP: {confirmed_below}")
     
-    # Show example models for each classification
-    if high_confidence_above > 0:
-        print(f"\nHigh confidence models > 1e25 FLOP:")
-        high_conf_above_models = [m for m in models_with_flop if m.threshold_classification == ThresholdClassification.HIGH_CONFIDENCE_ABOVE]
-        for model in sorted(high_conf_above_models, key=lambda m: m.training_flop, reverse=True)[:10]:
+    # Show example models above threshold
+    if confirmed_above + likely_above > 0:
+        print(f"\nModels above 1e25 FLOP:")
+        above_models = [m for m in models_with_flop if m.status in [ModelStatus.CONFIRMED_ABOVE, ModelStatus.LIKELY_ABOVE]]
+        for model in sorted(above_models, key=lambda m: m.training_flop, reverse=True)[:10]:
             print(f"  - {model.name}: {model.training_flop:.2e} FLOP "
-                  f"({model.training_flop_confidence.value})")
+                  f"({model.training_flop_confidence.value}, {model.status.value})")
     
-    if above_threshold_count > 0 and above_threshold_count != high_confidence_above:
+    if above_threshold_count > 0 and above_threshold_count != confirmed_above + likely_above:
         print(f"\nAll models likely above 1e25 FLOP threshold:")
         above_threshold = [m for m in all_models if m.training_flop and m.training_flop >= 1e25]
         for model in sorted(above_threshold, key=lambda m: m.training_flop, reverse=True)[:10]:
             print(f"  - {model.name}: {model.training_flop:.2e} FLOP "
-                  f"({model.training_flop_confidence.value}) [{model.threshold_classification.value}]")
+                  f"({model.training_flop_confidence.value}) [{model.status.value}]")
     
     print(f"{'='*80}\n")
 
@@ -1055,13 +1059,11 @@ def main():
                 logger.info(f"Would update {model.name}: {estimate['flop']:.2e} FLOP "
                           f"(confidence: {estimate['confidence'].value})")
             else:
-                # Update the model with threshold classification
+                # Update the model with status classification
                 model.update_flop_estimate(
                     flop=estimate['flop'],
                     confidence=estimate['confidence'],
                     method=estimate['method'],
-                    high_confidence_above_threshold=THRESHOLD_CONFIG.high_confidence_above_threshold,
-                    high_confidence_below_threshold=THRESHOLD_CONFIG.high_confidence_below_threshold,
                     reasoning=estimate['reasoning']
                 )
                 
@@ -1083,25 +1085,7 @@ def main():
             # No estimate possible
             usage_tracker.record_no_estimate(model.name)
     
-    # Apply threshold classification to all models (including those not updated)
-    if not args.dry_run:
-        logger.info("Applying threshold classification to all models...")
-        classification_count = 0
-        
-        for model in all_models:
-            if model.training_flop is not None:
-                old_classification = model.threshold_classification
-                new_classification = model.classify_by_threshold(
-                    THRESHOLD_CONFIG.high_confidence_above_threshold, 
-                    THRESHOLD_CONFIG.high_confidence_below_threshold
-                )
-                
-                if old_classification != new_classification:
-                    model.threshold_classification = new_classification
-                    classification_count += 1
-                    logger.debug(f"Classified {model.name}: {new_classification.value}")
-        
-        logger.info(f"Applied threshold classification to {classification_count} models")
+    # Status classification is now handled automatically in update_flop_estimate
     
     if not args.dry_run:
         # Save models to consolidated file (already deduplicated)

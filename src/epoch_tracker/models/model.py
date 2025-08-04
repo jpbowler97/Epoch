@@ -34,12 +34,6 @@ class ModelStatus(Enum):
     CONFIRMED_BELOW = "confirmed_below_1e25"
 
 
-class ThresholdClassification(Enum):
-    """Threshold-based classification for FLOP estimates."""
-    HIGH_CONFIDENCE_ABOVE = "high_confidence_above_1e25"
-    HIGH_CONFIDENCE_BELOW = "high_confidence_below_1e25"
-    NOT_SURE = "not_sure"
-
 
 class AlternativeEstimate(BaseModel):
     """Alternative FLOP estimate using a different method."""
@@ -93,9 +87,6 @@ class Model(BaseModel):
     status: ModelStatus = Field(
         ModelStatus.UNCERTAIN, description="Classification relative to 1e25 FLOP threshold"
     )
-    threshold_classification: ThresholdClassification = Field(
-        ThresholdClassification.NOT_SURE, description="Threshold-based classification for FLOP estimates"
-    )
     
     # Supporting data
     benchmarks: Dict[str, float] = Field(
@@ -144,29 +135,6 @@ class Model(BaseModel):
             # Low/speculative confidence - return None (uncertain)
             return None
     
-    def classify_by_threshold(
-        self, 
-        high_confidence_above_threshold: float,
-        high_confidence_below_threshold: float
-    ) -> ThresholdClassification:
-        """Classify model based on FLOP estimate and confidence thresholds.
-        
-        Args:
-            high_confidence_above_threshold: FLOP threshold for high confidence above 1e25
-            high_confidence_below_threshold: FLOP threshold for high confidence below 1e25
-            
-        Returns:
-            ThresholdClassification based on FLOP estimate
-        """
-        if self.training_flop is None:
-            return ThresholdClassification.NOT_SURE
-        
-        if self.training_flop >= high_confidence_above_threshold:
-            return ThresholdClassification.HIGH_CONFIDENCE_ABOVE
-        elif self.training_flop <= high_confidence_below_threshold:
-            return ThresholdClassification.HIGH_CONFIDENCE_BELOW
-        else:
-            return ThresholdClassification.NOT_SURE
     
     def add_source(self, url: str, description: str = ""):
         """Add a source URL with optional description."""
@@ -203,8 +171,6 @@ class Model(BaseModel):
         flop: float, 
         confidence: ConfidenceLevel, 
         method: EstimationMethod,
-        high_confidence_above_threshold: float,
-        high_confidence_below_threshold: float,
         reasoning: str = ""
     ):
         """Update the FLOP estimate with new information."""
@@ -228,11 +194,6 @@ class Model(BaseModel):
                 self.status = ModelStatus.LIKELY_BELOW
         else:
             self.status = ModelStatus.UNCERTAIN
-        
-        # Update threshold classification
-        self.threshold_classification = self.classify_by_threshold(
-            high_confidence_above_threshold, high_confidence_below_threshold
-        )
 
 
 class ModelCollection(BaseModel):
@@ -254,24 +215,32 @@ class ModelCollection(BaseModel):
             if model.status in [ModelStatus.CONFIRMED_ABOVE, ModelStatus.LIKELY_ABOVE]
         ]
     
-    def get_by_threshold_classification(self, classification: ThresholdClassification) -> List[Model]:
-        """Get models by threshold classification."""
+    def get_by_status(self, status: ModelStatus) -> List[Model]:
+        """Get models by status classification."""
         return [
             model for model in self.models
-            if model.threshold_classification == classification
+            if model.status == status
         ]
     
-    def get_high_confidence_above_models(self) -> List[Model]:
-        """Get models with high confidence above 1e25 FLOP."""
-        return self.get_by_threshold_classification(ThresholdClassification.HIGH_CONFIDENCE_ABOVE)
+    def get_confirmed_above_models(self) -> List[Model]:
+        """Get models confirmed above 1e25 FLOP."""
+        return self.get_by_status(ModelStatus.CONFIRMED_ABOVE)
     
-    def get_high_confidence_below_models(self) -> List[Model]:
-        """Get models with high confidence below 1e25 FLOP."""
-        return self.get_by_threshold_classification(ThresholdClassification.HIGH_CONFIDENCE_BELOW)
+    def get_likely_above_models(self) -> List[Model]:
+        """Get models likely above 1e25 FLOP."""
+        return self.get_by_status(ModelStatus.LIKELY_ABOVE)
     
-    def get_not_sure_models(self) -> List[Model]:
-        """Get models with uncertain threshold classification."""
-        return self.get_by_threshold_classification(ThresholdClassification.NOT_SURE)
+    def get_confirmed_below_models(self) -> List[Model]:
+        """Get models confirmed below 1e25 FLOP."""
+        return self.get_by_status(ModelStatus.CONFIRMED_BELOW)
+    
+    def get_likely_below_models(self) -> List[Model]:
+        """Get models likely below 1e25 FLOP."""
+        return self.get_by_status(ModelStatus.LIKELY_BELOW)
+    
+    def get_uncertain_models(self) -> List[Model]:
+        """Get models with uncertain classification."""
+        return self.get_by_status(ModelStatus.UNCERTAIN)
     
     def get_by_developer(self, developer: str) -> List[Model]:
         """Get all models from a specific developer."""
