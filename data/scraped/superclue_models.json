@@ -1,0 +1,881 @@
+{
+  "metadata": {
+    "saved_at": "2025-08-04T19:46:32.819230",
+    "source": "superclue",
+    "last_updated": "2025-08-04T19:46:32.819126",
+    "model_count": 30,
+    "stage": "scraped"
+  },
+  "models": [
+    {
+      "name": "o3",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 73.78,
+        "superclue_math": 81.6,
+        "superclue_reasoning": 59.7,
+        "superclue_code": 83.76,
+        "superclue_agents": 76.12
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.804852",
+      "metadata": {}
+    },
+    {
+      "name": "o4_mini",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 73.32,
+        "superclue_math": 76.34,
+        "superclue_reasoning": 55.56,
+        "superclue_code": 86.14,
+        "superclue_agents": 86.36
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.804908",
+      "metadata": {}
+    },
+    {
+      "name": "gemini_2.5_pro",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 68.98,
+        "superclue_math": 74.05,
+        "superclue_reasoning": 52.59,
+        "superclue_code": 82.38,
+        "superclue_agents": 82.09
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.804942",
+      "metadata": {}
+    },
+    {
+      "name": "doubao_seed_1.6",
+      "developer": "ByteDance",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 68.04,
+        "superclue_math": 70.77,
+        "superclue_reasoning": 40.49,
+        "superclue_code": 84.36,
+        "superclue_agents": 90.67
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.804977",
+      "metadata": {}
+    },
+    {
+      "name": "claude_opus_4_reasoning",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 67.02,
+        "superclue_math": 60.16,
+        "superclue_reasoning": 45.93,
+        "superclue_code": 80.4,
+        "superclue_agents": 80.6
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805015",
+      "metadata": {}
+    },
+    {
+      "name": "deepseek_v3",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 66.54,
+        "superclue_math": 64.22,
+        "superclue_reasoning": 42.1,
+        "superclue_code": 85.15,
+        "superclue_agents": 74.7
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805049",
+      "metadata": {}
+    },
+    {
+      "name": "gpt_4o",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 65.92,
+        "superclue_math": 64.74,
+        "superclue_reasoning": 48.52,
+        "superclue_code": 73.27,
+        "superclue_agents": 76.12
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805080",
+      "metadata": {}
+    },
+    {
+      "name": "claude_3.5_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 65.01,
+        "superclue_math": 58.45,
+        "superclue_reasoning": 45.56,
+        "superclue_code": 78.61,
+        "superclue_agents": 77.31
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805110",
+      "metadata": {}
+    },
+    {
+      "name": "qwen_max",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 64.47,
+        "superclue_math": 66.07,
+        "superclue_reasoning": 47.41,
+        "superclue_code": 75.64,
+        "superclue_agents": 68.76
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805142",
+      "metadata": {}
+    },
+    {
+      "name": "yi_lightning",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 63.88,
+        "superclue_math": 64.3,
+        "superclue_reasoning": 40.37,
+        "superclue_code": 77.23,
+        "superclue_agents": 73.61
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805174",
+      "metadata": {}
+    },
+    {
+      "name": "glm_4_plus",
+      "developer": "Zhipu AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 63.67,
+        "superclue_math": 63.04,
+        "superclue_reasoning": 37.04,
+        "superclue_code": 82.18,
+        "superclue_agents": 72.41
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805207",
+      "metadata": {}
+    },
+    {
+      "name": "hunyuan_pro",
+      "developer": "Tencent",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 62.91,
+        "superclue_math": 58.51,
+        "superclue_reasoning": 36.91,
+        "superclue_code": 81.98,
+        "superclue_agents": 74.23
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805240",
+      "metadata": {}
+    },
+    {
+      "name": "doubao_pro",
+      "developer": "ByteDance",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 62.53,
+        "superclue_math": 60.45,
+        "superclue_reasoning": 42.96,
+        "superclue_code": 72.77,
+        "superclue_agents": 74.93
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805272",
+      "metadata": {}
+    },
+    {
+      "name": "step_2_16k",
+      "developer": "StepFun",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 61.74,
+        "superclue_math": 66.61,
+        "superclue_reasoning": 37.41,
+        "superclue_code": 69.9,
+        "superclue_agents": 73.04
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805317",
+      "metadata": {}
+    },
+    {
+      "name": "minimax_01",
+      "developer": "MiniMax",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 61.29,
+        "superclue_math": 55.09,
+        "superclue_reasoning": 38.52,
+        "superclue_code": 75.25,
+        "superclue_agents": 76.31
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805353",
+      "metadata": {}
+    },
+    {
+      "name": "moonshot",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 60.89,
+        "superclue_math": 58.63,
+        "superclue_reasoning": 39.26,
+        "superclue_code": 69.11,
+        "superclue_agents": 76.57
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805406",
+      "metadata": {}
+    },
+    {
+      "name": "baichuan_4",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 59.54,
+        "superclue_math": 58.68,
+        "superclue_reasoning": 36.91,
+        "superclue_code": 71.09,
+        "superclue_agents": 71.48
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805447",
+      "metadata": {}
+    },
+    {
+      "name": "gpt_4o_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 58.82,
+        "superclue_math": 55.45,
+        "superclue_reasoning": 40.37,
+        "superclue_code": 67.92,
+        "superclue_agents": 71.56
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805494",
+      "metadata": {}
+    },
+    {
+      "name": "gemini_1.5_flash",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 57.89,
+        "superclue_math": 54.55,
+        "superclue_reasoning": 35.56,
+        "superclue_code": 68.91,
+        "superclue_agents": 72.56
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805767",
+      "metadata": {}
+    },
+    {
+      "name": "deepseek_v2.5",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 57.67,
+        "superclue_math": 60.34,
+        "superclue_reasoning": 38.77,
+        "superclue_code": 65.15,
+        "superclue_agents": 66.42
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805805",
+      "metadata": {}
+    },
+    {
+      "name": "qwen2.5_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 56.84,
+        "superclue_math": 62.11,
+        "superclue_reasoning": 38.02,
+        "superclue_code": 60.79,
+        "superclue_agents": 66.42
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805837",
+      "metadata": {}
+    },
+    {
+      "name": "claude_3.5_haiku",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 56.12,
+        "superclue_math": 49.26,
+        "superclue_reasoning": 33.83,
+        "superclue_code": 66.93,
+        "superclue_agents": 74.48
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805868",
+      "metadata": {}
+    },
+    {
+      "name": "internlm_3",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 55.93,
+        "superclue_math": 60.22,
+        "superclue_reasoning": 38.52,
+        "superclue_code": 57.03,
+        "superclue_agents": 67.97
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805902",
+      "metadata": {}
+    },
+    {
+      "name": "llama_3.3_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 55.84,
+        "superclue_math": 58.92,
+        "superclue_reasoning": 37.65,
+        "superclue_code": 59.01,
+        "superclue_agents": 67.8
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805932",
+      "metadata": {}
+    },
+    {
+      "name": "glm_4_flash",
+      "developer": "Zhipu AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 54.97,
+        "superclue_math": 49.85,
+        "superclue_reasoning": 31.36,
+        "superclue_code": 71.09,
+        "superclue_agents": 67.56
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805965",
+      "metadata": {}
+    },
+    {
+      "name": "marco_o1",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 54.76,
+        "superclue_math": 60.97,
+        "superclue_reasoning": 39.75,
+        "superclue_code": 50.59,
+        "superclue_agents": 67.73
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.805994",
+      "metadata": {}
+    },
+    {
+      "name": "gemma_2_27b",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 54.21,
+        "superclue_math": 58.63,
+        "superclue_reasoning": 35.93,
+        "superclue_code": 54.26,
+        "superclue_agents": 68.04
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.806041",
+      "metadata": {}
+    },
+    {
+      "name": "yi_1.5_34b",
+      "developer": "01 AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 52.69,
+        "superclue_math": 56.35,
+        "superclue_reasoning": 36.3,
+        "superclue_code": 57.03,
+        "superclue_agents": 61.08
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.806090",
+      "metadata": {}
+    },
+    {
+      "name": "llama_3.1_70b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 51.74,
+        "superclue_math": 57.15,
+        "superclue_reasoning": 37.41,
+        "superclue_code": 52.38,
+        "superclue_agents": 60.02
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.806138",
+      "metadata": {}
+    },
+    {
+      "name": "mixtral_8x22b",
+      "developer": "Mistral",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "superclue_overall": 50.86,
+        "superclue_math": 50.33,
+        "superclue_reasoning": 35.68,
+        "superclue_code": 53.96,
+        "superclue_agents": 63.46
+      },
+      "sources": [
+        "https://www.superclueai.com/ (SuperCLUE - Comprehensive Chinese language understanding benchmark)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.806188",
+      "metadata": {}
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "saved_at": "2025-08-04T19:46:32.738362",
+    "source": "physics_iq",
+    "last_updated": "2025-08-04T19:46:32.738318",
+    "model_count": 8,
+    "stage": "scraped"
+  },
+  "models": [
+    {
+      "name": "videopoet",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "physics_iq_score": 29.5
+      },
+      "sources": [
+        "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.727599",
+      "metadata": {}
+    },
+    {
+      "name": "lumiere",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "physics_iq_score": 23.0
+      },
+      "sources": [
+        "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.727643",
+      "metadata": {}
+    },
+    {
+      "name": "runway_gen_3",
+      "developer": "Runway",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "physics_iq_score": 22.8
+      },
+      "sources": [
+        "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.727673",
+      "metadata": {}
+    },
+    {
+      "name": "videopoet",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "physics_iq_score": 20.3
+      },
+      "sources": [
+        "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.727695",
+      "metadata": {}
+    },
+    {
+      "name": "lumiere",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "physics_iq_score": 19.0
+      },
+      "sources": [
+        "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.727716",
+      "metadata": {}
+    },
+    {
+      "name": "stable_video_diffusion",
+      "developer": "Stability AI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "physics_iq_score": 14.8
+      },
+      "sources": [
+        "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.727741",
+      "metadata": {}
+    },
+    {
+      "name": "pika",
+      "developer": "Pika Labs",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "physics_iq_score": 13.0
+      },
+      "sources": [
+        "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.727765",
+      "metadata": {}
+    },
+    {
+      "name": "sora",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "physics_iq_score": 10.0
+      },
+      "sources": [
+        "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.727783",
+      "metadata": {}
+    }
+  ]
+}

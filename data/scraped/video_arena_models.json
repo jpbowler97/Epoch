@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "saved_at": "2025-08-04T19:46:32.892284",
+    "source": "video_arena",
+    "last_updated": "2025-08-04T19:46:32.892237",
+    "model_count": 7,
+    "stage": "scraped"
+  },
+  "models": [
+    {
+      "name": "veo_3_preview",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "video_arena_elo": 1298.0,
+        "video_quality": 89.2
+      },
+      "sources": [
+        "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.878504",
+      "metadata": {}
+    },
+    {
+      "name": "veo_2",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "video_arena_elo": 1267.0,
+        "video_quality": 86.7
+      },
+      "sources": [
+        "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.878555",
+      "metadata": {}
+    },
+    {
+      "name": "sora",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "video_arena_elo": 1234.0,
+        "video_quality": 84.3
+      },
+      "sources": [
+        "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.878585",
+      "metadata": {}
+    },
+    {
+      "name": "seedance",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "video_arena_elo": 1205.0,
+        "video_quality": 81.5
+      },
+      "sources": [
+        "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.878617",
+      "metadata": {}
+    },
+    {
+      "name": "waver",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "video_arena_elo": 1187.0,
+        "video_quality": 79.8
+      },
+      "sources": [
+        "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.878648",
+      "metadata": {}
+    },
+    {
+      "name": "runway_gen3",
+      "developer": "Runway",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "video_arena_elo": 1156.0,
+        "video_quality": 75.2
+      },
+      "sources": [
+        "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.878681",
+      "metadata": {}
+    },
+    {
+      "name": "kling",
+      "developer": "Unknown",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "video_arena_elo": 1134.0,
+        "video_quality": 72.8
+      },
+      "sources": [
+        "https://artificialanalysis.ai/text-to-video/arena (Artificial Analysis Video Arena - Text-to-video model rankings)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.878712",
+      "metadata": {}
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "saved_at": "2025-08-04T19:46:32.167655",
+    "source": "olympic_arena",
+    "last_updated": "2025-08-04T19:46:32.167611",
+    "model_count": 8,
+    "stage": "scraped"
+  },
+  "models": [
+    {
+      "name": "gpt_4o",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "olympic_overall": 40.47,
+        "olympic_math": 28.32,
+        "olympic_physics": 30.01,
+        "olympic_chemistry": 46.68,
+        "olympic_biology": 52.42
+      },
+      "sources": [
+        "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.158890",
+      "metadata": {}
+    },
+    {
+      "name": "claude_3.5_sonnet",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "olympic_overall": 39.24,
+        "olympic_math": 24.41,
+        "olympic_physics": 26.8,
+        "olympic_chemistry": 44.34,
+        "olympic_biology": 56.05
+      },
+      "sources": [
+        "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.158934",
+      "metadata": {}
+    },
+    {
+      "name": "gemini_1.5_pro",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "olympic_overall": 35.09,
+        "olympic_math": 21.05,
+        "olympic_physics": 23.16,
+        "olympic_chemistry": 39.74,
+        "olympic_biology": 50.0
+      },
+      "sources": [
+        "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.158964",
+      "metadata": {}
+    },
+    {
+      "name": "gpt_4o_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "olympic_overall": 31.82,
+        "olympic_math": 19.92,
+        "olympic_physics": 20.88,
+        "olympic_chemistry": 36.36,
+        "olympic_biology": 44.35
+      },
+      "sources": [
+        "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.158991",
+      "metadata": {}
+    },
+    {
+      "name": "llama_3.1_405b",
+      "developer": "Meta",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "olympic_overall": 28.67,
+        "olympic_math": 17.58,
+        "olympic_physics": 18.56,
+        "olympic_chemistry": 32.47,
+        "olympic_biology": 40.32
+      },
+      "sources": [
+        "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.159018",
+      "metadata": {}
+    },
+    {
+      "name": "qwen2_72b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "olympic_overall": 26.89,
+        "olympic_math": 16.02,
+        "olympic_physics": 16.48,
+        "olympic_chemistry": 30.52,
+        "olympic_biology": 37.1
+      },
+      "sources": [
+        "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.159045",
+      "metadata": {}
+    },
+    {
+      "name": "claude_3_opus",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "olympic_overall": 25.78,
+        "olympic_math": 14.84,
+        "olympic_physics": 15.54,
+        "olympic_chemistry": 28.57,
+        "olympic_biology": 35.48
+      },
+      "sources": [
+        "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.159071",
+      "metadata": {}
+    },
+    {
+      "name": "gemini_1.0_pro",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "olympic_overall": 24.12,
+        "olympic_math": 13.28,
+        "olympic_physics": 14.09,
+        "olympic_chemistry": 26.62,
+        "olympic_biology": 32.26
+      },
+      "sources": [
+        "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.159097",
+      "metadata": {}
+    }
+  ]
+}

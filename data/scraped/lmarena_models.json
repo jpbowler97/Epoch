@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "saved_at": "2025-08-01T17:30:36.056856",
+    "saved_at": "2025-08-04T19:46:32.063380",
     "source": "lmarena",
-    "last_updated": "2025-08-01T17:30:36.040498",
-    "model_count": 212,
+    "last_updated": "2025-08-04T19:46:32.063306",
+    "model_count": 217,
     "stage": "scraped"
   },
   "models": [
@@ -26,16 +26,11 @@
         "lmarena_score": 1463.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.027154",
-      "metadata": {
-        "lmarena_score": 1463.0,
-        "lmarena_rank": "1",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.034724",
+      "metadata": {}
     },
     {
       "name": "o3",
@@ -56,16 +51,11 @@
         "lmarena_score": 1454.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.028886",
-      "metadata": {
-        "lmarena_score": 1454.0,
-        "lmarena_rank": "1",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035316",
+      "metadata": {}
     },
     {
       "name": "chatgpt_4o",
@@ -86,16 +76,11 @@
         "lmarena_score": 1443.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.028990",
-      "metadata": {
-        "lmarena_score": 1443.0,
-        "lmarena_rank": "2",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035338",
+      "metadata": {}
     },
     {
       "name": "gpt_4.5_preview",
@@ -116,16 +101,11 @@
         "lmarena_score": 1440.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029035",
-      "metadata": {
-        "lmarena_score": 1440.0,
-        "lmarena_rank": "3",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035355",
+      "metadata": {}
     },
     {
       "name": "grok_4",
@@ -146,16 +126,11 @@
         "lmarena_score": 1432.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029055",
-      "metadata": {
-        "lmarena_score": 1432.0,
-        "lmarena_rank": "3",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035371",
+      "metadata": {}
     },
     {
       "name": "claude_opus_4_thinking_16k",
@@ -176,16 +151,11 @@
         "lmarena_score": 1421.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029084",
-      "metadata": {
-        "lmarena_score": 1421.0,
-        "lmarena_rank": "5",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035385",
+      "metadata": {}
     },
     {
       "name": "kimi_k2_preview",
@@ -206,16 +176,11 @@
         "lmarena_score": 1420.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029104",
-      "metadata": {
-        "lmarena_score": 1420.0,
-        "lmarena_rank": "5",
-        "license": "Modified MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035400",
+      "metadata": {}
     },
     {
       "name": "deepseek_r1",
@@ -236,16 +201,11 @@
         "lmarena_score": 1418.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029152",
-      "metadata": {
-        "lmarena_score": 1418.0,
-        "lmarena_rank": "5",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035416",
+      "metadata": {}
     },
     {
       "name": "claude_opus_4",
@@ -266,16 +226,11 @@
         "lmarena_score": 1414.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029178",
-      "metadata": {
-        "lmarena_score": 1414.0,
-        "lmarena_rank": "6",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035430",
+      "metadata": {}
     },
     {
       "name": "grok_3",
@@ -296,16 +251,11 @@
         "lmarena_score": 1413.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029197",
-      "metadata": {
-        "lmarena_score": 1413.0,
-        "lmarena_rank": "6",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035448",
+      "metadata": {}
     },
     {
       "name": "gemini_2.5_flash",
@@ -326,16 +276,36 @@
         "lmarena_score": 1411.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029213",
-      "metadata": {
-        "lmarena_score": 1411.0,
-        "lmarena_rank": "6",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035460",
+      "metadata": {}
+    },
+    {
+      "name": "gpt_4.1",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1407.0
+      },
+      "sources": [
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.035473",
+      "metadata": {}
     },
     {
       "name": "claude_sonnet_4_thinking_32k",
@@ -356,16 +326,11 @@
         "lmarena_score": 1400.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029634",
-      "metadata": {
-        "lmarena_score": 1400.0,
-        "lmarena_rank": "10",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035485",
+      "metadata": {}
     },
     {
       "name": "o1",
@@ -386,16 +351,11 @@
         "lmarena_score": 1400.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029660",
-      "metadata": {
-        "lmarena_score": 1400.0,
-        "lmarena_rank": "11",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035497",
+      "metadata": {}
     },
     {
       "name": "qwen3_235b_a22b",
@@ -416,16 +376,11 @@
         "lmarena_score": 1397.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029676",
-      "metadata": {
-        "lmarena_score": 1397.0,
-        "lmarena_rank": "12",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035508",
+      "metadata": {}
     },
     {
       "name": "o4_mini",
@@ -446,16 +401,11 @@
         "lmarena_score": 1397.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029691",
-      "metadata": {
-        "lmarena_score": 1397.0,
-        "lmarena_rank": "12",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035520",
+      "metadata": {}
     },
     {
       "name": "qwen3_coder_480b",
@@ -476,16 +426,11 @@
         "lmarena_score": 1391.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029707",
-      "metadata": {
-        "lmarena_score": 1391.0,
-        "lmarena_rank": "12",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035533",
+      "metadata": {}
     },
     {
       "name": "deepseek_r1",
@@ -506,16 +451,36 @@
         "lmarena_score": 1394.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029722",
-      "metadata": {
-        "lmarena_score": 1394.0,
-        "lmarena_rank": "13",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035545",
+      "metadata": {}
+    },
+    {
+      "name": "deepseek_v3",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1394.0
+      },
+      "sources": [
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.035558",
+      "metadata": {}
     },
     {
       "name": "claude_sonnet_4",
@@ -536,16 +501,11 @@
         "lmarena_score": 1391.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029759",
-      "metadata": {
-        "lmarena_score": 1391.0,
-        "lmarena_rank": "13",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035574",
+      "metadata": {}
     },
     {
       "name": "claude_3_7_sonnet_thinking_32k",
@@ -566,16 +526,11 @@
         "lmarena_score": 1387.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029777",
-      "metadata": {
-        "lmarena_score": 1387.0,
-        "lmarena_rank": "14",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035587",
+      "metadata": {}
     },
     {
       "name": "o1_preview",
@@ -596,16 +551,11 @@
         "lmarena_score": 1385.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029795",
-      "metadata": {
-        "lmarena_score": 1385.0,
-        "lmarena_rank": "17",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035624",
+      "metadata": {}
     },
     {
       "name": "mistral_medium",
@@ -626,16 +576,11 @@
         "lmarena_score": 1384.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029811",
-      "metadata": {
-        "lmarena_score": 1384.0,
-        "lmarena_rank": "17",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035646",
+      "metadata": {}
     },
     {
       "name": "hunyuan_turbos",
@@ -656,16 +601,11 @@
         "lmarena_score": 1381.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029833",
-      "metadata": {
-        "lmarena_score": 1381.0,
-        "lmarena_rank": "17",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035659",
+      "metadata": {}
     },
     {
       "name": "minimax_m1",
@@ -686,16 +626,11 @@
         "lmarena_score": 1376.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029847",
-      "metadata": {
-        "lmarena_score": 1376.0,
-        "lmarena_rank": "20",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035670",
+      "metadata": {}
     },
     {
       "name": "gpt_4.1_mini",
@@ -716,16 +651,11 @@
         "lmarena_score": 1374.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029866",
-      "metadata": {
-        "lmarena_score": 1374.0,
-        "lmarena_rank": "21",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035683",
+      "metadata": {}
     },
     {
       "name": "qwen3_235b",
@@ -746,16 +676,11 @@
         "lmarena_score": 1374.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029880",
-      "metadata": {
-        "lmarena_score": 1374.0,
-        "lmarena_rank": "21",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035695",
+      "metadata": {}
     },
     {
       "name": "qwen2.5_max",
@@ -776,16 +701,11 @@
         "lmarena_score": 1373.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029895",
-      "metadata": {
-        "lmarena_score": 1373.0,
-        "lmarena_rank": "23",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035708",
+      "metadata": {}
     },
     {
       "name": "claude_3_7_sonnet",
@@ -806,16 +726,11 @@
         "lmarena_score": 1372.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029919",
-      "metadata": {
-        "lmarena_score": 1372.0,
-        "lmarena_rank": "24",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035720",
+      "metadata": {}
     },
     {
       "name": "claude_3_5_sonnet",
@@ -836,16 +751,11 @@
         "lmarena_score": 1367.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029936",
-      "metadata": {
-        "lmarena_score": 1367.0,
-        "lmarena_rank": "25",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035732",
+      "metadata": {}
     },
     {
       "name": "gemini_2.0_flash_001",
@@ -866,16 +776,11 @@
         "lmarena_score": 1366.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.029991",
-      "metadata": {
-        "lmarena_score": 1366.0,
-        "lmarena_rank": "25",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035743",
+      "metadata": {}
     },
     {
       "name": "o3_mini",
@@ -896,16 +801,11 @@
         "lmarena_score": 1364.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030011",
-      "metadata": {
-        "lmarena_score": 1364.0,
-        "lmarena_rank": "25",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035756",
+      "metadata": {}
     },
     {
       "name": "gemma_3_27b",
@@ -926,16 +826,11 @@
         "lmarena_score": 1363.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030026",
-      "metadata": {
-        "lmarena_score": 1363.0,
-        "lmarena_rank": "26",
-        "license": "Gemma",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035767",
+      "metadata": {}
     },
     {
       "name": "grok_3_mini",
@@ -956,16 +851,11 @@
         "lmarena_score": 1360.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030043",
-      "metadata": {
-        "lmarena_score": 1360.0,
-        "lmarena_rank": "26",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035779",
+      "metadata": {}
     },
     {
       "name": "grok_3_mini",
@@ -986,19 +876,39 @@
         "lmarena_score": 1356.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030058",
-      "metadata": {
-        "lmarena_score": 1356.0,
-        "lmarena_rank": "30",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035793",
+      "metadata": {}
     },
     {
-      "name": "llama_3.1_nemotron_ultra_253b",
+      "name": "deepseek_v3",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1357.0
+      },
+      "sources": [
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.035804",
+      "metadata": {}
+    },
+    {
+      "name": "llama_3.1_nemotron_ultra_253b_v1",
       "developer": "Nvidia",
       "release_date": null,
       "parameters": null,
@@ -1016,16 +926,11 @@
         "lmarena_score": 1346.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030099",
-      "metadata": {
-        "lmarena_score": 1346.0,
-        "lmarena_rank": "32",
-        "license": "Nvidia Open Model",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035815",
+      "metadata": {}
     },
     {
       "name": "gemini_2.0_flash_lite",
@@ -1046,16 +951,11 @@
         "lmarena_score": 1352.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030116",
-      "metadata": {
-        "lmarena_score": 1352.0,
-        "lmarena_rank": "34",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035826",
+      "metadata": {}
     },
     {
       "name": "gemini_1.5_pro_002",
@@ -1076,16 +976,11 @@
         "lmarena_score": 1351.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030131",
-      "metadata": {
-        "lmarena_score": 1351.0,
-        "lmarena_rank": "34",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035889",
+      "metadata": {}
     },
     {
       "name": "mistral_small",
@@ -1106,16 +1001,11 @@
         "lmarena_score": 1349.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030151",
-      "metadata": {
-        "lmarena_score": 1349.0,
-        "lmarena_rank": "34",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035902",
+      "metadata": {}
     },
     {
       "name": "command_a_03",
@@ -1136,16 +1026,11 @@
         "lmarena_score": 1347.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030167",
-      "metadata": {
-        "lmarena_score": 1347.0,
-        "lmarena_rank": "34",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035914",
+      "metadata": {}
     },
     {
       "name": "hunyuan_turbos",
@@ -1166,16 +1051,11 @@
         "lmarena_score": 1346.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030181",
-      "metadata": {
-        "lmarena_score": 1346.0,
-        "lmarena_rank": "34",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035927",
+      "metadata": {}
     },
     {
       "name": "qwen_plus",
@@ -1196,16 +1076,11 @@
         "lmarena_score": 1345.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030195",
-      "metadata": {
-        "lmarena_score": 1345.0,
-        "lmarena_rank": "34",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035938",
+      "metadata": {}
     },
     {
       "name": "qwen3_32b",
@@ -1226,16 +1101,11 @@
         "lmarena_score": 1344.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030215",
-      "metadata": {
-        "lmarena_score": 1344.0,
-        "lmarena_rank": "34",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035950",
+      "metadata": {}
     },
     {
       "name": "glm_4_plus",
@@ -1256,16 +1126,11 @@
         "lmarena_score": 1343.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030233",
-      "metadata": {
-        "lmarena_score": 1343.0,
-        "lmarena_rank": "34",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035964",
+      "metadata": {}
     },
     {
       "name": "hunyuan_turbo",
@@ -1286,16 +1151,11 @@
         "lmarena_score": 1341.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030247",
-      "metadata": {
-        "lmarena_score": 1341.0,
-        "lmarena_rank": "34",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035977",
+      "metadata": {}
     },
     {
       "name": "o3_mini",
@@ -1316,16 +1176,11 @@
         "lmarena_score": 1346.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030262",
-      "metadata": {
-        "lmarena_score": 1346.0,
-        "lmarena_rank": "36",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.035988",
+      "metadata": {}
     },
     {
       "name": "gemma_3_12b",
@@ -1346,16 +1201,11 @@
         "lmarena_score": 1338.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030276",
-      "metadata": {
-        "lmarena_score": 1338.0,
-        "lmarena_rank": "36",
-        "license": "Gemma",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036000",
+      "metadata": {}
     },
     {
       "name": "gpt_4o",
@@ -1376,16 +1226,11 @@
         "lmarena_score": 1344.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030292",
-      "metadata": {
-        "lmarena_score": 1344.0,
-        "lmarena_rank": "37",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036011",
+      "metadata": {}
     },
     {
       "name": "claude_3_5_sonnet",
@@ -1406,16 +1251,11 @@
         "lmarena_score": 1340.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030312",
-      "metadata": {
-        "lmarena_score": 1340.0,
-        "lmarena_rank": "39",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036022",
+      "metadata": {}
     },
     {
       "name": "qwq_32b",
@@ -1436,16 +1276,11 @@
         "lmarena_score": 1335.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030328",
-      "metadata": {
-        "lmarena_score": 1335.0,
-        "lmarena_rank": "39",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036033",
+      "metadata": {}
     },
     {
       "name": "step_2",
@@ -1466,16 +1301,11 @@
         "lmarena_score": 1332.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030353",
-      "metadata": {
-        "lmarena_score": 1332.0,
-        "lmarena_rank": "39",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036045",
+      "metadata": {}
     },
     {
       "name": "o1_mini",
@@ -1496,16 +1326,11 @@
         "lmarena_score": 1336.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030367",
-      "metadata": {
-        "lmarena_score": 1336.0,
-        "lmarena_rank": "42",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036060",
+      "metadata": {}
     },
     {
       "name": "llama_3.1_405b_instruct_bf16",
@@ -1526,16 +1351,11 @@
         "lmarena_score": 1335.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030382",
-      "metadata": {
-        "lmarena_score": 1335.0,
-        "lmarena_rank": "42",
-        "license": "Llama 3.1 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036072",
+      "metadata": {}
     },
     {
       "name": "llama_3.1_405b_instruct_fp8",
@@ -1556,16 +1376,11 @@
         "lmarena_score": 1334.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030397",
-      "metadata": {
-        "lmarena_score": 1334.0,
-        "lmarena_rank": "43",
-        "license": "Llama 3.1 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036083",
+      "metadata": {}
     },
     {
       "name": "gpt_4o",
@@ -1586,16 +1401,11 @@
         "lmarena_score": 1334.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030418",
-      "metadata": {
-        "lmarena_score": 1334.0,
-        "lmarena_rank": "43",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036094",
+      "metadata": {}
     },
     {
       "name": "gemini_advanced",
@@ -1616,16 +1426,11 @@
         "lmarena_score": 1332.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030439",
-      "metadata": {
-        "lmarena_score": 1332.0,
-        "lmarena_rank": "43",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036105",
+      "metadata": {}
     },
     {
       "name": "grok_2",
@@ -1646,16 +1451,11 @@
         "lmarena_score": 1332.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030454",
-      "metadata": {
-        "lmarena_score": 1332.0,
-        "lmarena_rank": "43",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036116",
+      "metadata": {}
     },
     {
       "name": "qwen3_30b",
@@ -1676,16 +1476,11 @@
         "lmarena_score": 1331.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030471",
-      "metadata": {
-        "lmarena_score": 1331.0,
-        "lmarena_rank": "43",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036127",
+      "metadata": {}
     },
     {
       "name": "llama_4_maverick_17b_128e",
@@ -1706,19 +1501,14 @@
         "lmarena_score": 1330.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030490",
-      "metadata": {
-        "lmarena_score": 1330.0,
-        "lmarena_rank": "43",
-        "license": "Llama 4",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036138",
+      "metadata": {}
     },
     {
-      "name": "llama_3.3_nemotron_49b_super",
+      "name": "llama_3.3_nemotron_49b_super_v1",
       "developer": "Nvidia",
       "release_date": null,
       "parameters": null,
@@ -1736,16 +1526,11 @@
         "lmarena_score": 1325.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030505",
-      "metadata": {
-        "lmarena_score": 1325.0,
-        "lmarena_rank": "43",
-        "license": "Nvidia",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036149",
+      "metadata": {}
     },
     {
       "name": "yi_lightning",
@@ -1766,16 +1551,11 @@
         "lmarena_score": 1328.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030523",
-      "metadata": {
-        "lmarena_score": 1328.0,
-        "lmarena_rank": "46",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036162",
+      "metadata": {}
     },
     {
       "name": "hunyuan_large",
@@ -1796,16 +1576,36 @@
         "lmarena_score": 1323.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030539",
-      "metadata": {
-        "lmarena_score": 1323.0,
-        "lmarena_rank": "46",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036173",
+      "metadata": {}
+    },
+    {
+      "name": "deepseek_v2.5",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1322.0
+      },
+      "sources": [
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.036186",
+      "metadata": {}
     },
     {
       "name": "gpt_4.1_nano",
@@ -1826,16 +1626,11 @@
         "lmarena_score": 1321.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030570",
-      "metadata": {
-        "lmarena_score": 1321.0,
-        "lmarena_rank": "50",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036197",
+      "metadata": {}
     },
     {
       "name": "gpt_4_turbo",
@@ -1856,16 +1651,11 @@
         "lmarena_score": 1324.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030588",
-      "metadata": {
-        "lmarena_score": 1324.0,
-        "lmarena_rank": "55",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036210",
+      "metadata": {}
     },
     {
       "name": "claude_3_opus",
@@ -1886,16 +1676,11 @@
         "lmarena_score": 1323.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030604",
-      "metadata": {
-        "lmarena_score": 1323.0,
-        "lmarena_rank": "56",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036221",
+      "metadata": {}
     },
     {
       "name": "gemini_1.5_pro_001",
@@ -1916,16 +1701,11 @@
         "lmarena_score": 1320.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030626",
-      "metadata": {
-        "lmarena_score": 1320.0,
-        "lmarena_rank": "58",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036233",
+      "metadata": {}
     },
     {
       "name": "glm_4_plus",
@@ -1946,16 +1726,11 @@
         "lmarena_score": 1319.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030641",
-      "metadata": {
-        "lmarena_score": 1319.0,
-        "lmarena_rank": "58",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036244",
+      "metadata": {}
     },
     {
       "name": "amazon_nova_experimental_chat_05_14",
@@ -1976,16 +1751,11 @@
         "lmarena_score": 1318.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030658",
-      "metadata": {
-        "lmarena_score": 1318.0,
-        "lmarena_rank": "58",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036255",
+      "metadata": {}
     },
     {
       "name": "llama_4_scout_17b_16e",
@@ -2006,16 +1776,11 @@
         "lmarena_score": 1318.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030672",
-      "metadata": {
-        "lmarena_score": 1318.0,
-        "lmarena_rank": "58",
-        "license": "Llama",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036268",
+      "metadata": {}
     },
     {
       "name": "gemma_3n_e4b",
@@ -2036,16 +1801,11 @@
         "lmarena_score": 1316.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030689",
-      "metadata": {
-        "lmarena_score": 1316.0,
-        "lmarena_rank": "58",
-        "license": "Gemma",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036280",
+      "metadata": {}
     },
     {
       "name": "qwen_max",
@@ -2066,16 +1826,11 @@
         "lmarena_score": 1317.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030704",
-      "metadata": {
-        "lmarena_score": 1317.0,
-        "lmarena_rank": "60",
-        "license": "Qwen",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036292",
+      "metadata": {}
     },
     {
       "name": "llama_3.3_70b",
@@ -2096,16 +1851,11 @@
         "lmarena_score": 1317.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030721",
-      "metadata": {
-        "lmarena_score": 1317.0,
-        "lmarena_rank": "61",
-        "license": "Llama-3.3",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036305",
+      "metadata": {}
     },
     {
       "name": "qwen2.5_plus",
@@ -2126,16 +1876,11 @@
         "lmarena_score": 1315.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030738",
-      "metadata": {
-        "lmarena_score": 1315.0,
-        "lmarena_rank": "61",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036316",
+      "metadata": {}
     },
     {
       "name": "claude_3_5_haiku",
@@ -2156,16 +1901,11 @@
         "lmarena_score": 1317.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030760",
-      "metadata": {
-        "lmarena_score": 1317.0,
-        "lmarena_rank": "62",
-        "license": "Propretary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036327",
+      "metadata": {}
     },
     {
       "name": "gpt_4o_mini",
@@ -2186,16 +1926,11 @@
         "lmarena_score": 1317.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030774",
-      "metadata": {
-        "lmarena_score": 1317.0,
-        "lmarena_rank": "62",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036338",
+      "metadata": {}
     },
     {
       "name": "gpt_4_preview",
@@ -2216,16 +1951,11 @@
         "lmarena_score": 1315.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030791",
-      "metadata": {
-        "lmarena_score": 1315.0,
-        "lmarena_rank": "62",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036350",
+      "metadata": {}
     },
     {
       "name": "athene",
@@ -2246,16 +1976,11 @@
         "lmarena_score": 1315.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030804",
-      "metadata": {
-        "lmarena_score": 1315.0,
-        "lmarena_rank": "62",
-        "license": "NexusFlow",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036436",
+      "metadata": {}
     },
     {
       "name": "hunyuan_standard",
@@ -2276,16 +2001,11 @@
         "lmarena_score": 1310.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030823",
-      "metadata": {
-        "lmarena_score": 1310.0,
-        "lmarena_rank": "62",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036450",
+      "metadata": {}
     },
     {
       "name": "gpt_4_preview",
@@ -2306,16 +2026,11 @@
         "lmarena_score": 1315.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030838",
-      "metadata": {
-        "lmarena_score": 1315.0,
-        "lmarena_rank": "63",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036462",
+      "metadata": {}
     },
     {
       "name": "gemini_1.5_flash_002",
@@ -2336,16 +2051,11 @@
         "lmarena_score": 1313.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030852",
-      "metadata": {
-        "lmarena_score": 1313.0,
-        "lmarena_rank": "64",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036476",
+      "metadata": {}
     },
     {
       "name": "mistral_large",
@@ -2366,16 +2076,11 @@
         "lmarena_score": 1313.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030872",
-      "metadata": {
-        "lmarena_score": 1313.0,
-        "lmarena_rank": "64",
-        "license": "Mistral Research",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036488",
+      "metadata": {}
     },
     {
       "name": "magistral_medium",
@@ -2396,16 +2101,11 @@
         "lmarena_score": 1304.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030886",
-      "metadata": {
-        "lmarena_score": 1304.0,
-        "lmarena_rank": "66",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036499",
+      "metadata": {}
     },
     {
       "name": "gemma_3_4b",
@@ -2426,16 +2126,11 @@
         "lmarena_score": 1303.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030900",
-      "metadata": {
-        "lmarena_score": 1303.0,
-        "lmarena_rank": "70",
-        "license": "Gemma",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036512",
+      "metadata": {}
     },
     {
       "name": "grok_2_mini",
@@ -2456,16 +2151,11 @@
         "lmarena_score": 1307.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030921",
-      "metadata": {
-        "lmarena_score": 1307.0,
-        "lmarena_rank": "73",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036523",
+      "metadata": {}
     },
     {
       "name": "mistral_large",
@@ -2486,16 +2176,11 @@
         "lmarena_score": 1306.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030936",
-      "metadata": {
-        "lmarena_score": 1306.0,
-        "lmarena_rank": "73",
-        "license": "MRL",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036535",
+      "metadata": {}
     },
     {
       "name": "athene_70b",
@@ -2516,16 +2201,36 @@
         "lmarena_score": 1305.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030954",
-      "metadata": {
-        "lmarena_score": 1305.0,
-        "lmarena_rank": "73",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036546",
+      "metadata": {}
+    },
+    {
+      "name": "deepseek_v2.5",
+      "developer": "DeepSeek",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "threshold_classification": "not_sure",
+      "benchmarks": {
+        "lmarena_score": 1306.0
+      },
+      "sources": [
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-04T19:46:32.036557",
+      "metadata": {}
     },
     {
       "name": "qwen2.5_72b",
@@ -2546,16 +2251,11 @@
         "lmarena_score": 1303.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.030984",
-      "metadata": {
-        "lmarena_score": 1303.0,
-        "lmarena_rank": "79",
-        "license": "Qwen",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036568",
+      "metadata": {}
     },
     {
       "name": "llama_3.1_nemotron_70b",
@@ -2576,16 +2276,11 @@
         "lmarena_score": 1298.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031003",
-      "metadata": {
-        "lmarena_score": 1298.0,
-        "lmarena_rank": "83",
-        "license": "Llama 3.1",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036579",
+      "metadata": {}
     },
     {
       "name": "hunyuan_large_vision",
@@ -2606,16 +2301,11 @@
         "lmarena_score": 1295.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031021",
-      "metadata": {
-        "lmarena_score": 1295.0,
-        "lmarena_rank": "83",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036652",
+      "metadata": {}
     },
     {
       "name": "mistral_small_3.1_24b",
@@ -2636,16 +2326,11 @@
         "lmarena_score": 1294.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031036",
-      "metadata": {
-        "lmarena_score": 1294.0,
-        "lmarena_rank": "85",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036666",
+      "metadata": {}
     },
     {
       "name": "llama_3.1_tulu_3_70b",
@@ -2666,16 +2351,11 @@
         "lmarena_score": 1290.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031050",
-      "metadata": {
-        "lmarena_score": 1290.0,
-        "lmarena_rank": "85",
-        "license": "Llama 3.1",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036678",
+      "metadata": {}
     },
     {
       "name": "llama_3.1_70b",
@@ -2696,16 +2376,11 @@
         "lmarena_score": 1295.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031065",
-      "metadata": {
-        "lmarena_score": 1295.0,
-        "lmarena_rank": "86",
-        "license": "Llama 3.1 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036690",
+      "metadata": {}
     },
     {
       "name": "llama_3.1_nemotron_51b",
@@ -2726,16 +2401,11 @@
         "lmarena_score": 1289.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031080",
-      "metadata": {
-        "lmarena_score": 1289.0,
-        "lmarena_rank": "86",
-        "license": "Llama 3.1",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036703",
+      "metadata": {}
     },
     {
       "name": "amazon_nova_pro",
@@ -2756,16 +2426,11 @@
         "lmarena_score": 1290.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031095",
-      "metadata": {
-        "lmarena_score": 1290.0,
-        "lmarena_rank": "89",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036720",
+      "metadata": {}
     },
     {
       "name": "jamba_1.5_large",
@@ -2786,16 +2451,11 @@
         "lmarena_score": 1289.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031109",
-      "metadata": {
-        "lmarena_score": 1289.0,
-        "lmarena_rank": "89",
-        "license": "Jamba Open",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036735",
+      "metadata": {}
     },
     {
       "name": "reka_core",
@@ -2816,16 +2476,11 @@
         "lmarena_score": 1289.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031133",
-      "metadata": {
-        "lmarena_score": 1289.0,
-        "lmarena_rank": "89",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036752",
+      "metadata": {}
     },
     {
       "name": "gpt_4",
@@ -2846,16 +2501,11 @@
         "lmarena_score": 1287.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031151",
-      "metadata": {
-        "lmarena_score": 1287.0,
-        "lmarena_rank": "91",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036771",
+      "metadata": {}
     },
     {
       "name": "gemma_2_27b",
@@ -2876,16 +2526,11 @@
         "lmarena_score": 1287.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031167",
-      "metadata": {
-        "lmarena_score": 1287.0,
-        "lmarena_rank": "91",
-        "license": "Gemma license",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036783",
+      "metadata": {}
     },
     {
       "name": "gemini_1.5_flash_001",
@@ -2906,16 +2551,11 @@
         "lmarena_score": 1284.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031181",
-      "metadata": {
-        "lmarena_score": 1284.0,
-        "lmarena_rank": "92",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036797",
+      "metadata": {}
     },
     {
       "name": "gemma_2_9b_it_simpo",
@@ -2936,16 +2576,11 @@
         "lmarena_score": 1282.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031194",
-      "metadata": {
-        "lmarena_score": 1282.0,
-        "lmarena_rank": "92",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036808",
+      "metadata": {}
     },
     {
       "name": "claude_3_sonnet",
@@ -2966,16 +2601,11 @@
         "lmarena_score": 1283.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031214",
-      "metadata": {
-        "lmarena_score": 1283.0,
-        "lmarena_rank": "93",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036821",
+      "metadata": {}
     },
     {
       "name": "command_r_plus_08",
@@ -2996,16 +2626,11 @@
         "lmarena_score": 1281.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031229",
-      "metadata": {
-        "lmarena_score": 1281.0,
-        "lmarena_rank": "93",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036832",
+      "metadata": {}
     },
     {
       "name": "nemotron_4_340b",
@@ -3026,16 +2651,11 @@
         "lmarena_score": 1280.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031244",
-      "metadata": {
-        "lmarena_score": 1280.0,
-        "lmarena_rank": "94",
-        "license": "NVIDIA Open Model",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036843",
+      "metadata": {}
     },
     {
       "name": "gpt_4",
@@ -3056,16 +2676,11 @@
         "lmarena_score": 1277.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031269",
-      "metadata": {
-        "lmarena_score": 1277.0,
-        "lmarena_rank": "97",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036855",
+      "metadata": {}
     },
     {
       "name": "reka_flash",
@@ -3086,16 +2701,11 @@
         "lmarena_score": 1275.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031288",
-      "metadata": {
-        "lmarena_score": 1275.0,
-        "lmarena_rank": "97",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036866",
+      "metadata": {}
     },
     {
       "name": "glm_4",
@@ -3116,16 +2726,11 @@
         "lmarena_score": 1275.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031303",
-      "metadata": {
-        "lmarena_score": 1275.0,
-        "lmarena_rank": "97",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036877",
+      "metadata": {}
     },
     {
       "name": "llama_3_70b",
@@ -3146,16 +2751,11 @@
         "lmarena_score": 1277.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031324",
-      "metadata": {
-        "lmarena_score": 1277.0,
-        "lmarena_rank": "99",
-        "license": "Llama 3 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036889",
+      "metadata": {}
     },
     {
       "name": "mistral_small_24b",
@@ -3176,16 +2776,11 @@
         "lmarena_score": 1275.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031339",
-      "metadata": {
-        "lmarena_score": 1275.0,
-        "lmarena_rank": "99",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036900",
+      "metadata": {}
     },
     {
       "name": "qwen2.5_coder_32b",
@@ -3206,16 +2801,11 @@
         "lmarena_score": 1272.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031472",
-      "metadata": {
-        "lmarena_score": 1272.0,
-        "lmarena_rank": "99",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036912",
+      "metadata": {}
     },
     {
       "name": "c4ai_aya_expanse_32b",
@@ -3236,16 +2826,11 @@
         "lmarena_score": 1269.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031516",
-      "metadata": {
-        "lmarena_score": 1269.0,
-        "lmarena_rank": "104",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036924",
+      "metadata": {}
     },
     {
       "name": "olmo_2_32b",
@@ -3266,16 +2851,11 @@
         "lmarena_score": 1261.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031535",
-      "metadata": {
-        "lmarena_score": 1261.0,
-        "lmarena_rank": "107",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036935",
+      "metadata": {}
     },
     {
       "name": "qwen2_72b",
@@ -3296,16 +2876,11 @@
         "lmarena_score": 1266.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031555",
-      "metadata": {
-        "lmarena_score": 1266.0,
-        "lmarena_rank": "108",
-        "license": "Qianwen LICENSE",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036946",
+      "metadata": {}
     },
     {
       "name": "command_r_plus",
@@ -3326,16 +2901,11 @@
         "lmarena_score": 1266.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031570",
-      "metadata": {
-        "lmarena_score": 1266.0,
-        "lmarena_rank": "109",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036959",
+      "metadata": {}
     },
     {
       "name": "gemma_2_9b",
@@ -3356,19 +2926,14 @@
         "lmarena_score": 1265.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031583",
-      "metadata": {
-        "lmarena_score": 1265.0,
-        "lmarena_rank": "109",
-        "license": "Gemma license",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036971",
+      "metadata": {}
     },
     {
-      "name": "deepseek_coder",
+      "name": "deepseek_coder_v2",
       "developer": "DeepSeek AI",
       "release_date": null,
       "parameters": null,
@@ -3386,16 +2951,11 @@
         "lmarena_score": 1264.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031593",
-      "metadata": {
-        "lmarena_score": 1264.0,
-        "lmarena_rank": "109",
-        "license": "DeepSeek License",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036984",
+      "metadata": {}
     },
     {
       "name": "claude_3_haiku",
@@ -3416,16 +2976,11 @@
         "lmarena_score": 1263.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031603",
-      "metadata": {
-        "lmarena_score": 1263.0,
-        "lmarena_rank": "112",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.036997",
+      "metadata": {}
     },
     {
       "name": "gemini_1.5_flash_8b_001",
@@ -3446,16 +3001,11 @@
         "lmarena_score": 1262.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031618",
-      "metadata": {
-        "lmarena_score": 1262.0,
-        "lmarena_rank": "112",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037028",
+      "metadata": {}
     },
     {
       "name": "amazon_nova_lite",
@@ -3476,16 +3026,11 @@
         "lmarena_score": 1261.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031628",
-      "metadata": {
-        "lmarena_score": 1261.0,
-        "lmarena_rank": "112",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037044",
+      "metadata": {}
     },
     {
       "name": "phi_4",
@@ -3506,16 +3051,11 @@
         "lmarena_score": 1258.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031642",
-      "metadata": {
-        "lmarena_score": 1258.0,
-        "lmarena_rank": "113",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037059",
+      "metadata": {}
     },
     {
       "name": "command_r_08",
@@ -3536,16 +3076,11 @@
         "lmarena_score": 1253.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031652",
-      "metadata": {
-        "lmarena_score": 1253.0,
-        "lmarena_rank": "116",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037072",
+      "metadata": {}
     },
     {
       "name": "amazon_nova_micro",
@@ -3566,16 +3101,11 @@
         "lmarena_score": 1246.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031661",
-      "metadata": {
-        "lmarena_score": 1246.0,
-        "lmarena_rank": "122",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037084",
+      "metadata": {}
     },
     {
       "name": "mistral_large",
@@ -3596,16 +3126,11 @@
         "lmarena_score": 1246.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031671",
-      "metadata": {
-        "lmarena_score": 1246.0,
-        "lmarena_rank": "122",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037095",
+      "metadata": {}
     },
     {
       "name": "jamba_1.5_mini",
@@ -3626,16 +3151,11 @@
         "lmarena_score": 1242.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031681",
-      "metadata": {
-        "lmarena_score": 1242.0,
-        "lmarena_rank": "122",
-        "license": "Jamba Open",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037107",
+      "metadata": {}
     },
     {
       "name": "hunyuan_standard_256k",
@@ -3656,16 +3176,11 @@
         "lmarena_score": 1239.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031691",
-      "metadata": {
-        "lmarena_score": 1239.0,
-        "lmarena_rank": "122",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037118",
+      "metadata": {}
     },
     {
       "name": "ministral_8b",
@@ -3686,16 +3201,11 @@
         "lmarena_score": 1239.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031706",
-      "metadata": {
-        "lmarena_score": 1239.0,
-        "lmarena_rank": "123",
-        "license": "MRL",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037129",
+      "metadata": {}
     },
     {
       "name": "qwen1.5_110b",
@@ -3716,16 +3226,11 @@
         "lmarena_score": 1238.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031721",
-      "metadata": {
-        "lmarena_score": 1238.0,
-        "lmarena_rank": "124",
-        "license": "Qianwen LICENSE",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037140",
+      "metadata": {}
     },
     {
       "name": "qwen1.5_72b",
@@ -3746,16 +3251,11 @@
         "lmarena_score": 1237.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031749",
-      "metadata": {
-        "lmarena_score": 1237.0,
-        "lmarena_rank": "124",
-        "license": "Qianwen LICENSE",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037154",
+      "metadata": {}
     },
     {
       "name": "reka_flash_21b_online",
@@ -3776,16 +3276,11 @@
         "lmarena_score": 1235.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.031766",
-      "metadata": {
-        "lmarena_score": 1235.0,
-        "lmarena_rank": "124",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037166",
+      "metadata": {}
     },
     {
       "name": "gemini_pro_dev_api",
@@ -3806,16 +3301,11 @@
         "lmarena_score": 1234.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.032838",
-      "metadata": {
-        "lmarena_score": 1234.0,
-        "lmarena_rank": "124",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037179",
+      "metadata": {}
     },
     {
       "name": "mixtral_8x22b_instruct",
@@ -3836,16 +3326,11 @@
         "lmarena_score": 1232.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.032875",
-      "metadata": {
-        "lmarena_score": 1232.0,
-        "lmarena_rank": "126",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037190",
+      "metadata": {}
     },
     {
       "name": "command_r",
@@ -3866,16 +3351,11 @@
         "lmarena_score": 1232.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.032892",
-      "metadata": {
-        "lmarena_score": 1232.0,
-        "lmarena_rank": "126",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037202",
+      "metadata": {}
     },
     {
       "name": "reka_flash_21b",
@@ -3896,16 +3376,11 @@
         "lmarena_score": 1230.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.032946",
-      "metadata": {
-        "lmarena_score": 1230.0,
-        "lmarena_rank": "126",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037213",
+      "metadata": {}
     },
     {
       "name": "mistral_medium",
@@ -3926,16 +3401,11 @@
         "lmarena_score": 1228.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.032972",
-      "metadata": {
-        "lmarena_score": 1228.0,
-        "lmarena_rank": "126",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037271",
+      "metadata": {}
     },
     {
       "name": "llama_3.1_tulu_3_8b",
@@ -3956,16 +3426,11 @@
         "lmarena_score": 1226.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.032986",
-      "metadata": {
-        "lmarena_score": 1226.0,
-        "lmarena_rank": "126",
-        "license": "Llama 3.1",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037284",
+      "metadata": {}
     },
     {
       "name": "gemini_pro",
@@ -3986,16 +3451,11 @@
         "lmarena_score": 1222.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033002",
-      "metadata": {
-        "lmarena_score": 1222.0,
-        "lmarena_rank": "126",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037295",
+      "metadata": {}
     },
     {
       "name": "gpt_3.5_turbo",
@@ -4016,16 +3476,11 @@
         "lmarena_score": 1226.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033012",
-      "metadata": {
-        "lmarena_score": 1226.0,
-        "lmarena_rank": "127",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037332",
+      "metadata": {}
     },
     {
       "name": "c4ai_aya_expanse_8b",
@@ -4046,16 +3501,11 @@
         "lmarena_score": 1224.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033025",
-      "metadata": {
-        "lmarena_score": 1224.0,
-        "lmarena_rank": "127",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037343",
+      "metadata": {}
     },
     {
       "name": "llama_3_8b",
@@ -4076,16 +3526,11 @@
         "lmarena_score": 1226.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033036",
-      "metadata": {
-        "lmarena_score": 1226.0,
-        "lmarena_rank": "129",
-        "license": "Llama 3 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037355",
+      "metadata": {}
     },
     {
       "name": "zephyr_orpo_141b",
@@ -4106,16 +3551,11 @@
         "lmarena_score": 1218.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033050",
-      "metadata": {
-        "lmarena_score": 1218.0,
-        "lmarena_rank": "129",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037368",
+      "metadata": {}
     },
     {
       "name": "yi_1.5_34b",
@@ -4136,16 +3576,11 @@
         "lmarena_score": 1218.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033062",
-      "metadata": {
-        "lmarena_score": 1218.0,
-        "lmarena_rank": "135",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037381",
+      "metadata": {}
     },
     {
       "name": "granite_3.1_8b",
@@ -4166,16 +3601,11 @@
         "lmarena_score": 1214.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033072",
-      "metadata": {
-        "lmarena_score": 1214.0,
-        "lmarena_rank": "135",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037392",
+      "metadata": {}
     },
     {
       "name": "llama_3.1_8b",
@@ -4196,16 +3626,11 @@
         "lmarena_score": 1215.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033085",
-      "metadata": {
-        "lmarena_score": 1215.0,
-        "lmarena_rank": "139",
-        "license": "Llama 3.1 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037403",
+      "metadata": {}
     },
     {
       "name": "qwen1.5_32b",
@@ -4226,16 +3651,11 @@
         "lmarena_score": 1209.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033100",
-      "metadata": {
-        "lmarena_score": 1209.0,
-        "lmarena_rank": "139",
-        "license": "Qianwen LICENSE",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037414",
+      "metadata": {}
     },
     {
       "name": "gpt_3.5_turbo",
@@ -4256,16 +3676,11 @@
         "lmarena_score": 1203.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033117",
-      "metadata": {
-        "lmarena_score": 1203.0,
-        "lmarena_rank": "141",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037425",
+      "metadata": {}
     },
     {
       "name": "phi_3_medium_4k",
@@ -4286,16 +3701,11 @@
         "lmarena_score": 1203.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033133",
-      "metadata": {
-        "lmarena_score": 1203.0,
-        "lmarena_rank": "144",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037438",
+      "metadata": {}
     },
     {
       "name": "mixtral_8x7b_instruct",
@@ -4316,16 +3726,11 @@
         "lmarena_score": 1202.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033148",
-      "metadata": {
-        "lmarena_score": 1202.0,
-        "lmarena_rank": "144",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037449",
+      "metadata": {}
     },
     {
       "name": "gemma_2_2b",
@@ -4346,16 +3751,11 @@
         "lmarena_score": 1201.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033169",
-      "metadata": {
-        "lmarena_score": 1201.0,
-        "lmarena_rank": "144",
-        "license": "Gemma license",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037461",
+      "metadata": {}
     },
     {
       "name": "internlm2_5_20b",
@@ -4376,16 +3776,11 @@
         "lmarena_score": 1200.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033186",
-      "metadata": {
-        "lmarena_score": 1200.0,
-        "lmarena_rank": "144",
-        "license": "Other",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037472",
+      "metadata": {}
     },
     {
       "name": "qwen1.5_14b",
@@ -4406,16 +3801,11 @@
         "lmarena_score": 1198.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033196",
-      "metadata": {
-        "lmarena_score": 1198.0,
-        "lmarena_rank": "144",
-        "license": "Qianwen LICENSE",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037484",
+      "metadata": {}
     },
     {
       "name": "dbrx_instruct_preview",
@@ -4436,16 +3826,11 @@
         "lmarena_score": 1198.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033238",
-      "metadata": {
-        "lmarena_score": 1198.0,
-        "lmarena_rank": "145",
-        "license": "DBRX LICENSE",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037496",
+      "metadata": {}
     },
     {
       "name": "wizardlm_70b",
@@ -4466,16 +3851,11 @@
         "lmarena_score": 1189.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033261",
-      "metadata": {
-        "lmarena_score": 1189.0,
-        "lmarena_rank": "147",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037508",
+      "metadata": {}
     },
     {
       "name": "granite_3.0_8b",
@@ -4496,16 +3876,11 @@
         "lmarena_score": 1188.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033272",
-      "metadata": {
-        "lmarena_score": 1188.0,
-        "lmarena_rank": "147",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037521",
+      "metadata": {}
     },
     {
       "name": "deepseek_llm_67b",
@@ -4526,16 +3901,11 @@
         "lmarena_score": 1186.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033283",
-      "metadata": {
-        "lmarena_score": 1186.0,
-        "lmarena_rank": "147",
-        "license": "DeepSeek License",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037532",
+      "metadata": {}
     },
     {
       "name": "yi_34b",
@@ -4556,16 +3926,11 @@
         "lmarena_score": 1188.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033292",
-      "metadata": {
-        "lmarena_score": 1188.0,
-        "lmarena_rank": "149",
-        "license": "Yi License",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037543",
+      "metadata": {}
     },
     {
       "name": "openchat",
@@ -4586,16 +3951,11 @@
         "lmarena_score": 1185.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033302",
-      "metadata": {
-        "lmarena_score": 1185.0,
-        "lmarena_rank": "149",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037556",
+      "metadata": {}
     },
     {
       "name": "openchat",
@@ -4616,16 +3976,11 @@
         "lmarena_score": 1185.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033312",
-      "metadata": {
-        "lmarena_score": 1185.0,
-        "lmarena_rank": "150",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037568",
+      "metadata": {}
     },
     {
       "name": "granite_3.1_2b",
@@ -4646,16 +4001,11 @@
         "lmarena_score": 1184.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033324",
-      "metadata": {
-        "lmarena_score": 1184.0,
-        "lmarena_rank": "150",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037579",
+      "metadata": {}
     },
     {
       "name": "tulu_2_dpo_70b",
@@ -4676,16 +4026,11 @@
         "lmarena_score": 1183.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033339",
-      "metadata": {
-        "lmarena_score": 1183.0,
-        "lmarena_rank": "150",
-        "license": "AI2 ImpACT Low-risk",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037590",
+      "metadata": {}
     },
     {
       "name": "openhermes_2.5_mistral_7b",
@@ -4706,16 +4051,11 @@
         "lmarena_score": 1181.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033354",
-      "metadata": {
-        "lmarena_score": 1181.0,
-        "lmarena_rank": "150",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037602",
+      "metadata": {}
     },
     {
       "name": "snowflake_arctic",
@@ -4736,16 +4076,11 @@
         "lmarena_score": 1184.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033370",
-      "metadata": {
-        "lmarena_score": 1184.0,
-        "lmarena_rank": "153",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037613",
+      "metadata": {}
     },
     {
       "name": "gemma_1.1_7b",
@@ -4766,16 +4101,11 @@
         "lmarena_score": 1180.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033389",
-      "metadata": {
-        "lmarena_score": 1180.0,
-        "lmarena_rank": "154",
-        "license": "Gemma license",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037624",
+      "metadata": {}
     },
     {
       "name": "vicuna_33b",
@@ -4796,16 +4126,11 @@
         "lmarena_score": 1178.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033405",
-      "metadata": {
-        "lmarena_score": 1178.0,
-        "lmarena_rank": "154",
-        "license": "Non-commercial",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037636",
+      "metadata": {}
     },
     {
       "name": "phi_3_small_8k",
@@ -4826,16 +4151,11 @@
         "lmarena_score": 1177.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033415",
-      "metadata": {
-        "lmarena_score": 1177.0,
-        "lmarena_rank": "154",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037647",
+      "metadata": {}
     },
     {
       "name": "starling_lm_7b",
@@ -4856,16 +4176,11 @@
         "lmarena_score": 1176.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033457",
-      "metadata": {
-        "lmarena_score": 1176.0,
-        "lmarena_rank": "154",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037658",
+      "metadata": {}
     },
     {
       "name": "llama_2_70b",
@@ -4886,16 +4201,11 @@
         "lmarena_score": 1176.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033476",
-      "metadata": {
-        "lmarena_score": 1176.0,
-        "lmarena_rank": "154",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037671",
+      "metadata": {}
     },
     {
       "name": "nous_hermes_2_mixtral_8x7b_dpo",
@@ -4916,16 +4226,11 @@
         "lmarena_score": 1175.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033494",
-      "metadata": {
-        "lmarena_score": 1175.0,
-        "lmarena_rank": "154",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037682",
+      "metadata": {}
     },
     {
       "name": "qwq_32b_preview",
@@ -4946,16 +4251,11 @@
         "lmarena_score": 1174.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033509",
-      "metadata": {
-        "lmarena_score": 1174.0,
-        "lmarena_rank": "154",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037693",
+      "metadata": {}
     },
     {
       "name": "llama_3.2_3b",
@@ -4976,16 +4276,11 @@
         "lmarena_score": 1173.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033527",
-      "metadata": {
-        "lmarena_score": 1173.0,
-        "lmarena_rank": "154",
-        "license": "Llama 3.2",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037705",
+      "metadata": {}
     },
     {
       "name": "starling_lm_7b_alpha",
@@ -5006,16 +4301,11 @@
         "lmarena_score": 1172.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033543",
-      "metadata": {
-        "lmarena_score": 1172.0,
-        "lmarena_rank": "154",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037718",
+      "metadata": {}
     },
     {
       "name": "llama2_70b_steerlm",
@@ -5036,16 +4326,11 @@
         "lmarena_score": 1164.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033558",
-      "metadata": {
-        "lmarena_score": 1164.0,
-        "lmarena_rank": "157",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037731",
+      "metadata": {}
     },
     {
       "name": "solar_10.7b_instruct",
@@ -5066,16 +4351,11 @@
         "lmarena_score": 1163.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033574",
-      "metadata": {
-        "lmarena_score": 1163.0,
-        "lmarena_rank": "157",
-        "license": "CC-BY-NC-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037742",
+      "metadata": {}
     },
     {
       "name": "dolphin_2.2.1_mistral_7b",
@@ -5096,16 +4376,11 @@
         "lmarena_score": 1155.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033585",
-      "metadata": {
-        "lmarena_score": 1155.0,
-        "lmarena_rank": "161",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037754",
+      "metadata": {}
     },
     {
       "name": "granite_3.0_2b",
@@ -5126,16 +4401,11 @@
         "lmarena_score": 1163.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033598",
-      "metadata": {
-        "lmarena_score": 1163.0,
-        "lmarena_rank": "164",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037765",
+      "metadata": {}
     },
     {
       "name": "mpt_30b",
@@ -5156,16 +4426,11 @@
         "lmarena_score": 1154.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033610",
-      "metadata": {
-        "lmarena_score": 1154.0,
-        "lmarena_rank": "169",
-        "license": "CC-BY-NC-SA-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037776",
+      "metadata": {}
     },
     {
       "name": "mistral_7b_instruct",
@@ -5186,16 +4451,11 @@
         "lmarena_score": 1156.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033621",
-      "metadata": {
-        "lmarena_score": 1156.0,
-        "lmarena_rank": "170",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037787",
+      "metadata": {}
     },
     {
       "name": "falcon_180b",
@@ -5216,16 +4476,11 @@
         "lmarena_score": 1145.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033631",
-      "metadata": {
-        "lmarena_score": 1145.0,
-        "lmarena_rank": "170",
-        "license": "Falcon-180B TII License",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037803",
+      "metadata": {}
     },
     {
       "name": "wizardlm_13b",
@@ -5246,16 +4501,11 @@
         "lmarena_score": 1153.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033643",
-      "metadata": {
-        "lmarena_score": 1153.0,
-        "lmarena_rank": "171",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037816",
+      "metadata": {}
     },
     {
       "name": "phi_3_mini_4k_instruct_june",
@@ -5276,16 +4526,11 @@
         "lmarena_score": 1149.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033654",
-      "metadata": {
-        "lmarena_score": 1149.0,
-        "lmarena_rank": "173",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037830",
+      "metadata": {}
     },
     {
       "name": "llama_2_13b",
@@ -5306,16 +4551,11 @@
         "lmarena_score": 1147.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033667",
-      "metadata": {
-        "lmarena_score": 1147.0,
-        "lmarena_rank": "173",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037842",
+      "metadata": {}
     },
     {
       "name": "qwen1.5_7b",
@@ -5336,16 +4576,11 @@
         "lmarena_score": 1146.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033679",
-      "metadata": {
-        "lmarena_score": 1146.0,
-        "lmarena_rank": "173",
-        "license": "Qianwen LICENSE",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037854",
+      "metadata": {}
     },
     {
       "name": "vicuna_13b",
@@ -5366,16 +4601,11 @@
         "lmarena_score": 1146.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033721",
-      "metadata": {
-        "lmarena_score": 1146.0,
-        "lmarena_rank": "174",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037865",
+      "metadata": {}
     },
     {
       "name": "codellama_34b",
@@ -5396,16 +4626,11 @@
         "lmarena_score": 1143.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033741",
-      "metadata": {
-        "lmarena_score": 1143.0,
-        "lmarena_rank": "174",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037876",
+      "metadata": {}
     },
     {
       "name": "palm_2",
@@ -5426,16 +4651,11 @@
         "lmarena_score": 1141.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033753",
-      "metadata": {
-        "lmarena_score": 1141.0,
-        "lmarena_rank": "174",
-        "license": "Proprietary",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037887",
+      "metadata": {}
     },
     {
       "name": "qwen_14b",
@@ -5456,16 +4676,11 @@
         "lmarena_score": 1140.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033764",
-      "metadata": {
-        "lmarena_score": 1140.0,
-        "lmarena_rank": "174",
-        "license": "Qianwen LICENSE",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037936",
+      "metadata": {}
     },
     {
       "name": "gemma_7b",
@@ -5486,16 +4701,11 @@
         "lmarena_score": 1139.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033774",
-      "metadata": {
-        "lmarena_score": 1139.0,
-        "lmarena_rank": "174",
-        "license": "Gemma license",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037954",
+      "metadata": {}
     },
     {
       "name": "codellama_70b",
@@ -5516,16 +4726,11 @@
         "lmarena_score": 1131.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033784",
-      "metadata": {
-        "lmarena_score": 1131.0,
-        "lmarena_rank": "174",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037966",
+      "metadata": {}
     },
     {
       "name": "smollm2_1.7b",
@@ -5546,16 +4751,11 @@
         "lmarena_score": 1132.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033796",
-      "metadata": {
-        "lmarena_score": 1132.0,
-        "lmarena_rank": "176",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037979",
+      "metadata": {}
     },
     {
       "name": "zephyr_7b_alpha",
@@ -5576,16 +4776,11 @@
         "lmarena_score": 1132.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033807",
-      "metadata": {
-        "lmarena_score": 1132.0,
-        "lmarena_rank": "176",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.037991",
+      "metadata": {}
     },
     {
       "name": "phi_3_mini_128k",
@@ -5606,16 +4801,11 @@
         "lmarena_score": 1138.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033819",
-      "metadata": {
-        "lmarena_score": 1138.0,
-        "lmarena_rank": "177",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038003",
+      "metadata": {}
     },
     {
       "name": "zephyr_7b",
@@ -5636,16 +4826,11 @@
         "lmarena_score": 1136.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033831",
-      "metadata": {
-        "lmarena_score": 1136.0,
-        "lmarena_rank": "177",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038015",
+      "metadata": {}
     },
     {
       "name": "phi_3_mini_4k",
@@ -5666,16 +4851,11 @@
         "lmarena_score": 1135.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033841",
-      "metadata": {
-        "lmarena_score": 1135.0,
-        "lmarena_rank": "178",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038028",
+      "metadata": {}
     },
     {
       "name": "guanaco_33b",
@@ -5696,16 +4876,11 @@
         "lmarena_score": 1129.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033851",
-      "metadata": {
-        "lmarena_score": 1129.0,
-        "lmarena_rank": "178",
-        "license": "Non-commercial",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038039",
+      "metadata": {}
     },
     {
       "name": "stripedhyena_nous_7b",
@@ -5726,16 +4901,11 @@
         "lmarena_score": 1124.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033862",
-      "metadata": {
-        "lmarena_score": 1124.0,
-        "lmarena_rank": "183",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038051",
+      "metadata": {}
     },
     {
       "name": "vicuna_7b",
@@ -5756,16 +4926,11 @@
         "lmarena_score": 1119.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033880",
-      "metadata": {
-        "lmarena_score": 1119.0,
-        "lmarena_rank": "185",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038062",
+      "metadata": {}
     },
     {
       "name": "llama_3.2_1b",
@@ -5786,16 +4951,11 @@
         "lmarena_score": 1121.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033899",
-      "metadata": {
-        "lmarena_score": 1121.0,
-        "lmarena_rank": "188",
-        "license": "Llama 3.2",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038073",
+      "metadata": {}
     },
     {
       "name": "mistral_7b",
@@ -5816,16 +4976,11 @@
         "lmarena_score": 1114.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033917",
-      "metadata": {
-        "lmarena_score": 1114.0,
-        "lmarena_rank": "192",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038084",
+      "metadata": {}
     },
     {
       "name": "llama_2_7b",
@@ -5846,16 +5001,11 @@
         "lmarena_score": 1113.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033937",
-      "metadata": {
-        "lmarena_score": 1113.0,
-        "lmarena_rank": "192",
-        "license": "Llama 2 Community",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038095",
+      "metadata": {}
     },
     {
       "name": "gemma_1.1_2b",
@@ -5876,16 +5026,11 @@
         "lmarena_score": 1112.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.033985",
-      "metadata": {
-        "lmarena_score": 1112.0,
-        "lmarena_rank": "192",
-        "license": "Gemma license",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038106",
+      "metadata": {}
     },
     {
       "name": "gemma_2b",
@@ -5906,16 +5051,11 @@
         "lmarena_score": 1092.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034001",
-      "metadata": {
-        "lmarena_score": 1092.0,
-        "lmarena_rank": "201",
-        "license": "Gemma license",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038120",
+      "metadata": {}
     },
     {
       "name": "qwen1.5_4b",
@@ -5936,16 +5076,11 @@
         "lmarena_score": 1091.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034013",
-      "metadata": {
-        "lmarena_score": 1091.0,
-        "lmarena_rank": "201",
-        "license": "Qianwen LICENSE",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038131",
+      "metadata": {}
     },
     {
       "name": "olmo_7b",
@@ -5966,16 +5101,11 @@
         "lmarena_score": 1082.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034024",
-      "metadata": {
-        "lmarena_score": 1082.0,
-        "lmarena_rank": "202",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038144",
+      "metadata": {}
     },
     {
       "name": "koala_13b",
@@ -5996,16 +5126,11 @@
         "lmarena_score": 1072.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034034",
-      "metadata": {
-        "lmarena_score": 1072.0,
-        "lmarena_rank": "202",
-        "license": "Non-commercial",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038155",
+      "metadata": {}
     },
     {
       "name": "gpt4all_13b_snoozy",
@@ -6026,16 +5151,11 @@
         "lmarena_score": 1068.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034044",
-      "metadata": {
-        "lmarena_score": 1068.0,
-        "lmarena_rank": "202",
-        "license": "Non-commercial",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038168",
+      "metadata": {}
     },
     {
       "name": "alpaca_13b",
@@ -6056,16 +5176,11 @@
         "lmarena_score": 1066.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034057",
-      "metadata": {
-        "lmarena_score": 1066.0,
-        "lmarena_rank": "203",
-        "license": "Non-commercial",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038179",
+      "metadata": {}
     },
     {
       "name": "mpt_7b",
@@ -6086,16 +5201,11 @@
         "lmarena_score": 1063.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034071",
-      "metadata": {
-        "lmarena_score": 1063.0,
-        "lmarena_rank": "204",
-        "license": "CC-BY-NC-SA-4.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038192",
+      "metadata": {}
     },
     {
       "name": "chatglm3_6b",
@@ -6116,16 +5226,11 @@
         "lmarena_score": 1055.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034082",
-      "metadata": {
-        "lmarena_score": 1055.0,
-        "lmarena_rank": "204",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038204",
+      "metadata": {}
     },
     {
       "name": "rwkv_4_raven_14b",
@@ -6146,16 +5251,11 @@
         "lmarena_score": 1044.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034096",
-      "metadata": {
-        "lmarena_score": 1044.0,
-        "lmarena_rank": "206",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038215",
+      "metadata": {}
     },
     {
       "name": "chatglm2_6b",
@@ -6176,16 +5276,11 @@
         "lmarena_score": 1033.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034110",
-      "metadata": {
-        "lmarena_score": 1033.0,
-        "lmarena_rank": "208",
-        "license": "Apache-2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038227",
+      "metadata": {}
     },
     {
       "name": "oasst_pythia_12b",
@@ -6206,16 +5301,11 @@
         "lmarena_score": 1021.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034126",
-      "metadata": {
-        "lmarena_score": 1021.0,
-        "lmarena_rank": "210",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038241",
+      "metadata": {}
     },
     {
       "name": "chatglm_6b",
@@ -6236,16 +5326,11 @@
         "lmarena_score": 1004.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034224",
-      "metadata": {
-        "lmarena_score": 1004.0,
-        "lmarena_rank": "211",
-        "license": "Non-commercial",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038253",
+      "metadata": {}
     },
     {
       "name": "fastchat_t5_3b",
@@ -6266,16 +5351,11 @@
         "lmarena_score": 995.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034238",
-      "metadata": {
-        "lmarena_score": 995.0,
-        "lmarena_rank": "212",
-        "license": "Apache 2.0",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038264",
+      "metadata": {}
     },
     {
       "name": "llama_13b",
@@ -6296,16 +5376,11 @@
         "lmarena_score": 978.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034256",
-      "metadata": {
-        "lmarena_score": 978.0,
-        "lmarena_rank": "213",
-        "license": "Non-commercial",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038277",
+      "metadata": {}
     },
     {
       "name": "dolly_v2_12b",
@@ -6326,16 +5401,11 @@
         "lmarena_score": 976.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034267",
-      "metadata": {
-        "lmarena_score": 976.0,
-        "lmarena_rank": "213",
-        "license": "MIT",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038288",
+      "metadata": {}
     },
     {
       "name": "stablelm_tuned_alpha_7b",
@@ -6356,16 +5426,11 @@
         "lmarena_score": 956.0
       },
       "sources": [
-        "LMArena Manual Data Collection (CSV file with manually collected leaderboard data)"
+        "CSV file with manually collected leaderboard data (LMArena Manual Data Collection)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-01T17:30:36.034567",
-      "metadata": {
-        "lmarena_score": 956.0,
-        "lmarena_rank": "215",
-        "license": "CC-BY-NC-S",
-        "source": "lmarena"
-      }
+      "last_updated": "2025-08-04T19:46:32.038299",
+      "metadata": {}
     }
   ]
 }
