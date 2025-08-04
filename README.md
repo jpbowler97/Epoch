@@ -91,40 +91,54 @@ The system follows a **four-stage data processing pipeline**:
 
 ```
 src/epoch_tracker/
-├── models/          # Data schemas (Model, ModelCollection)
-├── scrapers/        # Data collection (LMArena, Papers with Code)
+├── models/          # Data schemas and validation (Model, ModelCollection)
+├── scrapers/        # Configurable data collection system
+│   ├── parsers/     # File and web content parsers (CSV, Markdown, HTML)
+│   └── utils/       # Column mapping, model factory, numeric parsing
 ├── query/           # Query engine and output formatters
 ├── estimation/      # FLOP calculation algorithms (scaling laws, benchmarks)
 ├── storage/         # Data persistence (JSON, CSV export)
-├── config/          # Configuration management
-└── utils/           # HTTP client, date parsing, etc.
+├── config/          # Centralized configuration management
+└── utils/           # Developer blacklist, model names, date utilities
 
 scripts/
-├── run.py                    # Main entry point for all functionality
-├── data_collection/          # Data collection scripts
-│   ├── get_latest_model_data.py  # Collect data from all configured sources
-│   ├── fetch_lmarena_data.py     # Automated LMArena web scraping  
-│   └── fetch_openlm_data.py      # Automated OpenLM arena scraping
-├── data_processing/          # Data processing and estimation
-│   ├── estimate_flops.py         # Apply FLOP estimations to models
-│   └── refresh_core_dataset.py   # Generate/refresh curated dataset above 1e25 FLOP
-├── curation/                 # Manual curation and review
-│   ├── review_candidates.py      # Semi-automatic review process for manual curation
-│   ├── sync_staging_published.py # Sync staging and published datasets
+├── run.py                    # Main CLI entry point for all functionality
+├── data_collection/          # Data collection and scraping
+│   ├── get_latest_model_data.py  # Orchestrates data collection from all sources
+│   └── scraper_registry.py       # Registry for configurable scrapers
+├── data_processing/          # FLOP estimation and dataset processing
+│   ├── estimate_flops.py         # Multi-method FLOP estimation pipeline
+│   └── refresh_core_dataset.py   # Core dataset curation with dual-table management
+├── curation/                 # Manual review and dataset management
+│   ├── review_candidates.py      # Interactive candidate review with enhanced context
+│   ├── review_developers.py      # Developer blacklist management interface  
+│   ├── sync_staging_published.py # Bidirectional dataset synchronization
 │   └── manual_model_entry.py     # Manual model entry interface
-├── analysis/                 # Data analysis and querying
-│   └── query_models.py           # Interactive data exploration
+├── claude_instructions/      # Claude Code integration for JS-heavy sites
+│   └── update_benchmarks.md      # Instructions for benchmark data collection
+├── update_claude_benchmarks.py  # Claude-managed benchmark site updates
 └── testing/                  # Testing and validation
-    ├── test_compute_estimator.py # Test compute estimation methods
-    ├── test_verification_workflow.py # Test verification workflow
-    └── validate_against_epoch.py # Validate against Epoch's existing data
+    ├── test_compute_estimator.py    # FLOP estimation method tests
+    ├── test_configurable_scrapers.py # Scraper configuration tests
+    ├── test_verification_workflow.py # Manual review workflow tests
+    └── validate_against_epoch.py    # Cross-validation with Epoch data
+
+configs/
+├── benchmark_references.json    # Reference models for benchmark interpolation
+├── benchmark_sources/          # Benchmark-specific configuration files
+├── claude_scraping.yaml       # Claude Code scraping configuration
+├── developer_blacklist.json   # Developer transparency and FLOP capping rules
+├── flop_estimation_methods.json # Centralized threshold and method configuration
+├── model_name_mapping.yaml    # Model name normalization mappings
+└── scrapers/                  # Individual scraper configurations (JSON)
 
 data/
-├── scraped/        # Raw scraped model data (Stage 1)
-├── estimated/      # Models with FLOP estimates (Stage 2)
-├── clean/          # Curated datasets for manual verification (Stage 3)
+├── scraped/        # Raw scraped model data from all sources (Stage 1)
+├── estimated/      # Models with FLOP estimates applied (Stage 2)  
+├── clean/          # Dual-table curated datasets (above/below 1e25 FLOP) (Stage 3)
 ├── staging/        # Manually reviewed models ready for production (Stage 4)
-└── query_results/  # CSV exports and query outputs
+├── benchmark_files/ # Claude-managed benchmark site HTML/data files
+└── query_results/  # CSV exports and ad-hoc query outputs
 ```
 
 ## Current Data Sources
