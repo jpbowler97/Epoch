@@ -26,6 +26,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from epoch_tracker.models import Model, ThresholdClassification
 from epoch_tracker.storage import JSONStorage
+from epoch_tracker.config.thresholds import get_threshold_config
 
 
 def setup_logging(verbose: bool = False):
@@ -183,6 +184,81 @@ def format_alternative_methods(model: Model) -> str:
     return "; ".join(alternatives)
 
 
+def generate_confidence_explanation(model: Model) -> str:
+    """
+    Generate human-readable explanation for confidence level.
+    
+    Args:
+        model: Model object with confidence and estimation method
+        
+    Returns:
+        Human-readable explanation of confidence level
+    """
+    confidence = model.training_flop_confidence.value
+    method = model.estimation_method.value
+    
+    explanations = {
+        'high': {
+            'epoch_estimate': 'Official disclosure or high-precision research estimate',
+            'known_specification': 'Published model specifications and training details',
+            'scaling_laws': 'Known parameters with documented training tokens',
+            'benchmark_based': 'Very close benchmark match to reference model'
+        },
+        'medium': {
+            'epoch_estimate': 'Reliable research estimate from industry analysis',
+            'known_specification': 'Industry estimates of specifications',
+            'scaling_laws': 'Known parameters with estimated training tokens',
+            'benchmark_based': 'Good benchmark match with multiple agreeing sources'
+        },
+        'low': {
+            'epoch_estimate': 'Speculative research estimate',
+            'known_specification': 'Estimated specifications from limited data',
+            'scaling_laws': 'Extracted parameters with uncertain training tokens',
+            'benchmark_based': 'Distant benchmark interpolation or single source'
+        },
+        'speculative': {
+            'epoch_estimate': 'Highly speculative estimate',
+            'known_specification': 'Rough estimates from minimal information',
+            'scaling_laws': 'Heuristic parameter extraction with assumed ratios',
+            'benchmark_based': 'Very distant benchmark extrapolation'
+        }
+    }
+    
+    return explanations.get(confidence, {}).get(method, f'{confidence.title()} confidence from {method.replace("_", " ")} method')
+
+
+def is_blacklist_capped(model: Model) -> bool:
+    """Check if a model was capped due to developer blacklist policy."""
+    if not model.reasoning:
+        return False
+    return "capped" in model.reasoning.lower() and "developer blacklist policy" in model.reasoning.lower()
+
+
+def get_original_estimate(model: Model) -> Optional[str]:
+    """Extract original FLOP estimate from alternative estimates if model was capped."""
+    if not is_blacklist_capped(model):
+        return None
+    
+    # Look for original estimate in alternative estimates
+    for alt_est in model.alternative_estimates:
+        if "original estimate before developer policy cap" in alt_est.reasoning.lower():
+            return f"{alt_est.flop:.2e}"
+    
+    # Try to parse from reasoning field as fallback
+    reasoning = model.reasoning.lower()
+    if "original estimate:" in reasoning:
+        try:
+            # Extract value like "Original estimate: 3.2e25 FLOP"
+            parts = reasoning.split("original estimate:")
+            if len(parts) > 1:
+                value_part = parts[1].strip().split()[0]  # Get first part before space
+                return value_part
+        except:
+            pass
+    
+    return None
+
+
 def model_to_csv_row(model: Model, verified: str = "") -> Dict:
     """
     Convert a Model object to a CSV row dictionary.
@@ -194,13 +270,19 @@ def model_to_csv_row(model: Model, verified: str = "") -> Dict:
     Returns:
         Dictionary representing a CSV row
     """
+    # Check if model was blacklist capped
+    is_capped = is_blacklist_capped(model)
+    original_estimate = get_original_estimate(model) if is_capped else None
+    
     return {
         'model': model.name,  # Renamed from 'name' to 'model'
         'developer': model.developer,
         'release_date': model.release_date.isoformat() if model.release_date else None,
         'parameters': model.parameters,
+        'parameter_source': model.parameter_source,
         'training_flop': f"{model.training_flop:.2e}" if model.training_flop else None,
         'confidence': model.training_flop_confidence.value,
+        'confidence_explanation': generate_confidence_explanation(model),
         'estimation_method': model.estimation_method.value,
         'alternative_methods': format_alternative_methods(model),
         'threshold_classification': model.threshold_classification.value,
@@ -209,6 +291,8 @@ def model_to_csv_row(model: Model, verified: str = "") -> Dict:
         'sources': "; ".join(model.sources) if model.sources else "",
         'verified': verified,
         'last_updated': model.last_updated.isoformat(),
+        'blacklist_status': 'capped' if is_capped else 'allowed',
+        'original_estimate': original_estimate or "",
         'notes': ""  # Empty field for manual notes
     }
 
@@ -260,8 +344,14 @@ def create_new_csv(models: List[Model], csv_path: Path) -> pd.DataFrame:
     # Sort by training FLOP (descending) then by model name
     df = df.sort_values(['training_flop_numeric', 'model'], ascending=[False, True], na_position='last')
     
-    # Drop the temporary numeric column
+    # Drop the temporary numeric column and any unwanted columns
     df = df.drop('training_flop_numeric', axis=1)
+    
+    # Remove unwanted columns that might have been preserved from old CSV files
+    unwanted_columns = ['training_flop_formatted']
+    for col in unwanted_columns:
+        if col in df.columns:
+            df = df.drop(col, axis=1)
     
     # Ensure directory exists
     csv_path.parent.mkdir(parents=True, exist_ok=True)
@@ -402,6 +492,9 @@ def resolve_duplicates(above_df: pd.DataFrame, below_df: pd.DataFrame, all_model
     Returns:
         Tuple of (updated_above_df, updated_below_df, resolution_log)
     """
+    # Load centralized threshold configuration
+    threshold_config = get_threshold_config()
+    
     # Create model lookup for FLOP estimates
     model_lookup = {model.name.lower(): model for model in all_models}
     
@@ -458,14 +551,14 @@ def resolve_duplicates(above_df: pd.DataFrame, below_df: pd.DataFrame, all_model
         
         # Apply threshold classification logic
         flop = model_obj.training_flop
-        if flop >= 5e25:  # HIGH_CONFIDENCE_ABOVE_THRESHOLD
+        if flop >= threshold_config.high_confidence_above_threshold:  # HIGH_CONFIDENCE_ABOVE_THRESHOLD
             # Should be in above table
             models_to_remove_from_below.append(model_name_lower)
-            resolution_log.append(f"✓ {actual_model_name}: {flop:.2e} FLOP ≥ 5e25, moved to above table")
-        elif flop <= 9e24:  # HIGH_CONFIDENCE_BELOW_THRESHOLD  
+            resolution_log.append(f"✓ {actual_model_name}: {flop:.2e} FLOP ≥ {threshold_config.high_confidence_above_threshold:.1e}, moved to above table")
+        elif flop <= threshold_config.high_confidence_below_threshold:  # HIGH_CONFIDENCE_BELOW_THRESHOLD  
             # Should be in below table
             models_to_remove_from_above.append(model_name_lower)
-            resolution_log.append(f"✓ {actual_model_name}: {flop:.2e} FLOP ≤ 9e24, moved to below table")
+            resolution_log.append(f"✓ {actual_model_name}: {flop:.2e} FLOP ≤ {threshold_config.high_confidence_below_threshold:.1e}, moved to below table")
         else:
             # NOT_SURE range - should be in above table for verification
             models_to_remove_from_below.append(model_name_lower)
@@ -637,8 +730,14 @@ def refresh_existing_csv(existing_df: pd.DataFrame, models: List[Model], csv_pat
     # Sort by training FLOP (descending) then by model name
     updated_df = updated_df.sort_values(['training_flop_numeric', 'model'], ascending=[False, True], na_position='last')
     
-    # Drop the temporary numeric column
+    # Drop the temporary numeric column and any unwanted columns
     updated_df = updated_df.drop('training_flop_numeric', axis=1)
+    
+    # Remove unwanted columns that might have been preserved from old CSV files
+    unwanted_columns = ['training_flop_formatted']
+    for col in unwanted_columns:
+        if col in updated_df.columns:
+            updated_df = updated_df.drop(col, axis=1)
     
     # Save updated CSV
     updated_df.to_csv(csv_path, index=False)

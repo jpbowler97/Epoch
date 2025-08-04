@@ -48,7 +48,6 @@ STAGING_TO_PUBLISHED_FIELD_MAP = {
     'threshold_classification': None,  # No published equivalent
     'status': None,  # No published equivalent
     'alternative_methods': None,  # No published equivalent
-    'training_flop_formatted': None,  # No published equivalent
 }
 
 # Published fields that don't have staging equivalents

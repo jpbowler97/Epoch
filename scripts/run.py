@@ -54,6 +54,7 @@ Data Collection:
   collect-lmarena     Fetch LMArena leaderboard data
   collect-openlm      Fetch OpenLM arena data  
   collect-all         Collect data from all configured sources
+  update-claude       Update JavaScript-heavy sites via Claude Code
 
 Data Processing:
   estimate-flops      Apply FLOP estimations to scraped models
@@ -62,6 +63,7 @@ Data Processing:
 Curation:
   manual-entry        Manual model entry interface
   review-candidates   Review candidate models for inclusion
+  review-developers   Review and manage developer blacklist
   sync-datasets       Sync staging and published datasets
 
 Analysis:
@@ -74,6 +76,9 @@ Testing:
 
 Examples:
   %(prog)s collect-all                    # Full data collection pipeline
+  %(prog)s collect-all --update-claude-sites  # Collection with Claude updates
+  %(prog)s update-claude                  # Update only Claude-managed sites
+  %(prog)s update-claude --sites superclue --force  # Force update specific site
   %(prog)s estimate-flops --update        # Update FLOP estimates
   %(prog)s review-candidates               # Interactive model review
   %(prog)s query --above-threshold         # Query models above threshold
@@ -86,11 +91,11 @@ Examples:
         'command',
         choices=[
             # Data collection
-            'collect-lmarena', 'collect-openlm', 'collect-all',
+            'collect-all', 'update-claude',
             # Data processing  
             'estimate-flops', 'refresh-dataset',
             # Curation
-            'manual-entry', 'review-candidates', 'sync-datasets',
+            'manual-entry', 'review-candidates', 'review-developers', 'sync-datasets',
             # Analysis
             'query',
             # Testing
@@ -105,9 +110,8 @@ Examples:
     # Map commands to script paths
     command_map = {
         # Data collection
-        'collect-lmarena': 'data_collection/fetch_lmarena_data.py',
-        'collect-openlm': 'data_collection/fetch_openlm_data.py', 
         'collect-all': 'data_collection/get_latest_model_data.py',
+        'update-claude': 'update_claude_benchmarks.py',
         
         # Data processing
         'estimate-flops': 'data_processing/estimate_flops.py',
@@ -116,6 +120,7 @@ Examples:
         # Curation
         'manual-entry': 'curation/manual_model_entry.py',
         'review-candidates': 'curation/review_candidates.py',
+        'review-developers': 'curation/review_developers.py',
         'sync-datasets': 'curation/sync_staging_published.py',
         
         # Analysis
@@ -126,6 +131,7 @@ Examples:
         'test-workflow': 'testing/test_verification_workflow.py',
         'validate': 'testing/validate_against_epoch.py',
     }
+    
     
     script_path = command_map[args.command]
     exit_code = run_script(script_path, unknown_args)

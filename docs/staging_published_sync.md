@@ -232,35 +232,104 @@ $ python scripts/run.py sync-datasets --sync --direction staging-to-published
 
 🔄 Staging → Published Sync
 
-Processing 3 models for sync...
+Found 3 models to sync (staging_to_published)
+
+Options for each model:
+  y - Approve sync
+  n - Skip this model  
+  r - Remove this model from staging (don't sync)
+  quit - Exit sync process
 
 ================================================================================
-ADD: kimi_k2_preview → "Kimi K2 (preview)"
+SYNC PROPOSAL 1/3: staging_to_published
 ================================================================================
-Organization: Moonshot
-Training compute (FLOP): 4.55e+25
-Confidence: medium
-Training compute notes: Benchmark-based estimation from OpenLM Arena ELO scores
-Publication date: 2024-07-11
-Abstract: Large frontier model from Moonshot AI with strong benchmark performance
-Accessibility notes: Added via automation pipeline from staging dataset on 2025-08-01 14:30 UTC
 
-Approve this addition? (y/n): y
-✅ Added "Kimi K2 (preview)" to published dataset
+SOURCE MODEL:
+Model: kimi_k2_preview
+  Developer: Moonshot
+  Training FLOP: 4.55e+25
+  Confidence: medium
+  Estimation Method: benchmark_based
+  Reasoning: Benchmark-based estimation from OpenLM Arena ELO scores
+  Sources: https://openlm.ai/chatbot-arena/
+
+WILL CREATE:
+Will create published model: Kimi K2 (preview)
+  Organization: Moonshot
+  Training Compute (FLOP): 4.55e+25
+  Confidence: medium
+  Training compute notes: Benchmark-based estimation from OpenLM Arena ELO scores
+  Publication date: 2024-07-11
+  Accessibility notes: Added via automation pipeline from staging dataset on 2025-08-01 14:30 UTC
+
+Your choice (y/n/r/quit): y
+✓ Approved: kimi_k2_preview
 
 ================================================================================
-UPDATE: gpt_4o → "GPT-4o"  
+SYNC PROPOSAL 2/3: staging_to_published
 ================================================================================
-Changes:
-  Training compute (FLOP): 1.8e+25 → 2.1e+25
+
+SOURCE MODEL:
+Model: gpt_4o
+  Developer: OpenAI
+  Training FLOP: 2.10e+25
+  Confidence: high
+  Estimation Method: epoch_estimate
+  Reasoning: Updated with latest Epoch AI research data
+
+WILL CREATE:
+Will create published model: GPT-4o
+  Organization: OpenAI
+  Training Compute (FLOP): 2.10e+25
+  Confidence: high
   Training compute notes: Updated with latest Epoch AI research data
 
-Approve this update? (y/n): y  
-✅ Updated "GPT-4o" in published dataset
+Your choice (y/n/r/quit): y  
+✓ Approved: gpt_4o
 
-Sync completed: 2 additions, 1 update
-📁 Published dataset saved to: data/published/published_data.csv
+================================================================================
+SYNC PROPOSAL 3/3: staging_to_published
+================================================================================
+
+SOURCE MODEL:
+Model: test_model_beta
+  Developer: TestOrg
+  Training FLOP: 1.50e+25
+  Confidence: speculative
+  Estimation Method: parameter_heuristic
+  Reasoning: Rough estimate based on parameter count
+
+WILL CREATE:
+Will create published model: Test Model Beta
+  Organization: TestOrg
+  Training Compute (FLOP): 1.50e+25
+  Confidence: speculative
+
+Your choice (y/n/r/quit): r
+🗑️  Model 'test_model_beta' will be removed from staging
+
+🗑️  Removed 1 models from staging:
+  - test_model_beta
+✓ Updated staging file: data/staging/above_1e25_flop_staging.csv
+
+✓ Successfully synced 2 models to data/published/published_data.csv
 ```
+
+#### Staging Dataset Management
+
+When syncing from staging to published (`staging-to-published` direction), you have an additional option to remove models from the staging dataset:
+
+- **`r` - Remove from staging**: Permanently removes the model from the staging dataset without syncing it to published. This is useful for cleaning up the staging dataset by removing models that:
+  - Were incorrectly added to staging
+  - No longer meet the 1e25 FLOP threshold
+  - Are duplicates or test entries
+  - Should not be promoted to production
+
+**Important Notes:**
+- The remove option (`r`) is only available for `staging-to-published` direction
+- Removed models are immediately deleted from the staging CSV file
+- This action cannot be undone through the sync tool (you would need to manually re-add the model)
+- Use this feature carefully as it permanently modifies your staging dataset
 
 ### Field Value Diff Resolution
 
