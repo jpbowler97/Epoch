@@ -4,6 +4,7 @@
 
 This document specifies changes needed to update the existing [Epoch AI Models Documentation](https://epoch.ai/data/ai-models-documentation) to incorporate the new semi-automated methodology for tracking models above 1e25 FLOP.
 
+
 ## Inclusion Section Changes
 
 **Add new subsection after existing notability criteria:**
@@ -18,6 +19,10 @@ For frontier models, we use a **semi-automated inclusion process**:
 - Manual decisions protected from automated overwrites via `verified=y` flag
 
 This ensures comprehensive coverage of frontier AI systems while maintaining quality through human verification.
+
+## Database Updates Section Changes
+
+This section would largely be replaced by the documentation [here](../docs/ai_models_above_1e25_documentation.md) giving a more detailed overview of how the database is updated and maintained.
 
 ## Estimation Section Changes
 
