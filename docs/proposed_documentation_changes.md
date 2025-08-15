@@ -66,12 +66,6 @@ The following changes would be made to the existing [AI models documentation tab
 
 *Coverage percentages marked as "TBD" will be updated after further testing and implementation of the enhanced data collection pipeline.*
 
-### Notes on Changes
-
-1. **Training compute estimation method** - Existing field that now follows a strict hierarchical priority system
-2. **Confidence** - Existing field with more rigorous definitions tied to estimation methods
-3. **Training compute notes** - Existing field now used more extensively for calculation details
-4. The **Sources** field mentioned in our pipeline corresponds to existing bibliographic fields and requires no changes
 
 ## Generic Changes
 
@@ -79,4 +73,4 @@ The following changes would be made to the existing [AI models documentation tab
 - Semi-automated approach combining automation with human expertise
 - Complete audit trail from data collection to final inclusion
 
-These changes document the methodology actively used since [INSERT DATE] for tracking the most computationally intensive AI systems.
+There are some other existing fields which could be augmented based on the semi-automated process, but the above are the key changes.
