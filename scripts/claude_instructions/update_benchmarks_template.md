@@ -1,10 +1,10 @@
 # Claude Code Benchmark Update Task
 
 ## Objective
-Update benchmark data from JavaScript-rendered websites that regular Python scrapers cannot access. You will use your WebFetch tool to get the rendered content and save it as properly formatted HTML files.
+Update benchmark data from browser-interactive websites that regular Python scrapers cannot access. You will use your WebFetch tool to interact with the sites and save the content as properly formatted HTML files.
 
 ## Context
-These benchmark sites use dynamic JavaScript rendering (Gradio, React, etc.) that makes them inaccessible to standard web scraping tools. Your WebFetch capability can handle these sites by rendering the JavaScript before extraction.
+These benchmark sites require interactive browser behavior (clicking, scrolling, waiting for dynamic content) that makes them inaccessible to standard web scraping tools. Your WebFetch capability can handle these sites by performing the necessary interactions before extraction.
 
 ## Sites to Update
 
@@ -61,7 +61,7 @@ After creating all files, briefly report:
 - Confirmation that files were saved to specified paths
 
 ## Important Notes
-- Use WebFetch's ability to handle JavaScript-rendered content
+- Use WebFetch's ability to handle browser-interactive content
 - Some sites may require waiting for dynamic content to load
 - Extract the most complete and recent data available
 - If multiple tables exist, choose the main leaderboard/ranking table

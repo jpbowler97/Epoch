@@ -99,7 +99,7 @@ src/epoch_tracker/
 ├── estimation/      # FLOP calculation algorithms (scaling laws, benchmarks)
 ├── storage/         # Data persistence (JSON, CSV export)
 ├── config/          # Centralized configuration management
-└── utils/           # Developer blacklist, model names, date utilities
+└── utils/           # Developer exclusion criteria, model names, date utilities
 
 scripts/
 ├── run.py                    # Main CLI entry point for all functionality
@@ -111,10 +111,10 @@ scripts/
 │   └── refresh_core_dataset.py   # Core dataset curation with dual-table management
 ├── curation/                 # Manual review and dataset management
 │   ├── review_candidates.py      # Interactive candidate review with enhanced context
-│   ├── review_developers.py      # Developer blacklist management interface  
+│   ├── review_developers.py      # Developer exclusion criteria management interface  
 │   ├── sync_staging_published.py # Bidirectional dataset synchronization
 │   └── manual_model_entry.py     # Manual model entry interface
-├── claude_instructions/      # Claude Code integration for JS-heavy sites
+├── claude_instructions/      # Claude Code integration for browser-interactive sites
 │   └── update_benchmarks.md      # Instructions for benchmark data collection
 ├── update_claude_benchmarks.py  # Claude-managed benchmark site updates
 └── testing/                  # Testing and validation
@@ -127,7 +127,7 @@ configs/
 ├── benchmark_references.json    # Reference models for benchmark interpolation
 ├── benchmark_sources/          # Benchmark-specific configuration files
 ├── claude_scraping.yaml       # Claude Code scraping configuration
-├── developer_blacklist.json   # Developer transparency and FLOP capping rules
+├── developer_exclusion_criteria.json   # Developer resource constraints and FLOP capping rules
 ├── flop_estimation_methods.json # Centralized threshold and method configuration
 ├── model_name_mapping.yaml    # Model name normalization mappings
 └── scrapers/                  # Individual scraper configurations (JSON)
@@ -149,7 +149,7 @@ The system now uses a **configurable scraper architecture** that supports multip
 - **LMArena**: Leaderboard scores and model rankings (hybrid manual + automated)
 - **OpenLM Arena**: Chatbot arena leaderboard data (automated scraping)
 
-### Claude-Managed Benchmark Sites (JavaScript-Heavy)
+### Claude-Managed Benchmark Sites (Browser-Interactive)
 - **SuperCLUE**: Comprehensive Chinese language understanding benchmark
 - **Physics-IQ**: Video model physics understanding benchmark  
 - **Olympic Arena**: Multi-discipline cognitive reasoning benchmark
@@ -162,9 +162,9 @@ The system now uses a **configurable scraper architecture** that supports multip
 - **Developer Blacklist**: Transparency-based FLOP capping for undisclosed models
 - **Benchmark References**: Anchor models for benchmark interpolation methods
 
-### Claude Integration for JavaScript-Heavy Sites
+### Claude Integration for Browser-Interactive Sites
 
-Some benchmark sites use JavaScript rendering that regular scrapers can't handle. We use Claude Code's WebFetch capabilities for these:
+Some benchmark sites require interactive browser behavior that regular scrapers can't handle. We use Claude Code's WebFetch capabilities for these:
 
 ```bash
 # Update only Claude-managed sites (SuperCLUE, Physics-IQ, etc.)
@@ -216,5 +216,5 @@ The system uses a **hierarchical estimation approach** with multiple methods in 
 
 ## For more info....
 
-For detailed usage instructions, see the **[Usage Guide](docs/usage.md)**.
+For detailed setup instructions, see the **[Setup Guide](docs/setup.md)**.
 For development and architecture details, see **[CLAUDE.md](CLAUDE.md)**.

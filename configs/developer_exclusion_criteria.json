@@ -1,0 +1,269 @@
+{
+  "description": "Developer exclusion criteria configuration based on resource constraints and computational limitations",
+  "version": "2.0",
+  "last_updated": "2025-08-15T12:00:00.000000",
+  "exclusion_criteria": {
+    "01 AI": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Limited computational resources for 1e25 FLOP training runs"
+    },
+    "AI21 Labs": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Limited access to large-scale GPU infrastructure"
+    },
+    "Alibaba": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major tech company with established computational infrastructure"
+    },
+    "Amazon": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major cloud provider with extensive computational resources"
+    },
+    "Anthropic": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Well-funded AI company with access to large-scale compute"
+    },
+    "ByteDance": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Limited evidence of 1e25+ FLOP computational budget allocation"
+    },
+    "Cohere": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Smaller AI company with limited computational budget for frontier models"
+    },
+    "Databricks": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Focus on enterprise solutions, limited frontier model training resources"
+    },
+    "DeepSeek": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Chinese AI company with demonstrated large-scale training capabilities"
+    },
+    "Google": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major tech company with extensive TPU infrastructure and computational resources"
+    },
+    "Meta": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Major tech company with demonstrated ability to train 1e25+ FLOP models"
+    },
+    "Microsoft": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Primarily partners with OpenAI rather than training proprietary frontier models"
+    },
+    "MiniMax": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Limited computational resources for 1e25+ FLOP training runs"
+    },
+    "Mistral": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Well-funded European AI company with access to computational resources"
+    },
+    "Moonshot": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Startup with limited computational budget for frontier model training"
+    },
+    "NexusFlow": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Limited computational resources for large-scale training"
+    },
+    "Nvidia": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "GPU manufacturer with access to extensive computational hardware"
+    },
+    "OpenAI": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Leading AI company with demonstrated large-scale training capabilities"
+    },
+    "OpenChat": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Open source project with limited computational resources"
+    },
+    "Reka AI": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Smaller AI company with limited computational budget"
+    },
+    "Snowflake": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Data platform company without large-scale AI model training focus"
+    },
+    "StepFun": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Limited computational resources for 1e25+ FLOP training runs"
+    },
+    "Tencent": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Limited evidence of computational budget allocation for frontier AI models"
+    },
+    "Unknown": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Models with unidentified developers cannot be evaluated for resource availability"
+    },
+    "xAI": {
+      "excluded": false,
+      "last_reviewed": "2025-08-04",
+      "reason": "Well-funded company with access to large-scale computational resources"
+    },
+    "Zhipu": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Limited computational resources for 1e25+ FLOP training runs"
+    },
+    "Zhipu AI": {
+      "excluded": true,
+      "last_reviewed": "2025-08-04",
+      "reason": "Limited computational resources for 1e25+ FLOP training runs"
+    },
+    "Ai2": {
+      "excluded": false,
+      "reason": "Research institution with access to computational resources",
+      "last_reviewed": "2025-08-04T15:40:58.659204"
+    },
+    "Allen AI": {
+      "excluded": true,
+      "reason": "Limited computational budget for frontier model training",
+      "last_reviewed": "2025-08-04T15:45:44.549999"
+    },
+    "Cognitive Computations": {
+      "excluded": true,
+      "reason": "Limited computational resources for large-scale training",
+      "last_reviewed": "2025-08-04T15:45:54.053563"
+    },
+    "HuggingFace": {
+      "excluded": true,
+      "reason": "Platform company with limited computational budget for frontier models",
+      "last_reviewed": "2025-08-04T15:45:59.842002"
+    },
+    "InternLM": {
+      "excluded": true,
+      "reason": "Limited computational resources for 1e25+ FLOP training runs",
+      "last_reviewed": "2025-08-04T15:46:02.655002"
+    },
+    "MosaicML": {
+      "excluded": true,
+      "reason": "Limited computational resources compared to frontier model requirements",
+      "last_reviewed": "2025-08-04T15:46:04.646529"
+    },
+    "Nomic AI": {
+      "excluded": true,
+      "reason": "Small AI company with limited computational budget",
+      "last_reviewed": "2025-08-04T15:46:07.966037"
+    },
+    "OpenAssistant": {
+      "excluded": true,
+      "reason": "Open source project with limited computational resources",
+      "last_reviewed": "2025-08-04T15:46:11.103280"
+    },
+    "RWKV": {
+      "excluded": true,
+      "reason": "Open source project with limited computational resources",
+      "last_reviewed": "2025-08-04T15:46:14.589192"
+    },
+    "Stanford": {
+      "excluded": true,
+      "reason": "Academic institution with limited computational budget for frontier models",
+      "last_reviewed": "2025-08-04T15:46:15.923417"
+    },
+    "Together AI": {
+      "excluded": true,
+      "reason": "Limited computational resources for 1e25+ FLOP training runs",
+      "last_reviewed": "2025-08-04T15:46:17.542098"
+    },
+    "UC Berkeley": {
+      "excluded": true,
+      "reason": "Academic institution with limited computational budget for frontier models",
+      "last_reviewed": "2025-08-04T15:46:19.277055"
+    },
+    "Upstage AI": {
+      "excluded": true,
+      "reason": "Limited computational resources for large-scale training",
+      "last_reviewed": "2025-08-04T15:46:21.111812"
+    },
+    "Pika Labs": {
+      "excluded": true,
+      "reason": "Limited computational resources for 1e25+ FLOP training runs",
+      "last_reviewed": "2025-08-04T15:46:22.830449"
+    }
+  },
+  "pending_review": [
+    "AllenAI/UW",
+    "DeepSeek AI", 
+    "IBM",
+    "LMSYS",
+    "Nexusflow",
+    "NousResearch",
+    "Princeton",
+    "Stability AI",
+    "TII",
+    "Tsinghua",
+    "UW",
+    "Runway"
+  ],
+  "settings": {
+    "auto_discover": true,
+    "require_review_new_developers": true,
+    "default_exclusion_status": false,
+    "cap_value": 9.9e+24,
+    "cap_reasoning_template": "FLOP estimate capped at {cap_value:.1e} due to resource constraint policy: {reason}",
+    "preserve_original_estimates": true,
+    "reduce_confidence_on_cap": true
+  },
+  "statistics": {
+    "total_developers": 41,
+    "excluded_count": 30,
+    "allowed_count": 11,
+    "pending_count": 12
+  },
+  "notes": {
+    "exclusion_criteria": [
+      "Limited computational budget for 1e25+ FLOP training runs",
+      "Insufficient access to large-scale GPU/TPU infrastructure", 
+      "No demonstrated history of frontier model training",
+      "Primary focus on applications rather than model development"
+    ],
+    "examples": {
+      "excluded": [
+        "MiniMax",
+        "StepFun", 
+        "ByteDance",
+        "Moonshot",
+        "Tencent",
+        "Zhipu AI",
+        "Unknown"
+      ],
+      "allowed": [
+        "OpenAI",
+        "Google", 
+        "Anthropic",
+        "Meta",
+        "DeepSeek",
+        "Mistral",
+        "xAI"
+      ]
+    }
+  }
+}

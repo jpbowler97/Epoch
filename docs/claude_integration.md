@@ -2,14 +2,14 @@
 
 ## Overview
 
-The Epoch tracker integrates with Claude Code's WebFetch capabilities to handle JavaScript-heavy websites that regular Python scrapers cannot access. This hybrid approach allows us to collect data from modern web applications using Gradio, React, and other dynamic frameworks.
+The Epoch tracker integrates with Claude Code's WebFetch capabilities to handle browser-interactive websites that regular Python scrapers cannot access. This hybrid approach allows us to collect data from modern web applications that require actual browser interaction (clicking, scrolling, waiting for dynamic content).
 
 ## Architecture
 
 ```
 Regular Scrapers (Python)          Claude Code Service
 ├── HuggingFace API               ├── SuperCLUE (Gradio)
-├── LMArena (Static HTML)          ├── Physics-IQ (JavaScript)
+├── LMArena (Static HTML)          ├── Physics-IQ (Interactive)
 ├── OpenLM Arena (JSON)            ├── Olympic Arena (React)
 └── Papers with Code               └── Video Arena (Dynamic)
                 ↓                              ↓
@@ -76,17 +76,17 @@ Regular Scrapers (Python)          Claude Code Service
 ## How It Works
 
 ### The Problem
-Many modern benchmark sites use JavaScript frameworks that render content dynamically:
-- **SuperCLUE**: Uses Gradio interface
-- **Physics-IQ**: JavaScript-rendered tables
-- **Video Arena**: Dynamic content loading
+Many modern benchmark sites require interactive browser behavior to access their content:
+- **SuperCLUE**: Uses Gradio interface requiring clicks to load data
+- **Physics-IQ**: Interactive tables requiring navigation
+- **Video Arena**: Dynamic content loading requiring scrolling and waiting
 
-Regular Python scrapers using `requests` and `BeautifulSoup` cannot execute JavaScript, so they miss this content.
+Regular Python scrapers using `requests` and `BeautifulSoup` cannot perform these browser interactions, so they miss this content.
 
 ### The Solution
 Claude Code has access to WebFetch tools that can:
-1. **Render JavaScript**: Full browser-like rendering
-2. **Extract Content**: Parse dynamic content after rendering
+1. **Interact with Browser**: Full browser-like interaction (clicking, scrolling, waiting)
+2. **Extract Content**: Parse content after all interactions are complete
 3. **Save Locally**: Create HTML files for regular scrapers
 
 ### Simplified Workflow
@@ -197,7 +197,7 @@ The system includes multiple layers of error handling:
 
 ## Benefits
 
-1. **Comprehensive Coverage**: Access JavaScript-heavy sites
+1. **Comprehensive Coverage**: Access browser-interactive sites
 2. **Automation**: Scheduled updates without manual intervention
 3. **Reliability**: Fallback mechanisms ensure continuity
 4. **Maintainability**: Clear separation of concerns
@@ -205,7 +205,7 @@ The system includes multiple layers of error handling:
 
 ## Adding New Sites
 
-To add a new JavaScript-heavy site:
+To add a new browser-interactive site:
 
 1. **Add to Configuration** (`configs/claude_scraping.yaml`):
    ```yaml
@@ -272,7 +272,7 @@ python scripts/run.py collect-all --scrapers superclue --verbose
 ## Future Improvements
 
 - [ ] API integration instead of subprocess
-- [ ] Automatic detection of JavaScript requirements
+- [ ] Automatic detection of browser interaction requirements
 - [ ] Visual diff of HTML changes
 - [ ] Metrics dashboard for update success rates
 - [ ] Automatic fallback to alternative sources

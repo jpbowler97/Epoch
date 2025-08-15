@@ -6,7 +6,7 @@ This guide covers the initial setup and configuration of the Epoch AI Model Trac
 
 - **Python 3.9+** (tested with 3.9, 3.10, 3.11)
 - **Git** for cloning the repository
-- **Internet connection** for scraping data
+- **Internet connection** for data collection and Claude Code integration
 
 ## Installation
 
@@ -14,7 +14,7 @@ This guide covers the initial setup and configuration of the Epoch AI Model Trac
 
 ```bash
 git clone <repository-url>
-cd epoch-tracker
+cd Epoch
 ```
 
 ### 2. Create Virtual Environment
@@ -34,17 +34,27 @@ venv\Scripts\activate
 ### 3. Install Dependencies
 
 ```bash
+# Install production dependencies
 pip install -r requirements.txt
+
+# OR install with development dependencies
+pip install -e ".[dev]"
 ```
 
-This installs the minimal required dependencies:
+**Core Dependencies:**
 - `requests` - HTTP client for web scraping
-- `pydantic` + `pydantic-settings` - Data validation and configuration  
-- `python-dateutil` - Date parsing utilities
-- `huggingface-hub` - Hugging Face API access
+- `pydantic` - Data validation and schemas
+- `python-dateutil` - Date parsing utilities  
 - `pyyaml` - YAML configuration files
-- `python-dotenv` - Environment variable loading
-- `pandas` - CSV export functionality
+- `pandas` - CSV processing and exports
+- `beautifulsoup4` - HTML parsing for web scrapers
+
+**Development Dependencies (optional):**
+- `pytest` - Testing framework
+- `pytest-cov` - Test coverage reporting
+- `black` - Code formatting
+- `isort` - Import sorting
+- `flake8` - Code linting
 
 ## Configuration
 
@@ -54,21 +64,6 @@ Create a `.env` file for optional configuration:
 
 ```bash
 cp .env.example .env
-```
-
-### YAML Configuration
-
-The system uses `configs/default.yaml` for main configuration:
-
-```yaml
-scraping:
-  default_delay: 1.0
-  max_requests_per_minute: 60
-  
-sources:
-  huggingface:
-    enabled: true
-    delay: 0.5
 ```
 
 You can modify these settings as needed.
@@ -81,28 +76,6 @@ You can modify these settings as needed.
 python -c "import epoch_tracker; print('✅ Installation successful')"
 ```
 
-### 2. Run Help Commands
-
-```bash
-# Test scraper
-python scripts/scrape_huggingface.py --help
-
-# Test query tool  
-python scripts/query_models.py --help
-```
-
-### 3. Check Directory Structure
-
-Verify the project structure:
-```
-epoch-tracker/
-├── src/epoch_tracker/       # Main package
-├── scripts/                 # CLI tools
-├── configs/                 # Configuration files
-├── data/                    # Data storage (created on first run)
-├── requirements.txt         # Dependencies
-└── README.md               # Documentation
-```
 
 ## First Run
 

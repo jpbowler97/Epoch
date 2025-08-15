@@ -1,11 +1,34 @@
 # Task: Update Complex Benchmark Data
 
-You need to fetch and save benchmark data from JavaScript-rendered websites.
-Use your WebFetch tool to get the rendered content, then save it as HTML files.
+You need to fetch and save benchmark data from browser-interactive websites.
+Use your WebFetch tool to interact with the sites and get the rendered content, then save it as HTML files.
 
 ## Instructions:
 
-### 1. Update physics_iq
+### 1. Update superclue
+
+1. Use WebFetch to get content from: https://www.superclueai.com/
+2. Extract the following data:
+   Extract the complete leaderboard table with:
+   - Model names (模型名称)
+   - Organization/Developer (机构)
+   - Overall score (总分)
+   - Math scores (数学)
+   - Reasoning scores (推理)
+   - Code generation scores (代码)
+   - Agent capabilities (智能体)
+   Format as a clean HTML table with proper <table>, <thead>, <tbody> structure.
+   Ensure all Chinese and English text is preserved correctly.
+   
+3. Create a clean HTML file with:
+   - DOCTYPE and proper HTML structure
+   - A <table> element with the extracted data
+   - Proper <thead> and <tbody> sections
+   - All column headers and data preserved
+4. Save to: data/benchmark_files/SuperCLUE.html
+5. Add timestamp comment: <!-- Updated: 2025-08-11T13:54:57.349389 -->
+
+### 2. Update physics_iq
 
 1. Use WebFetch to get content from: https://physics-iq.github.io/
 2. Extract the following data:
@@ -21,9 +44,9 @@ Use your WebFetch tool to get the rendered content, then save it as HTML files.
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/PhysicsIQ.html
-5. Add timestamp comment: <!-- Updated: 2025-08-04T13:35:55.073848 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-11T13:54:57.349392 -->
 
-### 2. Update olympic_arena
+### 3. Update olympic_arena
 
 1. Use WebFetch to get content from: https://gair-nlp.github.io/OlympicArena
 2. Extract the following data:
@@ -40,9 +63,9 @@ Use your WebFetch tool to get the rendered content, then save it as HTML files.
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/OlympicArena.html
-5. Add timestamp comment: <!-- Updated: 2025-08-04T13:35:55.073856 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-11T13:54:57.349398 -->
 
-### 3. Update video_arena
+### 4. Update video_arena
 
 1. Use WebFetch to get content from: https://artificialanalysis.ai/text-to-video/arena
 2. Extract the following data:
@@ -59,7 +82,7 @@ Use your WebFetch tool to get the rendered content, then save it as HTML files.
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/VideoArena.html
-5. Add timestamp comment: <!-- Updated: 2025-08-04T13:35:55.073871 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-11T13:54:57.349401 -->
 
 ## Output Requirements:
 - Each HTML file must be valid HTML with proper structure

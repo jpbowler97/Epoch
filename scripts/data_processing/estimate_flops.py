@@ -18,7 +18,7 @@ from typing import Dict, List, Optional, Tuple
 from epoch_tracker.estimation import ComputeEstimator
 from epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod, ModelStatus
 from epoch_tracker.storage import JSONStorage
-from epoch_tracker.utils.developer_blacklist import DeveloperBlacklist
+from epoch_tracker.utils.developer_exclusion import DeveloperExclusion
 from epoch_tracker.config.thresholds import get_threshold_config
 
 
@@ -29,64 +29,70 @@ THRESHOLD_CONFIG = None
 # These take HIGHEST PRIORITY and override all other estimation methods
 # NOTE: Use exact FLOP values from Epoch's research with appropriate confidence levels
 MANUAL_OVERRIDES = {
-    # Frontier models from Epoch AI tracker - High precision estimates
-    "llama_3.1_405b": (3.8e25, ConfidenceLevel.HIGH, "https://epoch.ai/data-insights/models-over-1e25-flop: High-precision estimate from Meta disclosure"),
-    "grok_2": (3.0e25, ConfidenceLevel.HIGH, "https://epoch.ai/data-insights/models-over-1e25-flop: High-precision estimate from xAI disclosure"),
+    # All manual overrides use HIGH confidence since they represent our most authoritative estimates
+    # But descriptions preserve the original precision assessment from Epoch research
+    
+    # High-precision estimates from Epoch AI
+    "llama_3.1_405b": (3.8e25, ConfidenceLevel.HIGH, "Manual override: High-precision estimate from Meta disclosure"),
+    "grok_2": (3.0e25, ConfidenceLevel.HIGH, "Manual override: High-precision estimate from xAI disclosure"),
     
     # Low-precision but reliable estimates from Epoch AI
-    "claude_3_opus": (1.6e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from industry analysis"),
-    "claude_opus": (1.6e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from industry analysis"),  # Alias
-    "gpt_4": (2.1e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from scaling analysis"),
-    "gemini_1.0_ultra": (5.0e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from Google hints"),
-    "gemini_ultra": (5.0e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from Google hints"),  # Alias
-    "claude_3.5_sonnet": (3.6e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from benchmarks"),
-    "gpt_4o": (3.8e25, ConfidenceLevel.MEDIUM, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate from OpenAI patterns"),
+    "claude_3_opus": (1.6e25, ConfidenceLevel.HIGH, "Manual override: Low-precision estimate from industry analysis"),
+    "claude_opus": (1.6e25, ConfidenceLevel.HIGH, "Manual override: Low-precision estimate from industry analysis"),  # Alias
+    "gpt_4": (2.1e25, ConfidenceLevel.HIGH, "Manual override: Low-precision estimate from scaling analysis"),
+    "gemini_1.0_ultra": (5.0e25, ConfidenceLevel.HIGH, "Manual override: Low-precision estimate from Google hints"),
+    "gemini_ultra": (5.0e25, ConfidenceLevel.HIGH, "Manual override: Low-precision estimate from Google hints"),  # Alias
+    "claude_3.5_sonnet": (3.6e25, ConfidenceLevel.HIGH, "Manual override: Low-precision estimate from benchmarks"),
+    "gpt_4o": (3.8e25, ConfidenceLevel.HIGH, "Manual override: Low-precision estimate from OpenAI patterns"),
     
-    # Speculative but notable estimates from Epoch AI
-    "claude_opus_4": (1.5e26, ConfidenceLevel.LOW, "https://epoch.ai/data-insights/models-over-1e25-flop: Speculative estimate for next-gen Claude"),
-    "claude_4_opus": (1.5e26, ConfidenceLevel.LOW, "https://epoch.ai/data-insights/models-over-1e25-flop: Speculative estimate for next-gen Claude"),  # Alias
-    "gpt_4.5": (6.4e25, ConfidenceLevel.LOW, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate for GPT-4.5"),
-    "gpt_4.5_preview": (6.4e25, ConfidenceLevel.LOW, "https://epoch.ai/data-insights/models-over-1e25-flop: Low-precision estimate for GPT-4.5"),  # Alias
+    # Speculative estimates from Epoch AI
+    "claude_opus_4": (1.5e26, ConfidenceLevel.HIGH, "Manual override: Speculative estimate for next-gen Claude"),
+    "claude_4_opus": (1.5e26, ConfidenceLevel.HIGH, "Manual override: Speculative estimate for next-gen Claude"),  # Alias
+    "gpt_4.5": (6.4e25, ConfidenceLevel.HIGH, "Manual override: Speculative estimate for GPT-4.5"),
+    "gpt_4.5_preview": (6.4e25, ConfidenceLevel.HIGH, "Manual override: Speculative estimate for GPT-4.5"),  # Alias
 
-    # More manual overrides
-    "deepseek_r1": (3.0e24, ConfidenceLevel.HIGH, "https://epoch.ai/gradient-updates/what-went-into-training-deepseek-r1"),
+    # High-precision estimates from other sources
+    "deepseek_r1": (3.0e24, ConfidenceLevel.HIGH, "Manual override: High-precision estimate from DeepSeek disclosure"),
 }
 
 # Known model specifications for direct FLOP calculation
 # NOTE: Patterns must match normalized model names (underscores, not hyphens)
 # To add new models: Include normalized name pattern, parameters, training tokens, confidence level
 KNOWN_MODEL_SPECS = {
-    # Llama models (Meta) - HIGH confidence from official disclosures
-    "llama_3.1_405b": (405_000_000_000, 15_000_000_000_000, ConfidenceLevel.HIGH),
-    "llama_3.1_70b": (70_000_000_000, 15_000_000_000_000, ConfidenceLevel.HIGH),
-    "llama_3.1_8b": (8_000_000_000, 15_000_000_000_000, ConfidenceLevel.HIGH),
-    "llama_3_405b": (405_000_000_000, 15_000_000_000_000, ConfidenceLevel.HIGH),
-    "llama_3_70b": (70_000_000_000, 15_000_000_000_000, ConfidenceLevel.HIGH),
-    "llama_3_8b": (8_000_000_000, 15_000_000_000_000, ConfidenceLevel.HIGH),
-    "llama_2_70b": (70_000_000_000, 2_000_000_000_000, ConfidenceLevel.HIGH),
-    "llama_2_7b": (7_000_000_000, 2_000_000_000_000, ConfidenceLevel.HIGH),
+    # All Chinchilla scaling estimates use MEDIUM confidence regardless of disclosure quality
+    # This standardizes confidence across all parameter-based scaling methods
     
-    # OpenAI models - MEDIUM confidence from industry estimates
+    # Llama models (Meta) - From official disclosures
+    "llama_3.1_405b": (405_000_000_000, 15_000_000_000_000, ConfidenceLevel.MEDIUM),
+    "llama_3.1_70b": (70_000_000_000, 15_000_000_000_000, ConfidenceLevel.MEDIUM),
+    "llama_3.1_8b": (8_000_000_000, 15_000_000_000_000, ConfidenceLevel.MEDIUM),
+    "llama_3_405b": (405_000_000_000, 15_000_000_000_000, ConfidenceLevel.MEDIUM),
+    "llama_3_70b": (70_000_000_000, 15_000_000_000_000, ConfidenceLevel.MEDIUM),
+    "llama_3_8b": (8_000_000_000, 15_000_000_000_000, ConfidenceLevel.MEDIUM),
+    "llama_2_70b": (70_000_000_000, 2_000_000_000_000, ConfidenceLevel.MEDIUM),
+    "llama_2_7b": (7_000_000_000, 2_000_000_000_000, ConfidenceLevel.MEDIUM),
+    
+    # OpenAI models - From industry estimates
     "gpt_4": (1_760_000_000_000, 13_000_000_000_000, ConfidenceLevel.MEDIUM),
     "gpt_4o": (1_760_000_000_000, 13_000_000_000_000, ConfidenceLevel.MEDIUM),  # Similar to GPT-4
     
-    # Claude models (Anthropic) - MEDIUM confidence from industry estimates  
+    # Claude models (Anthropic) - From industry estimates  
     "claude_3.5_sonnet": (250_000_000_000, 10_000_000_000_000, ConfidenceLevel.MEDIUM),
     "claude_3_opus": (175_000_000_000, 8_000_000_000_000, ConfidenceLevel.MEDIUM),
     "claude_opus": (175_000_000_000, 8_000_000_000_000, ConfidenceLevel.MEDIUM),  # Alias
     
-    # Gemini models (Google) - MEDIUM confidence from industry estimates
+    # Gemini models (Google) - From industry estimates
     "gemini_1.5_pro": (300_000_000_000, 12_000_000_000_000, ConfidenceLevel.MEDIUM),
-    "gemini_2.0": (500_000_000_000, 20_000_000_000_000, ConfidenceLevel.LOW),  # Speculative
+    "gemini_2.0": (500_000_000_000, 20_000_000_000_000, ConfidenceLevel.MEDIUM),  # All specs use MEDIUM
     
-    # Qwen models (Alibaba) - MEDIUM confidence from partial disclosures
+    # Qwen models (Alibaba) - From partial disclosures
     "qwen3_235b": (235_000_000_000, 10_000_000_000_000, ConfidenceLevel.MEDIUM),
     "qwen3_480b": (480_000_000_000, 15_000_000_000_000, ConfidenceLevel.MEDIUM),
     "qwen3_coder_480b": (480_000_000_000, 15_000_000_000_000, ConfidenceLevel.MEDIUM),
     
-    # DeepSeek models - MEDIUM confidence from papers
+    # DeepSeek models - From papers and disclosures  
     "deepseek_v3": (671_000_000_000, 14_800_000_000_000, ConfidenceLevel.MEDIUM),  # From paper
-    "deepseek_r1": (671_000_000_000, 15_000_000_000_000, ConfidenceLevel.LOW),  # Estimated
+    "deepseek_r1": (671_000_000_000, 15_000_000_000_000, ConfidenceLevel.MEDIUM),  # All specs use MEDIUM
 }
 
 def load_estimation_methods_config(config_path: Optional[Path] = None) -> Dict:
@@ -421,6 +427,7 @@ def extract_model_size(model_name: str) -> Optional[int]:
 def estimate_training_tokens(model_name: str, param_count: int) -> Tuple[int, ConfidenceLevel, str]:
     """
     Estimate training tokens based on model characteristics and era.
+    All parameter-based scaling uses MEDIUM confidence consistently.
     
     Args:
         model_name: Name of the model 
@@ -452,7 +459,7 @@ def estimate_training_tokens(model_name: str, param_count: int) -> Tuple[int, Co
     # Earlier era models (2021-2022) - lower token counts
     elif any(x in model_lower for x in ['llama_1', 'llama_13b', 'llama_7b', 'gpt_3', 'palm']):
         tokens = param_count * 8  # Earlier models had lower token ratios
-        confidence = ConfidenceLevel.LOW
+        confidence = ConfidenceLevel.MEDIUM  # All parameter-based scaling uses MEDIUM
         reasoning = f"(Early era model: {param_count/1e9:.0f}B params * 8 tokens/param)"
     
     # Specialized models - different training patterns
@@ -470,7 +477,7 @@ def estimate_training_tokens(model_name: str, param_count: int) -> Tuple[int, Co
     # Default fallback - conservative estimate
     else:
         tokens = param_count * 15  # Conservative middle ground
-        confidence = ConfidenceLevel.LOW
+        confidence = ConfidenceLevel.MEDIUM  # All parameter-based scaling uses MEDIUM
         reasoning = f"(Generic estimate: {param_count/1e9:.0f}B params * 15 tokens/param)"
     
     return tokens, confidence, reasoning
@@ -607,18 +614,8 @@ def estimate_from_single_benchmark(benchmark_name: str, benchmark_score: float,
             
             # Adjust confidence based on distance from reference
             score_diff = abs(benchmark_score - ref_config["reference_score"])
-            if ref_config.get("benchmark_type") == "percentage":
-                # Percentage-based scores
-                if score_diff > 20:
-                    result.confidence = ConfidenceLevel.LOW
-                elif score_diff > 10:
-                    result.confidence = ConfidenceLevel.MEDIUM
-            else:
-                # ELO-based scores
-                if score_diff > 100:
-                    result.confidence = ConfidenceLevel.LOW
-                elif score_diff > 50:
-                    result.confidence = ConfidenceLevel.MEDIUM
+            # All benchmark interpolation uses LOW confidence due to inherent unreliability
+            result.confidence = ConfidenceLevel.LOW
             
             return {
                 'flop': result.flop_estimate,
@@ -689,12 +686,9 @@ def estimate_from_multiple_benchmarks(model: Model, estimator: ComputeEstimator)
     min_flop = min(flop_values)
     agreement_ratio = max_flop / min_flop if min_flop > 0 else float('inf')
     
-    if agreement_ratio <= 2.0 and len(individual_estimates) >= 2:
-        # Good agreement across benchmarks - boost confidence
-        if best_confidence == ConfidenceLevel.LOW:
-            best_confidence = ConfidenceLevel.MEDIUM
-        elif best_confidence == ConfidenceLevel.SPECULATIVE:
-            best_confidence = ConfidenceLevel.LOW
+    # All benchmark interpolation uses LOW confidence regardless of agreement
+    # due to rapid efficiency improvements making benchmark scaling unreliable
+    best_confidence = ConfidenceLevel.LOW
     
     # Create aggregate reasoning
     aggregate_reasoning = f"Multi-benchmark estimation from {len(individual_estimates)} benchmarks: {'; '.join(benchmark_details)} → weighted average: {avg_flop:.2e} FLOP"
@@ -739,11 +733,8 @@ def estimate_from_benchmark_score(model: Model, estimator: ComputeEstimator) -> 
             reference_flop=ref_flop
         )
         
-        # Adjust confidence based on score difference
-        if score_diff > 100:
-            result.confidence = ConfidenceLevel.LOW
-        elif score_diff > 50:
-            result.confidence = ConfidenceLevel.MEDIUM
+        # All benchmark interpolation uses LOW confidence due to inherent unreliability
+        result.confidence = ConfidenceLevel.LOW
             
         benchmark_type = 'openlm_arena_elo' if 'openlm_arena_elo' in model.benchmarks else 'lmarena_score'
         
@@ -814,7 +805,7 @@ def deduplicate_models(models: List[Model]) -> List[Model]:
 
 
 def estimate_model_flops(model: Model, estimator: ComputeEstimator, usage_tracker: Optional[MethodUsageTracker] = None, 
-                         blacklist: Optional[DeveloperBlacklist] = None) -> Optional[Dict]:
+                         exclusion_criteria: Optional[DeveloperExclusion] = None) -> Optional[Dict]:
     """
     Estimate FLOP for a single model using hierarchical methods with multiple estimates.
     
@@ -830,7 +821,7 @@ def estimate_model_flops(model: Model, estimator: ComputeEstimator, usage_tracke
         model: Model object with name and benchmark data
         estimator: ComputeEstimator instance
         usage_tracker: Optional tracker for method usage statistics
-        blacklist: Optional developer blacklist for applying FLOP caps
+        exclusion_criteria: Optional developer exclusion criteria for applying FLOP caps
         
     Returns:
         Dict with primary estimate and alternative estimates, or None if no estimate possible
@@ -950,25 +941,25 @@ def estimate_model_flops(model: Model, estimator: ComputeEstimator, usage_tracke
     # Infer correct developer from benchmark references if needed
     corrected_developer = infer_developer_from_references(model)
     
-    # Apply developer blacklist capping if configured
-    if blacklist and primary_estimate and corrected_developer:
+    # Apply developer exclusion criteria capping if configured
+    if exclusion_criteria and primary_estimate and corrected_developer:
         original_flop = primary_estimate['flop']
         original_confidence = primary_estimate['confidence']
         original_method = primary_estimate['method']
         original_reasoning = primary_estimate['reasoning']
         
-        final_flop, final_confidence, final_reasoning, was_capped = blacklist.apply_cap_if_needed(
+        final_flop, final_confidence, final_reasoning, was_capped = exclusion_criteria.apply_resource_cap_if_needed(
             corrected_developer, original_flop, original_confidence, original_method, original_reasoning
         )
         
         if was_capped:
             # Store original estimate as alternative if preserve is enabled
-            if blacklist.should_preserve_original():
+            if exclusion_criteria.should_preserve_original():
                 model.add_alternative_estimate(
                     flop=original_flop,
                     confidence=original_confidence,
                     method=original_method,
-                    reasoning=f"Original estimate before developer policy cap: {original_reasoning}"
+                    reasoning=f"Original estimate before resource constraint cap: {original_reasoning}"
                 )
             
             # Update primary estimate with capped values
@@ -1021,14 +1012,14 @@ def main():
     estimator = ComputeEstimator()
     usage_tracker = MethodUsageTracker()
     
-    # Initialize developer blacklist
+    # Initialize developer exclusion criteria
     try:
-        blacklist = DeveloperBlacklist()
-        logger.info(f"Loaded developer blacklist: {blacklist.get_statistics()}")
+        exclusion_criteria = DeveloperExclusion()
+        logger.info(f"Loaded developer exclusion criteria: {exclusion_criteria.get_statistics()}")
     except Exception as e:
-        logger.warning(f"Failed to load developer blacklist: {e}")
-        logger.warning("Proceeding without developer blacklist filtering")
-        blacklist = None
+        logger.warning(f"Failed to load developer exclusion criteria: {e}")
+        logger.warning("Proceeding without developer exclusion filtering")
+        exclusion_criteria = None
     
     # Load all models from scraped data
     raw_models = storage.load_all_scraped_models()
@@ -1052,7 +1043,7 @@ def main():
         # Track total models processed
         usage_tracker.total_models += 1
         
-        estimate = estimate_model_flops(model, estimator, usage_tracker, blacklist)
+        estimate = estimate_model_flops(model, estimator, usage_tracker, exclusion_criteria)
         if estimate:
             usage_tracker.models_with_estimates += 1
             if args.dry_run:

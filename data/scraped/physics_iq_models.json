@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "saved_at": "2025-08-04T20:15:45.384269",
+    "saved_at": "2025-08-11T21:24:14.473645",
     "source": "physics_iq",
-    "last_updated": "2025-08-04T20:15:45.384219",
+    "last_updated": "2025-08-11T21:24:14.473588",
     "model_count": 8,
     "stage": "scraped"
   },
@@ -28,7 +28,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T20:15:45.369538",
+      "last_updated": "2025-08-11T21:24:14.377875",
       "metadata": {}
     },
     {
@@ -52,7 +52,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T20:15:45.369589",
+      "last_updated": "2025-08-11T21:24:14.377972",
       "metadata": {}
     },
     {
@@ -76,7 +76,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T20:15:45.369626",
+      "last_updated": "2025-08-11T21:24:14.378038",
       "metadata": {}
     },
     {
@@ -100,7 +100,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T20:15:45.369656",
+      "last_updated": "2025-08-11T21:24:14.378166",
       "metadata": {}
     },
     {
@@ -124,7 +124,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T20:15:45.369683",
+      "last_updated": "2025-08-11T21:24:14.378359",
       "metadata": {}
     },
     {
@@ -148,7 +148,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T20:15:45.369715",
+      "last_updated": "2025-08-11T21:24:14.378459",
       "metadata": {}
     },
     {
@@ -172,7 +172,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T20:15:45.369745",
+      "last_updated": "2025-08-11T21:24:14.378523",
       "metadata": {}
     },
     {
@@ -196,7 +196,7 @@
         "https://physics-iq.github.io/ (Physics-IQ - Benchmark for physical understanding in video generation models)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-04T20:15:45.369769",
+      "last_updated": "2025-08-11T21:24:14.378577",
       "metadata": {}
     }
   ]
