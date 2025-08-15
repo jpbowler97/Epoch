@@ -63,7 +63,7 @@ class CompactFormatter(BaseFormatter):
             params_str = self._format_params(model.parameters)
             
             lines.append(f"   Training FLOP: {flop_str} ({confidence} confidence)")
-            lines.append(f"   Parameters: {params_str} | Status: {model.status.value}")
+            lines.append(f"   Parameters: {params_str} | Classification: {model.get_threshold_classification()}")
             
             # Sources
             if model.sources:
@@ -112,7 +112,7 @@ class FullFormatter(BaseFormatter):
                 "training_flop_confidence": model.training_flop_confidence.value,
                 "estimation_method": model.estimation_method.value,
                 "inference_flop_per_token": model.inference_flop_per_token,
-                "status": model.status.value,
+                "threshold_classification": model.get_threshold_classification(),
                 "context_length": model.context_length,
                 "architecture": model.architecture,
                 "reasoning": model.reasoning,
@@ -150,7 +150,7 @@ class TableFormatter(BaseFormatter):
                 self._format_flop(model.training_flop),
                 model.training_flop_confidence.value[:6],  # Truncate to fit
                 self._format_params(model.parameters),
-                model.status.value.replace("_", " ")[:15]
+                model.get_threshold_classification().replace("_", " ")[:15]
             ])
         
         # Calculate column widths

@@ -6,6 +6,8 @@ from typing import Dict, List, Optional, Any
 
 from pydantic import BaseModel, Field, validator
 
+from ..config.thresholds import ThresholdClassification
+
 
 class ConfidenceLevel(Enum):
     """Confidence levels for FLOP estimates."""
@@ -24,14 +26,6 @@ class EstimationMethod(Enum):
     COMPANY_DISCLOSURE = "company_disclosure"
     EPOCH_ESTIMATE = "epoch_estimate"
 
-
-class ModelStatus(Enum):
-    """Status of model in tracking system."""
-    CONFIRMED_ABOVE = "confirmed_above_1e25"
-    LIKELY_ABOVE = "likely_above_1e25"
-    UNCERTAIN = "uncertain"
-    LIKELY_BELOW = "likely_below_1e25"
-    CONFIRMED_BELOW = "confirmed_below_1e25"
 
 
 
@@ -83,11 +77,6 @@ class Model(BaseModel):
         None, description="FLOP required per output token"
     )
     
-    # Classification
-    status: ModelStatus = Field(
-        ModelStatus.UNCERTAIN, description="Classification relative to 1e25 FLOP threshold"
-    )
-    
     # Supporting data
     benchmarks: Dict[str, float] = Field(
         default_factory=dict, description="Benchmark scores (name -> score)"
@@ -135,6 +124,31 @@ class Model(BaseModel):
             # Low/speculative confidence - return None (uncertain)
             return None
     
+    def get_threshold_classification(self, threshold: float = 1e25) -> str:
+        """Get the threshold classification for this model.
+        
+        Based on configuration:
+        - >= 5e25 FLOP: HIGH_CONFIDENCE_ABOVE
+        - <= 1e25 FLOP: HIGH_CONFIDENCE_BELOW  
+        - Between 1e25 and 5e25: UNCERTAIN
+        
+        Returns:
+            Threshold classification constant string
+        """
+        if self.training_flop is None:
+            return ThresholdClassification.UNCERTAIN
+        
+        high_confidence_above_threshold = 5e25
+        target_threshold = threshold  # 1e25
+        
+        if self.training_flop >= high_confidence_above_threshold:
+            return ThresholdClassification.HIGH_CONFIDENCE_ABOVE
+        elif self.training_flop <= target_threshold:
+            return ThresholdClassification.HIGH_CONFIDENCE_BELOW
+        else:
+            # Between 1e25 and 5e25 - uncertain
+            return ThresholdClassification.UNCERTAIN
+    
     
     def add_source(self, url: str, description: str = ""):
         """Add a source URL with optional description."""
@@ -181,19 +195,7 @@ class Model(BaseModel):
             self.reasoning = reasoning
         self.last_updated = datetime.utcnow()
         
-        # Update status based on new estimate
-        if self.is_above_threshold() is True:
-            if confidence == ConfidenceLevel.HIGH:
-                self.status = ModelStatus.CONFIRMED_ABOVE
-            else:
-                self.status = ModelStatus.LIKELY_ABOVE
-        elif self.is_above_threshold() is False:
-            if confidence == ConfidenceLevel.HIGH:
-                self.status = ModelStatus.CONFIRMED_BELOW
-            else:
-                self.status = ModelStatus.LIKELY_BELOW
-        else:
-            self.status = ModelStatus.UNCERTAIN
+        # Status is now determined by get_threshold_classification() method
 
 
 class ModelCollection(BaseModel):
@@ -212,35 +214,38 @@ class ModelCollection(BaseModel):
         """Get models that are likely or confirmed above the threshold."""
         return [
             model for model in self.models
-            if model.status in [ModelStatus.CONFIRMED_ABOVE, ModelStatus.LIKELY_ABOVE]
+            if model.get_threshold_classification() in [
+                ThresholdClassification.HIGH_CONFIDENCE_ABOVE,
+                ThresholdClassification.LIKELY_ABOVE
+            ]
         ]
     
-    def get_by_status(self, status: ModelStatus) -> List[Model]:
-        """Get models by status classification."""
+    def get_by_threshold_classification(self, classification: str) -> List[Model]:
+        """Get models by threshold classification."""
         return [
             model for model in self.models
-            if model.status == status
+            if model.get_threshold_classification() == classification
         ]
     
     def get_confirmed_above_models(self) -> List[Model]:
         """Get models confirmed above 1e25 FLOP."""
-        return self.get_by_status(ModelStatus.CONFIRMED_ABOVE)
+        return self.get_by_threshold_classification(ThresholdClassification.HIGH_CONFIDENCE_ABOVE)
     
     def get_likely_above_models(self) -> List[Model]:
         """Get models likely above 1e25 FLOP."""
-        return self.get_by_status(ModelStatus.LIKELY_ABOVE)
+        return self.get_by_threshold_classification(ThresholdClassification.LIKELY_ABOVE)
     
     def get_confirmed_below_models(self) -> List[Model]:
         """Get models confirmed below 1e25 FLOP."""
-        return self.get_by_status(ModelStatus.CONFIRMED_BELOW)
+        return self.get_by_threshold_classification(ThresholdClassification.HIGH_CONFIDENCE_BELOW)
     
     def get_likely_below_models(self) -> List[Model]:
         """Get models likely below 1e25 FLOP."""
-        return self.get_by_status(ModelStatus.LIKELY_BELOW)
+        return self.get_by_threshold_classification(ThresholdClassification.LIKELY_BELOW)
     
     def get_uncertain_models(self) -> List[Model]:
         """Get models with uncertain classification."""
-        return self.get_by_status(ModelStatus.UNCERTAIN)
+        return self.get_by_threshold_classification(ThresholdClassification.UNCERTAIN)
     
     def get_by_developer(self, developer: str) -> List[Model]:
         """Get all models from a specific developer."""

@@ -13,6 +13,22 @@ from typing import Dict, Any, Optional
 from dataclasses import dataclass
 
 
+class ThresholdClassification:
+    """Standard threshold classification constants used throughout the system."""
+    HIGH_CONFIDENCE_ABOVE = 'high_confidence_above_1e25'
+    LIKELY_ABOVE = 'likely_above_1e25' 
+    UNCERTAIN = 'uncertain'
+    LIKELY_BELOW = 'likely_below_1e25'
+    HIGH_CONFIDENCE_BELOW = 'high_confidence_below_1e25'
+
+# Classifications that indicate model should be considered as candidate (above/uncertain)
+CANDIDATE_CLASSIFICATIONS = [
+    ThresholdClassification.HIGH_CONFIDENCE_ABOVE,
+    ThresholdClassification.LIKELY_ABOVE,
+    ThresholdClassification.UNCERTAIN
+]
+
+
 @dataclass(frozen=True)
 class ThresholdConfig:
     """Immutable configuration for FLOP threshold classification.

@@ -12,7 +12,7 @@ from typing import Optional, Dict, Any
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod, ModelStatus
+from epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod
 from epoch_tracker.storage import JSONStorage
 from epoch_tracker.estimation import ComputeEstimator
 
@@ -338,11 +338,7 @@ class ManualModelEntry:
                 reasoning=reasoning
             )
             
-            # Set status
-            if flop_value >= 1e25:
-                model.status = ModelStatus.CONFIRMED_ABOVE
-            else:
-                model.status = ModelStatus.CONFIRMED_BELOW
+            # Status determined by threshold_classification automatically
                 
             print(f"✅ FLOP estimate set: {flop_value:.2e}")
             
@@ -389,11 +385,7 @@ class ManualModelEntry:
                     reasoning=f"Era-aware estimation: {result.reasoning}"
                 )
                 
-                # Set status
-                if result.flop_estimate >= 1e25:
-                    model.status = ModelStatus.LIKELY_ABOVE
-                else:
-                    model.status = ModelStatus.LIKELY_BELOW
+                # Status determined by threshold_classification automatically
                     
                 print(f"✅ FLOP estimate: {result.flop_estimate:.2e} ({result.confidence.value})")
                 
@@ -413,11 +405,7 @@ class ManualModelEntry:
                     reasoning=result.reasoning
                 )
                 
-                # Set status
-                if result.flop_estimate >= 1e25:
-                    model.status = ModelStatus.LIKELY_ABOVE
-                else:
-                    model.status = ModelStatus.LIKELY_BELOW
+                # Status determined by threshold_classification automatically
                     
                 print(f"✅ FLOP estimate: {result.flop_estimate:.2e} ({result.confidence.value})")
                 
@@ -457,11 +445,7 @@ class ManualModelEntry:
                 reasoning=result.reasoning
             )
             
-            # Set status
-            if result.flop_estimate >= 1e25:
-                model.status = ModelStatus.LIKELY_ABOVE
-            else:
-                model.status = ModelStatus.LIKELY_BELOW
+            # Status determined by threshold_classification automatically
             
             print(f"✅ FLOP estimate: {result.flop_estimate:.2e} ({result.confidence.value})")
             
@@ -487,11 +471,7 @@ class ManualModelEntry:
                 reasoning=result.reasoning
             )
             
-            # Set status based on estimate
-            if result.flop_estimate >= 1e25:
-                model.status = ModelStatus.LIKELY_ABOVE
-            else:
-                model.status = ModelStatus.LIKELY_BELOW
+            # Status determined by threshold_classification automatically
             
             print(f"✅ FLOP estimate: {result.flop_estimate:.2e} ({result.confidence.value})")
             
@@ -515,11 +495,7 @@ class ManualModelEntry:
                 reasoning=result.reasoning
             )
             
-            # Set status
-            if result.flop_estimate >= 1e25:
-                model.status = ModelStatus.LIKELY_ABOVE
-            else:
-                model.status = ModelStatus.LIKELY_BELOW
+            # Status determined by threshold_classification automatically
             
             print(f"✅ FLOP estimate: {result.flop_estimate:.2e} ({result.confidence.value})")
             
@@ -549,7 +525,7 @@ class ManualModelEntry:
             print(f"Above 1e25 threshold: {'✅ Yes' if model.training_flop >= 1e25 else '❌ No'}")
             print(f"Confidence: {model.training_flop_confidence.value if model.training_flop_confidence else 'Unknown'}")
             print(f"Method: {model.estimation_method.value if model.estimation_method else 'Unknown'}")
-            print(f"Status: {model.status.value if model.status else 'Unknown'}")
+            print(f"Classification: {model.get_threshold_classification()}")
         
         if model.sources:
             print(f"Sources: {len(model.sources)} URLs")
@@ -582,14 +558,13 @@ class ManualModelEntry:
                 'estimation_method': model.estimation_method.value if model.estimation_method else 'manual_research',
                 'alternative_methods': '',  # Not used in manual entry
                 'threshold_classification': self._get_threshold_classification(model),
-                'status': model.status.value if model.status else 'uncertain',
+                'threshold_classification': model.get_threshold_classification(),
                 'reasoning': model.reasoning or '',
                 'sources': '; '.join(model.sources) if model.sources else '',
                 'verified': 'y',  # Always set for manual entries
                 'last_updated': model.last_updated.isoformat(),
                 'notes': lineage_note,
-                'blacklist_status': '',  # Not applicable for manual entries
-                'original_estimate': f"{model.training_flop:.2e}" if model.training_flop else ''
+                'blacklist_status': ''  # Not applicable for manual entries
             }
             
             # Check if file exists to determine if we need headers
@@ -600,8 +575,8 @@ class ManualModelEntry:
                 fieldnames = [
                     'model', 'developer', 'release_date', 'parameters', 'parameter_source',
                     'training_flop', 'confidence', 'confidence_explanation', 'estimation_method',
-                    'alternative_methods', 'threshold_classification', 'status', 'reasoning',
-                    'sources', 'verified', 'last_updated', 'notes', 'blacklist_status', 'original_estimate'
+                    'alternative_methods', 'threshold_classification', 'reasoning',
+                    'sources', 'verified', 'last_updated', 'notes', 'blacklist_status'
                 ]
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 
@@ -669,10 +644,10 @@ class ManualModelEntry:
             
             for i, entry in enumerate(manual_entries, 1):
                 flop_str = entry['training_flop'] if entry['training_flop'] else "Unknown"
-                status_str = entry['status'] or "Unknown"
+                classification_str = entry.get('threshold_classification', 'Unknown')
                 verified_str = "✅ Protected" if entry['verified'] == 'y' else "⚠️ Unprotected"
                 print(f"{i:2d}. {entry['model']} ({entry['developer']})")
-                print(f"    FLOP: {flop_str} | Status: {status_str} | {verified_str}")
+                print(f"    FLOP: {flop_str} | Classification: {classification_str} | {verified_str}")
                 if entry['notes']:
                     print(f"    Notes: {entry['notes'][:60]}...")
             

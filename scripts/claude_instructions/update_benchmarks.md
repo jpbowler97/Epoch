@@ -26,7 +26,7 @@ Use your WebFetch tool to get the rendered content, then save it as HTML files.
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/SuperCLUE.html
-5. Add timestamp comment: <!-- Updated: 2025-08-15T14:13:21.504334 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-15T16:21:36.781542 -->
 
 ### 2. Update physics_iq
 
@@ -44,7 +44,7 @@ Use your WebFetch tool to get the rendered content, then save it as HTML files.
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/PhysicsIQ.html
-5. Add timestamp comment: <!-- Updated: 2025-08-15T14:13:21.504362 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-15T16:21:36.781565 -->
 
 ### 3. Update olympic_arena
 
@@ -63,7 +63,7 @@ Use your WebFetch tool to get the rendered content, then save it as HTML files.
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/OlympicArena.html
-5. Add timestamp comment: <!-- Updated: 2025-08-15T14:13:21.504370 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-15T16:21:36.781572 -->
 
 ### 4. Update video_arena
 
@@ -82,7 +82,7 @@ Use your WebFetch tool to get the rendered content, then save it as HTML files.
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/VideoArena.html
-5. Add timestamp comment: <!-- Updated: 2025-08-15T14:13:21.504377 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-15T16:21:36.781576 -->
 
 ## Output Requirements:
 - Each HTML file must be valid HTML with proper structure

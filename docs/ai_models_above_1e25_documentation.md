@@ -89,15 +89,15 @@ Some developers are known to lack the computational resources (either financiall
 After FLOP estimation, all models are classified based on their estimates and sent for appropriate handling:
 
 **Models sent for manual review:**
-- **confirmed_above_1e25**: FLOP ≥ 10²⁵ with HIGH confidence → Sent for verification
-- **likely_above_1e25**: FLOP ≥ 10²⁵ with MEDIUM or LOW confidence → Sent for verification
-- **uncertain**: Models where the estimation method cannot reliably determine if they exceed 10²⁵ FLOP → Sent for verification
+- **high_confidence_above_1e25**: FLOP ≥ 5×10²⁵ (well above threshold) → Sent for verification
+- **uncertain**: FLOP between 1×10²⁵ and 5×10²⁵ (unclear if above threshold) → Sent for verification
 
 **Models excluded from review:**
-- **likely_below_1e25**: FLOP < 10²⁵ with MEDIUM or LOW confidence → Excluded
-- **confirmed_below_1e25**: FLOP < 10²⁵ with HIGH confidence → Excluded
+- **high_confidence_below_1e25**: FLOP ≤ 1×10²⁵ (at or below threshold) → Excluded
 
-All three categories sent for manual review (confirmed_above, likely_above, and uncertain) are handled identically in the review process. The classification helps track the reliability of our estimates, but every model potentially at or above the threshold undergoes human verification to ensure accuracy.
+Models are categorized by threshold classification based on FLOP estimates. During review, both the FLOP estimate and its confidence level (HIGH/MEDIUM/LOW/SPECULATIVE) are considered for the final inclusion decision.
+
+**Threshold Rationale**: The 5× buffer above 10²⁵ FLOP accounts for systematic overestimation bias in FLOP calculation methods. Experience shows estimates tend to be inflated, so models estimated at exactly 10²⁵ FLOP are often actually below the threshold.
 
 ### 1.5 Manual Review Process
 
@@ -138,14 +138,12 @@ The staging dataset (`data/staging/above_1e25_flop_staging.csv`) contains the fo
 | **estimation_method** | enum | Primary method used for FLOP calculation | `epoch_estimate`, `scaling_laws`, `benchmark_based` | Automatic |
 | **alternative_methods** | string | Other estimation attempts and results | `Scaling Laws: 8.4e+24 (Medium)` | Automatic |
 | **threshold_classification** | enum | Relationship to 10²⁵ FLOP threshold | `high_confidence_above_1e25` | Automatic |
-| **status** | enum | Overall inclusion status | `confirmed_above_1e25`, `uncertain` | Automatic/Manual |
 | **reasoning** | text | Detailed calculation or estimation logic | `Chinchilla scaling: 6 × 405B params × 15T tokens` | Automatic |
 | **sources** | text | URLs and references for data | `https://arxiv.org/abs/2407.21783` | Automatic |
 | **notes** | text | Manual annotations and verification reasoning | `Verified via official Meta blog post` | Manual |
 | **verified** | boolean | Manual verification flag (y/n) | `y` | Manual (review process) |
 | **last_updated** | timestamp | Last modification timestamp | `2025-02-01T12:00:00Z` | Automatic |
 | **blacklist_status** | string | Developer exclusion flag | `capped_insufficient_resources` | Automatic |
-| **original_estimate** | float | Initial FLOP estimate before adjustments | `3.0e+25` | Automatic |
 
 ### Potential Additional Fields
 

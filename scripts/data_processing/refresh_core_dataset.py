@@ -24,9 +24,9 @@ from typing import Dict, List, Optional, Set, Tuple
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from epoch_tracker.models import Model, ModelStatus
+from epoch_tracker.models import Model
 from epoch_tracker.storage import JSONStorage
-from epoch_tracker.config.thresholds import get_threshold_config
+from epoch_tracker.config.thresholds import get_threshold_config, ThresholdClassification, CANDIDATE_CLASSIFICATIONS
 
 
 def setup_logging(verbose: bool = False):
@@ -152,11 +152,9 @@ def get_candidate_models(models: List[Model]) -> List[Model]:
     candidates = []
     
     for model in models:
-        if model.status in [
-            ModelStatus.CONFIRMED_ABOVE,
-            ModelStatus.LIKELY_ABOVE,
-            ModelStatus.UNCERTAIN
-        ]:
+        # Filter based on threshold classification instead of status
+        threshold_class = model.get_threshold_classification()
+        if threshold_class in CANDIDATE_CLASSIFICATIONS:
             candidates.append(model)
     
     # Deduplicate candidates by name, keeping highest FLOP
@@ -166,6 +164,7 @@ def get_candidate_models(models: List[Model]) -> List[Model]:
 def format_alternative_methods(model: Model) -> str:
     """
     Format alternative estimation methods in human-readable format.
+    Includes original uncapped estimate for blacklist-capped models.
     
     Args:
         model: Model object with alternative estimates
@@ -173,15 +172,21 @@ def format_alternative_methods(model: Model) -> str:
     Returns:
         Human-readable string describing alternative methods
     """
-    if not model.alternative_estimates:
-        return ""
-    
     alternatives = []
-    for est in model.alternative_estimates:
-        method_name = est.method.value.replace('_', ' ').title()
-        flop_str = f"{est.flop:.2e}" if est.flop else "N/A"
-        confidence_str = est.confidence.value.title()
-        alternatives.append(f"{method_name}: {flop_str} ({confidence_str})")
+    
+    # Add regular alternative estimates
+    if model.alternative_estimates:
+        for est in model.alternative_estimates:
+            method_name = est.method.value.replace('_', ' ').title()
+            flop_str = f"{est.flop:.2e}" if est.flop else "N/A"
+            confidence_str = est.confidence.value.title()
+            alternatives.append(f"{method_name}: {flop_str} ({confidence_str})")
+    
+    # Add original estimate for blacklist-capped models
+    if is_blacklist_capped(model):
+        original_estimate = get_original_estimate(model)
+        if original_estimate:
+            alternatives.append(f"Original (uncapped): {original_estimate} FLOP")
     
     return "; ".join(alternatives)
 
@@ -274,7 +279,6 @@ def model_to_csv_row(model: Model, verified: str = "") -> Dict:
     """
     # Check if model was blacklist capped
     is_capped = is_blacklist_capped(model)
-    original_estimate = get_original_estimate(model) if is_capped else None
     
     return {
         'model': model.name,  # Renamed from 'name' to 'model'
@@ -287,13 +291,12 @@ def model_to_csv_row(model: Model, verified: str = "") -> Dict:
         'confidence_explanation': generate_confidence_explanation(model),
         'estimation_method': model.estimation_method.value,
         'alternative_methods': format_alternative_methods(model),
-        'status': model.status.value,
+        'threshold_classification': model.get_threshold_classification(),
         'reasoning': model.reasoning,
         'sources': "; ".join(model.sources) if model.sources else "",
         'verified': verified,
         'last_updated': model.last_updated.isoformat(),
         'blacklist_status': 'capped' if is_capped else 'allowed',
-        'original_estimate': original_estimate or "",
         'notes': ""  # Empty field for manual notes
     }
 

@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Callable
 
-from ..models import Model, ModelCollection, ModelStatus, ConfidenceLevel
+from ..models import Model, ModelCollection, ConfidenceLevel
 from ..storage import JSONStorage
 
 
@@ -141,9 +141,10 @@ class ModelQueryEngine:
         filtered = models.copy()
         
         if above_threshold:
+            from ..config.thresholds import ThresholdClassification
             filtered = [
                 m for m in filtered 
-                if m.status in [ModelStatus.CONFIRMED_ABOVE, ModelStatus.LIKELY_ABOVE]
+                if m.get_threshold_classification() in [ThresholdClassification.HIGH_CONFIDENCE_ABOVE, ThresholdClassification.UNCERTAIN]
             ]
         
         if developer:
@@ -174,11 +175,8 @@ class ModelQueryEngine:
                 self.logger.warning(f"Invalid confidence level: {confidence}")
         
         if status:
-            try:
-                status_level = ModelStatus(status.lower())
-                filtered = [m for m in filtered if m.status == status_level]
-            except ValueError:
-                self.logger.warning(f"Invalid status: {status}")
+            # Note: status filtering deprecated - use threshold_classification instead
+            self.logger.warning(f"Status filtering deprecated, ignoring status parameter: {status}")
         
         return filtered
     
@@ -255,9 +253,10 @@ class ModelQueryEngine:
         """Get statistics about the loaded dataset."""
         models = self.load_data()
         
+        from ..config.thresholds import ThresholdClassification
         above_threshold = [
             m for m in models 
-            if m.status in [ModelStatus.CONFIRMED_ABOVE, ModelStatus.LIKELY_ABOVE]
+            if m.get_threshold_classification() in [ThresholdClassification.HIGH_CONFIDENCE_ABOVE, ThresholdClassification.UNCERTAIN]
         ]
         
         confidence_counts = {}

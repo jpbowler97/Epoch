@@ -202,7 +202,7 @@ class JSONStorage:
                 "training_flop": model.training_flop,
                 "training_flop_confidence": model.training_flop_confidence.value,
                 "estimation_method": model.estimation_method.value,
-                "status": model.status.value,
+                "threshold_classification": model.get_threshold_classification(),
                 "reasoning": model.reasoning,
                 "sources": "; ".join(model.sources),
                 "benchmarks": json.dumps(model.benchmarks) if model.benchmarks else None,
@@ -238,7 +238,7 @@ class JSONStorage:
                 } for est in model.alternative_estimates
             ],
             "inference_flop_per_token": format_flop_value(model.inference_flop_per_token),
-            "status": model.status.value,
+            "threshold_classification": model.get_threshold_classification(),
             "benchmarks": model.benchmarks,
             "sources": model.sources,
             "reasoning": model.reasoning,
@@ -248,7 +248,7 @@ class JSONStorage:
     
     def _dict_to_model(self, data: Dict[str, Any]) -> Model:
         """Convert dictionary to Model object."""
-        from ..models import ConfidenceLevel, EstimationMethod, ModelStatus, AlternativeEstimate
+        from ..models import ConfidenceLevel, EstimationMethod, AlternativeEstimate
         from ..utils import parse_date
         
         # Parse alternative estimates
@@ -274,7 +274,7 @@ class JSONStorage:
             estimation_method=EstimationMethod(data.get("estimation_method", "manual_research")),
             alternative_estimates=alternative_estimates,
             inference_flop_per_token=parse_flop_value(data.get("inference_flop_per_token")),
-            status=ModelStatus(data.get("status", "uncertain")),
+            # Note: status field removed - threshold_classification computed dynamically
             benchmarks=data.get("benchmarks", {}),
             sources=data.get("sources", []),
             reasoning=data.get("reasoning", ""),

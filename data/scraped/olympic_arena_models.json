@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "saved_at": "2025-08-15T18:13:22.155093",
+    "saved_at": "2025-08-15T20:21:37.227494",
     "source": "olympic_arena",
-    "last_updated": "2025-08-15T18:13:22.155054",
+    "last_updated": "2025-08-15T20:21:37.227418",
     "model_count": 8,
     "stage": "scraped"
   },
@@ -20,7 +20,7 @@
       "estimation_method": "manual_research",
       "alternative_estimates": [],
       "inference_flop_per_token": null,
-      "status": "uncertain",
+      "threshold_classification": "uncertain",
       "benchmarks": {
         "olympic_overall": 40.47,
         "olympic_math": 28.32,
@@ -32,7 +32,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-15T18:13:22.129795",
+      "last_updated": "2025-08-15T20:21:37.200416",
       "metadata": {}
     },
     {
@@ -48,7 +48,7 @@
       "estimation_method": "manual_research",
       "alternative_estimates": [],
       "inference_flop_per_token": null,
-      "status": "uncertain",
+      "threshold_classification": "uncertain",
       "benchmarks": {
         "olympic_overall": 39.24,
         "olympic_math": 24.41,
@@ -60,7 +60,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-15T18:13:22.129861",
+      "last_updated": "2025-08-15T20:21:37.200488",
       "metadata": {}
     },
     {
@@ -76,7 +76,7 @@
       "estimation_method": "manual_research",
       "alternative_estimates": [],
       "inference_flop_per_token": null,
-      "status": "uncertain",
+      "threshold_classification": "uncertain",
       "benchmarks": {
         "olympic_overall": 35.09,
         "olympic_math": 21.05,
@@ -88,7 +88,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-15T18:13:22.129899",
+      "last_updated": "2025-08-15T20:21:37.200541",
       "metadata": {}
     },
     {
@@ -104,7 +104,7 @@
       "estimation_method": "manual_research",
       "alternative_estimates": [],
       "inference_flop_per_token": null,
-      "status": "uncertain",
+      "threshold_classification": "uncertain",
       "benchmarks": {
         "olympic_overall": 31.82,
         "olympic_math": 19.92,
@@ -116,7 +116,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-15T18:13:22.129934",
+      "last_updated": "2025-08-15T20:21:37.200591",
       "metadata": {}
     },
     {
@@ -132,7 +132,7 @@
       "estimation_method": "manual_research",
       "alternative_estimates": [],
       "inference_flop_per_token": null,
-      "status": "uncertain",
+      "threshold_classification": "uncertain",
       "benchmarks": {
         "olympic_overall": 28.67,
         "olympic_math": 17.58,
@@ -144,7 +144,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-15T18:13:22.129968",
+      "last_updated": "2025-08-15T20:21:37.200642",
       "metadata": {}
     },
     {
@@ -160,7 +160,7 @@
       "estimation_method": "manual_research",
       "alternative_estimates": [],
       "inference_flop_per_token": null,
-      "status": "uncertain",
+      "threshold_classification": "uncertain",
       "benchmarks": {
         "olympic_overall": 26.89,
         "olympic_math": 16.02,
@@ -172,7 +172,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-15T18:13:22.130002",
+      "last_updated": "2025-08-15T20:21:37.200693",
       "metadata": {}
     },
     {
@@ -188,7 +188,7 @@
       "estimation_method": "manual_research",
       "alternative_estimates": [],
       "inference_flop_per_token": null,
-      "status": "uncertain",
+      "threshold_classification": "uncertain",
       "benchmarks": {
         "olympic_overall": 25.78,
         "olympic_math": 14.84,
@@ -200,7 +200,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-15T18:13:22.130035",
+      "last_updated": "2025-08-15T20:21:37.200743",
       "metadata": {}
     },
     {
@@ -216,7 +216,7 @@
       "estimation_method": "manual_research",
       "alternative_estimates": [],
       "inference_flop_per_token": null,
-      "status": "uncertain",
+      "threshold_classification": "uncertain",
       "benchmarks": {
         "olympic_overall": 24.12,
         "olympic_math": 13.28,
@@ -228,7 +228,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-15T18:13:22.130067",
+      "last_updated": "2025-08-15T20:21:37.200794",
       "metadata": {}
     }
   ]

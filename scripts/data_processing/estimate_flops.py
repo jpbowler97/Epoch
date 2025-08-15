@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 from epoch_tracker.estimation import ComputeEstimator
-from epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod, ModelStatus
+from epoch_tracker.models import Model, ModelCollection, ConfidenceLevel, EstimationMethod
 from epoch_tracker.storage import JSONStorage
 from epoch_tracker.utils.developer_exclusion import DeveloperExclusion
 from epoch_tracker.config.thresholds import get_threshold_config
@@ -312,13 +312,13 @@ def initialize_configuration():
 def print_enhanced_summary(all_models: List[Model], updated_count: int, above_threshold_count: int, 
                           usage_tracker: MethodUsageTracker, args):
     """Print enhanced FLOP estimation summary with method priority and usage statistics."""
+    from epoch_tracker.config.thresholds import ThresholdClassification
+    
     final_models = all_models
     models_with_flop = [m for m in final_models if m.training_flop is not None]
-    confirmed_above = len([m for m in models_with_flop if m.status == ModelStatus.CONFIRMED_ABOVE])
-    likely_above = len([m for m in models_with_flop if m.status == ModelStatus.LIKELY_ABOVE])
-    confirmed_below = len([m for m in models_with_flop if m.status == ModelStatus.CONFIRMED_BELOW])
-    likely_below = len([m for m in models_with_flop if m.status == ModelStatus.LIKELY_BELOW])
-    uncertain = len([m for m in models_with_flop if m.status == ModelStatus.UNCERTAIN])
+    high_confidence_above = len([m for m in models_with_flop if m.get_threshold_classification() == ThresholdClassification.HIGH_CONFIDENCE_ABOVE])
+    high_confidence_below = len([m for m in models_with_flop if m.get_threshold_classification() == ThresholdClassification.HIGH_CONFIDENCE_BELOW])
+    uncertain = len([m for m in models_with_flop if m.get_threshold_classification() == ThresholdClassification.UNCERTAIN])
     
     print(f"\n{'='*80}")
     print("FLOP ESTIMATION SUMMARY")
@@ -379,27 +379,25 @@ def print_enhanced_summary(all_models: List[Model], updated_count: int, above_th
     print(f"  Models updated this run: {updated_count}")
     print(f"  Models above 1e25 FLOP: {above_threshold_count}")
     
-    print(f"\nModel Status Classification:")
-    print(f"  Confirmed above 1e25 FLOP: {confirmed_above}")
-    print(f"  Likely above 1e25 FLOP: {likely_above}")
-    print(f"  Uncertain: {uncertain}")
-    print(f"  Likely below 1e25 FLOP: {likely_below}")
-    print(f"  Confirmed below 1e25 FLOP: {confirmed_below}")
+    print(f"\nThreshold Classification:")
+    print(f"  High confidence above 1e25 FLOP: {high_confidence_above}")
+    print(f"  Uncertain (needs review): {uncertain}")
+    print(f"  High confidence below 1e25 FLOP: {high_confidence_below}")
     
     # Show example models above threshold
-    if confirmed_above + likely_above > 0:
+    if high_confidence_above > 0:
         print(f"\nModels above 1e25 FLOP:")
-        above_models = [m for m in models_with_flop if m.status in [ModelStatus.CONFIRMED_ABOVE, ModelStatus.LIKELY_ABOVE]]
+        above_models = [m for m in models_with_flop if m.get_threshold_classification() == ThresholdClassification.HIGH_CONFIDENCE_ABOVE]
         for model in sorted(above_models, key=lambda m: m.training_flop, reverse=True)[:10]:
             print(f"  - {model.name}: {model.training_flop:.2e} FLOP "
-                  f"({model.training_flop_confidence.value}, {model.status.value})")
+                  f"({model.training_flop_confidence.value}, {model.get_threshold_classification()})")
     
-    if above_threshold_count > 0 and above_threshold_count != confirmed_above + likely_above:
+    if above_threshold_count > 0 and above_threshold_count != high_confidence_above:
         print(f"\nAll models likely above 1e25 FLOP threshold:")
         above_threshold = [m for m in all_models if m.training_flop and m.training_flop >= 1e25]
         for model in sorted(above_threshold, key=lambda m: m.training_flop, reverse=True)[:10]:
             print(f"  - {model.name}: {model.training_flop:.2e} FLOP "
-                  f"({model.training_flop_confidence.value}) [{model.status.value}]")
+                  f"({model.training_flop_confidence.value}) [{model.get_threshold_classification()}]")
     
     print(f"{'='*80}\n")
 

@@ -84,15 +84,14 @@ def display_model_info(model_row: pd.Series) -> None:
         ('Parameters', 'parameters'),
         ('Parameter Source', 'parameter_source'),
         ('Estimation Method', 'estimation_method'),
-        ('Status', 'status'),
+        ('Threshold Classification', 'threshold_classification'),
         ('Blacklist Status', 'blacklist_status'),
         ('Release Date', 'release_date'),
-        ('Original Estimate', 'original_estimate'),
     ]
     
     for label, field in key_fields:
         if field in model_row and pd.notna(model_row[field]):
-            if field in ['training_flop', 'original_estimate']:
+            if field in ['training_flop']:
                 # Format FLOP values to 1 decimal place in scientific notation
                 try:
                     flop_value = float(model_row[field])
