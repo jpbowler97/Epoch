@@ -41,27 +41,37 @@ Some developers capped at 9.9×10²⁴ FLOP based on limited computational resou
 
 ## Records Section Changes
 
-**Add these new fields to the schema table:**
+The following changes would be made to the existing [AI models documentation table](https://epoch.ai/data/ai-models-documentation#records):
 
-### FLOP Estimation Fields
-- `training_flop` (float): Estimated training compute in FLOP
-- `confidence` (enum): HIGH/MEDIUM/LOW/SPECULATIVE reliability level - see [here](../docs/ai_models_above_1e25_documentation.md) for detailed definitions
-- `confidence_explanation` (text): Detailed reasoning for confidence assignment
-- `estimation_method` (enum): Primary method used (epoch_estimate, scaling_laws, benchmark_based)
-- `alternative_methods` (text): Results from other estimation attempts
-- `reasoning` (text): Detailed calculation explanation
+### Existing Fields with Enhanced Definitions
 
-### Verification Fields  
-- `verified` (boolean): Manual expert verification completed
-- `threshold_classification` (enum): Relationship to 1e25 FLOP threshold
-- `status` (enum): Overall inclusion determination
-- `sources` (text): All data source URLs
-- `collection_method` (enum): How data was obtained
-- `last_updated` (timestamp): Most recent data refresh
+| Column | Type | Definition | Example | Coverage |
+|--------|------|------------|---------------------------|----------|
+| Confidence | Enum | **Refined definition:** Structured levels (HIGH/MEDIUM/LOW/SPECULATIVE) with strict criteria based on estimation method hierarchy - see [detailed definitions](../docs/ai_models_above_1e25_documentation.md) | `HIGH` | Existing |
+| Training compute estimation method | Text | **Refined definition:** Currently this is a category e.g. "Hardware", we would now include the detailed calculation behind the estimate | "Known model specification 'deepseek_v3': Chinchilla scaling law: 6 × 671,000,000,000 params × 14,800,000,000,000 tokens = 5.96e+25 FLOP" | Existing |
 
-### Quality Assurance Fields
-- `exclusion_reason` (text): Why developer estimates were resource-capped
-- `notes` (text): Manual annotations and verification reasoning
+### New Fields to Add
+
+| Column | Type | Definition | Example from Llama 2-70B | Coverage |
+|--------|------|------------|---------------------------|----------|
+| Confidence explanation | Text | Detailed reasoning for confidence level assignment beyond the calculation | `Known parameters with documented training tokens` | TBD |
+| Alternative methods | Text | Results from other estimation attempts with their confidence levels | `Benchmark Based: 1.46e+25 (Low)` | TBD |
+| Verified | Boolean | Manual expert verification completed to protect against automated overwrites | `false` (not manually verified) | TBD |
+| Threshold classification | Enum | Relationship to 1e25 FLOP threshold (high_confidence_above_1e25, likely_above_1e25, uncertain, likely_below_1e25, confirmed_below_1e25) | `confirmed_below_1e25` | TBD |
+| Status | Enum | Overall inclusion determination (confirmed_above, likely_above, uncertain, confirmed_below, likely_below) | `confirmed_below_1e25` | TBD |
+| Collection method | Enum | How data was obtained (automated_scraping, browser_interactive, manual_research, company_disclosure) | `automated_scraping` | TBD |
+| Parameter source | Text | Origin of parameter count (known_specification, extracted_from_name, company_disclosure) | `known_specification:llama_2_70b` | TBD |
+| Exclusion reason | Text | Why developer estimates were resource-capped (for transparency) | `null` (Meta not resource-capped) | TBD |
+| Last updated | Timestamp | Most recent data refresh timestamp | `2025-08-15T18:13:34.256770` | TBD |
+
+*Coverage percentages marked as "TBD" will be updated after further testing and implementation of the enhanced data collection pipeline.*
+
+### Notes on Changes
+
+1. **Training compute estimation method** - Existing field that now follows a strict hierarchical priority system
+2. **Confidence** - Existing field with more rigorous definitions tied to estimation methods
+3. **Training compute notes** - Existing field now used more extensively for calculation details
+4. The **Sources** field mentioned in our pipeline corresponds to existing bibliographic fields and requires no changes
 
 ## Generic Changes
 
