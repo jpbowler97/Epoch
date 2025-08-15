@@ -145,53 +145,26 @@ Verified models are stored in `data/staging/above_1e25_flop_staging.csv` with fu
 
 The staging dataset (`data/staging/above_1e25_flop_staging.csv`) contains the following fields:
 
-### Core Identification Fields
-
 | Field | Type | Definition | Example | Population Method |
 |---|---|---|---|---|
 | **model** | string | Normalized model name in snake_case format | `gpt_4o`, `claude_3_opus` | Automatic (scraping + normalization) |
 | **developer** | string | Organization that developed the model | `OpenAI`, `Anthropic` | Automatic (source data) |
 | **release_date** | date | First public announcement or API availability | `2024-05-13` | Automatic/Manual |
-
-### Model Specifications
-
-| Field | Type | Definition | Example | Population Method |
-|---|---|---|---|---|
 | **parameters** | float | Total number of model parameters | `1.76e+12` (1.76T) | Automatic (when disclosed) |
 | **parameter_source** | string | Source and method for parameter count | `known_specification:gpt_4` | Automatic |
-
-### FLOP Estimation Fields
-
-| Field | Type | Definition | Example | Population Method |
-|---|---|---|---|---|
 | **training_flop** | float | Estimated training compute in FLOP | `2.1e+25` | Automatic (estimation pipeline) |
 | **confidence** | enum | Confidence level of FLOP estimate | `high`, `medium`, `low`, `speculative` | Automatic |
 | **confidence_explanation** | string | Detailed reasoning for confidence assignment | `Official disclosure from Meta` | Automatic |
 | **estimation_method** | enum | Primary method used for FLOP calculation | `epoch_estimate`, `scaling_laws`, `benchmark_based` | Automatic |
 | **alternative_methods** | string | Other estimation attempts and results | `Scaling Laws: 8.4e+24 (Medium)` | Automatic |
-
-### Classification Fields
-
-| Field | Type | Definition | Example | Population Method |
-|---|---|---|---|---|
 | **threshold_classification** | enum | Relationship to 10²⁵ FLOP threshold | `high_confidence_above_1e25` | Automatic |
 | **status** | enum | Overall inclusion status | `confirmed_above_1e25`, `uncertain` | Automatic/Manual |
-
-### Documentation Fields
-
-| Field | Type | Definition | Example | Population Method |
-|---|---|---|---|---|
 | **reasoning** | text | Detailed calculation or estimation logic | `Chinchilla scaling: 6 × 405B params × 15T tokens` | Automatic |
 | **sources** | text | URLs and references for data | `https://arxiv.org/abs/2407.21783` | Automatic |
 | **notes** | text | Manual annotations and verification reasoning | `Verified via official Meta blog post` | Manual |
-
-### Metadata Fields
-
-| Field | Type | Definition | Example | Population Method |
-|---|---|---|---|---|
 | **verified** | boolean | Manual verification flag (y/n) | `y` | Manual (review process) |
 | **last_updated** | timestamp | Last modification timestamp | `2025-02-01T12:00:00Z` | Automatic |
-| **blacklist_status** | string | Developer transparency flag | `capped_insufficient_transparency` | Automatic |
+| **blacklist_status** | string | Developer exclusion flag | `capped_insufficient_resources` | Automatic |
 | **original_estimate** | float | Initial FLOP estimate before adjustments | `3.0e+25` | Automatic |
 
 ### Potential Additional Fields
@@ -216,7 +189,7 @@ Training FLOP estimation relies on the Chinchilla scaling law, which establishes
 Training FLOP = 6 × N_parameters × N_tokens
 ```
 
-This relationship holds across model scales from 70M to 500B+ parameters, validated by empirical results from DeepMind, OpenAI, and Anthropic.
+The factor of 6 comes from the forward pass (2N operations) plus backward pass (4N operations) for N parameters. This relationship holds across model scales from 70M to 500B+ parameters. For detailed explanation, see [Hoffmann et al. 2022](https://arxiv.org/abs/2203.15556) and the [scaling laws overview](https://www.gwern.net/Scaling-hypothesis#chinchilla-scaling-laws).
 
 ### 3.2 Estimation Methods
 
@@ -284,10 +257,7 @@ Confidence: MEDIUM
 FLOP_model = FLOP_reference × (Score_model / Score_reference)^α
 ```
 
-Where α (scaling exponent) varies by benchmark type:
-- ELO-based scores: α = 3.0
-- Percentage scores (MMLU): α = 2.5  
-- Specialized benchmarks: α = 2.0
+Currently α = 3.0 for all benchmark types based on implementation. This value was chosen empirically but lacks theoretical justification.
 
 **Reference Models**:
 
@@ -314,190 +284,27 @@ Confidence levels reflect both data quality and estimation method:
 | **LOW** | Single benchmark, distant interpolation, older models | Limited data |
 | **SPECULATIVE** | Heuristics only, major assumptions | Name parsing without context |
 
-### 3.4 Validation and Quality Control
-
-#### 3.4.1 Range Validation
-
-FLOP estimates must fall within physically plausible bounds:
-- Minimum: 1e20 FLOP (small research models)
-- Maximum: 1e28 FLOP (current infrastructure limits)
-- Estimates outside range trigger manual review
-
-#### 3.4.2 Consistency Checks
-
-- Models from same family should show monotonic scaling
-- Contemporary models should cluster in FLOP ranges
-- Benchmark scores should correlate with FLOP estimates
-
-#### 3.4.3 Audit Trail
+### 3.4 Audit Trail
 
 Every estimation maintains complete provenance:
 - Primary method and calculation details in `reasoning`
-- Alternative attempts in `alternative_methods`
+- Alternative attempts in `alternative_methods`  
 - Data sources in `sources`
 - Manual adjustments in `notes`
 
-### 3.5 Special Cases
-
-#### 3.5.1 Mixture of Experts (MoE)
-
-MoE models report both total and active parameters. FLOP calculations use:
-- Training: Total parameters (all experts trained)
-- Inference: Active parameters (subset activated)
-
-Example: Mixtral 8×7B = 47B total parameters for training FLOP
-
-#### 3.5.2 Continued Pre-training
-
-Models with multiple training phases aggregate compute:
-```
-Total FLOP = Initial training + Continued training + Fine-tuning
-```
-
-#### 3.5.3 Multimodal Models
-
-Vision and multimodal models include:
-- Text token processing
-- Image patch encoding  
-- Cross-modal attention
-
-Typically 1.2-1.5× compute vs text-only equivalent
-
 ## 4. System Architecture
 
-### 4.1 Repository Structure
+For complete technical details, repository structure, and implementation specifics, see the project [README.md](../README.md).
 
-The complete system available at: https://github.com/epochai/model-tracker
+## 5. Key Considerations for Researchers
 
-```
-src/epoch_tracker/
-├── models/          # Pydantic schemas for data validation
-├── scrapers/        # Modular scraper implementations
-├── estimation/      # FLOP calculation methods
-├── storage/         # JSON/CSV persistence layer
-└── query/           # Data filtering and analysis
+**Important Limitations**:
+- FLOP estimates have inherent uncertainty (factor of 2-3× typical for MEDIUM confidence)
+- Confidence levels indicate reliability of estimates  
+- Coverage limited to publicly disclosed or inferrable models
+- Training compute only (excludes inference, fine-tuning)
 
-scripts/
-├── run.py                      # Main CLI interface
-├── data_collection/            # Stage 1 scripts
-├── data_processing/            # Stage 2-3 scripts
-└── curation/                   # Stage 4 scripts
-
-configs/
-├── model_name_mapping.yaml     # Staging→Published mappings
-├── benchmark_references.json   # Reference models for interpolation
-└── developer_blacklist.json    # Transparency-based capping
-
-data/
-├── scraped/                    # Raw collected data
-├── estimated/                  # Models with FLOP estimates
-├── clean/                      # Candidate models for review
-└── staging/                    # Verified models for production
-```
-
-### 4.2 Extensibility
-
-The system designed for easy extension:
-
-**Adding New Scrapers**:
-1. Inherit from `BaseScraper` class
-2. Implement `scrape_models()` method
-3. Add configuration to `configs/scrapers/`
-
-**Adding New Benchmarks**:
-1. Edit `configs/benchmark_references.json`
-2. Include reference model and scaling parameters
-3. No code changes required
-
-**Adding New Estimation Methods**:
-1. Implement in `ComputeEstimator` class
-2. Add to hierarchy in `estimate_flops.py`
-3. Define confidence mapping
-
-## 5. Usage Guidelines
-
-### 5.1 For Researchers
-
-This dataset enables research on:
-- AI scaling trends and compute requirements
-- Efficiency improvements over time
-- Regional differences in AI development
-- Correlation between compute and capabilities
-
-**Important Considerations**:
-- FLOP estimates have inherent uncertainty (factor of 2-3× typical)
-- Confidence levels indicate reliability
-- Manual verification ongoing for borderline cases
-- Dataset updates monthly with new models
-
-### 5.2 For Contributors
-
-To contribute improved estimates or new models:
-1. Review existing estimation methods
-2. Check `configs/model_name_mapping.yaml` for naming conventions
-3. Submit pull requests with:
-   - Source documentation
-   - Calculation methodology
-   - Confidence justification
-
-### 5.3 Citation
-
-When using this dataset in research:
-
-```bibtex
-@dataset{epoch_ai_models_1e25_2025,
-  title={AI Models Above 1e25 FLOP Dataset},
-  author={Epoch AI},
-  year={2025},
-  url={https://github.com/epochai/model-tracker},
-  note={Semi-automated tracking of frontier AI systems}
-}
-```
-
-## 6. Limitations and Future Work
-
-### 6.1 Current Limitations
-
-- **Coverage**: Limited to publicly disclosed or inferrable models
-- **Accuracy**: FLOP estimates uncertain for closed models
-- **Latency**: 1-2 week delay for new model inclusion
-- **Scope**: Training compute only (excludes inference, fine-tuning)
-
-### 6.2 Planned Improvements
-
-- **Real-time tracking**: API integration for automatic updates
-- **Inference compute**: Add deployment cost estimates
-- **Hardware tracking**: Detailed GPU/TPU configuration data
-- **Carbon footprint**: Energy consumption and emissions
-
-## 7. Appendices
-
-### 7.1 Frequently Asked Questions
-
-**Q: Why 10²⁵ FLOP as the threshold?**
-A: This represents approximately $1-5 million in compute costs (2024 prices) and typically indicates frontier model development efforts.
-
-**Q: How accurate are the FLOP estimates?**
-A: HIGH confidence estimates typically within 50% of true value. MEDIUM confidence within factor of 2-3×. LOW confidence order-of-magnitude estimates.
-
-**Q: What about proprietary models?**
-A: We include all models with sufficient public information for estimation. Completely proprietary models without any disclosure excluded.
-
-### 7.2 Glossary
-
-- **FLOP**: Floating-point operation, the basic unit of computational work
-- **Chinchilla scaling**: Optimal compute allocation discovered by DeepMind
-- **ELO score**: Relative performance rating from competitive evaluation
-- **Staging dataset**: Manually verified models ready for production use
-- **Confidence level**: Reliability indicator for FLOP estimates
-
-### 7.3 Contact Information
-
-For questions, corrections, or contributions:
-- GitHub Issues: https://github.com/epochai/model-tracker/issues
-- Email: research@epoch.ai
-- Dataset Updates: https://epoch.ai/data/models
-
----
-
-*This documentation reflects the methodology as of February 2025. For the latest updates, consult the GitHub repository.*
+**Dataset Properties**:
+- Manual verification required for all included models
+- Dataset updated as new frontier models are identified
+- Complete audit trail maintained for all estimates
