@@ -58,11 +58,10 @@ Some developers capped at 9.9×10²⁴ FLOP based on limited computational resou
 - `exclusion_reason` (text): Why developer estimates were resource-capped
 - `notes` (text): Manual annotations and verification reasoning
 
-## Key Messaging Changes
+## Generic Changes
 
 **Throughout documentation, emphasize:**
 - Semi-automated approach combining automation with human expertise
-- Transparent uncertainty quantification for FLOP estimates
 - Complete audit trail from data collection to final inclusion
 
 These changes document the methodology actively used since [INSERT DATE] for tracking the most computationally intensive AI systems.

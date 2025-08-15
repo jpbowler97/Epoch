@@ -10,7 +10,7 @@ This document describes the methodology used to produce the table in [`data/stag
 
 ### 1.1 Summary
 
-The inclusion process follows a four-stage pipeline designed to transform raw model information from multiple sources into a high-quality, verified dataset:
+The inclusion process follows a three-stage pipeline designed to transform raw model information from multiple sources into a high-quality, verified dataset:
 
 ```
 Stage 1: Identify New Models → Stage 2: Estimate FLOPs → Stage 3: Manual Review
@@ -37,21 +37,6 @@ The system aggregates model information from multiple sources using a configurab
 
 These sites require actual browser interaction (clicking through pages, waiting for dynamic content, handling interactive elements) and cannot be accessed via conventional HTTP requests. Data from these sources is collected either manually or using an AI agent with browser access.
 
-
-#### 1.2.2 Collection Methodology
-
-The collection process ensures comprehensive coverage and data quality through:
-
-**Data Processing:**
-- Model names are standardized to enable consistent tracking across sources
-- Duplicate models are identified and merged using model name and developer information
-- Each data point maintains full provenance including source URL and collection timestamp
-
-**Quality Control:**
-- Generic or incomplete model names are filtered out (e.g., "gpt" or "claude" without version numbers)
-- Test and demo models are excluded from the dataset
-- Models are validated against known naming patterns and developer information
-
 ### 1.3 Stage 2: FLOP Estimation
 
 The system applies a hierarchical series of estimation methods to calculate training FLOP for each model. Methods are attempted in priority order, with the first successful method used.
@@ -70,7 +55,7 @@ The system applies a hierarchical series of estimation methods to calculate trai
    - Confidence: MEDIUM (reliable when parameter and token counts are known or can be reasonably estimated)
 
 2. **Benchmark Interpolation**
-   - Source: Performance scores (ELO, MMLU, coding benchmarks)
+   - Source: Performance scores (ELO, MMLU, coding benchmarks, etc.)
    - Method: Power law scaling from reference models with known FLOP
    - Confidence: LOW (inherently unreliable due to rapid efficiency improvements)
    - **Important caveat**: This method becomes increasingly unreliable over time as newer models achieve similar benchmark scores with less compute through distillation, improved architectures, and better training techniques
@@ -93,11 +78,6 @@ The system applies a hierarchical series of estimation methods to calculate trai
 #### 1.3.2 Developer-Based Exclusion Criteria
 
 Some developers are known to lack the computational resources (either financially or due to limited GPU access) to train models exceeding 10²⁵ FLOP. To prevent overestimation, models from these developers are automatically capped at 9.9×10²⁴ FLOP.
-
-**Currently affected developers:**
-- Mistral AI (limited computational resources)
-- Microsoft (Azure-hosted models without clear compute disclosure)
-- Additional developers as identified through industry analysis
 
 **Maintenance:** This list is manually maintained in `configs/developer_exclusion_criteria.json` and updated based on:
 - Known computational budgets and infrastructure
@@ -300,8 +280,7 @@ For complete technical details, repository structure, and implementation specifi
 
 **Important Limitations**:
 - FLOP estimates have inherent uncertainty (factor of 2-3× typical for MEDIUM confidence)
-- Confidence levels indicate reliability of estimates  
-- Coverage limited to publicly disclosed or inferrable models
+- Confidence levels indicate rough reliability of estimates  
 - Training compute only (excludes inference, fine-tuning)
 
 **Dataset Properties**:
