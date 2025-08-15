@@ -1,6 +1,6 @@
 # AI Models Above 1e25 FLOP: Documentation
 
-## Executive Summary
+## Overview
 
 This document describes the methodology used to produce the table in [`data/staging/above_1e25_flop_staging.csv`](../data/staging/above_1e25_flop_staging.csv). It covers how we automatically identify candidate models, estimate their training FLOPs (floating-point operations) and then manually verify to add to our dataset to ensure our list is accurate and comprehensive.
 
@@ -8,7 +8,7 @@ This document describes the methodology used to produce the table in [`data/stag
 
 ## 1. Inclusion Process
 
-### 1.1 Overview
+### 1.1 Summary
 
 The inclusion process follows a four-stage pipeline designed to transform raw model information from multiple sources into a high-quality, verified dataset:
 

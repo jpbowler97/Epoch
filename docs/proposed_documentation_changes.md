@@ -21,23 +21,15 @@ This ensures comprehensive coverage of frontier AI systems while maintaining qua
 
 ## Estimation Section Changes
 
-**Replace existing "Compute Estimation" subsection with:**
-
-### Training Compute (FLOP) Estimation
+**Incorporate into "Estimating compute" subsection:**
 
 **Hierarchical method priority:**
 
-1. **Authoritative Estimates (HIGH confidence)** - Expert analysis of official disclosures
-2. **Chinchilla Scaling (MEDIUM confidence)** - `6 × parameters × tokens` with era-aware token estimation
-3. **Benchmark Interpolation (LOW confidence)** - Power law scaling from ELO/MMLU scores
+1. **Authoritative Manual Estimates (HIGH confidence)** - Expert analysis of official disclosures
+2. **Chinchilla Scaling (MEDIUM confidence)** - `6 × parameters × tokens` when parameter count is known
+3. **Benchmark Interpolation (LOW confidence)** - Benchmark score comparison against model(s) with known FLOPs
    - *Caveat: Increasingly unreliable due to efficiency improvements over time*
 4. **Hardware-based (SPECULATIVE)** - GPU specifications and training duration
-
-**Update confidence levels:**
-- HIGH: ±50% (authoritative sources)
-- MEDIUM: ±2-3× (Chinchilla scaling)  
-- LOW: ±5-10× (benchmark interpolation)
-- SPECULATIVE: Order of magnitude (hardware estimates)
 
 **Add developer exclusion criteria:**
 Some developers capped at 9.9×10²⁴ FLOP based on limited computational resources or lack of demonstrated 1e25+ FLOP training capability.
@@ -48,7 +40,7 @@ Some developers capped at 9.9×10²⁴ FLOP based on limited computational resou
 
 ### FLOP Estimation Fields
 - `training_flop` (float): Estimated training compute in FLOP
-- `confidence` (enum): HIGH/MEDIUM/LOW/SPECULATIVE reliability level
+- `confidence` (enum): HIGH/MEDIUM/LOW/SPECULATIVE reliability level - see [here](../docs/ai_models_above_1e25_documentation.md) for detailed definitions
 - `confidence_explanation` (text): Detailed reasoning for confidence assignment
 - `estimation_method` (enum): Primary method used (epoch_estimate, scaling_laws, benchmark_based)
 - `alternative_methods` (text): Results from other estimation attempts
@@ -72,6 +64,5 @@ Some developers capped at 9.9×10²⁴ FLOP based on limited computational resou
 - Semi-automated approach combining automation with human expertise
 - Transparent uncertainty quantification for FLOP estimates
 - Complete audit trail from data collection to final inclusion
-- Specialized focus on frontier models (≥1e25 FLOP) requiring different methodology than traditional academic models
 
-These changes document the methodology actively used since August 2024 for tracking the most computationally intensive AI systems.
+These changes document the methodology actively used since [INSERT DATE] for tracking the most computationally intensive AI systems.
