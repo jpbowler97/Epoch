@@ -34,7 +34,6 @@ This section would largely be replaced by the documentation [here](../docs/ai_mo
 2. **Chinchilla Scaling (MEDIUM confidence)** - `6 × parameters × tokens` when parameter count is known
 3. **Benchmark Interpolation (LOW confidence)** - Benchmark score comparison against model(s) with known FLOPs
    - *Caveat: Increasingly unreliable due to efficiency improvements over time*
-4. **Hardware-based (SPECULATIVE)** - GPU specifications and training duration
 
 **Add developer exclusion criteria:**
 Some developers capped at 9.9×10²⁴ FLOP based on limited computational resources or lack of demonstrated 1e25+ FLOP training capability.
