@@ -847,24 +847,29 @@ def estimate_model_flops(model: Model, estimator: ComputeEstimator, usage_tracke
     if known_specs:
         params, tokens, confidence, matched_pattern = known_specs
         
-        # Update model parameters if not already set
-        if model.parameters is None:
-            model.parameters = params
-            model.parameter_source = f"known_specification:{matched_pattern}"
-        
-        result = estimator.estimate_from_scaling_laws(params, tokens, "chinchilla")
-        estimate = {
-            'flop': result.flop_estimate,
-            'confidence': confidence,
-            'method': result.method,
-            'reasoning': f"Known model specification '{matched_pattern}': {result.reasoning}",
-            'parameters': params,
-            'parameter_source': f'known_specification:{matched_pattern}',
-            'priority': 1
-        }
-        all_estimates.append(estimate)
-        if primary_estimate is None:
-            primary_estimate = estimate
+        # Skip if we don't have both parameters and tokens
+        if params is None or tokens is None:
+            if usage_tracker:
+                usage_tracker.record_no_estimate(model.name)
+        else:
+            # Update model parameters if not already set
+            if model.parameters is None:
+                model.parameters = params
+                model.parameter_source = f"known_specification:{matched_pattern}"
+            
+            result = estimator.estimate_from_scaling_laws(params, tokens, "chinchilla")
+            estimate = {
+                'flop': result.flop_estimate,
+                'confidence': confidence,
+                'method': result.method,
+                'reasoning': f"Known model specification '{matched_pattern}': {result.reasoning}",
+                'parameters': params,
+                'parameter_source': f'known_specification:{matched_pattern}',
+                'priority': 1
+            }
+            all_estimates.append(estimate)
+            if primary_estimate is None:
+                primary_estimate = estimate
     
     # PRIORITY 2: Parameter-based Chinchilla scaling
     param_count = extract_model_size(model.name)

@@ -70,6 +70,13 @@ class ComputeEstimator:
             tokens: Number of training tokens
             method: Scaling law method ("chinchilla", "kaplan", "basic")
         """
+        # Validate inputs
+        if parameters is None or tokens is None:
+            raise ValueError(f"Both parameters ({parameters}) and tokens ({tokens}) must be provided for scaling law estimation")
+        
+        if parameters <= 0 or tokens <= 0:
+            raise ValueError(f"Parameters ({parameters}) and tokens ({tokens}) must be positive")
+        
         if method == "chinchilla":
             # Chinchilla scaling: 6 * N * D (most accurate)
             flop_estimate = 6 * parameters * tokens

@@ -116,12 +116,11 @@ def categorize_models(models: List[Model]) -> Dict[str, List[Model]]:
     below_confident = []
     
     for model in models:
-        # Use status field instead of threshold_classification for model placement
-        if model.status in [ModelStatus.CONFIRMED_ABOVE, ModelStatus.LIKELY_ABOVE]:
-            above_candidates.append(model)
-        elif model.status == ModelStatus.UNCERTAIN:
-            above_candidates.append(model)  # Uncertain models go to above table for verification
-        else:  # CONFIRMED_BELOW, LIKELY_BELOW
+        # Use threshold_classification for model placement
+        threshold_class = model.get_threshold_classification()
+        if threshold_class in [ThresholdClassification.HIGH_CONFIDENCE_ABOVE, ThresholdClassification.UNCERTAIN]:
+            above_candidates.append(model)  # Models above threshold or uncertain go to above table for verification
+        else:  # HIGH_CONFIDENCE_BELOW
             below_confident.append(model)
     
     return {
@@ -877,11 +876,11 @@ Models with 'verified=y' are preserved during refresh operations.
     above_verified = len(above_df[above_df['verified'].fillna('').str.lower() == 'y'])
     below_verified = len(below_df[below_df['verified'].fillna('').str.lower() == 'y'])
     
-    confirmed_above = len(above_df[above_df['status'] == 'confirmed_above_1e25'])
-    likely_above = len(above_df[above_df['status'] == 'likely_above_1e25'])
-    uncertain_unverified = len(above_df[(above_df['status'] == 'uncertain') & (above_df['verified'].fillna('').str.lower() != 'y')])
-    confirmed_below = len(below_df[below_df['status'] == 'confirmed_below_1e25'])
-    likely_below = len(below_df[below_df['status'] == 'likely_below_1e25'])
+    # Count threshold classifications
+    high_confidence_above = len(above_df[above_df['threshold_classification'] == 'HIGH_CONFIDENCE_ABOVE'])
+    uncertain_above = len(above_df[above_df['threshold_classification'] == 'UNCERTAIN'])
+    high_confidence_below = len(below_df[below_df['threshold_classification'] == 'HIGH_CONFIDENCE_BELOW'])
+    uncertain_unverified = len(above_df[(above_df['threshold_classification'] == 'UNCERTAIN') & (above_df['verified'].fillna('').str.lower() != 'y')])
     
     print(f"\n{'='*70}")
     print("DUAL-TABLE CORE DATASET SUMMARY")
@@ -889,15 +888,13 @@ Models with 'verified=y' are preserved during refresh operations.
     print(f"Above/Uncertain Table (above_1e25_flop.csv):")
     print(f"  Total models: {len(above_df)}")
     print(f"  Manually verified: {above_verified}")
-    print(f"  Confirmed above 1e25: {confirmed_above}")
-    print(f"  Likely above 1e25: {likely_above}")
+    print(f"  High confidence above 1e25: {high_confidence_above}")
     print(f"  Uncertain (need verification): {uncertain_unverified}")
     
     print(f"\nBelow Table (below_1e25_flop.csv):")
     print(f"  Total models: {len(below_df)}")
     print(f"  Manually verified: {below_verified}")
-    print(f"  Confirmed below 1e25: {confirmed_below}")
-    print(f"  Likely below 1e25: {likely_below}")
+    print(f"  High confidence below 1e25: {high_confidence_below}")
     
     print(f"\nCoverage Analysis:")
     print(f"  Models in estimated_models.json: {coverage['total_estimated']}")
