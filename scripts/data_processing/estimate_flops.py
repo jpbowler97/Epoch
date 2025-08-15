@@ -83,7 +83,7 @@ KNOWN_MODEL_SPECS = {
     
     # Gemini models (Google) - From industry estimates
     "gemini_1.5_pro": (300_000_000_000, 12_000_000_000_000, ConfidenceLevel.MEDIUM),
-    "gemini_2.0": (500_000_000_000, 20_000_000_000_000, ConfidenceLevel.MEDIUM),  # All specs use MEDIUM
+    # Note: Gemini 2.0+ models removed - no official parameter disclosure available
     
     # Qwen models (Alibaba) - From partial disclosures
     "qwen3_235b": (235_000_000_000, 10_000_000_000_000, ConfidenceLevel.MEDIUM),

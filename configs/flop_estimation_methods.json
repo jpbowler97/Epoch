@@ -212,28 +212,28 @@
         "source": "Industry estimates"
       },
       "gemini_2.0": {
-        "parameters": 500000000000,
-        "training_tokens": 20000000000000,
-        "confidence": "LOW",
-        "source": "Speculative estimates for base Gemini 2.0 model"
+        "parameters": null,
+        "training_tokens": null,
+        "confidence": "SPECULATIVE",
+        "source": "No official parameter disclosure available - parameters unknown"
       },
       "gemini_2.5_pro": {
-        "parameters": 800000000000,
-        "training_tokens": 25000000000000,
-        "confidence": "LOW",
-        "source": "Estimated - Pro models typically larger than Flash variants"
+        "parameters": null,
+        "training_tokens": null,
+        "confidence": "SPECULATIVE",
+        "source": "No official parameter disclosure available - parameters unknown"
       },
       "gemini_2.0_flash": {
-        "parameters": 300000000000,
-        "training_tokens": 18000000000000,
-        "confidence": "LOW",
-        "source": "Estimated - Flash models optimized for speed with fewer parameters"
+        "parameters": null,
+        "training_tokens": null,
+        "confidence": "SPECULATIVE",
+        "source": "No official parameter disclosure available - parameters unknown"
       },
       "gemini_2.5_flash": {
-        "parameters": 400000000000,
-        "training_tokens": 20000000000000,
-        "confidence": "LOW",
-        "source": "Estimated - Mid-size between 2.0 Flash and 2.5 Pro"
+        "parameters": null,
+        "training_tokens": null,
+        "confidence": "SPECULATIVE",
+        "source": "No official parameter disclosure available - parameters unknown"
       },
       "qwen3_235b": {
         "parameters": 235000000000,

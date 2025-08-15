@@ -1,7 +1,7 @@
 # Task: Update Complex Benchmark Data
 
-You need to fetch and save benchmark data from browser-interactive websites.
-Use your WebFetch tool to interact with the sites and get the rendered content, then save it as HTML files.
+You need to fetch and save benchmark data from JavaScript-rendered websites.
+Use your WebFetch tool to get the rendered content, then save it as HTML files.
 
 ## Instructions:
 
@@ -26,7 +26,7 @@ Use your WebFetch tool to interact with the sites and get the rendered content, 
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/SuperCLUE.html
-5. Add timestamp comment: <!-- Updated: 2025-08-11T13:54:57.349389 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-15T14:13:21.504334 -->
 
 ### 2. Update physics_iq
 
@@ -44,7 +44,7 @@ Use your WebFetch tool to interact with the sites and get the rendered content, 
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/PhysicsIQ.html
-5. Add timestamp comment: <!-- Updated: 2025-08-11T13:54:57.349392 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-15T14:13:21.504362 -->
 
 ### 3. Update olympic_arena
 
@@ -63,7 +63,7 @@ Use your WebFetch tool to interact with the sites and get the rendered content, 
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/OlympicArena.html
-5. Add timestamp comment: <!-- Updated: 2025-08-11T13:54:57.349398 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-15T14:13:21.504370 -->
 
 ### 4. Update video_arena
 
@@ -82,7 +82,7 @@ Use your WebFetch tool to interact with the sites and get the rendered content, 
    - Proper <thead> and <tbody> sections
    - All column headers and data preserved
 4. Save to: data/benchmark_files/VideoArena.html
-5. Add timestamp comment: <!-- Updated: 2025-08-11T13:54:57.349401 -->
+5. Add timestamp comment: <!-- Updated: 2025-08-15T14:13:21.504377 -->
 
 ## Output Requirements:
 - Each HTML file must be valid HTML with proper structure

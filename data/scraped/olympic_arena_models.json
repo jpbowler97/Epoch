@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "saved_at": "2025-08-11T21:24:13.099247",
+    "saved_at": "2025-08-15T18:13:22.155093",
     "source": "olympic_arena",
-    "last_updated": "2025-08-11T21:24:13.099201",
+    "last_updated": "2025-08-15T18:13:22.155054",
     "model_count": 8,
     "stage": "scraped"
   },
@@ -32,7 +32,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.055830",
+      "last_updated": "2025-08-15T18:13:22.129795",
       "metadata": {}
     },
     {
@@ -60,7 +60,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.055959",
+      "last_updated": "2025-08-15T18:13:22.129861",
       "metadata": {}
     },
     {
@@ -88,7 +88,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.056063",
+      "last_updated": "2025-08-15T18:13:22.129899",
       "metadata": {}
     },
     {
@@ -116,7 +116,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.056159",
+      "last_updated": "2025-08-15T18:13:22.129934",
       "metadata": {}
     },
     {
@@ -144,7 +144,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.056304",
+      "last_updated": "2025-08-15T18:13:22.129968",
       "metadata": {}
     },
     {
@@ -172,7 +172,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.056401",
+      "last_updated": "2025-08-15T18:13:22.130002",
       "metadata": {}
     },
     {
@@ -200,7 +200,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.056498",
+      "last_updated": "2025-08-15T18:13:22.130035",
       "metadata": {}
     },
     {
@@ -228,7 +228,7 @@
         "https://gair-nlp.github.io/OlympicArena (OlympicArena - Chinese LLM benchmark across STEM subjects)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.056584",
+      "last_updated": "2025-08-15T18:13:22.130067",
       "metadata": {}
     }
   ]

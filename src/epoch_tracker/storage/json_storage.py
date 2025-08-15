@@ -36,7 +36,7 @@ class JSONStorage:
             data_dir: Base data directory (uses config default if None)
         """
         if data_dir is None:
-            data_dir = get_settings().data_dir
+            data_dir = Path("data")
         
         self.data_dir = Path(data_dir)
         self.scraped_dir = self.data_dir / "scraped"

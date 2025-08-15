@@ -77,6 +77,37 @@ The system follows a **four-stage data processing pipeline**:
 - **Field value reconciliation**: `python scripts/run.py sync-datasets --diff` provides interactive comparison and resolution of field differences with automatic verification protection
 - **Output**: Curated staging dataset in `data/staging/above_1e25_flop_staging.csv` ready for production
 
+## Manual Model Management
+
+### Adding Models Manually
+
+To add a model manually (protected from automation):
+
+```bash
+python scripts/run.py manual-entry
+```
+
+This interactive interface:
+- Walks you through entering model details step-by-step
+- Automatically sets `verified=y` flag for protection
+- Allows custom FLOP estimates and confidence levels
+- Saves directly to the staging dataset with full audit trail
+
+### Protection from Automation
+
+Models with `verified=y` are **completely protected**:
+- Never overwritten by automated pipeline runs
+- Preserved during data refreshes and updates  
+- Manual estimates take precedence over automation
+- Provides complete audit trail protection
+
+### Direct CSV Editing
+
+If editing `data/staging/above_1e25_flop_staging.csv` directly:
+- **Always set `verified=y`** to prevent automation overwrites
+- Fill in all required fields (model, developer, training_flop, confidence, reasoning)
+- Add detailed notes explaining your methodology
+
 **📚 Documentation:**
 - **[Developer Guide](CLAUDE.md)** - Development setup, architecture, and current system status
 - **[Core Dataset Management](docs/core_dataset_management.md)** - Detailed guide to curating models above 1e25 FLOP

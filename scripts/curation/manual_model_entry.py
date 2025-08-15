@@ -24,6 +24,114 @@ class ManualModelEntry:
         self.storage = JSONStorage()
         self.estimator = ComputeEstimator()
         self.logger = logging.getLogger(__name__)
+        self.field_config = self._load_field_config()
+    
+    def _load_field_config(self) -> Dict[str, Any]:
+        """Load field definitions from JSON config."""
+        import json
+        from pathlib import Path
+        
+        config_path = Path(__file__).parent.parent.parent / "configs" / "manual_entry_fields.json"
+        try:
+            with open(config_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            self.logger.warning(f"Failed to load field config: {e}")
+            # Return minimal fallback config
+            return {}
+    
+    def _display_field_prompt(self, field_key: str) -> None:
+        """Display consistent field prompt with definition and examples."""
+        if field_key not in self.field_config:
+            return
+            
+        config = self.field_config[field_key]
+        
+        # Header with icon, label, and required/optional
+        required_text = "(required)" if config.get("required", False) else "(optional)"
+        icon = config.get("icon", "📝")
+        print(f"\n{icon} {config['label']} {required_text}:")
+        
+        # Definition
+        if "definition" in config:
+            print(f"   Definition: {config['definition']}")
+        
+        # Examples  
+        if "examples" in config:
+            examples_str = ", ".join(config['examples'])
+            print(f"   Examples: {examples_str}")
+        
+        # Special notes
+        if "note" in config:
+            print(f"   Note: {config['note']}")
+        
+        # Special instructions (for sources, etc.)
+        if "instruction" in config:
+            print(f"   {config['instruction']}")
+        
+        # Format information (for dates, etc.)
+        if "formats" in config:
+            formats_str = " or ".join(config['formats'])
+            print(f"   Formats: {formats_str}")
+    
+    def _check_duplicate_model(self, model_name: str) -> tuple[bool, str]:
+        """Check if model already exists using normalized names.
+        
+        Returns:
+            (is_duplicate, duplicate_info) - info about existing model if duplicate found
+        """
+        try:
+            from epoch_tracker.utils.model_names import normalize_model_name
+            import csv
+            
+            normalized_name = normalize_model_name(model_name)
+            staging_csv_path = Path("data/staging/above_1e25_flop_staging.csv")
+            
+            if not staging_csv_path.exists():
+                return False, ""
+            
+            with open(staging_csv_path, 'r', encoding='utf-8') as csvfile:
+                reader = csv.DictReader(csvfile)
+                for row in reader:
+                    existing_name = row.get('model', '')
+                    if normalize_model_name(existing_name) == normalized_name:
+                        # Found duplicate, create info string
+                        developer = row.get('developer', 'Unknown')
+                        release_date = row.get('release_date', 'Unknown')
+                        params = row.get('parameters', '')
+                        if params:
+                            params_b = float(params) / 1_000_000_000 if params.replace('.','').isdigit() else params
+                            params_str = f"{params_b:.0f}B parameters" if isinstance(params_b, float) else params
+                        else:
+                            params_str = "Unknown parameters"
+                        
+                        duplicate_info = f"{developer}, {release_date}, {params_str}"
+                        return True, duplicate_info
+                        
+            return False, ""
+            
+        except Exception as e:
+            self.logger.warning(f"Failed to check for duplicates: {e}")
+            return False, ""
+    
+    def _prompt_field(self, field_key: str, required: bool = False) -> str:
+        """Single method to handle all field prompts with clean display."""
+        self._display_field_prompt(field_key)
+        
+        field_config = self.field_config[field_key]
+        label = field_config['label']
+        
+        while True:
+            if required:
+                value = input(f"{label}: ").strip()
+                if value.lower() == 'quit':
+                    return 'quit'
+                if value:
+                    return value
+                print(f"❌ {label} is required.")
+            else:
+                value = input(f"{label}: ").strip()
+                return value if value.lower() != 'quit' else 'quit'
     
     def interactive_entry(self) -> Optional[Model]:
         """Interactive prompts to gather model information."""
@@ -35,12 +143,26 @@ class ManualModelEntry:
         print("Type 'quit' at any time to exit.\n")
         
         try:
-            # Basic information
-            name = self._prompt_required("Model name", "e.g., GPT-5, Claude 4, Llama 4")
+            # Basic information with duplicate checking
+            name = self._prompt_field("model_name", required=True)
             if name == 'quit':
                 return None
+            
+            # Check for duplicates
+            is_duplicate, duplicate_info = self._check_duplicate_model(name)
+            if is_duplicate:
+                from epoch_tracker.utils.model_names import normalize_model_name
+                normalized = normalize_model_name(name)
+                print(f"\n⚠️  Model \"{normalized}\" already exists in staging dataset!")
+                print(f"   Existing entry: {duplicate_info}")
                 
-            developer = self._prompt_required("Developer/Organization", "e.g., OpenAI, Anthropic, Meta")
+                continue_anyway = input("   Continue anyway? (y/n): ").lower().strip()
+                if continue_anyway not in ['y', 'yes']:
+                    print("Model entry cancelled due to duplicate.")
+                    return None
+                print()  # Extra spacing after duplicate warning
+                
+            developer = self._prompt_field("developer", required=True)
             if developer == 'quit':
                 return None
             
@@ -48,33 +170,35 @@ class ManualModelEntry:
             model = Model(name=name, developer=developer)
             
             # Release date
-            release_date = self._prompt_optional("Release date", "YYYY-MM-DD format, e.g., 2024-07-29")
+            release_date = self._prompt_field("release_date", required=False)
             if release_date and release_date != 'quit':
-                try:
-                    model.release_date = datetime.strptime(release_date, "%Y-%m-%d")
-                except ValueError:
-                    print("⚠️  Invalid date format, skipping...")
+                parsed_date = self._parse_date_flexible(release_date)
+                if parsed_date:
+                    model.release_date = parsed_date
+                else:
+                    print("⚠️  Invalid date format. Please use YYYY-MM-DD or MM/DD/YYYY (e.g., 2024-03-04 or 3/4/2024)")
             
             # Technical specifications
-            params_str = self._prompt_optional("Parameter count", "e.g., 405000000000 for 405B")
+            params_str = self._prompt_field("parameters", required=False)
             if params_str and params_str != 'quit':
                 try:
                     model.parameters = self._parse_parameter_count(params_str)
+                    model.parameter_source = "manual_entry"
                 except ValueError:
-                    print("⚠️  Invalid parameter format, skipping...")
+                    print("⚠️  Invalid parameter format. Use formats like: 405B, 70B, 1.76T, or raw numbers")
             
             # Architecture
-            architecture = self._prompt_optional("Architecture", "e.g., transformer, MoE")
+            architecture = self._prompt_field("architecture", required=False)
             if architecture and architecture != 'quit':
                 model.architecture = architecture
             
             # Context length
-            context_str = self._prompt_optional("Context length", "e.g., 128000 for 128k tokens")
+            context_str = self._prompt_field("context_length", required=False)
             if context_str and context_str != 'quit':
                 try:
                     model.context_length = int(context_str)
                 except ValueError:
-                    print("⚠️  Invalid context length, skipping...")
+                    print("⚠️  Invalid context length. Please enter a number (e.g., 128000 for 128k tokens)")
             
             # Sources
             sources = self._prompt_sources()
@@ -101,28 +225,11 @@ class ManualModelEntry:
             print("\n\nModel entry cancelled by user.")
             return None
     
-    def _prompt_required(self, field_name: str, example: str) -> str:
-        """Prompt for required field with validation."""
-        while True:
-            value = input(f"📝 {field_name} (required): ").strip()
-            if value.lower() == 'quit':
-                return 'quit'
-            if value:
-                return value
-            print(f"❌ {field_name} is required. {example}")
-    
-    def _prompt_optional(self, field_name: str, example: str) -> str:
-        """Prompt for optional field."""
-        value = input(f"📝 {field_name} (optional): ").strip()
-        if not value:
-            return ""
-        return value
     
     def _prompt_sources(self) -> list:
-        """Prompt for source URLs."""
+        """Prompt for source URLs using centralized config."""
         sources = []
-        print("\n📚 Sources (URLs for papers, blogs, announcements)")
-        print("Enter one URL per line. Press Enter on empty line when done.")
+        self._display_field_prompt("sources")
         
         while True:
             url = input(f"Source {len(sources) + 1}: ").strip()
@@ -138,8 +245,11 @@ class ManualModelEntry:
         """Parse parameter count from various formats."""
         params_str = params_str.lower().replace(',', '').replace('_', '')
         
-        # Handle suffixes like 405b, 7b, 1.3b
-        if 'b' in params_str:
+        # Handle suffixes like 405b, 7b, 1.3b, 1.76t
+        if 't' in params_str:
+            number = float(params_str.replace('t', '').strip())
+            return int(number * 1_000_000_000_000)
+        elif 'b' in params_str:
             number = float(params_str.replace('b', '').strip())
             return int(number * 1_000_000_000)
         elif 'm' in params_str:
@@ -147,6 +257,40 @@ class ManualModelEntry:
             return int(number * 1_000_000)
         else:
             return int(params_str)
+    
+    def _parse_token_count(self, tokens_str: str) -> int:
+        """Parse token count from various formats."""
+        tokens_str = tokens_str.lower().replace(',', '').replace('_', '')
+        
+        # Handle suffixes like 7t, 15t, 1.5t (trillion)
+        if 't' in tokens_str:
+            number = float(tokens_str.replace('t', '').strip())
+            return int(number * 1_000_000_000_000)
+        elif 'b' in tokens_str:
+            number = float(tokens_str.replace('b', '').strip())
+            return int(number * 1_000_000_000)
+        elif 'm' in tokens_str:
+            number = float(tokens_str.replace('m', '').strip())
+            return int(number * 1_000_000)
+        elif 'e' in tokens_str:
+            # Scientific notation like 1.5e13
+            return int(float(tokens_str))
+        else:
+            return int(float(tokens_str))
+    
+    def _parse_date_flexible(self, date_str: str) -> Optional[datetime]:
+        """Parse dates in ISO or US format only."""
+        formats = [
+            '%Y-%m-%d',     # 2024-03-04 (ISO format)
+            '%m/%d/%Y',     # 3/4/2024 or 03/04/2024 (US format)
+        ]
+        
+        for fmt in formats:
+            try:
+                return datetime.strptime(date_str.strip(), fmt)
+            except ValueError:
+                continue
+        return None
     
     def _estimate_flop_interactive(self, model: Model):
         """Interactive FLOP estimation."""
@@ -218,31 +362,69 @@ class ManualModelEntry:
             else:
                 return
         
-        tokens_str = input("📊 Training tokens (e.g., 15e12 for 15T): ").strip()
-        if not tokens_str:
-            return
+        print("\n📊 Training tokens options:")
+        print("  • Press Enter: Use automatic era-aware estimation")
+        print("  • Enter number: e.g., '7T' (7 trillion), '15T', or '1.5e13'")
+        tokens_str = input("Training tokens: ").strip()
         
-        try:
-            tokens = float(tokens_str)
-            result = self.estimator.estimate_from_scaling_laws(model.parameters, int(tokens))
-            
-            model.update_flop_estimate(
-                flop=result.flop_estimate,
-                confidence=result.confidence,
-                method=result.method,
-                reasoning=result.reasoning
-            )
-            
-            # Set status
-            if result.flop_estimate >= 1e25:
-                model.status = ModelStatus.LIKELY_ABOVE
-            else:
-                model.status = ModelStatus.LIKELY_BELOW
+        if not tokens_str:
+            # Use automatic era-aware token estimation
+            print("Using automatic era-aware token estimation...")
+            try:
+                # Import the era-aware estimation function
+                import sys
+                from pathlib import Path
+                sys.path.insert(0, str(Path(__file__).parent.parent / "data_processing"))
+                from estimate_flops import estimate_training_tokens
                 
-            print(f"✅ FLOP estimate: {result.flop_estimate:.2e} ({result.confidence.value})")
-            
-        except ValueError:
-            print("❌ Invalid tokens format")
+                estimated_tokens, confidence, reasoning = estimate_training_tokens(model.name, model.parameters)
+                print(f"📊 Estimated tokens: {estimated_tokens/1e12:.1f}T {reasoning}")
+                
+                result = self.estimator.estimate_from_scaling_laws(model.parameters, int(estimated_tokens))
+                
+                model.update_flop_estimate(
+                    flop=result.flop_estimate,
+                    confidence=result.confidence,
+                    method=result.method,
+                    reasoning=f"Era-aware estimation: {result.reasoning}"
+                )
+                
+                # Set status
+                if result.flop_estimate >= 1e25:
+                    model.status = ModelStatus.LIKELY_ABOVE
+                else:
+                    model.status = ModelStatus.LIKELY_BELOW
+                    
+                print(f"✅ FLOP estimate: {result.flop_estimate:.2e} ({result.confidence.value})")
+                
+            except Exception as e:
+                print(f"❌ Automatic estimation failed: {e}")
+                return
+        else:
+            try:
+                tokens = self._parse_token_count(tokens_str)
+                print(f"📊 Using {tokens/1e12:.1f}T tokens")
+                result = self.estimator.estimate_from_scaling_laws(model.parameters, tokens)
+                
+                model.update_flop_estimate(
+                    flop=result.flop_estimate,
+                    confidence=result.confidence,
+                    method=result.method,
+                    reasoning=result.reasoning
+                )
+                
+                # Set status
+                if result.flop_estimate >= 1e25:
+                    model.status = ModelStatus.LIKELY_ABOVE
+                else:
+                    model.status = ModelStatus.LIKELY_BELOW
+                    
+                print(f"✅ FLOP estimate: {result.flop_estimate:.2e} ({result.confidence.value})")
+                
+            except ValueError as e:
+                print(f"❌ Invalid tokens format. Please use formats like: 7T, 15T, 1.5e13")
+                print(f"   Error: {e}")
+                return
     
     def _estimate_hardware(self, model: Model):
         """Hardware-based estimation."""
@@ -365,7 +547,7 @@ class ManualModelEntry:
         if model.training_flop:
             print(f"Training FLOP: {model.training_flop:.2e}")
             print(f"Above 1e25 threshold: {'✅ Yes' if model.training_flop >= 1e25 else '❌ No'}")
-            print(f"Confidence: {model.flop_confidence.value if model.flop_confidence else 'Unknown'}")
+            print(f"Confidence: {model.training_flop_confidence.value if model.training_flop_confidence else 'Unknown'}")
             print(f"Method: {model.estimation_method.value if model.estimation_method else 'Unknown'}")
             print(f"Status: {model.status.value if model.status else 'Unknown'}")
         
@@ -373,47 +555,126 @@ class ManualModelEntry:
             print(f"Sources: {len(model.sources)} URLs")
     
     def save_model(self, model: Model) -> str:
-        """Save model to manual_entries collection."""
+        """Save model directly to staging CSV dataset."""
+        import csv
+        from datetime import datetime
+        
         try:
-            # Try to load existing manual entries
-            try:
-                collection = self.storage.load_models("manual_entries")
-                if not collection:
-                    collection = ModelCollection(models=[], source="manual_entry")
-            except:
-                collection = ModelCollection(models=[], source="manual_entry")
+            staging_csv_path = Path("data/staging/above_1e25_flop_staging.csv")
             
-            # Add the new model
-            collection.models.append(model)
+            # Set verification flag for automation protection
+            model.metadata = model.metadata or {}
             
-            # Save back to storage
-            self.storage.save_models(collection, "manual_entries")
+            # Add lineage documentation to notes
+            entry_date = datetime.now().strftime("%Y-%m-%d")
+            lineage_note = f"Added via manual-entry on {entry_date} using scripts/run.py manual-entry"
+            
+            # Prepare row data matching CSV schema (19 fields)
+            row_data = {
+                'model': model.name,
+                'developer': model.developer,
+                'release_date': model.release_date.strftime("%Y-%m-%d") if model.release_date else '',
+                'parameters': str(model.parameters) if model.parameters else '',
+                'parameter_source': model.parameter_source or '',
+                'training_flop': f"{model.training_flop:.2e}" if model.training_flop else '',
+                'confidence': model.training_flop_confidence.value if model.training_flop_confidence else 'speculative',
+                'confidence_explanation': model.reasoning or '',
+                'estimation_method': model.estimation_method.value if model.estimation_method else 'manual_research',
+                'alternative_methods': '',  # Not used in manual entry
+                'threshold_classification': self._get_threshold_classification(model),
+                'status': model.status.value if model.status else 'uncertain',
+                'reasoning': model.reasoning or '',
+                'sources': '; '.join(model.sources) if model.sources else '',
+                'verified': 'y',  # Always set for manual entries
+                'last_updated': model.last_updated.isoformat(),
+                'notes': lineage_note,
+                'blacklist_status': '',  # Not applicable for manual entries
+                'original_estimate': f"{model.training_flop:.2e}" if model.training_flop else ''
+            }
+            
+            # Check if file exists to determine if we need headers
+            file_exists = staging_csv_path.exists()
+            
+            # Append to CSV
+            with open(staging_csv_path, 'a', newline='', encoding='utf-8') as csvfile:
+                fieldnames = [
+                    'model', 'developer', 'release_date', 'parameters', 'parameter_source',
+                    'training_flop', 'confidence', 'confidence_explanation', 'estimation_method',
+                    'alternative_methods', 'threshold_classification', 'status', 'reasoning',
+                    'sources', 'verified', 'last_updated', 'notes', 'blacklist_status', 'original_estimate'
+                ]
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                
+                # Write header if file is new
+                if not file_exists:
+                    writer.writeheader()
+                
+                writer.writerow(row_data)
             
             print(f"\n✅ Model '{model.name}' saved successfully!")
-            print(f"📁 Saved to: data/processed/manual_entries.json")
+            print(f"📁 Appended to: data/staging/above_1e25_flop_staging.csv")
+            print(f"🔒 Protected with verified=y flag")
             
-            return "manual_entries"
+            return "staging"
             
         except Exception as e:
             print(f"\n❌ Failed to save model: {e}")
             raise
     
+    def _get_threshold_classification(self, model: Model) -> str:
+        """Get threshold classification based on FLOP estimate and confidence."""
+        if not model.training_flop:
+            return "uncertain"
+        
+        if model.training_flop >= 1e25:
+            if hasattr(model.training_flop_confidence, 'value') and model.training_flop_confidence.value == 'high':
+                return "high_confidence_above_1e25"
+            elif model.training_flop_confidence == ConfidenceLevel.HIGH:
+                return "high_confidence_above_1e25"
+            else:
+                return "likely_above_1e25"
+        else:
+            if hasattr(model.training_flop_confidence, 'value') and model.training_flop_confidence.value == 'high':
+                return "high_confidence_below_1e25"
+            elif model.training_flop_confidence == ConfidenceLevel.HIGH:
+                return "high_confidence_below_1e25"
+            else:
+                return "likely_below_1e25"
+    
     def list_manual_entries(self):
-        """List all manually entered models."""
+        """List all manually entered models from staging CSV."""
+        import csv
+        
         try:
-            collection = self.storage.load_models("manual_entries")
-            if not collection or not collection.models:
-                print("No manually entered models found.")
+            staging_csv_path = Path("data/staging/above_1e25_flop_staging.csv")
+            
+            if not staging_csv_path.exists():
+                print("No staging dataset found.")
                 return
             
-            print(f"\n📋 Manual Entries ({len(collection.models)} models):")
-            print("-" * 60)
+            manual_entries = []
+            with open(staging_csv_path, 'r', encoding='utf-8') as csvfile:
+                reader = csv.DictReader(csvfile)
+                for row in reader:
+                    # Check if entry has manual-entry lineage in notes
+                    if row['notes'] and 'manual-entry' in row['notes']:
+                        manual_entries.append(row)
             
-            for i, model in enumerate(collection.models, 1):
-                flop_str = f"{model.training_flop:.2e}" if model.training_flop else "Unknown"
-                status_str = model.status.value if model.status else "Unknown"
-                print(f"{i:2d}. {model.name} ({model.developer})")
-                print(f"    FLOP: {flop_str} | Status: {status_str}")
+            if not manual_entries:
+                print("No manually entered models found in staging dataset.")
+                return
+            
+            print(f"\n📋 Manual Entries ({len(manual_entries)} models):")
+            print("-" * 80)
+            
+            for i, entry in enumerate(manual_entries, 1):
+                flop_str = entry['training_flop'] if entry['training_flop'] else "Unknown"
+                status_str = entry['status'] or "Unknown"
+                verified_str = "✅ Protected" if entry['verified'] == 'y' else "⚠️ Unprotected"
+                print(f"{i:2d}. {entry['model']} ({entry['developer']})")
+                print(f"    FLOP: {flop_str} | Status: {status_str} | {verified_str}")
+                if entry['notes']:
+                    print(f"    Notes: {entry['notes'][:60]}...")
             
         except Exception as e:
             print(f"❌ Failed to list manual entries: {e}")
@@ -468,7 +729,7 @@ or correcting AI model information in the Epoch tracker.
                 entry_system.save_model(model)
                 print("\n🎉 Model entry completed successfully!")
                 print("\nTo view all models including manual entries:")
-                print("  python scripts/query_models.py --stats")
+                print("  python scripts/run.py query --stats")
             else:
                 print("\n👋 Model entry cancelled.")
                 

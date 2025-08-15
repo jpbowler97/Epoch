@@ -1,0 +1,54 @@
+{
+  "model_name": {
+    "label": "Model name",
+    "required": true,
+    "definition": "Official name or identifier for the model",
+    "examples": ["GPT-4", "Claude 3.5 Sonnet", "Llama 3.1 405B", "Grok-2"],
+    "icon": "📝"
+  },
+  "developer": {
+    "label": "Developer/Organization", 
+    "required": true,
+    "definition": "Company or research group that created the model",
+    "examples": ["OpenAI", "Anthropic", "Meta", "Google", "xAI", "Mistral AI"],
+    "icon": "📝"
+  },
+  "release_date": {
+    "label": "Release date",
+    "required": false,
+    "definition": "Date when model was first publicly announced or made available",
+    "examples": ["2024-03-04", "3/4/2024", "March 4, 2024"],
+    "formats": ["YYYY-MM-DD", "MM/DD/YYYY"],
+    "icon": "📅"
+  },
+  "parameters": {
+    "label": "Parameter count",
+    "required": false,
+    "definition": "Total number of trainable parameters in the model", 
+    "examples": ["405B", "70B", "1.76T", "405000000000"],
+    "icon": "🔢"
+  },
+  "architecture": {
+    "label": "Architecture",
+    "required": false,
+    "definition": "The neural network design/structure type",
+    "examples": ["decoder-only transformer", "MoE (Mixture of Experts)", "hybrid"],
+    "note": "Most modern LLMs use 'decoder-only transformer'",
+    "icon": "🏗️"
+  },
+  "context_length": {
+    "label": "Context length", 
+    "required": false,
+    "definition": "Maximum number of tokens the model can process in a single input",
+    "examples": ["128000 (128k)", "200000 (200k)", "1000000 (1M)", "4096 (4k)"],
+    "icon": "📏"
+  },
+  "sources": {
+    "label": "Sources",
+    "required": false,
+    "definition": "Official documentation, research papers, or announcements about this model",
+    "examples": ["Company blog posts", "arXiv papers", "model cards", "official documentation"],
+    "instruction": "Enter one URL per line. Press Enter on empty line when done.",
+    "icon": "📚"
+  }
+}

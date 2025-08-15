@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "saved_at": "2025-08-11T21:24:13.245304",
+    "saved_at": "2025-08-15T18:13:24.683832",
     "source": "openlm_arena",
-    "last_updated": "2025-08-11T21:24:13.245224",
-    "model_count": 210,
+    "last_updated": "2025-08-15T18:13:24.683620",
+    "model_count": 214,
     "stage": "scraped"
   },
   "models": [
@@ -22,8 +22,8 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1471.0,
-        "coding_score": 1472.0,
+        "openlm_arena_elo": 1469.0,
+        "coding_score": 1471.0,
         "vision_score": 1318.0,
         "aai_score": 65.0,
         "mmlu_pro_score": 86.2
@@ -32,7 +32,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.011545",
+      "last_updated": "2025-08-15T18:13:24.621625",
       "metadata": {}
     },
     {
@@ -60,7 +60,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.011746",
+      "last_updated": "2025-08-15T18:13:24.621675",
       "metadata": {}
     },
     {
@@ -78,8 +78,8 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1436.0,
-        "coding_score": 1441.0,
+        "openlm_arena_elo": 1437.0,
+        "coding_score": 1442.0,
         "vision_score": 1273.0,
         "aai_score": 68.0,
         "mmlu_pro_score": 86.6
@@ -88,7 +88,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.011843",
+      "last_updated": "2025-08-15T18:13:24.621708",
       "metadata": {}
     },
     {
@@ -106,8 +106,8 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1433.0,
-        "coding_score": 1446.0,
+        "openlm_arena_elo": 1431.0,
+        "coding_score": 1447.0,
         "aai_score": 56.0,
         "mmlu_pro_score": 83.5
       },
@@ -115,35 +115,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.011937",
-      "metadata": {}
-    },
-    {
-      "name": "chatgpt_4o",
-      "developer": "OpenAI",
-      "release_date": null,
-      "parameters": null,
-      "parameter_source": null,
-      "context_length": null,
-      "architecture": null,
-      "training_flop": null,
-      "training_flop_confidence": "speculative",
-      "estimation_method": "manual_research",
-      "alternative_estimates": [],
-      "inference_flop_per_token": null,
-      "status": "uncertain",
-      "benchmarks": {
-        "openlm_arena_elo": 1429.0,
-        "coding_score": 1435.0,
-        "vision_score": 1297.0,
-        "aai_score": 40.0,
-        "mmlu_pro_score": 80.3
-      },
-      "sources": [
-        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
-      ],
-      "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012046",
+      "last_updated": "2025-08-15T18:13:24.621735",
       "metadata": {}
     },
     {
@@ -161,9 +133,9 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1428.0,
+        "openlm_arena_elo": 1429.0,
         "coding_score": 1444.0,
-        "vision_score": 1271.0,
+        "vision_score": 1267.0,
         "aai_score": 67.0,
         "mmlu_pro_score": 85.3
       },
@@ -171,7 +143,35 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012138",
+      "last_updated": "2025-08-15T18:13:24.621762",
+      "metadata": {}
+    },
+    {
+      "name": "chatgpt_4o",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "benchmarks": {
+        "openlm_arena_elo": 1427.0,
+        "coding_score": 1434.0,
+        "vision_score": 1296.0,
+        "aai_score": 40.0,
+        "mmlu_pro_score": 80.3
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-15T18:13:24.621789",
       "metadata": {}
     },
     {
@@ -198,7 +198,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012223",
+      "last_updated": "2025-08-15T18:13:24.621814",
       "metadata": {}
     },
     {
@@ -216,8 +216,8 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1425.0,
-        "coding_score": 1437.0,
+        "openlm_arena_elo": 1426.0,
+        "coding_score": 1436.0,
         "aai_score": 59.0,
         "mmlu_pro_score": 84.9
       },
@@ -225,7 +225,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012300",
+      "last_updated": "2025-08-15T18:13:24.621841",
       "metadata": {}
     },
     {
@@ -244,7 +244,7 @@
       "status": "uncertain",
       "benchmarks": {
         "openlm_arena_elo": 1423.0,
-        "coding_score": 1440.0,
+        "coding_score": 1439.0,
         "aai_score": 46.0,
         "mmlu_pro_score": 79.9
       },
@@ -252,7 +252,61 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012376",
+      "last_updated": "2025-08-15T18:13:24.621866",
+      "metadata": {}
+    },
+    {
+      "name": "claude_opus",
+      "developer": "Anthropic",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "benchmarks": {
+        "openlm_arena_elo": 1417.0,
+        "coding_score": 1470.0,
+        "aai_score": 61.0,
+        "mmlu_pro_score": 87.8
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-15T18:13:24.622277",
+      "metadata": {}
+    },
+    {
+      "name": "qwen3_235b_a22b",
+      "developer": "Alibaba",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "benchmarks": {
+        "openlm_arena_elo": 1416.0,
+        "coding_score": 1446.0,
+        "aai_score": 64.0,
+        "mmlu_pro_score": 84.3
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-15T18:13:24.622500",
       "metadata": {}
     },
     {
@@ -280,34 +334,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012491",
-      "metadata": {}
-    },
-    {
-      "name": "qwen3_235b_a22b",
-      "developer": "Alibaba",
-      "release_date": null,
-      "parameters": null,
-      "parameter_source": null,
-      "context_length": null,
-      "architecture": null,
-      "training_flop": null,
-      "training_flop_confidence": "speculative",
-      "estimation_method": "manual_research",
-      "alternative_estimates": [],
-      "inference_flop_per_token": null,
-      "status": "uncertain",
-      "benchmarks": {
-        "openlm_arena_elo": 1413.0,
-        "coding_score": 1442.0,
-        "aai_score": 64.0,
-        "mmlu_pro_score": 84.3
-      },
-      "sources": [
-        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
-      ],
-      "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012563",
+      "last_updated": "2025-08-15T18:13:24.622562",
       "metadata": {}
     },
     {
@@ -325,9 +352,9 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1412.0,
-        "coding_score": 1421.0,
-        "vision_score": 1280.0,
+        "openlm_arena_elo": 1413.0,
+        "coding_score": 1419.0,
+        "vision_score": 1278.0,
         "aai_score": 58.0,
         "mmlu_pro_score": 83.2
       },
@@ -335,7 +362,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012648",
+      "last_updated": "2025-08-15T18:13:24.622614",
       "metadata": {}
     },
     {
@@ -354,7 +381,7 @@
       "status": "uncertain",
       "benchmarks": {
         "openlm_arena_elo": 1397.0,
-        "coding_score": 1398.0,
+        "coding_score": 1396.0,
         "vision_score": 1220.0,
         "aai_score": 38.0,
         "mmlu_pro_score": 80.5
@@ -363,7 +390,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012737",
+      "last_updated": "2025-08-15T18:13:24.622741",
       "metadata": {}
     },
     {
@@ -391,7 +418,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012828",
+      "last_updated": "2025-08-15T18:13:24.622822",
       "metadata": {}
     },
     {
@@ -409,8 +436,8 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1393.0,
-        "coding_score": 1421.0,
+        "openlm_arena_elo": 1391.0,
+        "coding_score": 1422.0,
         "aai_score": 49.0,
         "mmlu_pro_score": 81.5
       },
@@ -418,11 +445,11 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012915",
+      "last_updated": "2025-08-15T18:13:24.622874",
       "metadata": {}
     },
     {
-      "name": "qwen3_235b_a22b",
+      "name": "qwen3_30b",
       "developer": "Alibaba",
       "release_date": null,
       "parameters": null,
@@ -436,16 +463,16 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1391.0,
-        "coding_score": 1412.0,
-        "aai_score": 51.0,
-        "mmlu_pro_score": 82.8
+        "openlm_arena_elo": 1381.0,
+        "coding_score": 1426.0,
+        "aai_score": 46.0,
+        "mmlu_pro_score": 77.7
       },
       "sources": [
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.012987",
+      "last_updated": "2025-08-15T18:13:24.622919",
       "metadata": {}
     },
     {
@@ -464,7 +491,7 @@
       "status": "uncertain",
       "benchmarks": {
         "openlm_arena_elo": 1381.0,
-        "coding_score": 1406.0,
+        "coding_score": 1405.0,
         "aai_score": 49.0,
         "mmlu_pro_score": 82.4
       },
@@ -472,34 +499,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013081",
-      "metadata": {}
-    },
-    {
-      "name": "qwen3_30b",
-      "developer": "Alibaba",
-      "release_date": null,
-      "parameters": null,
-      "parameter_source": null,
-      "context_length": null,
-      "architecture": null,
-      "training_flop": null,
-      "training_flop_confidence": "speculative",
-      "estimation_method": "manual_research",
-      "alternative_estimates": [],
-      "inference_flop_per_token": null,
-      "status": "uncertain",
-      "benchmarks": {
-        "openlm_arena_elo": 1380.0,
-        "coding_score": 1419.0,
-        "aai_score": 46.0,
-        "mmlu_pro_score": 77.7
-      },
-      "sources": [
-        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
-      ],
-      "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013214",
+      "last_updated": "2025-08-15T18:13:24.622972",
       "metadata": {}
     },
     {
@@ -517,9 +517,9 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1380.0,
-        "coding_score": 1398.0,
-        "vision_score": 1256.0,
+        "openlm_arena_elo": 1378.0,
+        "coding_score": 1396.0,
+        "vision_score": 1255.0,
         "aai_score": 47.0,
         "mmlu_pro_score": 80.6
       },
@@ -527,7 +527,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013306",
+      "last_updated": "2025-08-15T18:13:24.623024",
       "metadata": {}
     },
     {
@@ -546,14 +546,14 @@
       "status": "uncertain",
       "benchmarks": {
         "openlm_arena_elo": 1377.0,
-        "coding_score": 1388.0,
+        "coding_score": 1390.0,
         "mmlu_pro_score": 78.0
       },
       "sources": [
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013387",
+      "last_updated": "2025-08-15T18:13:24.623068",
       "metadata": {}
     },
     {
@@ -571,7 +571,7 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1376.0,
+        "openlm_arena_elo": 1375.0,
         "coding_score": 1391.0,
         "aai_score": 44.0,
         "mmlu_pro_score": 81.9
@@ -580,7 +580,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013465",
+      "last_updated": "2025-08-15T18:13:24.623113",
       "metadata": {}
     },
     {
@@ -599,8 +599,8 @@
       "status": "uncertain",
       "benchmarks": {
         "openlm_arena_elo": 1374.0,
-        "coding_score": 1434.0,
-        "vision_score": 1224.0,
+        "coding_score": 1433.0,
+        "vision_score": 1225.0,
         "aai_score": 59.0,
         "mmlu_pro_score": 87.3
       },
@@ -608,7 +608,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013549",
+      "last_updated": "2025-08-15T18:13:24.623162",
       "metadata": {}
     },
     {
@@ -635,7 +635,59 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013633",
+      "last_updated": "2025-08-15T18:13:24.623207",
+      "metadata": {}
+    },
+    {
+      "name": "gpt_5_mini",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "benchmarks": {
+        "aai_score": 64.0,
+        "mmlu_pro_score": 82.8
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-15T18:13:24.623244",
+      "metadata": {}
+    },
+    {
+      "name": "gpt_oss_120b",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "benchmarks": {
+        "openlm_arena_elo": 1371.0,
+        "coding_score": 1411.0,
+        "aai_score": 61.0,
+        "mmlu_pro_score": 80.8
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-15T18:13:24.623286",
       "metadata": {}
     },
     {
@@ -653,9 +705,9 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1370.0,
-        "coding_score": 1388.0,
-        "vision_score": 1196.0,
+        "openlm_arena_elo": 1369.0,
+        "coding_score": 1387.0,
+        "vision_score": 1199.0,
         "aai_score": 39.0,
         "mmlu_pro_score": 76.0
       },
@@ -663,7 +715,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013731",
+      "last_updated": "2025-08-15T18:13:24.623338",
       "metadata": {}
     },
     {
@@ -681,7 +733,7 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1370.0,
+        "openlm_arena_elo": 1369.0,
         "coding_score": 1371.0,
         "vision_score": 1241.0,
         "aai_score": 38.0,
@@ -691,7 +743,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013822",
+      "last_updated": "2025-08-15T18:13:24.623397",
       "metadata": {}
     },
     {
@@ -718,7 +770,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013894",
+      "last_updated": "2025-08-15T18:13:24.623447",
       "metadata": {}
     },
     {
@@ -737,8 +789,8 @@
       "status": "uncertain",
       "benchmarks": {
         "openlm_arena_elo": 1366.0,
-        "coding_score": 1405.0,
-        "vision_score": 1212.0,
+        "coding_score": 1404.0,
+        "vision_score": 1213.0,
         "aai_score": 47.0,
         "mmlu_pro_score": 86.0
       },
@@ -746,7 +798,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.013964",
+      "last_updated": "2025-08-15T18:13:24.623501",
       "metadata": {}
     },
     {
@@ -773,7 +825,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014031",
+      "last_updated": "2025-08-15T18:13:24.623548",
       "metadata": {}
     },
     {
@@ -801,7 +853,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014099",
+      "last_updated": "2025-08-15T18:13:24.623600",
       "metadata": {}
     },
     {
@@ -820,8 +872,8 @@
       "status": "uncertain",
       "benchmarks": {
         "openlm_arena_elo": 1362.0,
-        "coding_score": 1384.0,
-        "vision_score": 1239.0,
+        "coding_score": 1385.0,
+        "vision_score": 1241.0,
         "aai_score": 65.0,
         "mmlu_pro_score": 83.2
       },
@@ -829,7 +881,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014234",
+      "last_updated": "2025-08-15T18:13:24.623663",
       "metadata": {}
     },
     {
@@ -856,7 +908,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014305",
+      "last_updated": "2025-08-15T18:13:24.623696",
       "metadata": {}
     },
     {
@@ -883,32 +935,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014369",
-      "metadata": {}
-    },
-    {
-      "name": "gpt_oss_120b",
-      "developer": "OpenAI",
-      "release_date": null,
-      "parameters": null,
-      "parameter_source": null,
-      "context_length": null,
-      "architecture": null,
-      "training_flop": null,
-      "training_flop_confidence": "speculative",
-      "estimation_method": "manual_research",
-      "alternative_estimates": [],
-      "inference_flop_per_token": null,
-      "status": "uncertain",
-      "benchmarks": {
-        "aai_score": 59.0,
-        "mmlu_pro_score": 79.3
-      },
-      "sources": [
-        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
-      ],
-      "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014414",
+      "last_updated": "2025-08-15T18:13:24.623730",
       "metadata": {}
     },
     {
@@ -928,7 +955,7 @@
       "benchmarks": {
         "openlm_arena_elo": 1357.0,
         "coding_score": 1348.0,
-        "vision_score": 1214.0,
+        "vision_score": 1216.0,
         "aai_score": 25.0,
         "mmlu_pro_score": 66.9
       },
@@ -936,7 +963,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014478",
+      "last_updated": "2025-08-15T18:13:24.623767",
       "metadata": {}
     },
     {
@@ -954,7 +981,7 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1354.0,
+        "openlm_arena_elo": 1353.0,
         "coding_score": 1369.0,
         "aai_score": 53.0,
         "mmlu_pro_score": 81.6
@@ -963,7 +990,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014539",
+      "last_updated": "2025-08-15T18:13:24.623800",
       "metadata": {}
     },
     {
@@ -981,7 +1008,7 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1351.0,
+        "openlm_arena_elo": 1350.0,
         "coding_score": 1412.0,
         "vision_score": 1225.0,
         "aai_score": 59.0,
@@ -991,7 +1018,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014606",
+      "last_updated": "2025-08-15T18:13:24.623833",
       "metadata": {}
     },
     {
@@ -1018,7 +1045,33 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014666",
+      "last_updated": "2025-08-15T18:13:24.623873",
+      "metadata": {}
+    },
+    {
+      "name": "step_1o_turbo",
+      "developer": "StepFun",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "benchmarks": {
+        "openlm_arena_elo": 1339.0,
+        "coding_score": 1360.0,
+        "vision_score": 1227.0
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-15T18:13:24.623914",
       "metadata": {}
     },
     {
@@ -1037,7 +1090,7 @@
       "status": "uncertain",
       "benchmarks": {
         "openlm_arena_elo": 1339.0,
-        "coding_score": 1352.0,
+        "coding_score": 1359.0,
         "aai_score": 52.0,
         "mmlu_pro_score": 81.4
       },
@@ -1045,7 +1098,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014731",
+      "last_updated": "2025-08-15T18:13:24.623960",
       "metadata": {}
     },
     {
@@ -1064,7 +1117,7 @@
       "status": "uncertain",
       "benchmarks": {
         "openlm_arena_elo": 1338.0,
-        "coding_score": 1386.0,
+        "coding_score": 1384.0,
         "vision_score": 1212.0,
         "aai_score": 46.0,
         "mmlu_pro_score": 83.7
@@ -1073,7 +1126,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014797",
+      "last_updated": "2025-08-15T18:13:24.624001",
       "metadata": {}
     },
     {
@@ -1100,7 +1153,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014853",
+      "last_updated": "2025-08-15T18:13:24.624035",
       "metadata": {}
     },
     {
@@ -1120,7 +1173,7 @@
       "benchmarks": {
         "openlm_arena_elo": 1337.0,
         "coding_score": 1369.0,
-        "vision_score": 1230.0,
+        "vision_score": 1231.0,
         "aai_score": 42.0,
         "mmlu_pro_score": 78.1
       },
@@ -1128,7 +1181,32 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014915",
+      "last_updated": "2025-08-15T18:13:24.624067",
+      "metadata": {}
+    },
+    {
+      "name": "gemini_2.5_flash_lite",
+      "developer": "Google",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "benchmarks": {
+        "aai_score": 44.0,
+        "mmlu_pro_score": 75.9
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-15T18:13:24.624092",
       "metadata": {}
     },
     {
@@ -1148,7 +1226,7 @@
       "benchmarks": {
         "openlm_arena_elo": 1335.0,
         "coding_score": 1361.0,
-        "vision_score": 1183.0,
+        "vision_score": 1186.0,
         "aai_score": 32.0,
         "mmlu_pro_score": 68.1
       },
@@ -1156,7 +1234,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.014994",
+      "last_updated": "2025-08-15T18:13:24.624125",
       "metadata": {}
     },
     {
@@ -1183,7 +1261,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015172",
+      "last_updated": "2025-08-15T18:13:24.624158",
       "metadata": {}
     },
     {
@@ -1210,7 +1288,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015275",
+      "last_updated": "2025-08-15T18:13:24.624319",
       "metadata": {}
     },
     {
@@ -1236,7 +1314,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015350",
+      "last_updated": "2025-08-15T18:13:24.624373",
       "metadata": {}
     },
     {
@@ -1263,7 +1341,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015429",
+      "last_updated": "2025-08-15T18:13:24.624454",
       "metadata": {}
     },
     {
@@ -1291,7 +1369,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015509",
+      "last_updated": "2025-08-15T18:13:24.624490",
       "metadata": {}
     },
     {
@@ -1316,7 +1394,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015579",
+      "last_updated": "2025-08-15T18:13:24.624515",
       "metadata": {}
     },
     {
@@ -1334,8 +1412,8 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1326.0,
-        "coding_score": 1334.0,
+        "openlm_arena_elo": 1327.0,
+        "coding_score": 1336.0,
         "aai_score": 32.0,
         "mmlu_pro_score": 71.2
       },
@@ -1343,7 +1421,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015660",
+      "last_updated": "2025-08-15T18:13:24.624547",
       "metadata": {}
     },
     {
@@ -1361,8 +1439,8 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1322.0,
-        "coding_score": 1335.0,
+        "openlm_arena_elo": 1323.0,
+        "coding_score": 1337.0,
         "aai_score": 35.0,
         "mmlu_pro_score": 73.3
       },
@@ -1370,7 +1448,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015779",
+      "last_updated": "2025-08-15T18:13:24.624583",
       "metadata": {}
     },
     {
@@ -1397,7 +1475,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015868",
+      "last_updated": "2025-08-15T18:13:24.624614",
       "metadata": {}
     },
     {
@@ -1422,7 +1500,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.015933",
+      "last_updated": "2025-08-15T18:13:24.624639",
       "metadata": {}
     },
     {
@@ -1449,7 +1527,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016012",
+      "last_updated": "2025-08-15T18:13:24.624668",
       "metadata": {}
     },
     {
@@ -1477,7 +1555,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016100",
+      "last_updated": "2025-08-15T18:13:24.624701",
       "metadata": {}
     },
     {
@@ -1504,7 +1582,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016188",
+      "last_updated": "2025-08-15T18:13:24.624782",
       "metadata": {}
     },
     {
@@ -1531,7 +1609,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016298",
+      "last_updated": "2025-08-15T18:13:24.624881",
       "metadata": {}
     },
     {
@@ -1551,7 +1629,7 @@
       "benchmarks": {
         "openlm_arena_elo": 1317.0,
         "coding_score": 1354.0,
-        "vision_score": 1205.0,
+        "vision_score": 1206.0,
         "aai_score": 47.0,
         "mmlu_pro_score": 83.7
       },
@@ -1559,7 +1637,32 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016405",
+      "last_updated": "2025-08-15T18:13:24.624926",
+      "metadata": {}
+    },
+    {
+      "name": "gpt_5_nano",
+      "developer": "OpenAI",
+      "release_date": null,
+      "parameters": null,
+      "parameter_source": null,
+      "context_length": null,
+      "architecture": null,
+      "training_flop": null,
+      "training_flop_confidence": "speculative",
+      "estimation_method": "manual_research",
+      "alternative_estimates": [],
+      "inference_flop_per_token": null,
+      "status": "uncertain",
+      "benchmarks": {
+        "aai_score": 54.0,
+        "mmlu_pro_score": 77.2
+      },
+      "sources": [
+        "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
+      ],
+      "reasoning": "",
+      "last_updated": "2025-08-15T18:13:24.624957",
       "metadata": {}
     },
     {
@@ -1577,6 +1680,8 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
+        "openlm_arena_elo": 1314.0,
+        "coding_score": 1370.0,
         "aai_score": 49.0,
         "mmlu_pro_score": 73.6
       },
@@ -1584,7 +1689,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016478",
+      "last_updated": "2025-08-15T18:13:24.624991",
       "metadata": {}
     },
     {
@@ -1602,14 +1707,14 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "openlm_arena_elo": 1314.0,
+        "openlm_arena_elo": 1313.0,
         "coding_score": 1335.0
       },
       "sources": [
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016541",
+      "last_updated": "2025-08-15T18:13:24.625019",
       "metadata": {}
     },
     {
@@ -1636,7 +1741,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016615",
+      "last_updated": "2025-08-15T18:13:24.625048",
       "metadata": {}
     },
     {
@@ -1663,7 +1768,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016691",
+      "last_updated": "2025-08-15T18:13:24.625080",
       "metadata": {}
     },
     {
@@ -1690,7 +1795,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016771",
+      "last_updated": "2025-08-15T18:13:24.625113",
       "metadata": {}
     },
     {
@@ -1715,7 +1820,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016832",
+      "last_updated": "2025-08-15T18:13:24.625136",
       "metadata": {}
     },
     {
@@ -1743,7 +1848,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016911",
+      "last_updated": "2025-08-15T18:13:24.625170",
       "metadata": {}
     },
     {
@@ -1771,7 +1876,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.016993",
+      "last_updated": "2025-08-15T18:13:24.625203",
       "metadata": {}
     },
     {
@@ -1799,7 +1904,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017070",
+      "last_updated": "2025-08-15T18:13:24.625235",
       "metadata": {}
     },
     {
@@ -1826,7 +1931,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017143",
+      "last_updated": "2025-08-15T18:13:24.625265",
       "metadata": {}
     },
     {
@@ -1851,7 +1956,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017233",
+      "last_updated": "2025-08-15T18:13:24.625288",
       "metadata": {}
     },
     {
@@ -1878,7 +1983,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017311",
+      "last_updated": "2025-08-15T18:13:24.625319",
       "metadata": {}
     },
     {
@@ -1898,7 +2003,7 @@
       "benchmarks": {
         "openlm_arena_elo": 1292.0,
         "coding_score": 1312.0,
-        "vision_score": 1184.0,
+        "vision_score": 1185.0,
         "aai_score": 42.0,
         "mmlu_pro_score": 80.9
       },
@@ -1906,7 +2011,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017395",
+      "last_updated": "2025-08-15T18:13:24.625352",
       "metadata": {}
     },
     {
@@ -1932,7 +2037,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017462",
+      "last_updated": "2025-08-15T18:13:24.625379",
       "metadata": {}
     },
     {
@@ -1957,7 +2062,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017522",
+      "last_updated": "2025-08-15T18:13:24.625403",
       "metadata": {}
     },
     {
@@ -1985,7 +2090,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017625",
+      "last_updated": "2025-08-15T18:13:24.625434",
       "metadata": {}
     },
     {
@@ -2013,7 +2118,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017709",
+      "last_updated": "2025-08-15T18:13:24.625470",
       "metadata": {}
     },
     {
@@ -2041,7 +2146,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.017790",
+      "last_updated": "2025-08-15T18:13:24.625504",
       "metadata": {}
     },
     {
@@ -2068,7 +2173,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018046",
+      "last_updated": "2025-08-15T18:13:24.625534",
       "metadata": {}
     },
     {
@@ -2095,7 +2200,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018229",
+      "last_updated": "2025-08-15T18:13:24.625563",
       "metadata": {}
     },
     {
@@ -2120,7 +2225,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018364",
+      "last_updated": "2025-08-15T18:13:24.625584",
       "metadata": {}
     },
     {
@@ -2147,7 +2252,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018440",
+      "last_updated": "2025-08-15T18:13:24.625612",
       "metadata": {}
     },
     {
@@ -2172,7 +2277,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018501",
+      "last_updated": "2025-08-15T18:13:24.625634",
       "metadata": {}
     },
     {
@@ -2200,7 +2305,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018595",
+      "last_updated": "2025-08-15T18:13:24.625664",
       "metadata": {}
     },
     {
@@ -2225,7 +2330,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018660",
+      "last_updated": "2025-08-15T18:13:24.625703",
       "metadata": {}
     },
     {
@@ -2245,7 +2350,7 @@
       "benchmarks": {
         "openlm_arena_elo": 1276.0,
         "coding_score": 1290.0,
-        "vision_score": 1171.0,
+        "vision_score": 1174.0,
         "aai_score": 33.0,
         "mmlu_pro_score": 75.2
       },
@@ -2253,7 +2358,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018742",
+      "last_updated": "2025-08-15T18:13:24.625744",
       "metadata": {}
     },
     {
@@ -2278,7 +2383,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018805",
+      "last_updated": "2025-08-15T18:13:24.625790",
       "metadata": {}
     },
     {
@@ -2305,7 +2410,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018875",
+      "last_updated": "2025-08-15T18:13:24.625823",
       "metadata": {}
     },
     {
@@ -2332,7 +2437,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.018957",
+      "last_updated": "2025-08-15T18:13:24.625854",
       "metadata": {}
     },
     {
@@ -2360,7 +2465,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019055",
+      "last_updated": "2025-08-15T18:13:24.625888",
       "metadata": {}
     },
     {
@@ -2387,7 +2492,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019153",
+      "last_updated": "2025-08-15T18:13:24.625919",
       "metadata": {}
     },
     {
@@ -2413,7 +2518,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019230",
+      "last_updated": "2025-08-15T18:13:24.625950",
       "metadata": {}
     },
     {
@@ -2441,7 +2546,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019317",
+      "last_updated": "2025-08-15T18:13:24.625986",
       "metadata": {}
     },
     {
@@ -2468,7 +2573,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019396",
+      "last_updated": "2025-08-15T18:13:24.626018",
       "metadata": {}
     },
     {
@@ -2493,7 +2598,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019457",
+      "last_updated": "2025-08-15T18:13:24.626044",
       "metadata": {}
     },
     {
@@ -2520,7 +2625,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019536",
+      "last_updated": "2025-08-15T18:13:24.626072",
       "metadata": {}
     },
     {
@@ -2545,7 +2650,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019593",
+      "last_updated": "2025-08-15T18:13:24.626095",
       "metadata": {}
     },
     {
@@ -2573,7 +2678,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019668",
+      "last_updated": "2025-08-15T18:13:24.626127",
       "metadata": {}
     },
     {
@@ -2600,7 +2705,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019742",
+      "last_updated": "2025-08-15T18:13:24.626156",
       "metadata": {}
     },
     {
@@ -2628,7 +2733,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019839",
+      "last_updated": "2025-08-15T18:13:24.626191",
       "metadata": {}
     },
     {
@@ -2653,7 +2758,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.019992",
+      "last_updated": "2025-08-15T18:13:24.626213",
       "metadata": {}
     },
     {
@@ -2681,7 +2786,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020077",
+      "last_updated": "2025-08-15T18:13:24.626244",
       "metadata": {}
     },
     {
@@ -2708,7 +2813,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020151",
+      "last_updated": "2025-08-15T18:13:24.626276",
       "metadata": {}
     },
     {
@@ -2734,7 +2839,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020218",
+      "last_updated": "2025-08-15T18:13:24.626304",
       "metadata": {}
     },
     {
@@ -2759,7 +2864,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020344",
+      "last_updated": "2025-08-15T18:13:24.626326",
       "metadata": {}
     },
     {
@@ -2784,7 +2889,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020456",
+      "last_updated": "2025-08-15T18:13:24.626347",
       "metadata": {}
     },
     {
@@ -2811,7 +2916,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020587",
+      "last_updated": "2025-08-15T18:13:24.626400",
       "metadata": {}
     },
     {
@@ -2836,11 +2941,11 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020697",
+      "last_updated": "2025-08-15T18:13:24.626430",
       "metadata": {}
     },
     {
-      "name": "mistral_small_24b",
+      "name": "mistral_small_3_24b",
       "developer": "Mistral",
       "release_date": null,
       "parameters": null,
@@ -2863,7 +2968,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020820",
+      "last_updated": "2025-08-15T18:13:24.626464",
       "metadata": {}
     },
     {
@@ -2890,7 +2995,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020902",
+      "last_updated": "2025-08-15T18:13:24.626561",
       "metadata": {}
     },
     {
@@ -2917,7 +3022,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.020979",
+      "last_updated": "2025-08-15T18:13:24.626596",
       "metadata": {}
     },
     {
@@ -2944,7 +3049,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021051",
+      "last_updated": "2025-08-15T18:13:24.626630",
       "metadata": {}
     },
     {
@@ -2971,7 +3076,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021189",
+      "last_updated": "2025-08-15T18:13:24.626661",
       "metadata": {}
     },
     {
@@ -2999,7 +3104,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021348",
+      "last_updated": "2025-08-15T18:13:24.626697",
       "metadata": {}
     },
     {
@@ -3024,7 +3129,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021419",
+      "last_updated": "2025-08-15T18:13:24.626724",
       "metadata": {}
     },
     {
@@ -3051,7 +3156,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021500",
+      "last_updated": "2025-08-15T18:13:24.626755",
       "metadata": {}
     },
     {
@@ -3079,7 +3184,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021578",
+      "last_updated": "2025-08-15T18:13:24.626790",
       "metadata": {}
     },
     {
@@ -3104,7 +3209,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021632",
+      "last_updated": "2025-08-15T18:13:24.626812",
       "metadata": {}
     },
     {
@@ -3129,7 +3234,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021691",
+      "last_updated": "2025-08-15T18:13:24.626837",
       "metadata": {}
     },
     {
@@ -3154,7 +3259,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021752",
+      "last_updated": "2025-08-15T18:13:24.626862",
       "metadata": {}
     },
     {
@@ -3181,7 +3286,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021832",
+      "last_updated": "2025-08-15T18:13:24.626893",
       "metadata": {}
     },
     {
@@ -3207,7 +3312,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.021924",
+      "last_updated": "2025-08-15T18:13:24.626920",
       "metadata": {}
     },
     {
@@ -3234,7 +3339,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022013",
+      "last_updated": "2025-08-15T18:13:24.626953",
       "metadata": {}
     },
     {
@@ -3262,7 +3367,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022103",
+      "last_updated": "2025-08-15T18:13:24.626988",
       "metadata": {}
     },
     {
@@ -3287,7 +3392,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022163",
+      "last_updated": "2025-08-15T18:13:24.627013",
       "metadata": {}
     },
     {
@@ -3314,7 +3419,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022231",
+      "last_updated": "2025-08-15T18:13:24.627045",
       "metadata": {}
     },
     {
@@ -3339,7 +3444,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022345",
+      "last_updated": "2025-08-15T18:13:24.627069",
       "metadata": {}
     },
     {
@@ -3366,7 +3471,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022485",
+      "last_updated": "2025-08-15T18:13:24.627103",
       "metadata": {}
     },
     {
@@ -3393,7 +3498,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022575",
+      "last_updated": "2025-08-15T18:13:24.627135",
       "metadata": {}
     },
     {
@@ -3418,7 +3523,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022637",
+      "last_updated": "2025-08-15T18:13:24.627160",
       "metadata": {}
     },
     {
@@ -3445,7 +3550,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022717",
+      "last_updated": "2025-08-15T18:13:24.627190",
       "metadata": {}
     },
     {
@@ -3472,7 +3577,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022797",
+      "last_updated": "2025-08-15T18:13:24.627221",
       "metadata": {}
     },
     {
@@ -3500,7 +3605,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022882",
+      "last_updated": "2025-08-15T18:13:24.627254",
       "metadata": {}
     },
     {
@@ -3525,7 +3630,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.022939",
+      "last_updated": "2025-08-15T18:13:24.627275",
       "metadata": {}
     },
     {
@@ -3550,7 +3655,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.023006",
+      "last_updated": "2025-08-15T18:13:24.627296",
       "metadata": {}
     },
     {
@@ -3577,7 +3682,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.023085",
+      "last_updated": "2025-08-15T18:13:24.627326",
       "metadata": {}
     },
     {
@@ -3602,7 +3707,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.023144",
+      "last_updated": "2025-08-15T18:13:24.627353",
       "metadata": {}
     },
     {
@@ -3627,7 +3732,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.032715",
+      "last_updated": "2025-08-15T18:13:24.627375",
       "metadata": {}
     },
     {
@@ -3654,7 +3759,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.032931",
+      "last_updated": "2025-08-15T18:13:24.627408",
       "metadata": {}
     },
     {
@@ -3681,7 +3786,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033174",
+      "last_updated": "2025-08-15T18:13:24.627437",
       "metadata": {}
     },
     {
@@ -3706,7 +3811,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033254",
+      "last_updated": "2025-08-15T18:13:24.627461",
       "metadata": {}
     },
     {
@@ -3733,7 +3838,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033334",
+      "last_updated": "2025-08-15T18:13:24.627493",
       "metadata": {}
     },
     {
@@ -3759,7 +3864,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033404",
+      "last_updated": "2025-08-15T18:13:24.627519",
       "metadata": {}
     },
     {
@@ -3784,7 +3889,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033488",
+      "last_updated": "2025-08-15T18:13:24.627540",
       "metadata": {}
     },
     {
@@ -3809,7 +3914,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033535",
+      "last_updated": "2025-08-15T18:13:24.627559",
       "metadata": {}
     },
     {
@@ -3834,7 +3939,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033578",
+      "last_updated": "2025-08-15T18:13:24.627580",
       "metadata": {}
     },
     {
@@ -3861,7 +3966,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033663",
+      "last_updated": "2025-08-15T18:13:24.627610",
       "metadata": {}
     },
     {
@@ -3888,7 +3993,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033739",
+      "last_updated": "2025-08-15T18:13:24.627666",
       "metadata": {}
     },
     {
@@ -3915,7 +4020,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033826",
+      "last_updated": "2025-08-15T18:13:24.627697",
       "metadata": {}
     },
     {
@@ -3940,7 +4045,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033901",
+      "last_updated": "2025-08-15T18:13:24.627721",
       "metadata": {}
     },
     {
@@ -3967,7 +4072,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.033997",
+      "last_updated": "2025-08-15T18:13:24.627750",
       "metadata": {}
     },
     {
@@ -3992,7 +4097,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034074",
+      "last_updated": "2025-08-15T18:13:24.627773",
       "metadata": {}
     },
     {
@@ -4017,7 +4122,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034178",
+      "last_updated": "2025-08-15T18:13:24.627796",
       "metadata": {}
     },
     {
@@ -4042,7 +4147,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034330",
+      "last_updated": "2025-08-15T18:13:24.627847",
       "metadata": {}
     },
     {
@@ -4067,7 +4172,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034404",
+      "last_updated": "2025-08-15T18:13:24.627870",
       "metadata": {}
     },
     {
@@ -4094,7 +4199,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034566",
+      "last_updated": "2025-08-15T18:13:24.627991",
       "metadata": {}
     },
     {
@@ -4119,7 +4224,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034635",
+      "last_updated": "2025-08-15T18:13:24.628016",
       "metadata": {}
     },
     {
@@ -4146,7 +4251,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034739",
+      "last_updated": "2025-08-15T18:13:24.628046",
       "metadata": {}
     },
     {
@@ -4171,7 +4276,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034821",
+      "last_updated": "2025-08-15T18:13:24.628071",
       "metadata": {}
     },
     {
@@ -4198,7 +4303,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034905",
+      "last_updated": "2025-08-15T18:13:24.628101",
       "metadata": {}
     },
     {
@@ -4223,7 +4328,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.034964",
+      "last_updated": "2025-08-15T18:13:24.628122",
       "metadata": {}
     },
     {
@@ -4248,7 +4353,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035025",
+      "last_updated": "2025-08-15T18:13:24.628145",
       "metadata": {}
     },
     {
@@ -4273,7 +4378,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035083",
+      "last_updated": "2025-08-15T18:13:24.628166",
       "metadata": {}
     },
     {
@@ -4300,7 +4405,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035161",
+      "last_updated": "2025-08-15T18:13:24.628197",
       "metadata": {}
     },
     {
@@ -4325,7 +4430,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035256",
+      "last_updated": "2025-08-15T18:13:24.628222",
       "metadata": {}
     },
     {
@@ -4350,7 +4455,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035327",
+      "last_updated": "2025-08-15T18:13:24.628245",
       "metadata": {}
     },
     {
@@ -4375,7 +4480,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035400",
+      "last_updated": "2025-08-15T18:13:24.628268",
       "metadata": {}
     },
     {
@@ -4400,7 +4505,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035460",
+      "last_updated": "2025-08-15T18:13:24.628293",
       "metadata": {}
     },
     {
@@ -4427,7 +4532,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035606",
+      "last_updated": "2025-08-15T18:13:24.628325",
       "metadata": {}
     },
     {
@@ -4452,7 +4557,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035704",
+      "last_updated": "2025-08-15T18:13:24.628349",
       "metadata": {}
     },
     {
@@ -4479,7 +4584,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035792",
+      "last_updated": "2025-08-15T18:13:24.628406",
       "metadata": {}
     },
     {
@@ -4504,7 +4609,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035856",
+      "last_updated": "2025-08-15T18:13:24.628437",
       "metadata": {}
     },
     {
@@ -4529,7 +4634,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.035958",
+      "last_updated": "2025-08-15T18:13:24.628468",
       "metadata": {}
     },
     {
@@ -4554,7 +4659,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036061",
+      "last_updated": "2025-08-15T18:13:24.628495",
       "metadata": {}
     },
     {
@@ -4579,7 +4684,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036163",
+      "last_updated": "2025-08-15T18:13:24.628521",
       "metadata": {}
     },
     {
@@ -4605,7 +4710,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036289",
+      "last_updated": "2025-08-15T18:13:24.628554",
       "metadata": {}
     },
     {
@@ -4630,7 +4735,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036423",
+      "last_updated": "2025-08-15T18:13:24.628583",
       "metadata": {}
     },
     {
@@ -4655,7 +4760,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036523",
+      "last_updated": "2025-08-15T18:13:24.628609",
       "metadata": {}
     },
     {
@@ -4680,7 +4785,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036625",
+      "last_updated": "2025-08-15T18:13:24.628632",
       "metadata": {}
     },
     {
@@ -4705,7 +4810,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036727",
+      "last_updated": "2025-08-15T18:13:24.628658",
       "metadata": {}
     },
     {
@@ -4730,7 +4835,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036799",
+      "last_updated": "2025-08-15T18:13:24.628682",
       "metadata": {}
     },
     {
@@ -4755,7 +4860,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036847",
+      "last_updated": "2025-08-15T18:13:24.628707",
       "metadata": {}
     },
     {
@@ -4780,7 +4885,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036901",
+      "last_updated": "2025-08-15T18:13:24.628733",
       "metadata": {}
     },
     {
@@ -4807,7 +4912,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.036987",
+      "last_updated": "2025-08-15T18:13:24.628767",
       "metadata": {}
     },
     {
@@ -4834,7 +4939,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037065",
+      "last_updated": "2025-08-15T18:13:24.628798",
       "metadata": {}
     },
     {
@@ -4859,7 +4964,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037123",
+      "last_updated": "2025-08-15T18:13:24.628855",
       "metadata": {}
     },
     {
@@ -4884,7 +4989,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037177",
+      "last_updated": "2025-08-15T18:13:24.628886",
       "metadata": {}
     },
     {
@@ -4909,7 +5014,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037231",
+      "last_updated": "2025-08-15T18:13:24.628909",
       "metadata": {}
     },
     {
@@ -4934,7 +5039,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037291",
+      "last_updated": "2025-08-15T18:13:24.628931",
       "metadata": {}
     },
     {
@@ -4959,7 +5064,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037346",
+      "last_updated": "2025-08-15T18:13:24.628958",
       "metadata": {}
     },
     {
@@ -4984,7 +5089,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037404",
+      "last_updated": "2025-08-15T18:13:24.629034",
       "metadata": {}
     },
     {
@@ -5009,7 +5114,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037455",
+      "last_updated": "2025-08-15T18:13:24.629061",
       "metadata": {}
     },
     {
@@ -5034,7 +5139,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037508",
+      "last_updated": "2025-08-15T18:13:24.629087",
       "metadata": {}
     },
     {
@@ -5059,7 +5164,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037566",
+      "last_updated": "2025-08-15T18:13:24.629111",
       "metadata": {}
     },
     {
@@ -5084,7 +5189,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037632",
+      "last_updated": "2025-08-15T18:13:24.629135",
       "metadata": {}
     },
     {
@@ -5111,7 +5216,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037781",
+      "last_updated": "2025-08-15T18:13:24.629166",
       "metadata": {}
     },
     {
@@ -5129,13 +5234,13 @@
       "inference_flop_per_token": null,
       "status": "uncertain",
       "benchmarks": {
-        "vision_score": 1198.0
+        "vision_score": 1199.0
       },
       "sources": [
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037842",
+      "last_updated": "2025-08-15T18:13:24.629189",
       "metadata": {}
     },
     {
@@ -5159,7 +5264,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.037902",
+      "last_updated": "2025-08-15T18:13:24.629212",
       "metadata": {}
     },
     {
@@ -5183,7 +5288,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038050",
+      "last_updated": "2025-08-15T18:13:24.629233",
       "metadata": {}
     },
     {
@@ -5209,7 +5314,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038122",
+      "last_updated": "2025-08-15T18:13:24.629261",
       "metadata": {}
     },
     {
@@ -5233,7 +5338,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038186",
+      "last_updated": "2025-08-15T18:13:24.629282",
       "metadata": {}
     },
     {
@@ -5257,7 +5362,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038239",
+      "last_updated": "2025-08-15T18:13:24.629302",
       "metadata": {}
     },
     {
@@ -5281,7 +5386,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038348",
+      "last_updated": "2025-08-15T18:13:24.629328",
       "metadata": {}
     },
     {
@@ -5305,7 +5410,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038402",
+      "last_updated": "2025-08-15T18:13:24.629350",
       "metadata": {}
     },
     {
@@ -5331,7 +5436,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038471",
+      "last_updated": "2025-08-15T18:13:24.629423",
       "metadata": {}
     },
     {
@@ -5355,7 +5460,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038524",
+      "last_updated": "2025-08-15T18:13:24.629464",
       "metadata": {}
     },
     {
@@ -5381,7 +5486,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038592",
+      "last_updated": "2025-08-15T18:13:24.629497",
       "metadata": {}
     },
     {
@@ -5405,7 +5510,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038648",
+      "last_updated": "2025-08-15T18:13:24.629522",
       "metadata": {}
     },
     {
@@ -5429,7 +5534,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.038706",
+      "last_updated": "2025-08-15T18:13:24.629547",
       "metadata": {}
     },
     {
@@ -5453,7 +5558,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.039894",
+      "last_updated": "2025-08-15T18:13:24.629569",
       "metadata": {}
     },
     {
@@ -5477,7 +5582,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.040186",
+      "last_updated": "2025-08-15T18:13:24.629590",
       "metadata": {}
     },
     {
@@ -5503,7 +5608,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.040299",
+      "last_updated": "2025-08-15T18:13:24.629617",
       "metadata": {}
     },
     {
@@ -5527,7 +5632,7 @@
         "https://openlm.ai/chatbot-arena/ (OpenLM Chatbot Arena leaderboard)"
       ],
       "reasoning": "",
-      "last_updated": "2025-08-11T21:24:13.040383",
+      "last_updated": "2025-08-15T18:13:24.629640",
       "metadata": {}
     }
   ]
